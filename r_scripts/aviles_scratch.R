@@ -9,6 +9,7 @@ library(modelsummary)
 library(fixest)
 library(tidymodels)
 library(vip)
+library(car)
 
 meta_clusters <- read_csv('../chapter_two/data/meta_clusters_with_formatted_name.csv')
 bsr <- read_csv('../cc_legislation/data/bills_with_cluster_count.csv')
