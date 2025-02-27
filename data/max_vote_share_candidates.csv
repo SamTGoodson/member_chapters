@@ -1,0 +1,266 @@
+precinct,ed_name,candidate,votes,ed_total,vote_share
+AD: 43 ED: 012,43012,Jabari Brisport,156,274,56.93
+AD: 43 ED: 045,43045,Jabari Brisport,213,340,62.65
+AD: 43 ED: 046,43046,Jabari Brisport,200,289,69.2
+AD: 43 ED: 047,43047,Jabari Brisport,115,183,62.84
+AD: 43 ED: 048,43048,Jabari Brisport,74,152,48.68
+AD: 43 ED: 049,43049,Tremaine S. Wright,110,231,47.62
+AD: 43 ED: 050,43050,Jabari Brisport,167,312,53.53
+AD: 43 ED: 051,43051,Jabari Brisport,146,279,52.33
+AD: 43 ED: 072,43072,Jabari Brisport,125,215,58.14
+AD: 43 ED: 087,43087,Jabari Brisport,212,308,68.83
+AD: 50 ED: 001,50001,Tremaine S. Wright,40,66,60.61
+AD: 50 ED: 014,50014,Tremaine S. Wright,31,68,45.59
+AD: 50 ED: 083,50083,Jabari Brisport,90,148,60.81
+AD: 50 ED: 084,50084,Jabari Brisport,33,40,82.5
+AD: 50 ED: 085,50085,Jabari Brisport,51,60,85.0
+AD: 50 ED: 088,50088,Jabari Brisport,43,48,89.58
+AD: 50 ED: 089,50089,Jabari Brisport,190,257,73.93
+AD: 50 ED: 090,50090,Jabari Brisport,158,199,79.4
+AD: 50 ED: 091,50091,Jabari Brisport,136,180,75.56
+AD: 50 ED: 092,50092,Jabari Brisport,149,196,76.02
+AD: 50 ED: 093,50093,Jabari Brisport,32,45,71.11
+AD: 50 ED: 099,50099,Jabari Brisport,167,220,75.91
+AD: 51 ED: 008,51008,Jabari Brisport,73,109,66.97
+AD: 51 ED: 044,51044,Jabari Brisport,53,73,72.6
+AD: 51 ED: 045,51045,Jabari Brisport,3,7,42.86
+AD: 51 ED: 046,51046,Jabari Brisport,7,11,63.64
+AD: 51 ED: 049,51049,Jabari Brisport,173,258,67.05
+AD: 51 ED: 050,51050,Jabari Brisport,34,58,58.62
+AD: 51 ED: 051,51051,Jabari Brisport,52,108,48.15
+AD: 51 ED: 052,51052,Jabari Brisport,45,83,54.22
+AD: 51 ED: 053,51053,Jabari Brisport,64,94,68.09
+AD: 51 ED: 054,51054,Jabari Brisport,58,105,55.24
+AD: 51 ED: 055,51055,Jabari Brisport,170,225,75.56
+AD: 51 ED: 068,51068,Jabari Brisport,33,49,67.35
+AD: 51 ED: 069,51069,Jabari Brisport,45,101,44.55
+AD: 51 ED: 070,51070,Tremaine S. Wright,67,129,51.94
+AD: 51 ED: 071,51071,Tremaine S. Wright,74,139,53.24
+AD: 51 ED: 072,51072,Jabari Brisport,159,220,72.27
+AD: 51 ED: 073,51073,Jabari Brisport,110,179,61.45
+AD: 51 ED: 074,51074,Tremaine S. Wright,42,78,53.85
+AD: 51 ED: 081,51081,Jabari Brisport,69,108,63.89
+AD: 52 ED: 003,52003,Jabari Brisport,51,80,63.75
+AD: 52 ED: 022,52022,Jabari Brisport,64,127,50.39
+AD: 52 ED: 023,52023,Jabari Brisport,102,244,41.8
+AD: 52 ED: 024,52024,Jabari Brisport,74,120,61.67
+AD: 52 ED: 025,52025,Jabari Brisport,218,387,56.33
+AD: 52 ED: 027,52027,Jabari Brisport,540,806,67.0
+AD: 52 ED: 028,52028,Jabari Brisport,163,291,56.01
+AD: 52 ED: 029,52029,Jabari Brisport,133,237,56.12
+AD: 52 ED: 030,52030,Jabari Brisport,183,307,59.61
+AD: 52 ED: 031,52031,Jabari Brisport,150,290,51.72
+AD: 52 ED: 032,52032,Jabari Brisport,144,262,54.96
+AD: 52 ED: 033,52033,Jabari Brisport,125,215,58.14
+AD: 52 ED: 048,52048,Jabari Brisport,156,242,64.46
+AD: 52 ED: 049,52049,Jabari Brisport,155,236,65.68
+AD: 52 ED: 050,52050,Jabari Brisport,116,180,64.44
+AD: 52 ED: 051,52051,Tremaine S. Wright,71,150,47.33
+AD: 52 ED: 052,52052,Tremaine S. Wright,59,111,53.15
+AD: 52 ED: 053,52053,Jabari Brisport,112,222,50.45
+AD: 52 ED: 054,52054,Tremaine S. Wright,50,99,50.51
+AD: 52 ED: 055,52055,Jabari Brisport,150,222,67.57
+AD: 52 ED: 056,52056,Jabari Brisport,134,203,66.01
+AD: 52 ED: 057,52057,Jabari Brisport,169,269,62.83
+AD: 52 ED: 058,52058,Jabari Brisport,150,212,70.75
+AD: 52 ED: 059,52059,Jabari Brisport,209,329,63.53
+AD: 52 ED: 060,52060,Jabari Brisport,149,226,65.93
+AD: 52 ED: 061,52061,Jabari Brisport,169,266,63.53
+AD: 52 ED: 062,52062,Jabari Brisport,127,199,63.82
+AD: 52 ED: 089,52089,Jabari Brisport,250,368,67.93
+AD: 52 ED: 090,52090,Jabari Brisport,242,366,66.12
+AD: 52 ED: 091,52091,Jabari Brisport,140,191,73.3
+AD: 52 ED: 095,52095,Jabari Brisport,31,44,70.45
+AD: 52 ED: 096,52096,Jabari Brisport,186,277,67.15
+AD: 52 ED: 097,52097,Jabari Brisport,224,375,59.73
+AD: 52 ED: 098,52098,Jabari Brisport,167,270,61.85
+AD: 52 ED: 099,52099,Jabari Brisport,191,287,66.55
+AD: 52 ED: 100,52100,Jabari Brisport,160,234,68.38
+AD: 52 ED: 104,52104,Tremaine S. Wright,110,186,59.14
+AD: 52 ED: 106,52106,Jabari Brisport,10,13,76.92
+AD: 52 ED: 107,52107,Jabari Brisport,151,230,65.65
+AD: 52 ED: 108,52108,Jabari Brisport,163,269,60.59
+AD: 52 ED: 109,52109,Jabari Brisport,99,142,69.72
+AD: 52 ED: 112,52112,Jabari Brisport,191,270,70.74
+AD: 52 ED: 115,52115,Jabari Brisport,76,170,44.71
+AD: 54 ED: 015,54015,Jabari Brisport,59,95,62.11
+AD: 54 ED: 026,54026,Jabari Brisport,16,22,72.73
+AD: 55 ED: 002,55002,Jabari Brisport,129,168,76.79
+AD: 55 ED: 004,55004,Jabari Brisport,94,183,51.37
+AD: 55 ED: 008,55008,Jabari Brisport,14,28,50.0
+AD: 55 ED: 009,55009,Jabari Brisport,89,159,55.97
+AD: 55 ED: 010,55010,Jabari Brisport,109,201,54.23
+AD: 55 ED: 011,55011,Jabari Brisport,103,187,55.08
+AD: 55 ED: 012,55012,Jabari Brisport,40,68,58.82
+AD: 55 ED: 017,55017,Jabari Brisport,42,89,47.19
+AD: 55 ED: 018,55018,Jabari Brisport,104,209,49.76
+AD: 55 ED: 019,55019,Jabari Brisport,126,245,51.43
+AD: 55 ED: 020,55020,Tremaine S. Wright,111,235,47.23
+AD: 55 ED: 021,55021,Tremaine S. Wright,68,122,55.74
+AD: 55 ED: 022,55022,Tremaine S. Wright,69,132,52.27
+AD: 55 ED: 023,55023,Tremaine S. Wright,113,208,54.33
+AD: 55 ED: 024,55024,Jabari Brisport,92,174,52.87
+AD: 55 ED: 025,55025,Jabari Brisport,100,174,57.47
+AD: 55 ED: 028,55028,Tremaine S. Wright,27,53,50.94
+AD: 55 ED: 029,55029,Jabari Brisport,29,60,48.33
+AD: 55 ED: 030,55030,Tremaine S. Wright,61,128,47.66
+AD: 55 ED: 031,55031,Tremaine S. Wright,97,162,59.88
+AD: 55 ED: 032,55032,Tremaine S. Wright,75,142,52.82
+AD: 55 ED: 033,55033,Tremaine S. Wright,80,154,51.95
+AD: 55 ED: 034,55034,Tremaine S. Wright,86,158,54.43
+AD: 55 ED: 101,55101,Tremaine S. Wright,55,115,47.83
+AD: 55 ED: 102,55102,Jabari Brisport,57,123,46.34
+AD: 55 ED: 103,55103,Jabari Brisport,93,158,58.86
+AD: 55 ED: 104,55104,Tremaine S. Wright,63,120,52.5
+AD: 55 ED: 107,55107,Tremaine S. Wright,118,235,50.21
+AD: 55 ED: 108,55108,Tremaine S. Wright,85,166,51.2
+AD: 55 ED: 109,55109,Jabari Brisport,48,91,52.75
+AD: 56 ED: 005,56005,Tremaine S. Wright,72,127,56.69
+AD: 56 ED: 012,56012,Jabari Brisport,153,232,65.95
+AD: 56 ED: 013,56013,Jabari Brisport,166,262,63.36
+AD: 56 ED: 014,56014,Jabari Brisport,168,248,67.74
+AD: 56 ED: 015,56015,Jabari Brisport,160,280,57.14
+AD: 56 ED: 016,56016,Jabari Brisport,155,260,59.62
+AD: 56 ED: 018,56018,Tremaine S. Wright,113,204,55.39
+AD: 56 ED: 019,56019,Jabari Brisport,134,258,51.94
+AD: 56 ED: 021,56021,Jabari Brisport,119,220,54.09
+AD: 56 ED: 022,56022,Tremaine S. Wright,174,268,64.93
+AD: 56 ED: 023,56023,Tremaine S. Wright,131,267,49.06
+AD: 56 ED: 024,56024,Jabari Brisport,128,230,55.65
+AD: 56 ED: 025,56025,Jabari Brisport,103,197,52.28
+AD: 56 ED: 026,56026,Jabari Brisport,113,200,56.5
+AD: 56 ED: 027,56027,Jabari Brisport,142,246,57.72
+AD: 56 ED: 028,56028,Jabari Brisport,121,246,49.19
+AD: 56 ED: 029,56029,Tremaine S. Wright,88,141,62.41
+AD: 56 ED: 030,56030,Tremaine S. Wright,128,193,66.32
+AD: 56 ED: 031,56031,Jabari Brisport,115,214,53.74
+AD: 56 ED: 032,56032,Jabari Brisport,144,288,50.0
+AD: 56 ED: 033,56033,Tremaine S. Wright,148,262,56.49
+AD: 56 ED: 034,56034,Jabari Brisport,109,203,53.69
+AD: 56 ED: 035,56035,Jabari Brisport,165,288,57.29
+AD: 56 ED: 036,56036,Jabari Brisport,137,237,57.81
+AD: 56 ED: 037,56037,Tremaine S. Wright,140,283,49.47
+AD: 56 ED: 038,56038,Jabari Brisport,207,345,60.0
+AD: 56 ED: 039,56039,Jabari Brisport,117,218,53.67
+AD: 56 ED: 040,56040,Jabari Brisport,156,310,50.32
+AD: 56 ED: 041,56041,Tremaine S. Wright,155,318,48.74
+AD: 56 ED: 042,56042,Jabari Brisport,150,303,49.5
+AD: 56 ED: 043,56043,Tremaine S. Wright,153,286,53.5
+AD: 56 ED: 044,56044,Jabari Brisport,109,214,50.93
+AD: 56 ED: 045,56045,Tremaine S. Wright,145,272,53.31
+AD: 56 ED: 046,56046,Tremaine S. Wright,136,245,55.51
+AD: 56 ED: 047,56047,Jabari Brisport,145,281,51.6
+AD: 56 ED: 048,56048,Tremaine S. Wright,135,263,51.33
+AD: 56 ED: 049,56049,Tremaine S. Wright,141,276,51.09
+AD: 56 ED: 050,56050,Tremaine S. Wright,147,268,54.85
+AD: 56 ED: 051,56051,Tremaine S. Wright,131,201,65.17
+AD: 56 ED: 052,56052,Jabari Brisport,134,268,50.0
+AD: 56 ED: 053,56053,Jabari Brisport,177,319,55.49
+AD: 56 ED: 054,56054,Jabari Brisport,116,236,49.15
+AD: 56 ED: 055,56055,Jabari Brisport,172,327,52.6
+AD: 56 ED: 056,56056,Tremaine S. Wright,70,140,50.0
+AD: 56 ED: 057,56057,Tremaine S. Wright,158,271,58.3
+AD: 56 ED: 058,56058,Jabari Brisport,152,258,58.91
+AD: 56 ED: 059,56059,Tremaine S. Wright,78,151,51.66
+AD: 56 ED: 060,56060,Tremaine S. Wright,87,135,64.44
+AD: 56 ED: 061,56061,Jabari Brisport,115,187,61.5
+AD: 56 ED: 062,56062,Tremaine S. Wright,91,175,52.0
+AD: 56 ED: 063,56063,Tremaine S. Wright,68,125,54.4
+AD: 56 ED: 064,56064,Tremaine S. Wright,64,98,65.31
+AD: 56 ED: 065,56065,Tremaine S. Wright,93,191,48.69
+AD: 56 ED: 066,56066,Jabari Brisport,30,59,50.85
+AD: 56 ED: 067,56067,Jabari Brisport,57,118,48.31
+AD: 56 ED: 068,56068,Tremaine S. Wright,88,169,52.07
+AD: 56 ED: 069,56069,Tremaine S. Wright,100,191,52.36
+AD: 56 ED: 070,56070,Tremaine S. Wright,66,130,50.77
+AD: 56 ED: 071,56071,Tremaine S. Wright,117,178,65.73
+AD: 56 ED: 072,56072,Tremaine S. Wright,150,294,51.02
+AD: 56 ED: 074,56074,Tremaine S. Wright,87,165,52.73
+AD: 56 ED: 079,56079,Jabari Brisport,205,320,64.06
+AD: 56 ED: 080,56080,Tremaine S. Wright,142,277,51.26
+AD: 56 ED: 081,56081,Tremaine S. Wright,71,124,57.26
+AD: 56 ED: 082,56082,Tremaine S. Wright,111,200,55.5
+AD: 56 ED: 083,56083,Tremaine S. Wright,7,12,58.33
+AD: 56 ED: 084,56084,Tremaine S. Wright,73,137,53.28
+AD: 56 ED: 085,56085,Jabari Brisport,246,340,72.35
+AD: 56 ED: 086,56086,Jabari Brisport,121,216,56.02
+AD: 56 ED: 087,56087,Jabari Brisport,151,219,68.95
+AD: 56 ED: 088,56088,Jabari Brisport,137,258,53.1
+AD: 56 ED: 089,56089,Tremaine S. Wright,134,234,57.26
+AD: 56 ED: 090,56090,Tremaine S. Wright,140,289,48.44
+AD: 56 ED: 091,56091,Jabari Brisport,197,301,65.45
+AD: 57 ED: 001,57001,Jabari Brisport,44,89,49.44
+AD: 57 ED: 002,57002,Tremaine S. Wright,63,133,47.37
+AD: 57 ED: 003,57003,Jabari Brisport,53,123,43.09
+AD: 57 ED: 004,57004,Jabari Brisport,94,150,62.67
+AD: 57 ED: 005,57005,Jabari Brisport,20,37,54.05
+AD: 57 ED: 006,57006,Tremaine S. Wright,47,104,45.19
+AD: 57 ED: 007,57007,Tremaine S. Wright,31,59,52.54
+AD: 57 ED: 008,57008,Jabari Brisport,65,120,54.17
+AD: 57 ED: 009,57009,Jabari Brisport,109,218,50.0
+AD: 57 ED: 010,57010,Jabari Brisport,257,467,55.03
+AD: 57 ED: 011,57011,Tremaine S. Wright,103,217,47.47
+AD: 57 ED: 012,57012,Jabari Brisport,63,143,44.06
+AD: 57 ED: 013,57013,Tremaine S. Wright,56,110,50.91
+AD: 57 ED: 014,57014,Jabari Brisport,159,224,70.98
+AD: 57 ED: 015,57015,Jabari Brisport,191,275,69.45
+AD: 57 ED: 016,57016,Jabari Brisport,245,379,64.64
+AD: 57 ED: 017,57017,Jabari Brisport,264,419,63.01
+AD: 57 ED: 018,57018,Tremaine S. Wright,175,377,46.42
+AD: 57 ED: 019,57019,Tremaine S. Wright,44,93,47.31
+AD: 57 ED: 021,57021,Jabari Brisport,221,288,76.74
+AD: 57 ED: 022,57022,Jabari Brisport,159,248,64.11
+AD: 57 ED: 023,57023,Jabari Brisport,47,56,83.93
+AD: 57 ED: 024,57024,Jabari Brisport,220,339,64.9
+AD: 57 ED: 025,57025,Jabari Brisport,320,484,66.12
+AD: 57 ED: 026,57026,Jabari Brisport,264,377,70.03
+AD: 57 ED: 027,57027,Jabari Brisport,192,271,70.85
+AD: 57 ED: 028,57028,Jabari Brisport,181,286,63.29
+AD: 57 ED: 029,57029,Jabari Brisport,214,374,57.22
+AD: 57 ED: 030,57030,Tremaine S. Wright,114,267,42.7
+AD: 57 ED: 031,57031,Tremaine S. Wright,239,454,52.64
+AD: 57 ED: 032,57032,Tremaine S. Wright,49,100,49.0
+AD: 57 ED: 033,57033,Jabari Brisport,37,79,46.84
+AD: 57 ED: 034,57034,Jabari Brisport,245,408,60.05
+AD: 57 ED: 035,57035,Jabari Brisport,212,342,61.99
+AD: 57 ED: 036,57036,Jabari Brisport,255,351,72.65
+AD: 57 ED: 037,57037,Jabari Brisport,189,251,75.3
+AD: 57 ED: 038,57038,Jabari Brisport,311,412,75.49
+AD: 57 ED: 039,57039,Jabari Brisport,253,381,66.4
+AD: 57 ED: 040,57040,Jabari Brisport,226,342,66.08
+AD: 57 ED: 041,57041,Jabari Brisport,280,393,71.25
+AD: 57 ED: 042,57042,Jabari Brisport,186,312,59.62
+AD: 57 ED: 043,57043,Jabari Brisport,299,456,65.57
+AD: 57 ED: 044,57044,Jabari Brisport,175,309,56.63
+AD: 57 ED: 045,57045,Jabari Brisport,135,281,48.04
+AD: 57 ED: 046,57046,Jabari Brisport,91,201,45.27
+AD: 57 ED: 047,57047,Jabari Brisport,169,231,73.16
+AD: 57 ED: 048,57048,Jabari Brisport,237,372,63.71
+AD: 57 ED: 049,57049,Jabari Brisport,271,378,71.69
+AD: 57 ED: 050,57050,Jabari Brisport,211,296,71.28
+AD: 57 ED: 051,57051,Jabari Brisport,217,309,70.23
+AD: 57 ED: 052,57052,Jabari Brisport,140,197,71.07
+AD: 57 ED: 053,57053,Jabari Brisport,140,246,56.91
+AD: 57 ED: 054,57054,Jabari Brisport,291,406,71.67
+AD: 57 ED: 055,57055,Jabari Brisport,159,238,66.81
+AD: 57 ED: 056,57056,Jabari Brisport,216,321,67.29
+AD: 57 ED: 057,57057,Jabari Brisport,216,290,74.48
+AD: 57 ED: 058,57058,Jabari Brisport,196,274,71.53
+AD: 57 ED: 059,57059,Jabari Brisport,148,220,67.27
+AD: 57 ED: 060,57060,Jabari Brisport,175,239,73.22
+AD: 57 ED: 061,57061,Jabari Brisport,353,508,69.49
+AD: 57 ED: 062,57062,Jabari Brisport,154,217,70.97
+AD: 57 ED: 063,57063,Jabari Brisport,220,303,72.61
+AD: 57 ED: 064,57064,Jabari Brisport,310,432,71.76
+AD: 57 ED: 065,57065,Jabari Brisport,299,344,86.92
+AD: 57 ED: 066,57066,Jabari Brisport,210,298,70.47
+AD: 57 ED: 094,57094,Jabari Brisport,94,129,72.87
+AD: 57 ED: 095,57095,Jabari Brisport,120,182,65.93
+AD: 57 ED: 097,57097,Tremaine S. Wright,46,94,48.94
+AD: 57 ED: 098,57098,Jabari Brisport,44,98,44.9
+AD: 57 ED: 099,57099,Jabari Brisport,171,240,71.25
+AD: 57 ED: 100,57100,Jabari Brisport,173,251,68.92
+AD: 57 ED: 101,57101,Jabari Brisport,188,313,60.06
+AD: 57 ED: 102,57102,Jabari Brisport,180,241,74.69
+AD: 57 ED: 103,57103,Jabari Brisport,201,282,71.28
+AD: 57 ED: 104,57104,Jabari Brisport,347,463,74.95

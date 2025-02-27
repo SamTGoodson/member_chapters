@@ -1,0 +1,349 @@
+ELECTION,OFFICECD,CANDID,CANCLASS,CANDLAST,CANDFIRST,CANDMI,COMMITTEE,FILING,SCHEDULE,PAGENO,SEQUENCENO,REFNO,INV_DATE,DATE,NAME,C_CODE,ORG_IND,STRNO,STRNAME,APARTMENT,CITY,STATE,ZIP,PAY_METHOD,AMNT,PURPOSECD,PURPOSE,EXPLAIN,EXEMPTCD,RR_IND,SEG_IND
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0005092,10/19/2020,10/19/2020,Amazon,CORP,Y,,,,Seattle,WA,98109,Unknown,260.21,OTHER,Other: explntion,wireless microphone,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0005740,2/12/2021,2/12/2021,Amazon,CORP,Y,,,,Seattle,WA,98109,Unknown,108.80,OTHER,Other: explntion,face masks,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0005977,3/3/2021,3/3/2021,Amazon,CORP,Y,,,,Seattle,WA,98109,Unknown,7.04,OFFCE,Office Expenses,pens,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0005980,3/3/2021,3/3/2021,Amazon,CORP,Y,,,,Seattle,WA,98109,Unknown,13.64,OFFCE,Office Expenses,clipboard,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,15,F,,,R0008020,10/18/2021,12/30/2021,ASP Media,CORP,Y,,,,Rhinecliff,NY,12574,Unknown,5006.71,PROFL,Prof. Srvcs.,30 second dig media,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007139,2/14/2021,2/19/2021,"Bayalama, Godfre-Vianney",IND,N,,,,Brooklyn,NY,11216,Unknown,2000.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007142,2/28/2021,3/5/2021,"Bayalama, Godfre-Vianney",IND,N,,,,Brooklyn,NY,11216,Unknown,2000.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007152,3/14/2021,3/19/2021,"Bayalama, Godfre-Vianney",IND,N,,,,Brooklyn,NY,11216,Unknown,2000.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007157,3/28/2021,4/2/2021,"Bayalama, Godfre-Vianney",IND,N,,,,Brooklyn,NY,11216,Unknown,2000.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007164,4/11/2021,4/16/2021,"Bayalama, Godfre-Vianney",IND,N,,,,Brooklyn,NY,11216,Unknown,2000.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007170,4/25/2021,4/30/2021,"Bayalama, Godfre-Vianney",IND,N,,,,Brooklyn,NY,11216,Unknown,2000.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007175,5/9/2021,5/14/2021,"Bayalama, Godfre-Vianney",IND,N,,,,Brooklyn,NY,11216,Unknown,2000.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007181,5/23/2021,5/28/2021,"Bayalama, Godfre-Vianney",IND,N,,,,Brooklyn,NY,11216,Unknown,2000.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007195,6/6/2021,6/11/2021,"Bayalama, Godfre-Vianney",IND,N,,,,Brooklyn,NY,11216,Unknown,2000.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007226,6/18/2021,6/25/2021,"Bayalama, Godfre-Vianney",IND,N,,,,Brooklyn,NY,11216,Unknown,2000.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007269,7/4/2021,7/9/2021,"Bayalama, Godfre-Vianney",IND,N,,,,Brooklyn,NY,11216,Unknown,2000.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007285,,7/11/2021,"Bayalama, Godfre-Vianney",IND,N,,,,Brooklyn,NY,11216,Advance,1300.00,ADVAN,Advance Repaymnt,Advance Repayment,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,11,F,,,R0007454,7/18/2021,7/18/2021,"Bayalama, Godfre-Vianney",IND,N,,,,Brooklyn,NY,11216,Unknown,2000.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,11,F,,,R0007456,8/1/2021,8/1/2021,"Bayalama, Godfre-Vianney",IND,N,,,,Brooklyn,NY,11216,Unknown,2000.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,11,F,,,R0007481,8/15/2021,8/15/2021,"Bayalama, Godfre-Vianney",IND,N,,,,Brooklyn,NY,11216,Unknown,2000.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,12,F,,,R0007768,9/12/2021,9/20/2021,"Bayalama, Godfre-Vianney",IND,N,,,,Brooklyn,NY,11216,Unknown,2769.24,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,12,F,,,R0007799,8/29/2021,8/29/2021,"Bayalama, Godfre-Vianney",IND,N,,,,Brooklyn,NY,11216,Unknown,2769.24,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,12,F,,,R0007834,9/26/2021,9/26/2021,"Bayalama, Godfre-Vianney",IND,N,,,,Brooklyn,NY,11216,Unknown,2769.24,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,13,F,,,R0007853,10/10/2021,10/15/2021,"Bayalama, Godfre-Vianney",IND,N,,,,Brooklyn,NY,11216,Unknown,2769.24,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,14,F,,,R0007960,11/7/2021,11/7/2021,"Bayalama, Godfre-Vianney",IND,N,,,,Brooklyn,NY,11216,Unknown,1780.20,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,14,F,,,R0007963,10/24/2021,10/24/2021,"Bayalama, Godfre-Vianney",IND,N,,,,Brooklyn,NY,11216,Unknown,2769.24,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0006975,6/9/2021,6/10/2021,Berlin Rosen,CORP,Y,,,,PECK SLIP,NY,10038,Unknown,1125.00,LITER,Campgn Lit.,Production and print,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0004026,7/21/2020,7/21/2020,Best Buy,CORP,Y,,,,Minneapolis,MN,55423,Unknown,263.44,OFFCE,Office Expenses,Printer and Paper,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0004251,8/24/2020,8/25/2020,Best Buy,CORP,Y,,,,Minneapolis,MN,55423,Unknown,264.00,OTHER,Other: explntion,phone stand photos,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0005577,12/24/2020,12/24/2020,Canva,CORP,Y,,,,San Jose,CA,95113,Unknown,119.40,PROFL,Prof. Srvcs.,design,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0005056,12/7/2020,12/16/2020,"Chitanvis, Kiran",IND,N,,,,Brooklyn,NY,11238,Unknown,2900.00,OTHER,Other: explntion,Campaign video,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0005060,12/15/2020,12/16/2020,"Chitanvis, Kiran",IND,N,,,,Brooklyn,NY,11238,Unknown,2900.00,OTHER,Other: explntion,Campaign video,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007036,5/23/2021,5/28/2021,"Connor, Leigh",IND,N,,,,Brooklyn,NY,11217,Unknown,600.00,WAGES,Campgn Wrkrs $$,Manual payroll check,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007201,6/6/2021,6/11/2021,"Connor, Leigh",IND,N,,,,Brooklyn,NY,11217,Unknown,400.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007221,6/18/2021,6/25/2021,"Connor, Leigh",IND,N,,,,Brooklyn,NY,11217,Unknown,400.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0005952,3/1/2021,3/5/2021,"Connor, Leigh",IND,N,,,,Brooklyn,NY,11217,Unknown,500.00,OTHER,Other: explntion,Fellowship Stipend 1,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006479,5/11/2021,5/11/2021,"Connor, Leigh",IND,N,,,,Brooklyn,NY,11217,Unknown,500.00,OTHER,Other: explntion,Fellowship Stipend 2,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,11,F,,,R0007336,7/17/2021,7/17/2021,Costco,CORP,Y,,,,Brooklyn,NY,11232,Unknown,242.10,OTHER,Other: explntion,thank you bbq vols,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0005974,3/1/2021,3/18/2021,"Cowan, Jacob",IND,N,,,,Grinnell,IA,50112,Unknown,500.00,OTHER,Other: explntion,Fellowship Stipend 1,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0005700,2/9/2021,2/9/2021,Crown Discount Store,CORP,Y,,,,Brooklyn,NY,11225,Unknown,9.33,OFFCE,Office Expenses,tape,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,11,F,,,R0007741,8/23/2021,8/23/2021,Crown Heights Cafe,OTHR,Y,,,,Brooklyn,NY,11238,Unknown,34.92,OTHER,Other: explntion,coffee w/ Crystal,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,11,F,,,R0007744,8/23/2021,8/23/2021,Crown Heights Cafe,OTHR,Y,,,,Brooklyn,NY,11238,Unknown,27.19,OTHER,Other: explntion,coffee w/ Crystal,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0005883,2/23/2021,2/26/2021,"Dawson, Vincent",IND,N,,,,Brooklyn,NY,11233,Unknown,50.00,LITER,Campgn Lit.,Posters,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0004455,9/12/2020,9/14/2020,Duane Reade,CORP,Y,,,,Brooklyn,NY,11217,Unknown,5.98,OFFCE,Office Expenses,rubber bands,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0005879,1/19/2021,1/19/2021,Duane Reade,CORP,Y,,,,Brooklyn,NY,11217,Unknown,54.43,OTHER,Other: explntion,hand warmers volunte,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0006939,5/23/2021,6/8/2021,"Duffy, Margot",IND,N,,,,Brooklyn,NY,11215,Unknown,200.00,WAGES,Campgn Wrkrs $$,Manual payroll check,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007187,5/23/2021,6/3/2021,"Duffy, Margot",IND,N,,,,Brooklyn,NY,11215,Unknown,120.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007207,6/6/2021,6/11/2021,"Duffy, Margot",IND,N,,,,Brooklyn,NY,11215,Unknown,640.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007229,6/18/2021,6/25/2021,"Duffy, Margot",IND,N,,,,Brooklyn,NY,11215,Unknown,560.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0006075,2/25/2021,2/25/2021,Dunkin Donuts,CORP,Y,,,,,,,Unknown,49.98,OTHER,Other: explntion,hot chocolate canvas,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006637,5/2/2021,5/27/2021,EveryAction Inc.,CORP,Y,,,,Pittsburgh,PA,15251-926,Unknown,272.19,PROFL,Prof. Srvcs.,Mobilize Small Campa,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,9,F,,,R0006750,4/28/2021,5/26/2021,EveryAction Inc.,CORP,Y,,,,Pittsburgh,PA,15251-926,Unknown,272.19,PROFL,Prof. Srvcs.,Mobilize Small Campa,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,9,F,,,R0006833,6/2/2021,6/3/2021,EveryAction Inc.,CORP,Y,,,,Pittsburgh,PA,15251-926,Unknown,272.19,PROFL,Prof. Srvcs.,Mobilize Small Campa,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006658,5/17/2021,5/17/2021,Fed Ex,CORP,Y,,,,Memphis,TN,38120,Unknown,1513.70,POSTA,Postage,Mailer printout,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,14,F,,,R0007895,10/25/2021,10/25/2021,Golda,OTHR,Y,,,,Brooklyn,NY,11238,Unknown,16.50,OTHER,Other: explntion,coffee w/ Crystal,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,14,F,,,R0007896,10/25/2021,10/25/2021,Golda,OTHR,Y,,,,Brooklyn,NY,11238,Unknown,4.50,OTHER,Other: explntion,coffee w/ Crystal,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,14,F,,,R0007897,10/25/2021,10/25/2021,Golda,OTHR,Y,,,,Brooklyn,NY,11238,Unknown,4.50,OTHER,Other: explntion,coffee w/ Crystal,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,4,F,,,R0000672,12/7/2019,12/7/2019,Harland Clarke Corp.,CORP,Y,,,,San Antonio,TX,78256,Unknown,149.50,PROFL,Prof. Srvcs.,Checks,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007087,6/6/2021,6/18/2021,"Hazard, Tyler",IND,N,,,,Brooklyn,NY,11214,Unknown,120.00,WAGES,Campgn Wrkrs $$,Manual payroll check,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007233,6/18/2021,6/25/2021,"Hazard, Tyler",IND,N,,,,Brooklyn,NY,11214,Unknown,560.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,15,F,,,R0008114,1/14/2022,1/14/2022,Internal Revenue Service,OTHR,Y,,,,New York,NY,10278,Unknown,16.47,OTHER,Other: explntion,IRS filing,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,15,F,,,R0008115,1/10/2022,1/10/2022,Internal Revenue Service,OTHR,Y,,,,New York,NY,10278,Unknown,13.17,OTHER,Other: explntion,IRS filing,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,16,F,,,R0008084,2/9/2022,2/9/2022,Internal Revenue Service,OTHR,Y,,,,New York,NY,10278,Unknown,5.14,OTHER,Other: explntion,1099 E file fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,16,F,,,R0008113,1/31/2022,1/31/2022,Internal Revenue Service,OTHR,Y,,,,New York,NY,10278,Unknown,24.21,OTHER,Other: explntion,IRS filing,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007190,5/23/2021,6/3/2021,"John, Nathan",IND,N,,,,Brooklyn,NY,11213,Unknown,120.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007210,6/6/2021,6/11/2021,"John, Nathan",IND,N,,,,Brooklyn,NY,11213,Unknown,640.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007235,6/18/2021,6/25/2021,"John, Nathan",IND,N,,,,Brooklyn,NY,11213,Unknown,320.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,9,F,,,R0006943,5/23/2021,6/2/2021,"John, Nathan",IND,N,,,,Brooklyn,NY,11213,Unknown,200.00,WAGES,Campgn Wrkrs $$,Manual payroll check,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0006984,6/10/2021,6/10/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,111.95,WAGES,Campgn Wrkrs $$,payroll fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0006985,6/6/2021,6/10/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,594.96,WAGES,Campgn Wrkrs $$,tax liability,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007212,6/25/2021,6/25/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,74.95,WAGES,Campgn Wrkrs $$,payroll fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007271,6/20/2021,6/25/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,598.29,WAGES,Campgn Wrkrs $$,tax liability,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007273,7/4/2021,7/9/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,336.71,WAGES,Campgn Wrkrs $$,tax liability,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007276,7/9/2021,7/9/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,60.70,WAGES,Campgn Wrkrs $$,payroll fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,11,F,,,R0007460,7/23/2021,7/23/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,57.85,WAGES,Campgn Wrkrs $$,fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,11,F,,,R0007462,8/6/2021,8/6/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,57.85,WAGES,Campgn Wrkrs $$,fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,11,F,,,R0007465,7/23/2021,7/23/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,141.58,WAGES,Campgn Wrkrs $$,tax liability,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,11,F,,,R0007468,8/6/2021,8/6/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,141.58,WAGES,Campgn Wrkrs $$,tax liability,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,11,F,,,R0007476,8/15/2021,8/15/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,141.58,WAGES,Campgn Wrkrs $$,tax liability,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,11,F,,,R0007477,8/20/2021,8/20/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,57.85,WAGES,Campgn Wrkrs $$,payroll fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,12,F,,,R0007771,9/17/2021,9/17/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,57.85,WAGES,Campgn Wrkrs $$,fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,12,F,,,R0007775,9/17/2021,9/17/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,196.49,WAGES,Campgn Wrkrs $$,tax liability,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,12,F,,,R0007794,9/3/2021,9/3/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,72.85,WAGES,Campgn Wrkrs $$,payroll fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,12,F,,,R0007795,9/3/2021,9/3/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,196.49,WAGES,Campgn Wrkrs $$,tax liability,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,12,F,,,R0007829,8/31/2021,8/31/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,272.84,OTHER,Other: explntion,tax liability,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,12,F,,,R0007840,9/26/2021,9/26/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,313.70,PROFL,Prof. Srvcs.,tax liability,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,13,F,,,R0007831,10/1/2021,10/1/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,60.70,PROFL,Prof. Srvcs.,payroll fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,13,F,,,R0007857,10/15/2021,10/15/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,57.85,WAGES,Campgn Wrkrs $$,payroll fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,13,F,,,R0007859,10/15/2021,10/15/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,196.49,WAGES,Campgn Wrkrs $$,tax liability,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,14,F,,,R0007924,10/29/2021,10/29/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,60.70,WAGES,Campgn Wrkrs $$,payroll fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,14,F,,,R0007925,10/29/2021,10/29/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,349.22,WAGES,Campgn Wrkrs $$,tax liability,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,14,F,,,R0007970,11/12/2021,11/12/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,219.39,WAGES,Campgn Wrkrs $$,tax liability,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,14,F,,,R0007973,11/12/2021,11/12/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,60.70,OTHER,Other: explntion,payroll fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,15,F,,,R0007991,12/10/2021,12/10/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,207.00,PROFL,Prof. Srvcs.,payroll closeout fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0005856,1/31/2021,2/4/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,299.63,WAGES,Campgn Wrkrs $$,12903127 TAX IMPOUN,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0005860,2/4/2021,2/4/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,57.85,WAGES,Campgn Wrkrs $$,12903127 BILLING,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0005871,2/14/2021,2/18/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,517.21,WAGES,Campgn Wrkrs $$,12903127 TAX IMPOUN,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0005874,2/18/2021,2/18/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,60.70,WAGES,Campgn Wrkrs $$,12903127 BILLING,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0006007,3/4/2021,3/4/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,75.70,WAGES,Campgn Wrkrs $$,NATPAY-12903127 BILL,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0006010,2/28/2021,3/4/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,509.70,WAGES,Campgn Wrkrs $$,employer tax,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006198,3/28/2021,4/1/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,432.30,WAGES,Campgn Wrkrs $$,NATPAY-12903127 TAX,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006199,4/1/2021,4/1/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,60.70,WAGES,Campgn Wrkrs $$,NATPAY-12903127 BILL,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006200,3/18/2021,3/18/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,60.70,WAGES,Campgn Wrkrs $$,NATPAY-12903127 BILL,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006201,3/14/2021,3/18/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,500.71,WAGES,Campgn Wrkrs $$,tax liability,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006295,4/15/2021,4/15/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,60.70,WAGES,Campgn Wrkrs $$,NATPAY-12903127 BILL,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006296,4/11/2021,4/15/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,400.71,WAGES,Campgn Wrkrs $$,NATPAY-12903127 TAX,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006444,4/29/2021,4/29/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,60.70,WAGES,Campgn Wrkrs $$,NATPAY-12903127 BILL,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006445,4/25/2021,4/29/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,394.30,WAGES,Campgn Wrkrs $$,tax liability,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006548,5/9/2021,5/13/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,336.71,WAGES,Campgn Wrkrs $$,tax liability,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006551,5/13/2021,5/13/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,60.70,WAGES,Campgn Wrkrs $$,NATPAY-12903127 BILL,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,9,F,,,R0006955,5/23/2021,6/3/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,25.06,WAGES,Campgn Wrkrs $$,tax liability,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,9,F,,,R0006993,5/23/2021,5/27/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,507.32,WAGES,Campgn Wrkrs $$,tax liability,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,9,F,,,R0006996,5/27/2021,5/27/2021,Journey Payroll & HR,CORP,Y,,,,Fort Collins,CO,80525,Unknown,72.10,WAGES,Campgn Wrkrs $$,NATPAY-12903127 BILL,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0005969,3/1/2021,3/29/2021,"Khan, Abida",IND,N,,,,Brooklyn,NY,11208,Unknown,500.00,OTHER,Other: explntion,Fellowship Stipend 1,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006485,5/11/2021,5/11/2021,"Khan, Abida",IND,N,,,,Brooklyn,NY,11208,Unknown,500.00,OTHER,Other: explntion,Fellowship Stipend 2,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,14,F,,,R0007909,9/26/2021,9/26/2021,"Knowles, Trivette",IND,N,,,,Brooklyn,NY,11216,Unknown,1000.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,14,F,,,R0007914,10/24/2021,10/24/2021,"Knowles, Trivette",IND,N,,,,Brooklyn,NY,11216,Unknown,1300.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,14,F,,,R0007966,11/7/2021,11/7/2021,"Knowles, Trivette",IND,N,,,,Brooklyn,NY,11216,Unknown,800.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0004972,12/3/2020,12/14/2020,L+L Design,CORP,Y,,,,Brooklyn,NY,11222,Unknown,1000.00,PROFL,Prof. Srvcs.,Dsgn campgn identity,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0005085,10/26/2020,11/10/2020,L+L Design,CORP,Y,,,,Brooklyn,NY,11222,Unknown,1000.00,PROFL,Prof. Srvcs.,design campaign iden,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006288,4/8/2021,4/15/2021,Lander for NYC,PCOMC,Y,,,,,,,Unknown,81.65,PETIT,Petition Expns.,joint petitions,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,15,F,,,R0008030,12/30/2021,12/30/2021,"Laufer, Laurence",IND,N,,,,Mt Tremper,NY,12457,Unknown,5400.00,PROFL,Prof. Srvcs.,audit counsel,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007256,6/24/2021,6/25/2021,"Law Office of Ali Najmi, Esq.",PART,Y,,,,New York,NY,10016,Unknown,6000.00,OTHER,Other: explntion,legal advice,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0005267,1/5/2021,1/7/2021,"Law Office of Ali Najmi, Esq.",PART,Y,,,,New York,NY,10016,Unknown,7000.00,CONSL,Campgn Consuls.,legal advice,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,5,F,,,R0001645,2/26/2020,3/24/2020,"Lawrence, Marcie",IND,N,,,,Brooklyn,NY,11220,Unknown,1080.00,LITER,Campgn Lit.,logo development,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0005964,3/1/2021,3/5/2021,"Lopez, Ariela",IND,N,,,,The Bronx,NY,10463,Unknown,500.00,OTHER,Other: explntion,Fellowship Stipend 1,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006483,5/11/2021,5/11/2021,"Lopez, Ariela",IND,N,,,,The Bronx,NY,10463,Unknown,500.00,OTHER,Other: explntion,Fellowship Stipend 2,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,12,F,,,R0007805,9/20/2021,9/20/2021,Lyft,CORP,Y,,,,New York,NY,10001,Unknown,12.69,OTHER,Other: explntion,transportation,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,12,F,,,R0007806,9/20/2021,9/20/2021,Lyft,CORP,Y,,,,New York,NY,10001,Unknown,16.92,OTHER,Other: explntion,transportation,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006163,3/22/2021,3/22/2021,"Mosley, Marilyn",IND,N,,,,Brooklyn,NY,11238,Unknown,500.00,WAGES,Campgn Wrkrs $$,street canvassing,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0004446,9/15/2020,9/18/2020,New York State Democratic Comm,PCOMZ,Y,,,,BOWLING GREEN,NY,10004,Unknown,2000.00,OTHER,Other: explntion,NYVAN AD57voter file,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0005253,1/7/2021,1/9/2021,New York State Democratic Comm,PCOMZ,Y,,,,BOWLING GREEN,NY,10004,Unknown,3500.00,OTHER,Other: explntion,NYVAN AD57voter file,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0005864,2/8/2021,2/8/2021,New York State Insurance Fund,CORP,Y,,,,New York,NY,10007,Unknown,528.48,WAGES,Campgn Wrkrs $$,Workers Comp,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0005866,2/8/2021,2/8/2021,New York State Insurance Fund,CORP,Y,,,,New York,NY,10007,Unknown,11.89,WAGES,Campgn Wrkrs $$,WC Processing Fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0006069,2/27/2021,3/11/2021,NY Prints LLC,CORP,Y,,,,Long Island City,NY,11101,Unknown,326.63,PETIT,Petition Expns.,single candidate pet,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,14,F,,,R0007948,10/25/2021,11/11/2021,NYS Workers’ Compensation Boar,OTHR,Y,,,,Binghamton,NY,13902,Unknown,661.50,OTHER,Other: explntion,penalty fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0005155,12/22/2020,12/26/2020,"O' Leary, Kelsie",IND,N,,,,Columbus,OH,43235,Unknown,2370.97,CONSL,Campgn Consuls.,field consulting,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,13,F,,,R0007880,10/1/2021,10/16/2021,Paragon Strategies,OTHR,Y,,,,Brooklyn,NY,11233,Unknown,1500.00,CONSL,Campgn Consuls.,campaign strategy,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0005958,3/1/2021,3/5/2021,"Petersen, Sezlyn",IND,N,,,,Brooklyn,NY,11238,Unknown,500.00,OTHER,Other: explntion,Fellowship Stipend 1,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006481,5/11/2021,5/18/2021,"Petersen, Sezlyn",IND,N,,,,Brooklyn,NY,11238,Unknown,500.00,OTHER,Other: explntion,Fellowship Stipend 2,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0006931,6/8/2021,6/8/2021,Premiere Political Communicati,CORP,Y,,,,Austin,TX,78756,Unknown,153.92,PROFL,Prof. Srvcs.,robocalls,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007055,6/18/2021,6/18/2021,Premiere Political Communicati,CORP,Y,,,,Austin,TX,78756,Unknown,115.44,PROFL,Prof. Srvcs.,robocalls,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007263,6/14/2021,6/15/2021,Premiere Political Communicati,CORP,Y,,,,Austin,TX,78756,Unknown,153.92,PROFL,Prof. Srvcs.,robocalls,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007080,6/19/2021,6/19/2021,Reach Progress PBC,CORP,Y,,,,Long Island City,NY,11101,Unknown,163.31,PROFL,Prof. Srvcs.,text msg service ads,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,11,F,,,R0007327,7/19/2021,7/19/2021,Reach Progress PBC,CORP,Y,,,,Long Island City,NY,11101,Unknown,163.31,PROFL,Prof. Srvcs.,text msg service ads,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,11,F,,,R0007724,8/20/2021,8/20/2021,Reach Progress PBC,CORP,Y,,,,Long Island City,NY,11101,Unknown,163.31,PROFL,Prof. Srvcs.,text msg service ads,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,12,F,,,R0007766,9/19/2021,9/19/2021,Reach Progress PBC,CORP,Y,,,,Long Island City,NY,11101,Unknown,163.31,PROFL,Prof. Srvcs.,text msg service ads,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0005790,2/19/2021,2/22/2021,Reach Progress PBC,CORP,Y,,,,Long Island City,NY,11101,Unknown,163.31,PROFL,Prof. Srvcs.,text msg service ads,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006231,3/29/2021,4/7/2021,Reach Progress PBC,CORP,Y,,,,Long Island City,NY,11101,Unknown,163.31,PROFL,Prof. Srvcs.,text msg service ads,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006499,4/19/2021,4/19/2021,Reach Progress PBC,CORP,Y,,,,Long Island City,NY,11101,Unknown,163.31,PROFL,Prof. Srvcs.,text msg service ads,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,9,F,,,R0006830,6/2/2021,6/3/2021,Reach Progress PBC,CORP,Y,,,,Long Island City,NY,11101,Unknown,163.31,PROFL,Prof. Srvcs.,text msg service ads,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007043,6/15/2021,6/15/2021,Redhorse Strategies,CORP,Y,,,,Brooklyn,NY,11201,Unknown,28926.56,CMAIL,Campgn Mlngs,mailer digital palmc,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,12,F,,,R0007755,8/3/2021,9/20/2021,Redhorse Strategies,CORP,Y,,,,Brooklyn,NY,11201,Unknown,250.00,CONSL,Campgn Consuls.,september 2021,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,12,F,,,R0007756,8/3/2021,9/20/2021,Redhorse Strategies,CORP,Y,,,,Brooklyn,NY,11201,Unknown,250.00,CONSL,Campgn Consuls.,august 2021 retainer,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,12,F,,,R0007757,8/3/2021,9/20/2021,Redhorse Strategies,CORP,Y,,,,Brooklyn,NY,11201,Unknown,250.00,CONSL,Campgn Consuls.,july 2021 retainer,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,13,F,,,R0007846,10/8/2021,10/9/2021,Redhorse Strategies,CORP,Y,,,,Brooklyn,NY,11201,Unknown,4605.00,CONSL,Campgn Consuls.,palm card poster,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,14,F,,,R0007917,10/26/2021,11/1/2021,Redhorse Strategies,CORP,Y,,,,Brooklyn,NY,11201,Unknown,29967.00,CMAIL,Campgn Mlngs,design print mail,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,14,F,,,R0007940,10/27/2021,11/2/2021,Redhorse Strategies,CORP,Y,,,,Brooklyn,NY,11201,Unknown,7500.00,CONSL,Campgn Consuls.,digital spend,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,5,F,,,R0001647,3/6/2020,3/18/2020,Redhorse Strategies,CORP,Y,,,,Brooklyn,NY,11201,Unknown,250.00,CONSL,Campgn Consuls.,March 2020 retainer,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,5,F,,,R0001696,4/2/2020,5/19/2020,Redhorse Strategies,CORP,Y,,,,Brooklyn,NY,11201,Unknown,250.00,CONSL,Campgn Consuls.,April 2020 retainer,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,5,F,,,R0001700,5/4/2020,5/19/2020,Redhorse Strategies,CORP,Y,,,,Brooklyn,NY,11201,Unknown,250.00,CONSL,Campgn Consuls.,May 2020 retainer,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,5,F,,,R0001728,6/7/2020,6/22/2020,Redhorse Strategies,CORP,Y,,,,Brooklyn,NY,11201,Unknown,250.00,CONSL,Campgn Consuls.,June 2020 retainer,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0003906,7/9/2020,7/27/2020,Redhorse Strategies,CORP,Y,,,,Brooklyn,NY,11201,Unknown,250.00,CONSL,Campgn Consuls.,July 2020 retainer,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0004967,12/4/2020,12/14/2020,Redhorse Strategies,CORP,Y,,,,Brooklyn,NY,11201,Unknown,6911.50,CONSL,Campgn Consuls.,monthly payment,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0005148,12/23/2020,12/24/2020,Redhorse Strategies,CORP,Y,,,,Brooklyn,NY,11201,Unknown,22460.52,CMAIL,Campgn Mlngs,"mailer,digital banne",,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0005642,1/16/2021,2/9/2021,Redhorse Strategies,CORP,Y,,,,Brooklyn,NY,11201,Unknown,250.00,CONSL,Campgn Consuls.,Jan 2021 retainer,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0005704,2/5/2021,3/1/2021,Redhorse Strategies,CORP,Y,,,,Brooklyn,NY,11201,Unknown,1750.00,CONSL,Campgn Consuls.,Feb retainer,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006083,3/7/2021,3/14/2021,Redhorse Strategies,CORP,Y,,,,Brooklyn,NY,11201,Unknown,1750.00,CONSL,Campgn Consuls.,monthly payment,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006285,4/5/2021,4/10/2021,Redhorse Strategies,CORP,Y,,,,Brooklyn,NY,11201,Unknown,18325.07,LITER,Campgn Lit.,"print palm cards,",,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006455,5/5/2021,5/8/2021,Redhorse Strategies,CORP,Y,,,,Brooklyn,NY,11201,Unknown,1750.00,CONSL,Campgn Consuls.,retainer,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,9,F,,,R0006744,5/24/2021,5/26/2021,Redhorse Strategies,CORP,Y,,,,Brooklyn,NY,11201,Unknown,19293.44,CONSL,Campgn Consuls.,"palm cards, mail hou",,N,N
+2021,55,2267,P,Hudson,Crystal,,H,9,F,,,R0006822,6/1/2021,6/1/2021,Redhorse Strategies,CORP,Y,,,,Brooklyn,NY,11201,Unknown,27436.70,CMAIL,Campgn Mlngs,"Design, Print, mail",,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0004401,9/10/2020,9/11/2020,Rev,CORP,Y,,,,San Francisco,CA,94108,Unknown,2.50,PROFL,Prof. Srvcs.,closed captioning,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0004638,10/15/2020,10/16/2020,Rev,CORP,Y,,,,San Francisco,CA,94108,Unknown,11.25,PROFL,Prof. Srvcs.,transcription Chopit,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0004976,11/22/2020,11/23/2020,Rev,CORP,Y,,,,San Francisco,CA,94108,Unknown,3.75,PROFL,Prof. Srvcs.,captioning,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0004978,9/30/2020,10/1/2020,Rev,CORP,Y,,,,San Francisco,CA,94108,Unknown,18.75,PROFL,Prof. Srvcs.,captioning,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0004981,12/6/2020,12/7/2020,Rev,CORP,Y,,,,San Francisco,CA,94108,Unknown,6.25,PROFL,Prof. Srvcs.,captioning,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0005089,10/30/2020,11/2/2020,Rev,CORP,Y,,,,San Francisco,CA,94108,Unknown,11.25,PROFL,Prof. Srvcs.,captioning,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0005799,12/30/2020,12/30/2020,Rev,CORP,Y,,,,San Francisco,CA,94108,Unknown,11.25,OTHER,Other: explntion,captioning,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0005801,2/17/2021,2/17/2021,Rev,CORP,Y,,,,San Francisco,CA,94108,Unknown,11.25,OTHER,Other: explntion,captioning,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,9,F,,,R0006820,6/1/2021,6/1/2021,Rev,CORP,Y,,,,San Francisco,CA,94108,Unknown,12.50,OTHER,Other: explntion,captioning,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,9,F,,,R0006870,6/8/2021,6/8/2021,Rev,CORP,Y,,,,San Francisco,CA,94108,Unknown,11.25,PROFL,Prof. Srvcs.,captioning,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007034,6/14/2021,6/17/2021,Scale to Win,CORP,Y,,,,Santa Ana,CA,92703,Unknown,533.52,PROFL,Prof. Srvcs.,text message service,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,9,F,,,R0006674,4/7/2021,5/21/2021,Scale to Win,CORP,Y,,,,Santa Ana,CA,92703,Unknown,853.82,PROFL,Prof. Srvcs.,text message service,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,9,F,,,R0006677,5/3/2021,5/21/2021,Scale to Win,CORP,Y,,,,Santa Ana,CA,92703,Unknown,13.26,PROFL,Prof. Srvcs.,text message service,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,9,F,,,R0006874,6/7/2021,6/7/2021,"Serrano, Marissa",IND,N,,,,Brooklyn,NY,11226,Unknown,220.00,WAGES,Campgn Wrkrs $$,Manual payroll check,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007135,2/14/2021,2/19/2021,"Shane, Katie",IND,N,,,,Brooklyn,NY,11237,Unknown,2750.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007136,1/31/2021,2/5/2021,"Shane, Katie",IND,N,,,,Brooklyn,NY,11237,Unknown,2750.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007145,2/28/2021,3/5/2021,"Shane, Katie",IND,N,,,,Brooklyn,NY,11237,Unknown,2750.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007148,3/14/2021,3/19/2021,"Shane, Katie",IND,N,,,,Brooklyn,NY,11237,Unknown,2750.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007154,3/28/2021,4/2/2021,"Shane, Katie",IND,N,,,,Brooklyn,NY,11237,Unknown,2750.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007161,4/11/2021,4/16/2021,"Shane, Katie",IND,N,,,,Brooklyn,NY,11237,Unknown,2750.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007166,4/25/2021,4/30/2021,"Shane, Katie",IND,N,,,,Brooklyn,NY,11237,Unknown,2750.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007173,5/9/2021,5/14/2021,"Shane, Katie",IND,N,,,,Brooklyn,NY,11237,Unknown,2750.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007178,5/23/2021,5/28/2021,"Shane, Katie",IND,N,,,,Brooklyn,NY,11237,Unknown,2750.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007192,6/6/2021,6/11/2021,"Shane, Katie",IND,N,,,,Brooklyn,NY,11237,Unknown,2750.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007223,6/18/2021,6/25/2021,"Shane, Katie",IND,N,,,,Brooklyn,NY,11237,Unknown,2750.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007266,7/4/2021,7/9/2021,"Shane, Katie",IND,N,,,,Brooklyn,NY,11237,Unknown,2750.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,9,F,,,R0006662,,5/19/2021,"Shane, Katie",IND,N,,,,Brooklyn,NY,11237,Advance,161.97,ADVAN,Advance Repaymnt,Advance Repayment,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,9,F,,,R0006663,,5/19/2021,"Shane, Katie",IND,N,,,,Brooklyn,NY,11237,Advance,70.54,ADVAN,Advance Repaymnt,Advance Repayment,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007204,6/6/2021,6/11/2021,"Spector, Jennie",IND,N,,,,Brooklyn,NY,11201,Unknown,400.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007217,6/18/2021,6/25/2021,"Spector, Jennie",IND,N,,,,Brooklyn,NY,11201,Unknown,400.00,WAGES,Campgn Wrkrs $$,gross pay,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,9,F,,,R0006946,5/23/2021,6/2/2021,"Spector, Jennie",IND,N,,,,Brooklyn,NY,11201,Unknown,600.00,WAGES,Campgn Wrkrs $$,Manual payroll check,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,13,F,,,R0007872,10/5/2021,10/5/2021,Squarespace,CORP,Y,,,,,,,Unknown,333.56,PROFL,Prof. Srvcs.,website,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,4,F,,,R0000090,10/21/2019,10/21/2019,Squarespace,CORP,Y,,,,,,,Unknown,26.00,PROFL,Prof. Srvcs.,Web domain purchase,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,4,F,,,R0000092,10/21/2019,10/21/2019,Squarespace,CORP,Y,,,,,,,Unknown,20.00,PROFL,Prof. Srvcs.,G-Suite email acct,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,4,F,,,R0000641,11/19/2019,11/20/2019,Squarespace,CORP,Y,,,,,,,Unknown,26.00,PROFL,Prof. Srvcs.,monthly payment webs,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,4,F,,,R0000850,12/20/2019,12/20/2019,Squarespace,CORP,Y,,,,,,,Unknown,26.00,PROFL,Prof. Srvcs.,monthly payment webs,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,5,F,,,R0001668,3/20/2020,3/20/2020,Squarespace,CORP,Y,,,,,,,Unknown,26.00,PROFL,Prof. Srvcs.,monthly payment webs,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,5,F,,,R0001670,2/20/2020,2/20/2020,Squarespace,CORP,Y,,,,,,,Unknown,26.00,PROFL,Prof. Srvcs.,monthly payment webs,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,5,F,,,R0001672,1/21/2020,1/21/2020,Squarespace,CORP,Y,,,,,,,Unknown,26.00,PROFL,Prof. Srvcs.,monthly payment webs,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,5,F,,,R0001731,4/19/2020,4/19/2020,Squarespace,CORP,Y,,,,,,,Unknown,26.00,PROFL,Prof. Srvcs.,monthly payment webs,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,5,F,,,R0001926,5/19/2020,5/19/2020,Squarespace,CORP,Y,,,,,,,Unknown,26.00,PROFL,Prof. Srvcs.,monthly payment webs,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,5,F,,,R0003378,6/19/2020,6/19/2020,Squarespace,CORP,Y,,,,,,,Unknown,26.00,PROFL,Prof. Srvcs.,monthly payment webs,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0003375,7/11/2020,7/13/2020,Squarespace,CORP,Y,,,,,,,Unknown,30.00,PROFL,Prof. Srvcs.,monthly payment webs,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0004013,7/19/2020,7/20/2020,Squarespace,CORP,Y,,,,,,,Unknown,26.00,PROFL,Prof. Srvcs.,monthly payment webs,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0004155,8/12/2020,8/12/2020,Squarespace,CORP,Y,,,,,,,Unknown,30.00,OTHER,Other: explntion,website,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0004469,9/2/2020,9/3/2020,Squarespace,CORP,Y,,,,,,,Unknown,10.07,PROFL,Prof. Srvcs.,annual gsuite fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0004473,9/11/2020,9/14/2020,Squarespace,CORP,Y,,,,,,,Unknown,30.00,PROFL,Prof. Srvcs.,monthly payment webs,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0005070,10/4/2020,10/5/2020,Squarespace,CORP,Y,,,,,,,Unknown,20.00,OTHER,Other: explntion,purchase of domain,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0005072,10/11/2020,10/13/2020,Squarespace,CORP,Y,,,,,,,Unknown,30.00,PROFL,Prof. Srvcs.,monthly payment webs,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0005074,10/19/2020,10/20/2020,Squarespace,CORP,Y,,,,,,,Unknown,156.78,OTHER,Other: explntion,web payment gsuite,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0005076,11/11/2020,11/12/2020,Squarespace,CORP,Y,,,,,,,Unknown,30.00,PROFL,Prof. Srvcs.,monthly payment webs,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0005078,12/6/2020,12/7/2020,Squarespace,CORP,Y,,,,,,,Unknown,68.08,OTHER,Other: explntion,web payment gsuite,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0005080,12/11/2020,12/14/2020,Squarespace,CORP,Y,,,,,,,Unknown,30.00,PROFL,Prof. Srvcs.,monthly payment webs,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0005794,1/11/2021,1/11/2021,Squarespace,CORP,Y,,,,,,,Unknown,30.00,PROFL,Prof. Srvcs.,monthly payment webs,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0005271,1/8/2021,1/12/2021,Squarespace,CORP,Y,,,,,,,Unknown,60.99,PROFL,Prof. Srvcs.,G-suite annual,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0005797,2/11/2021,2/11/2021,Squarespace,CORP,Y,,,,,,,Unknown,30.00,PROFL,Prof. Srvcs.,monthly payment webs,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0006068,3/11/2021,3/12/2021,Squarespace,CORP,Y,,,,,,,Unknown,30.00,PROFL,Prof. Srvcs.,monthly payment webs,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006449,4/27/2021,4/27/2021,Squarespace,CORP,Y,,,,,,,Unknown,190.00,PROFL,Prof. Srvcs.,business monthly web,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006452,4/26/2021,4/26/2021,Squarespace,CORP,Y,,,,,,,Unknown,26.00,PROFL,Prof. Srvcs.,monthly payment webs,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,14,F,,,R0007951,11/1/2021,11/8/2021,STANDARD SECURITY LIFE INSURAN,CORP,Y,,,,New York,NY,10022-587,Unknown,30.41,OTHER,Other: explntion,STD insurance,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0004465,9/12/2020,9/14/2020,Staples,CORP,Y,,,,Brooklyn,NY,11215,Unknown,37.62,OFFCE,Office Expenses,clipbrd pens sanitiz,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006559,5/14/2021,5/14/2021,Staples,CORP,Y,,,,Brooklyn,NY,11215,Unknown,102.27,OFFCE,Office Expenses,Envelopes& glue mail,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,9,F,,,R0006827,5/30/2021,6/1/2021,Staples,CORP,Y,,,,Brooklyn,NY,11215,Unknown,45.72,CMAIL,Campgn Mlngs,Labels Absentee Mail,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007045,6/13/2021,6/14/2021,"Steele, Marlene",IND,N,,,,Brooklyn,NY,11205,Unknown,700.00,CONSL,Campgn Consuls.,GOTV Consultant,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,16,F,,,R0008076,1/27/2022,2/2/2022,Steven Golodny CPA P.C.,PART,Y,,,,New York,NY,10018,Unknown,300.00,PROFL,Prof. Srvcs.,1099 accountant,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,4,F,,,R0000688,12/10/2019,12/10/2019,Stripe,CORP,Y,,,,,,,Unknown,332.69,OTHER,Other: explntion,Stripe Donations,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,4,F,,,R0000689,10/31/2019,10/31/2019,Stripe,CORP,Y,,,,,,,Unknown,176.25,OTHER,Other: explntion,Stripe Donations,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007294,6/30/2021,6/30/2021,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,119.39,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,11,F,,,R0007386,7/31/2021,7/31/2021,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,5.70,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,12,F,,,R0007747,8/31/2021,8/31/2021,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,197.75,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,13,F,,,R0007865,9/30/2021,9/30/2021,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,1.91,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,14,F,,,R0007944,10/31/2021,10/31/2021,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,6.40,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,15,F,,,R0008041,11/25/2021,11/25/2021,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,14.80,OTHER,Other: explntion,stripe fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,15,F,,,R0008069,12/31/2021,12/31/2021,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,29.37,PROFL,Prof. Srvcs.,stripe fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,4,F,,,R0001311,12/31/2019,12/31/2019,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,168.75,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,5,F,,,R0001594,1/31/2020,1/31/2020,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,413.12,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,5,F,,,R0001656,2/29/2020,2/29/2020,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,12.37,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,5,F,,,R0001683,3/31/2020,3/31/2020,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,19.81,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,5,F,,,R0001704,4/30/2020,4/30/2020,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,7.97,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,5,F,,,R0001724,5/31/2020,5/31/2020,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,0.59,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,5,F,,,R0002172,6/30/2020,6/30/2020,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,122.48,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0004185,7/31/2020,7/31/2020,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,1135.16,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0004284,8/31/2020,8/31/2020,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,60.12,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0004574,9/30/2020,9/30/2020,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,135.29,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0004704,10/31/2020,10/31/2020,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,111.23,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0004938,11/30/2020,11/30/2020,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,94.49,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0005238,12/31/2020,12/31/2020,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,132.65,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0005723,1/31/2021,1/31/2021,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,205.28,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0006001,2/28/2021,2/28/2021,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,101.91,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006244,3/31/2021,3/31/2021,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,137.56,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006463,4/30/2021,4/30/2021,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,129.88,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,9,F,,,R0006965,5/31/2021,5/31/2021,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,190.66,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007106,6/18/2021,6/25/2021,"Superville, Karmisha",IND,N,,,,Brooklyn,NY,11213,Unknown,112.00,WAGES,Campgn Wrkrs $$,canvassing,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0006933,6/8/2021,6/8/2021,Target,CORP,Y,,,,Brooklyn,NY,11217,Unknown,1.19,OFFCE,Office Expenses,envelopes,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,5,F,,,R0001661,3/9/2020,3/9/2020,Target,CORP,Y,,,,Brooklyn,NY,11217,Unknown,9.78,OFFCE,Office Expenses,Folders & envelopes,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0006926,6/8/2021,6/8/2021,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,30.00,OTHER,Other: explntion,wire transfer fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007057,6/17/2021,6/17/2021,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,15.00,OTHER,Other: explntion,incoming wire fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007317,12/22/2020,12/22/2020,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,16.00,OTHER,Other: explntion,fee certified check,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,11,F,,,R0007314,7/28/2021,7/28/2021,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,8.00,OTHER,Other: explntion,fee certified check,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,11,F,,,R0007390,8/11/2021,8/11/2021,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,8.00,OTHER,Other: explntion,Refund Bank Check,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,11,F,,,R0007450,7/15/2021,7/15/2021,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,15.00,OTHER,Other: explntion,wire transfer fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,11,F,,,R0007451,7/13/2021,7/13/2021,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,15.00,OTHER,Other: explntion,wire transfer fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,11,F,,,R0007492,8/23/2021,8/23/2021,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,8.00,OTHER,Other: explntion,Refund Check fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,11,F,,,R0007591,8/23/2021,8/23/2021,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,8.00,OTHER,Other: explntion,Refund Check fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,12,F,,,R0007717,8/25/2021,8/25/2021,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,8.00,OTHER,Other: explntion,Refund Bank Check,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,14,F,,,R0007954,11/2/2021,11/2/2021,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,30.00,OTHER,Other: explntion,fee to void check,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,15,F,,,R0008033,12/30/2021,12/30/2021,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,8.00,OTHER,Other: explntion,check fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,15,F,,,R0008035,12/30/2021,12/30/2021,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,8.00,OTHER,Other: explntion,check fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,15,F,,,R0008037,12/31/2021,12/31/2021,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,25.00,OTHER,Other: explntion,Maintenance Fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,16,F,,,R0008094,2/28/2022,2/28/2022,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,25.00,OTHER,Other: explntion,Maintenance Fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,16,F,,,R0008096,3/8/2022,3/8/2022,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,35.00,OTHER,Other: explntion,overdraft fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,16,F,,,R0008098,3/31/2022,3/31/2022,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,25.00,OTHER,Other: explntion,Maintenance Fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,16,F,,,R0008110,1/31/2022,1/31/2022,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,25.00,OTHER,Other: explntion,Maintenance Fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,4,F,,,R0000151,10/31/2019,10/31/2019,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,3.00,OTHER,Other: explntion,Paper statement fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,4,F,,,R0000154,10/31/2019,10/31/2019,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,25.00,OTHER,Other: explntion,Bank Maintenance fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,4,F,,,R0000846,12/18/2019,12/18/2019,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,5.00,OTHER,Other: explntion,Cost of money order,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,5,F,,,R0001409,1/11/2020,1/13/2020,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,16.00,OTHER,Other: explntion,Refund Bank Checks,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,5,F,,,R0001664,3/16/2020,3/16/2020,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,8.00,OTHER,Other: explntion,Refund Bank Check,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0004436,9/18/2020,9/18/2020,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,8.00,OTHER,Other: explntion,Refund Bank Check,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0004443,9/18/2020,9/18/2020,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,8.00,OTHER,Other: explntion,Refund Bank Check,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0004450,9/18/2020,9/18/2020,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,30.00,OTHER,Other: explntion,NYVANvoter file FEE,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0005062,12/15/2020,12/15/2020,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,15.00,OTHER,Other: explntion,Wire Fee Public fund,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0005260,1/9/2021,1/9/2021,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,8.00,OTHER,Other: explntion,Refund Bank Check,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0006079,1/11/2021,1/11/2021,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,30.00,PROFL,Prof. Srvcs.,Wire Fee NYS Dem,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0006071,3/10/2021,3/10/2021,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,8.00,OTHER,Other: explntion,Refund Bank Check,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006279,4/15/2021,4/15/2021,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,8.00,OTHER,Other: explntion,Refund Bank Check,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006507,5/11/2021,5/11/2021,TD Bank,CORP,Y,,,,Brooklyn,NY,11217,Unknown,8.00,FUNDR,Fundraising,Refund Bank Check,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007252,6/27/2021,7/8/2021,The Action Network - Action Sq,CORP,Y,,,,Washington,DC,20036,Unknown,22.00,PROFL,Prof. Srvcs.,monthly payment webs,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007289,7/6/2021,7/6/2021,The Action Network - Action Sq,CORP,Y,,,,Washington,DC,20036,Unknown,10.00,OTHER,Other: explntion,monthly payment webs,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,11,F,,,R0007320,7/27/2021,7/27/2021,The Action Network - Action Sq,CORP,Y,,,,Washington,DC,20036,Unknown,10.00,PROFL,Prof. Srvcs.,monthly payment webs,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,11,F,,,R0007726,8/4/2021,8/4/2021,The Action Network - Action Sq,CORP,Y,,,,Washington,DC,20036,Unknown,10.00,PROFL,Prof. Srvcs.,website,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,12,F,,,R0007732,8/27/2021,8/30/2021,The Action Network - Action Sq,CORP,Y,,,,Washington,DC,20036,Unknown,16.00,PROFL,Prof. Srvcs.,movement minimum,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,12,F,,,R0007801,9/7/2021,9/7/2021,The Action Network - Action Sq,CORP,Y,,,,Washington,DC,20036,Unknown,10.00,PROFL,Prof. Srvcs.,website,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,13,F,,,R0007874,10/4/2021,10/4/2021,The Action Network - Action Sq,CORP,Y,,,,Washington,DC,20036,Unknown,10.89,PROFL,Prof. Srvcs.,website,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,13,F,,,R0007876,9/28/2021,9/28/2021,The Action Network - Action Sq,CORP,Y,,,,Washington,DC,20036,Unknown,10.00,PROFL,Prof. Srvcs.,website,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,14,F,,,R0007920,10/28/2021,10/28/2021,The Action Network - Action Sq,CORP,Y,,,,Washington,DC,20036,Unknown,10.89,PROFL,Prof. Srvcs.,website,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,14,F,,,R0007958,11/4/2021,11/4/2021,The Action Network - Action Sq,CORP,Y,,,,Washington,DC,20036,Unknown,10.89,PROFL,Prof. Srvcs.,website,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,15,F,,,R0008042,12/6/2021,12/6/2021,The Action Network - Action Sq,CORP,Y,,,,Washington,DC,20036,Unknown,10.89,PROFL,Prof. Srvcs.,monthly payment webs,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,15,F,,,R0008043,1/5/2022,1/5/2022,The Action Network - Action Sq,CORP,Y,,,,Washington,DC,20036,Unknown,10.89,PROFL,Prof. Srvcs.,monthly payment webs,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,15,F,,,R0008044,12/27/2021,12/27/2021,The Action Network - Action Sq,CORP,Y,,,,Washington,DC,20036,Unknown,10.89,PROFL,Prof. Srvcs.,website,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,15,F,,,R0008117,11/29/2021,11/29/2021,The Action Network - Action Sq,CORP,Y,,,,Washington,DC,20036,Unknown,10.89,PROFL,Prof. Srvcs.,emails,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,16,F,,,R0008087,2/28/2022,2/28/2022,The Action Network - Action Sq,CORP,Y,,,,Washington,DC,20036,Unknown,10.89,PROFL,Prof. Srvcs.,website,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,16,F,,,R0008088,3/7/2022,3/7/2022,The Action Network - Action Sq,CORP,Y,,,,Washington,DC,20036,Unknown,10.89,PROFL,Prof. Srvcs.,website,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,16,F,,,R0008112,2/7/2022,2/7/2022,The Action Network - Action Sq,CORP,Y,,,,Washington,DC,20036,Unknown,10.89,PROFL,Prof. Srvcs.,website,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0004152,7/27/2020,7/27/2020,The Action Network - Action Sq,CORP,Y,,,,Washington,DC,20036,Unknown,10.00,OTHER,Other: explntion,email and CRM tool,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0004479,8/27/2020,8/28/2020,The Action Network - Action Sq,CORP,Y,,,,Washington,DC,20036,Unknown,10.00,PROFL,Prof. Srvcs.,monthly payment,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0004503,9/27/2020,9/28/2020,The Action Network - Action Sq,CORP,Y,,,,Washington,DC,20036,Unknown,10.00,PROFL,Prof. Srvcs.,monthly payment webs,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0004882,10/27/2020,10/27/2020,The Action Network - Action Sq,CORP,Y,,,,Washington,DC,20036,Unknown,10.00,PROFL,Prof. Srvcs.,monthly payment,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0004883,11/27/2020,11/30/2020,The Action Network - Action Sq,CORP,Y,,,,Washington,DC,20036,Unknown,10.00,PROFL,Prof. Srvcs.,month payment,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0005215,12/27/2020,12/27/2020,The Action Network - Action Sq,CORP,Y,,,,Washington,DC,20036,Unknown,10.00,PROFL,Prof. Srvcs.,monthly payment webs,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0005994,2/27/2021,3/1/2021,The Action Network - Action Sq,CORP,Y,,,,Washington,DC,20036,Unknown,20.00,PROFL,Prof. Srvcs.,movement minimum,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0006077,1/27/2021,1/28/2021,The Action Network - Action Sq,CORP,Y,,,,Washington,DC,20036,Unknown,10.00,PROFL,Prof. Srvcs.,monthly payment webs,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006181,3/27/2021,3/29/2021,The Action Network - Action Sq,CORP,Y,,,,Washington,DC,20036,Unknown,10.00,PROFL,Prof. Srvcs.,monthly payment webs,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006436,4/27/2021,4/29/2021,The Action Network - Action Sq,CORP,Y,,,,Washington,DC,20036,Unknown,10.00,PROFL,Prof. Srvcs.,monthly payment webs,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,9,F,,,R0006772,5/27/2021,5/28/2021,The Action Network - Action Sq,CORP,Y,,,,Washington,DC,20036,Unknown,10.00,PROFL,Prof. Srvcs.,monthly payment webs,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,9,F,,,R0006999,6/4/2021,6/4/2021,The Action Network - Action Sq,CORP,Y,,,,Washington,DC,20036,Unknown,10.00,PROFL,Prof. Srvcs.,monthly payment webs,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,15,F,,,R0008016,12/31/2021,12/31/2021,The UPS Store,CORP,Y,,,,Brooklyn,NY,11217,Unknown,21.37,POSTA,Postage,mail payment,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,5,F,,,R0001643,3/8/2020,3/8/2020,The UPS Store,CORP,Y,,,,Brooklyn,NY,11217,Unknown,15.00,POSTA,Postage,book of stamps,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006562,5/14/2021,5/14/2021,The UPS Store,CORP,Y,,,,Brooklyn,NY,11217,Unknown,101.91,OFFCE,Office Expenses,downpayment labels,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,15,F,,,R0008000,12/27/2021,12/27/2021,Track1099 by Avalara,CORP,Y,,,,Palo Alto,CA,94305,Unknown,9.00,PROFL,Prof. Srvcs.,1099 annual subscrip,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,15,F,,,R0008005,12/27/2021,12/27/2021,Track1099 by Avalara,CORP,Y,,,,Palo Alto,CA,94305,Unknown,3.29,PROFL,Prof. Srvcs.,IRS filing,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,13,F,,,R0007825,9/26/2021,11/17/2021,Trina Photography,OTHR,Y,,,,Braintree,VT,05060,Unknown,1278.75,PROFL,Prof. Srvcs.,photography,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,14,F,,,R0007956,11/8/2021,11/8/2021,United States Postal Service,OTHR,Y,,,,Brooklyn,NY,11218,Unknown,3.75,OTHER,Other: explntion,certified mail fee,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,15,F,,,R0008017,12/31/2021,12/31/2021,United States Postal Service,OTHR,Y,,,,Brooklyn,NY,11218,Unknown,7.95,POSTA,Postage,mail payment,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0004460,9/12/2020,9/14/2020,United States Postal Service,OTHR,Y,,,,Brooklyn,NY,11218,Unknown,175.00,POSTA,Postage,stamps,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0005094,9/28/2020,9/28/2020,United States Postal Service,OTHR,Y,,,,Brooklyn,NY,11218,Unknown,232.00,OFFCE,Office Expenses,USPS,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,6,F,,,R0005499,1/11/2021,1/11/2021,United States Postal Service,OTHR,Y,,,,Brooklyn,NY,11218,Unknown,70.00,POSTA,Postage,Postcard stamps,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006610,5/14/2021,5/14/2021,United States Postal Service,OTHR,Y,,,,Brooklyn,NY,11218,Unknown,42.84,POSTA,Postage,stamps,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,8,F,,,R0006632,5/17/2021,5/18/2021,United States Postal Service,OTHR,Y,,,,Brooklyn,NY,11218,Unknown,786.00,POSTA,Postage,postage for mailers,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,9,F,,,R0006987,5/18/2021,5/18/2021,United States Postal Service,OTHR,Y,,,,Brooklyn,NY,11218,Unknown,1.65,POSTA,Postage,USPS PO 3508780354,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0007111,6/18/2021,6/25/2021,"Weston, Kim",IND,N,,,,Brooklyn,NY,11233,Unknown,104.00,WAGES,Campgn Wrkrs $$,canvassing,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,10,F,,,R0006924,6/7/2021,6/8/2021,Win Creative LLC,LLC,Y,,,,Rhinecliff,NY,12574,Unknown,6500.00,TVADS,Television Ads.,"Hulu, amazon, stream",,N,N
+2021,55,2267,P,Hudson,Crystal,,H,14,F,,,R0007935,11/1/2021,11/2/2021,"Wright, Andrew",IND,N,,,,Brooklyn,NY,11205,Unknown,2500.00,CONSL,Campgn Consuls.,policy & comms,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0005805,1/18/2021,1/18/2021,Zoom Video Communications Inc.,CORP,Y,,,,San Jose,CA,95113,Unknown,153.51,PROFL,Prof. Srvcs.,Zoom annual payment,,N,N
+2021,55,2267,P,Hudson,Crystal,,H,7,F,,,R0005808,1/25/2021,1/25/2021,Zoom Video Communications Inc.,CORP,Y,,,,San Jose,CA,95113,Unknown,40.96,PROFL,Prof. Srvcs.,Zoom monthly payment,,N,N
+

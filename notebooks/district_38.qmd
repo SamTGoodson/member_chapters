@@ -1,0 +1,66 @@
+---
+title: "'Big-Table Socialism' in the 38th"
+format:
+  pdf:
+    code-fold: true
+execute:
+  echo: false
+jupyter: python3
+bibliography: references.bib
+---
+
+
+```{python}
+import pandas as pd
+import geopandas as gpd
+import numpy as np
+import matplotlib.pyplot as plt
+
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+
+import statsmodels.api as sm
+from statsmodels.iolib.summary2 import summary_col
+
+from utils import make_precinct_counts,make_demo_map,job_cols,race_cols,cols_to_keep,scale_and_cluster,make_edname,map_round_votes
+from shapely import wkt
+from stargazer.stargazer import Stargazer
+
+demo_cluster = pd.read_csv('../../chapter_two/data/occupation_demo_clusters_on_ed.csv')
+d38 = pd.read_csv('../../cc_election_cleaning/all_rounds_results/district_35.csv')
+ed_level = pd.read_csv('../../cc_election_cleaning/occupation_demo_data_feb21.csv')
+
+ed_shapefile = '../../chapter_two/data/nyed_21a/nyed.shp'
+ed_gdf = gpd.read_file(ed_shapefile)
+
+full_results = pd.read_csv('../../cc_election_cleaning/election_results_with_vote_sponsor_cluster_FEB13.csv')
+d38_eds = d38['ed_name'].unique().tolist()
+```
+
+
+New York’s 38th City Council district is a diverse, largely working-class area. The top two contenders in the 2021 Council primary represented the districts two largest ethnic groups, Alexa Aviles represented the districts large Latino population and Yu Lin its large Asian population. Both candidates also represented broad narratives about changes in city politics. Aviles, a Puerto Rican born, DSA endorsed, non-profit worker represented a wave of young female progressives onto the council. Yu Lin was one of a wave of Chinese born candidates seeking to represent the districts Asian community at a time of rising anti-Asian discrimination. Several other candidates took a few election districts, including the also quite progressive Jacqui Painter and Rodrigo Camarena. Aviles won on a platform she referred to as “big table socialism,” and her victory and activity on the council offers a window into an important and growing corner of the city’s progressive left. 
+
+## The District
+
+The largest ethnic groups in the district are Asians and Hispanics, both around 33% of the districts population, placing the district in the top quintile of Asian population and the second of Hispanic population. This district is also in the second quintile of white transplants, whites born out of New York state, as the district’s relatively affordable rents draw new arrivals, particularly along the N, D, and R train corridor. Figures 1 and 2 below map income and white population.  
+
+
+```{python}
+demo_map = make_demo_map(d38_eds,ed_level)
+demo_map = demo_map[demo_map['mhhi21'] < 299999]
+demo_map.plot(column='nhw21p', cmap='viridis', legend=True, figsize=(15, 10))
+plt.title("Income Level by ED")
+plt.show()
+```
+
+
+```{python}
+demo_map = make_demo_map(d38_eds,ed_level)
+demo_map = demo_map[demo_map['mhhi21'] < 299999]
+demo_map.plot(column='mhhi21', cmap='viridis', legend=True, figsize=(15, 10))
+plt.title("Income Level by ED")
+plt.show()
+```
+
+A key issue facing the district was the Industry City rezoning, which propelled outgoing member Carlos Menchaca to brief fame and a mayoral run as he blocked the measure in the council. This proposed rezoning, along with rising rent pressures felt by the entire city, primed the district for a fight over zoning, though as discussed below, every candidate on record gave some verios of oppostition to the rezoning. 
+

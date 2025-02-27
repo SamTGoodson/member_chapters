@@ -1,0 +1,329 @@
+ELECTION,OFFICECD,CANDID,CANCLASS,CANDLAST,CANDFIRST,CANDMI,COMMITTEE,FILING,SCHEDULE,PAGENO,SEQUENCENO,REFNO,INV_DATE,DATE,NAME,C_CODE,ORG_IND,STRNO,STRNAME,APARTMENT,CITY,STATE,ZIP,PAY_METHOD,AMNT,PURPOSECD,PURPOSE,EXPLAIN,EXEMPTCD,RR_IND,SEG_IND
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0001934,12/9/2020,12/9/2020,A2 Hosting,CORP,Y,,,,Ann Arbor,MI,48106,Unknown,179.88,PROFL,Prof. Srvcs.,Web hosting,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0007741,5/3/2021,5/3/2021,Accurate Append,CORP,Y,,,,Bellevue,WA,98004,Unknown,1148.60,INTER,Interest Expns.,Phone append service,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008688,11/30/2020,11/30/2020,ActBlue,CORP,Y,,,,West Somerville,MA,02144,Unknown,22.26,OTHER,Other: explntion,ActBlue fees,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008691,12/31/2020,12/31/2020,ActBlue,CORP,Y,,,,West Somerville,MA,02144,Unknown,237.26,OTHER,Other: explntion,ActBlue fees,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008695,2/3/2021,2/3/2021,ActBlue,CORP,Y,,,,West Somerville,MA,02144,Unknown,323.99,OTHER,Other: explntion,ActBlue fees,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008705,4/5/2021,4/5/2021,ActBlue,CORP,Y,,,,West Somerville,MA,02144,Unknown,18.05,OTHER,Other: explntion,ActBlue fees,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008708,3/3/2021,3/3/2021,ActBlue,CORP,Y,,,,West Somerville,MA,02144,Unknown,15.13,OTHER,Other: explntion,ActBlue fees,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008711,5/5/2021,5/5/2021,ActBlue,CORP,Y,,,,West Somerville,MA,02144,Unknown,10.55,OTHER,Other: explntion,ActBlue fees,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008714,6/3/2021,6/3/2021,ActBlue,CORP,Y,,,,West Somerville,MA,02144,Unknown,19.74,OTHER,Other: explntion,ActBlue fees,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008717,7/6/2021,7/6/2021,ActBlue,CORP,Y,,,,West Somerville,MA,02144,Unknown,10.99,OTHER,Other: explntion,ActBlue fees,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008720,8/5/2021,8/5/2021,ActBlue,CORP,Y,,,,West Somerville,MA,02144,Unknown,6.40,OTHER,Other: explntion,ActBlue fees,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009253,1/31/2021,1/31/2021,ActBlue,CORP,Y,,,,West Somerville,MA,02144,Unknown,543.27,FUNDR,Fundraising,Merchant account fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009257,2/28/2021,2/28/2021,ActBlue,CORP,Y,,,,West Somerville,MA,02144,Unknown,56.47,FUNDR,Fundraising,Merchant account fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009260,3/31/2021,3/31/2021,ActBlue,CORP,Y,,,,West Somerville,MA,02144,Unknown,46.42,FUNDR,Fundraising,Merchant account fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009263,4/30/2021,4/30/2021,ActBlue,CORP,Y,,,,West Somerville,MA,02144,Unknown,43.15,FUNDR,Fundraising,Merchant account fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009266,5/31/2021,5/31/2021,ActBlue,CORP,Y,,,,West Somerville,MA,02144,Unknown,50.27,FUNDR,Fundraising,Merchant account fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009270,6/30/2021,6/30/2021,ActBlue,CORP,Y,,,,West Somerville,MA,02144,Unknown,35.40,FUNDR,Fundraising,Merchant account fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009272,7/31/2021,7/31/2021,ActBlue,CORP,Y,,,,West Somerville,MA,02144,Unknown,19.74,FUNDR,Fundraising,Merchant account fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009292,1/11/2021,1/11/2021,ActBlue,CORP,Y,,,,West Somerville,MA,02144,Unknown,1000.00,OTHER,Other: explntion,Contribution refund,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009294,1/14/2021,1/14/2021,ActBlue,CORP,Y,,,,West Somerville,MA,02144,Unknown,13.67,OTHER,Other: explntion,Contribution refund,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009296,1/16/2021,1/16/2021,ActBlue,CORP,Y,,,,West Somerville,MA,02144,Unknown,100.00,OTHER,Other: explntion,Contribution refund,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0005673,1/1/2021,1/1/2021,ActBlue,CORP,Y,,,,West Somerville,MA,02144,Unknown,125.38,FUNDR,Fundraising,ActBlue fees,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0005676,12/1/2020,12/1/2020,ActBlue,CORP,Y,,,,West Somerville,MA,02144,Unknown,13.30,FUNDR,Fundraising,ActBlue fees,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008156,6/9/2021,6/9/2021,Airtable,CORP,Y,,,,,,,Unknown,72.00,OTHER,Other: explntion,Airtable premium app,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0002723,1/8/2021,1/8/2021,Airtable,CORP,Y,,,,,,,Unknown,24.00,OFFCE,Office Expenses,Airtable premium app,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0006696,2/9/2021,2/9/2021,Airtable,CORP,Y,,,,,,,Unknown,112.12,OFFCE,Office Expenses,Airtable premium app,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0006699,3/9/2021,3/9/2021,Airtable,CORP,Y,,,,,,,Unknown,72.00,OFFCE,Office Expenses,Airtable premium app,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0006850,4/12/2021,4/12/2021,Airtable,CORP,Y,,,,,,,Unknown,72.00,OFFCE,Office Expenses,Airtable,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0007804,5/10/2021,5/10/2021,Airtable,CORP,Y,,,,,,,Unknown,348.86,OFFCE,Office Expenses,Airtable,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0006919,4/29/2021,4/29/2021,Amazon,CORP,Y,,,,Seattle,WA,98109,Unknown,45.15,OFFCE,Office Expenses,Toner,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0000433,11/9/2020,11/9/2020,American Button Machines,CORP,Y,,,,Plano,TX,75074,Unknown,51.11,LITER,Campgn Lit.,Button supplies,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008747,7/2/2021,7/2/2021,"Arievitch, Maria",IND,N,,,,Brooklyn,NY,11222,Unknown,640.00,WAGES,Campgn Wrkrs $$,Door knocking,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008803,6/15/2021,6/21/2021,"Arievitch, Maria",IND,N,,,,Brooklyn,NY,11222,Unknown,305.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007867,5/22/2021,5/22/2021,Associated Supermarket,CORP,Y,,,,Brooklyn,NY,11225,Unknown,24.69,OTHER,Other: explntion,Food for canvassers,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008770,7/2/2021,7/2/2021,"Ben, Woloch",IND,N,,,,,,,Unknown,166.60,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008816,6/15/2021,6/15/2021,"Ben, Woloch",IND,N,,,,,,,Unknown,70.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0008979,6/15/2021,6/15/2021,"Benjamin, Woloch",IND,N,,,,,,,Unknown,70.00,WAGES,Campgn Wrkrs $$,Door knocking,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0008982,7/2/2021,7/2/2021,"Benjamin, Woloch",IND,N,,,,,,,Unknown,166.60,WAGES,Campgn Wrkrs $$,Door knocking,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007863,5/22/2021,5/22/2021,Bob and Betty's,CORP,Y,,,,Brooklyn,NY,,Unknown,15.03,OTHER,Other: explntion,Food for canvassers,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0006657,3/1/2021,3/1/2021,Bravo,CORP,Y,,,,Brooklyn,NY,11216,Unknown,8.63,OFFCE,Office Expenses,Office supplies,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009300,5/5/2021,5/5/2021,Canva,CORP,Y,,,,San Jos,CA,95113,Unknown,12.99,LITER,Campgn Lit.,Website,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0006838,4/4/2021,4/4/2021,Canva,CORP,Y,,,,San Jos,CA,95113,Unknown,12.99,LITER,Campgn Lit.,Canva Pro,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0008144,6/4/2021,6/4/2021,Canva,CORP,Y,,,,San Jos,CA,95113,Unknown,12.99,OTHER,Other: explntion,Graphic design,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008159,6/9/2021,6/9/2021,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,8.00,OTHER,Other: explntion,Cashiers check fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008165,6/9/2021,6/9/2021,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,35.00,OTHER,Other: explntion,Wire fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008686,6/30/2021,6/30/2021,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,8.00,OTHER,Other: explntion,Check fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,19,F,,,R0008918,6/30/2021,6/30/2021,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,3.00,PROFL,Prof. Srvcs.,Paper statement fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,19,F,,,R0008920,6/18/2021,6/18/2021,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,25.00,PROFL,Prof. Srvcs.,Wire fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0005682,12/31/2020,12/31/2020,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,10.00,OTHER,Other: explntion,Service fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0005685,12/31/2020,12/31/2020,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,3.00,OTHER,Other: explntion,Paper statement fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0005688,11/30/2020,11/30/2020,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,10.00,OTHER,Other: explntion,Service charge,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0005691,11/30/2020,11/30/2020,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,3.00,OTHER,Other: explntion,Paper statement fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0005694,10/30/2020,10/30/2020,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,10.00,OTHER,Other: explntion,Service charge,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0005697,10/30/2020,10/30/2020,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,3.00,FUNDR,Fundraising,Paper statement fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0005700,9/30/2020,9/30/2020,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,10.00,OTHER,Other: explntion,Service charge,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0005703,9/30/2020,9/30/2020,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,3.00,OTHER,Other: explntion,Paper statement fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0005706,8/31/2020,8/31/2020,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,10.00,OTHER,Other: explntion,Service charge,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0005709,8/31/2020,8/31/2020,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,3.00,OTHER,Other: explntion,Paper statement fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0005712,7/31/2020,7/31/2020,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,3.00,OTHER,Other: explntion,Paper statement fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0005715,12/30/2020,12/30/2020,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,16.00,OTHER,Other: explntion,Certified checks,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0005743,12/28/2020,12/28/2020,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,35.00,OTHER,Other: explntion,Domestic wire fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0005745,12/21/2020,12/21/2020,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,35.00,OTHER,Other: explntion,Domestic wire fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0005723,1/15/2021,1/15/2021,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,8.00,OTHER,Other: explntion,Certified check,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0005823,1/21/2021,1/21/2021,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,35.00,LITER,Campgn Lit.,Wire transfer fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0006611,2/17/2021,2/17/2021,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,35.00,LITER,Campgn Lit.,Wire fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0006780,4/7/2021,4/7/2021,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,24.00,OTHER,Other: explntion,Bank fees,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0007775,5/5/2021,5/5/2021,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,35.00,OTHER,Other: explntion,Wire transfer fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0007778,4/15/2021,4/15/2021,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,25.00,OTHER,Other: explntion,Wire transfer fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0007781,3/16/2021,3/16/2021,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,35.00,OTHER,Other: explntion,Wire transfer fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0007784,3/31/2021,3/31/2021,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,3.00,OTHER,Other: explntion,Paper statement fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0007787,4/30/2021,4/30/2021,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,3.00,OTHER,Other: explntion,Paper statement fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007855,5/24/2021,5/24/2021,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,35.00,OTHER,Other: explntion,Wire fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007939,6/3/2021,6/3/2021,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,35.00,LITER,Campgn Lit.,Wire fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0008206,5/28/2021,5/28/2021,Carver Federal Savings Bank,OTHR,Y,,,,New York,NY,10027,Unknown,3.00,OTHER,Other: explntion,Paper statement fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008135,6/9/2021,6/9/2021,Century Direct,CORP,Y,,,,Hauppauge,NY,11749,Unknown,34000.00,LITER,Campgn Lit.,Mailers 3 and 4,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008139,6/9/2021,6/9/2021,Century Direct,CORP,Y,,,,Hauppauge,NY,11749,Unknown,2200.00,LITER,Campgn Lit.,Posters,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008323,6/17/2021,6/17/2021,Century Direct,CORP,Y,,,,Hauppauge,NY,11749,Unknown,1200.00,LITER,Campgn Lit.,Mailers,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0001939,12/21/2020,12/21/2020,Century Direct,CORP,Y,,,,Hauppauge,NY,11749,Unknown,15000.00,CMAIL,Campgn Mlngs,First mailer,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0005820,1/21/2021,1/21/2021,Century Direct,CORP,Y,,,,Hauppauge,NY,11749,Unknown,452.00,LITER,Campgn Lit.,Posters,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0006608,2/17/2021,2/17/2021,Century Direct,CORP,Y,,,,Hauppauge,NY,11749,Unknown,1685.00,LITER,Campgn Lit.,Printing,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0006765,3/16/2021,3/16/2021,Century Direct,CORP,Y,,,,Hauppauge,NY,11749,Unknown,1470.00,LITER,Campgn Lit.,Palm cards,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0007744,5/4/2021,5/4/2021,Century Direct,CORP,Y,,,,Hauppauge,NY,11749,Unknown,1800.00,LITER,Campgn Lit.,Palm cards,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007849,5/24/2021,5/24/2021,Century Direct,CORP,Y,,,,Hauppauge,NY,11749,Unknown,17132.00,LITER,Campgn Lit.,Mailers,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007852,5/24/2021,5/24/2021,Century Direct,CORP,Y,,,,Hauppauge,NY,11749,Unknown,300.00,LITER,Campgn Lit.,Palm cards,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007933,6/3/2021,6/3/2021,Century Direct,CORP,Y,,,,Hauppauge,NY,11749,Unknown,23000.00,CMAIL,Campgn Mlngs,Palm cards,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007936,6/2/2021,6/2/2021,Century Direct,CORP,Y,,,,Hauppauge,NY,11749,Unknown,2000.00,CMAIL,Campgn Mlngs,Palm cards,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0007762,5/17/2021,5/17/2021,Con Edison,CORP,Y,,,,New York,NY,10276,Unknown,110.00,OFFCE,Office Expenses,Electricity,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0006870,4/7/2021,4/7/2021,Consolidated Solutions Corpora,CORP,Y,,,,,,,Unknown,6300.00,RENTO,Office Rent,Office rent,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008233,6/11/2021,6/11/2021,Digital Graphic Design Inc.,CORP,Y,,,,Jackson Heights,NY,11372,Unknown,1258.00,LITER,Campgn Lit.,Graphic design,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0006631,2/26/2021,2/26/2021,Digital Touch,CORP,Y,,,,New York,NY,10001,Unknown,130.65,PETIT,Petition Expns.,Printing petitions,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0006636,2/26/2021,2/26/2021,Digital Touch,CORP,Y,,,,New York,NY,10001,Unknown,50.00,PETIT,Petition Expns.,Printing petitions,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0006671,3/5/2021,3/5/2021,Digital Touch,CORP,Y,,,,New York,NY,10001,Unknown,76.21,PETIT,Petition Expns.,Printing petitions,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008248,6/15/2021,6/15/2021,Dr. Dons Buttons,CORP,Y,,,,Glendale,AZ,85308,Unknown,208.33,INTER,Interest Expns.,Button supplies,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0006784,4/12/2021,4/12/2021,Dr. Dons Buttons,CORP,Y,,,,Glendale,AZ,85308,Unknown,505.61,LITER,Campgn Lit.,Button supplies,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008744,6/30/2021,7/2/2021,"Drucker, Henry",IND,N,,,,Brooklyn,NY,11238,Unknown,320.00,WAGES,Campgn Wrkrs $$,Door knocking,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008791,6/23/2021,6/23/2021,"Drucker, Henry",IND,N,,,,Brooklyn,NY,11238,Unknown,80.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008826,6/9/2021,6/14/2021,"Drucker, Henry",IND,N,,,,Brooklyn,NY,11238,Unknown,80.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008829,6/9/2021,6/14/2021,"Drucker, Henry",IND,N,,,,Brooklyn,NY,11238,Unknown,80.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008214,6/10/2021,6/10/2021,Facebook,CORP,Y,,,,West Menlo Park,CA,94025,Unknown,900.00,INTER,Interest Expns.,Online advertising,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008217,6/11/2021,6/11/2021,Facebook,CORP,Y,,,,West Menlo Park,CA,94025,Unknown,900.00,INTER,Interest Expns.,Online advertising,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008220,6/13/2021,6/13/2021,Facebook,CORP,Y,,,,West Menlo Park,CA,94025,Unknown,900.00,INTER,Interest Expns.,Online advertising,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008223,6/14/2021,6/14/2021,Facebook,CORP,Y,,,,West Menlo Park,CA,94025,Unknown,900.00,INTER,Interest Expns.,Online advertising,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008245,6/15/2021,6/15/2021,Facebook,CORP,Y,,,,West Menlo Park,CA,94025,Unknown,900.00,INTER,Interest Expns.,Online advertising,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008317,6/16/2021,6/16/2021,Facebook,CORP,Y,,,,West Menlo Park,CA,94025,Unknown,900.00,INTER,Interest Expns.,Online advertising,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008320,6/17/2021,6/17/2021,Facebook,CORP,Y,,,,West Menlo Park,CA,94025,Unknown,900.00,INTER,Interest Expns.,Online advertising,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008342,6/18/2021,6/18/2021,Facebook,CORP,Y,,,,West Menlo Park,CA,94025,Unknown,900.00,INTER,Interest Expns.,Online advertising,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008345,6/19/2021,6/19/2021,Facebook,CORP,Y,,,,West Menlo Park,CA,94025,Unknown,165.91,INTER,Interest Expns.,Online advertising,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008545,6/28/2021,6/28/2021,Facebook,CORP,Y,,,,West Menlo Park,CA,94025,Unknown,46.04,INTER,Interest Expns.,Online advertising,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008680,6/20/2021,6/20/2021,Facebook,CORP,Y,,,,West Menlo Park,CA,94025,Unknown,900.00,INTER,Interest Expns.,Facebook ad,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008683,6/21/2021,6/21/2021,Facebook,CORP,Y,,,,West Menlo Park,CA,94025,Unknown,900.00,INTER,Interest Expns.,Facebook ad,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007871,5/30/2021,5/30/2021,Facebook,CORP,Y,,,,West Menlo Park,CA,94025,Unknown,600.00,OTHER,Other: explntion,Online advertising,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007877,5/28/2021,5/28/2021,Facebook,CORP,Y,,,,West Menlo Park,CA,94025,Unknown,400.00,OTHER,Other: explntion,Online advertising,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007880,5/26/2021,5/26/2021,Facebook,CORP,Y,,,,West Menlo Park,CA,94025,Unknown,250.00,OTHER,Other: explntion,Online advertising,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007883,5/25/2021,5/25/2021,Facebook,CORP,Y,,,,West Menlo Park,CA,94025,Unknown,175.00,OTHER,Other: explntion,Online advertising,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007886,5/23/2021,5/23/2021,Facebook,CORP,Y,,,,West Menlo Park,CA,94025,Unknown,125.00,OTHER,Other: explntion,Online advertising,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007889,5/21/2021,5/21/2021,Facebook,CORP,Y,,,,West Menlo Park,CA,94025,Unknown,75.00,OTHER,Other: explntion,Online advertising,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007892,5/19/2021,5/19/2021,Facebook,CORP,Y,,,,West Menlo Park,CA,94025,Unknown,25.00,OTHER,Other: explntion,Online advertising,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007895,5/19/2021,5/19/2021,Facebook,CORP,Y,,,,West Menlo Park,CA,94025,Unknown,25.00,OTHER,Other: explntion,Online advertising,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007898,5/19/2021,5/19/2021,Facebook,CORP,Y,,,,West Menlo Park,CA,94025,Unknown,25.00,OTHER,Other: explntion,Online advertising,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007901,5/19/2021,5/19/2021,Facebook,CORP,Y,,,,West Menlo Park,CA,94025,Unknown,35.00,OTHER,Other: explntion,Online advertising,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007904,5/20/2021,5/20/2021,Facebook,CORP,Y,,,,West Menlo Park,CA,94025,Unknown,50.00,OTHER,Other: explntion,Online advertising,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007907,5/21/2021,5/21/2021,Facebook,CORP,Y,,,,West Menlo Park,CA,94025,Unknown,75.00,OTHER,Other: explntion,Online advertising,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007945,6/2/2021,6/2/2021,Facebook,CORP,Y,,,,West Menlo Park,CA,94025,Unknown,900.00,LITER,Campgn Lit.,Online advertising,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007948,6/6/2021,6/6/2021,Facebook,CORP,Y,,,,West Menlo Park,CA,94025,Unknown,900.00,LITER,Campgn Lit.,Online advertising,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0006661,3/1/2021,3/1/2021,Foodtown,CORP,Y,,,,Brooklyn,NY,11216,Unknown,11.60,OFFCE,Office Expenses,Office supplies,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009015,2/12/2021,2/12/2021,FUTA,OTHR,Y,,,,,,,Unknown,24.30,WAGES,Campgn Wrkrs $$,Federal unemployment,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009043,2/26/2021,2/26/2021,FUTA,OTHR,Y,,,,,,,Unknown,24.30,WAGES,Campgn Wrkrs $$,Federal unemployment,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009071,3/15/2021,3/15/2021,FUTA,OTHR,Y,,,,,,,Unknown,24.30,WAGES,Campgn Wrkrs $$,Federal unemployment,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009099,3/31/2021,3/31/2021,FUTA,OTHR,Y,,,,,,,Unknown,11.10,WAGES,Campgn Wrkrs $$,Federal unemployment,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008314,6/17/2021,6/17/2021,GetThru,CORP,Y,,,,Alameda,CA,94501,Unknown,1902.45,INTER,Interest Expns.,Texting outreach,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008579,7/7/2021,7/7/2021,GetThru,CORP,Y,,,,Alameda,CA,94501,Unknown,1144.94,INTER,Interest Expns.,Automatic dialer,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0005832,2/1/2021,2/1/2021,GetThru,CORP,Y,,,,Alameda,CA,94501,Unknown,100.00,OTHER,Other: explntion,Predictive dialer,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007765,5/18/2021,5/18/2021,GetThru,CORP,Y,,,,Alameda,CA,94501,Unknown,2325.35,INTER,Interest Expns.,automated calls,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0008990,2/12/2021,2/12/2021,"Goetz, Elizabeth",IND,N,,,,Brooklyn,NY,11216,Unknown,2000.00,WAGES,Campgn Wrkrs $$,Campaign staff,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009023,2/26/2021,2/26/2021,"Goetz, Elizabeth",IND,N,,,,Brooklyn,NY,11216,Unknown,2000.00,WAGES,Campgn Wrkrs $$,Campaign staff,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009051,3/15/2021,3/15/2021,"Goetz, Elizabeth",IND,N,,,,Brooklyn,NY,11216,Unknown,2000.00,WAGES,Campgn Wrkrs $$,Campaign staff,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009079,3/31/2021,3/31/2021,"Goetz, Elizabeth",IND,N,,,,Brooklyn,NY,11216,Unknown,2000.00,WAGES,Campgn Wrkrs $$,Campaign staff,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009107,4/15/2021,4/15/2021,"Goetz, Elizabeth",IND,N,,,,Brooklyn,NY,11216,Unknown,2000.00,WAGES,Campgn Wrkrs $$,Campaign staff,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009130,5/14/2021,5/14/2021,"Goetz, Elizabeth",IND,N,,,,Brooklyn,NY,11216,Unknown,2000.00,WAGES,Campgn Wrkrs $$,campaign staff,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009146,4/30/2021,4/30/2021,"Goetz, Elizabeth",IND,N,,,,Brooklyn,NY,11216,Unknown,2000.00,WAGES,Campgn Wrkrs $$,campaign staff,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009170,5/28/2021,5/28/2021,"Goetz, Elizabeth",IND,N,,,,Brooklyn,NY,11216,Unknown,2000.00,WAGES,Campgn Wrkrs $$,campaign staff,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009186,6/15/2021,6/15/2021,"Goetz, Elizabeth",IND,N,,,,Brooklyn,NY,11216,Unknown,2000.00,WAGES,Campgn Wrkrs $$,campaign staff,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009231,6/30/2021,6/30/2021,"Goetz, Elizabeth",IND,N,,,,Brooklyn,NY,11216,Unknown,2000.00,WAGES,Campgn Wrkrs $$,campaign staff,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009298,4/12/2021,4/12/2021,"Goetz, Elizabeth",IND,N,,,,Brooklyn,NY,11216,Unknown,13.62,OTHER,Other: explntion,Reimbursement,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008326,6/17/2021,6/17/2021,Google,CORP,Y,,,,Mountain View,CA,94043,Unknown,350.00,INTER,Interest Expns.,Online advertising,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008356,6/20/2021,6/20/2021,Google,CORP,Y,,,,Mountain View,CA,94043,Unknown,350.00,INTER,Interest Expns.,Online advertising,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008548,6/28/2021,6/28/2021,Google,CORP,Y,,,,Mountain View,CA,94043,Unknown,118.28,INTER,Interest Expns.,Online advertising,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008573,6/30/2021,6/30/2021,Google,CORP,Y,,,,Mountain View,CA,94043,Unknown,52.26,OTHER,Other: explntion,Google workspace,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008696,5/31/2021,5/31/2021,Google,CORP,Y,,,,Mountain View,CA,94043,Unknown,52.26,OTHER,Other: explntion,Google workspace,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009302,6/2/2021,6/2/2021,Google,CORP,Y,,,,Mountain View,CA,94043,Unknown,52.26,LITER,Campgn Lit.,Web suite,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009304,8/3/2021,8/3/2021,Google,CORP,Y,,,,Mountain View,CA,94043,Unknown,11.79,OTHER,Other: explntion,Gsuite,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0006643,2/28/2021,2/28/2021,Google,CORP,Y,,,,Mountain View,CA,94043,Unknown,24.26,OFFCE,Office Expenses,Google workspace,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0006768,4/1/2021,4/1/2021,Google,CORP,Y,,,,Mountain View,CA,94043,Unknown,52.26,OFFCE,Office Expenses,Google workspace,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009311,7/1/2021,7/1/2021,Gusto,CORP,Y,,,,San Francisco,CA,94107,Unknown,112.15,OTHER,Other: explntion,Payroll fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009314,8/3/2021,8/3/2021,Gusto,CORP,Y,,,,San Francisco,CA,94107,Unknown,86.02,OTHER,Other: explntion,Payroll fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0006639,2/26/2021,2/26/2021,Gusto,CORP,Y,,,,San Francisco,CA,94107,Unknown,33.76,OTHER,Other: explntion,Payroll servicing,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0006865,4/2/2021,4/2/2021,Gusto,CORP,Y,,,,San Francisco,CA,94107,Unknown,33.76,WAGES,Campgn Wrkrs $$,Payroll service fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0006922,5/3/2021,5/3/2021,Gusto,CORP,Y,,,,San Francisco,CA,94107,Unknown,33.76,WAGES,Campgn Wrkrs $$,Payroll servicing,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007928,6/1/2021,6/1/2021,Gusto,CORP,Y,,,,San Francisco,CA,94107,Unknown,33.76,WAGES,Campgn Wrkrs $$,Payroll servicing,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008738,6/22/2021,7/2/2021,"Hayden, Katherine",IND,N,,,,Brooklyn,NY,11238,Unknown,60.00,WAGES,Campgn Wrkrs $$,Door knocking,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008804,6/5/2021,6/11/2021,"Hayden, Katherine",IND,N,,,,Brooklyn,NY,11238,Unknown,40.00,WAGES,Campgn Wrkrs $$,Door knocking,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008807,6/15/2021,6/21/2021,"Hayden, Katherine",IND,N,,,,Brooklyn,NY,11238,Unknown,90.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008353,6/19/2021,6/19/2021,Home Depot,CORP,Y,,,,Brooklyn,NY,,Unknown,31.68,OFFCE,Office Expenses,Supplies,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007859,5/22/2021,5/22/2021,Joe & Sals Pizza,CORP,Y,,,,Brooklyn,NY,11225,Unknown,172.47,OTHER,Other: explntion,Pizza for canvassers,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008838,6/9/2021,6/11/2021,"Kamal, Nathan",IND,N,,,,Brooklyn,NY,11206,Unknown,70.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0008970,6/16/2021,6/16/2021,"Kamal, Nathan",IND,N,,,,Brooklyn,NY,11206,Unknown,70.00,WAGES,Campgn Wrkrs $$,Door knocking,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008229,6/12/2021,6/12/2021,Key Food,CORP,Y,,,,Brooklyn,NY,11238,Unknown,31.97,OTHER,Other: explntion,Food for canvassers,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008539,6/22/2021,6/22/2021,Key Food,CORP,Y,,,,Brooklyn,NY,11238,Unknown,17.62,OTHER,Other: explntion,Food for volunteers,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008779,7/2/2021,7/2/2021,"Kukielski, Emma",IND,N,,,,Brooklyn,NY,11222,Unknown,400.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008797,6/21/2021,6/21/2021,"Kukielski, Emma",IND,N,,,,Brooklyn,NY,11222,Unknown,420.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008832,6/14/2021,6/14/2021,"Kukielski, Emma",IND,N,,,,Brooklyn,NY,11222,Unknown,400.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008841,6/11/2021,6/11/2021,"Kukielski, Emma",IND,N,,,,Brooklyn,NY,11222,Unknown,360.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007834,6/2/2021,6/2/2021,"Kukielski, Emma",IND,N,,,,Brooklyn,NY,11222,Unknown,400.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008735,7/7/2021,7/7/2021,"Lazur, Sarah",IND,N,,,,Brooklyn,NY,11213,Unknown,350.00,WAGES,Campgn Wrkrs $$,Door knocking,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008785,6/22/2021,6/22/2021,"Lazur, Sarah",IND,N,,,,Brooklyn,NY,11213,Unknown,125.00,WAGES,Campgn Wrkrs $$,Door knocking,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008813,6/17/2021,6/17/2021,"Lazur, Sarah",IND,N,,,,Brooklyn,NY,11213,Unknown,240.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008844,6/9/2021,6/9/2021,"Lazur, Sarah",IND,N,,,,Brooklyn,NY,11213,Unknown,165.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0008948,7/2/2021,7/2/2021,"Lazur, Sarah",IND,N,,,,Brooklyn,NY,11213,Unknown,330.00,WAGES,Campgn Wrkrs $$,Door knocking,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007837,6/3/2021,6/3/2021,"Lazur, Sarah",IND,N,,,,Brooklyn,NY,11213,Unknown,70.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008820,6/23/2021,6/23/2021,"lucas, peter",IND,N,,,,,,,Unknown,190.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007769,5/19/2021,5/19/2021,M&Z Organic Gourmet Deli,CORP,Y,,,,Brooklyn,NY,11238,Unknown,4.16,OFFCE,Office Expenses,Toilet paper,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008242,6/10/2021,6/10/2021,Mailchimp,CORP,Y,,,,Atlanta,GA,30308,Unknown,68.57,INTER,Interest Expns.,Listserve management,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,11,F,,,R0008607,8/10/2021,8/10/2021,Mailchimp,CORP,Y,,,,Atlanta,GA,30308,Unknown,68.57,INTER,Interest Expns.,Mailchimp,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008698,7/10/2021,7/10/2021,Mailchimp,CORP,Y,,,,Atlanta,GA,30308,Unknown,68.57,CMAIL,Campgn Mlngs,Mailchimp,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008700,9/10/2021,9/10/2021,Mailchimp,CORP,Y,,,,Atlanta,GA,30308,Unknown,10.88,CMAIL,Campgn Mlngs,Mailchimp,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0001959,12/10/2020,12/10/2020,Mailchimp,CORP,Y,,,,Atlanta,GA,30308,Unknown,22.85,CMAIL,Campgn Mlngs,Listserve management,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0001962,12/22/2020,12/22/2020,Mailchimp,CORP,Y,,,,Atlanta,GA,30308,Unknown,10.89,CMAIL,Campgn Mlngs,Listserve management,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0005666,1/10/2021,1/10/2021,Mailchimp,CORP,Y,,,,Atlanta,GA,30308,Unknown,44.62,CMAIL,Campgn Mlngs,Listserve management,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0006702,2/10/2021,2/10/2021,Mailchimp,CORP,Y,,,,Atlanta,GA,30308,Unknown,55.49,INTER,Interest Expns.,Listserve management,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0006705,3/10/2021,3/10/2021,Mailchimp,CORP,Y,,,,Atlanta,GA,30308,Unknown,66.37,INTER,Interest Expns.,Listserve management,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0006841,3/24/2021,3/24/2021,Mailchimp,CORP,Y,,,,Atlanta,GA,30308,Unknown,23.95,LITER,Campgn Lit.,Mailchimp,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0006844,4/10/2021,4/10/2021,Mailchimp,CORP,Y,,,,Atlanta,GA,30308,Unknown,57.69,LITER,Campgn Lit.,Mailchimp,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0007755,5/10/2021,5/10/2021,Mailchimp,CORP,Y,,,,Atlanta,GA,30308,Unknown,57.69,OTHER,Other: explntion,Mailchimp,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0008995,2/12/2021,2/12/2021,Medicare,OTHR,Y,,,,,,,Unknown,58.73,WAGES,Campgn Wrkrs $$,Medicare,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009027,2/26/2021,2/26/2021,Medicare,OTHR,Y,,,,,,,Unknown,58.72,WAGES,Campgn Wrkrs $$,Medicare,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009055,3/15/2021,3/15/2021,Medicare,OTHR,Y,,,,,,,Unknown,58.73,WAGES,Campgn Wrkrs $$,Medicare,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009083,3/31/2021,3/31/2021,Medicare,OTHR,Y,,,,,,,Unknown,58.72,WAGES,Campgn Wrkrs $$,Medicare,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009111,4/15/2021,4/15/2021,Medicare,OTHR,Y,,,,,,,Unknown,58.73,WAGES,Campgn Wrkrs $$,Medicare,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009134,5/14/2021,5/14/2021,Medicare,OTHR,Y,,,,,,,Unknown,58.73,WAGES,Campgn Wrkrs $$,Medicare,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009150,4/30/2021,4/30/2021,Medicare,OTHR,Y,,,,,,,Unknown,58.72,WAGES,Campgn Wrkrs $$,Medicare,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009174,5/28/2021,5/28/2021,Medicare,OTHR,Y,,,,,,,Unknown,58.72,WAGES,Campgn Wrkrs $$,Medicare,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009190,6/15/2021,6/15/2021,Medicare,OTHR,Y,,,,,,,Unknown,58.73,WAGES,Campgn Wrkrs $$,Medicare,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009245,6/30/2021,6/30/2021,Medicare,OTHR,Y,,,,,,,Unknown,58.72,OTHER,Other: explntion,Medicare,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008569,6/30/2021,6/30/2021,N.Y. Democratic Socialists of,PCOMP,Y,,,,Brooklyn,NY,11216,Unknown,209.25,OTHER,Other: explntion,Volunteer list,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0002719,12/30/2020,12/30/2020,N.Y. Democratic Socialists of,PCOMP,Y,,,,Brooklyn,NY,11216,Unknown,87.50,OTHER,Other: explntion,Voter IDs,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0001944,12/28/2020,12/28/2020,New York State Democratic Comm,PCOMZ,Y,,,,New York,NY,,Unknown,3515.00,FUNDR,Fundraising,VAN purchase,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0005840,2/3/2021,2/3/2021,New York State Insurance Fund,OTHR,Y,,,,New York,NY,10007,Unknown,272.97,WAGES,Campgn Wrkrs $$,Disability/leave,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0005843,2/7/2021,2/7/2021,New York State Insurance Fund,OTHR,Y,,,,New York,NY,10007,Unknown,457.95,WAGES,Campgn Wrkrs $$,Workers comp,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009010,2/12/2021,2/12/2021,NY reemployment,OTHR,Y,,,,,,,Unknown,3.04,WAGES,Campgn Wrkrs $$,Reemployment tax,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009039,2/26/2021,2/26/2021,NY reemployment,OTHR,Y,,,,,,,Unknown,3.04,WAGES,Campgn Wrkrs $$,NY reemployment,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009067,3/15/2021,3/15/2021,NY reemployment,OTHR,Y,,,,,,,Unknown,3.04,WAGES,Campgn Wrkrs $$,NY reemployment,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009095,3/31/2021,3/31/2021,NY reemployment,OTHR,Y,,,,,,,Unknown,3.04,WAGES,Campgn Wrkrs $$,NY reemployment,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009123,4/15/2021,4/15/2021,NY reemployment,OTHR,Y,,,,,,,Unknown,3.04,WAGES,Campgn Wrkrs $$,Reemployment tax,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009162,4/30/2021,4/30/2021,NY reemployment,OTHR,Y,,,,,,,Unknown,2.51,WAGES,Campgn Wrkrs $$,NY reemployment,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009000,2/12/2021,2/12/2021,NY SUI,OTHR,Y,,,,,,,Unknown,126.56,WAGES,Campgn Wrkrs $$,unemployment insuran,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009031,2/26/2021,2/26/2021,NY SUI,OTHR,Y,,,,,,,Unknown,126.56,WAGES,Campgn Wrkrs $$,unemployment insuran,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009059,3/15/2021,3/15/2021,NY SUI,OTHR,Y,,,,,,,Unknown,126.56,WAGES,Campgn Wrkrs $$,unemployment insuran,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009087,3/31/2021,3/31/2021,NY SUI,OTHR,Y,,,,,,,Unknown,126.56,WAGES,Campgn Wrkrs $$,unemployment insuran,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009115,4/15/2021,4/15/2021,NY SUI,OTHR,Y,,,,,,,Unknown,163.01,WAGES,Campgn Wrkrs $$,unemployment insuran,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009154,4/30/2021,4/30/2021,NY SUI,OTHR,Y,,,,,,,Unknown,134.84,WAGES,Campgn Wrkrs $$,unemployment insuran,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009308,4/7/2021,4/7/2021,NY SUI,OTHR,Y,,,,,,,Unknown,145.80,OTHER,Other: explntion,Unemployment insuran,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008566,6/29/2021,6/29/2021,Optimum,CORP,Y,,,,Bethpage,NY,11714,Unknown,114.15,OFFCE,Office Expenses,Internet,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0007728,4/28/2021,4/28/2021,Optimum,CORP,Y,,,,Bethpage,NY,11714,Unknown,186.92,OFFCE,Office Expenses,Internet,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007846,5/29/2021,5/29/2021,Optimum,CORP,Y,,,,Bethpage,NY,11714,Unknown,146.80,OFFCE,Office Expenses,Internet,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008750,6/30/2021,7/2/2021,"Pena, Kayleen",IND,N,,,,Brooklyn,NY,11249,Unknown,90.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0008986,2/12/2021,2/12/2021,"Pensler, Nathan",IND,N,,,,Brooklyn,NY,11216,Unknown,2050.00,WAGES,Campgn Wrkrs $$,Campaign manager,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009019,2/26/2021,2/26/2021,"Pensler, Nathan",IND,N,,,,Brooklyn,NY,11216,Unknown,2050.00,WAGES,Campgn Wrkrs $$,Campaign manager,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009047,3/15/2021,3/15/2021,"Pensler, Nathan",IND,N,,,,Brooklyn,NY,11216,Unknown,2050.00,WAGES,Campgn Wrkrs $$,Campaign manager,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009075,3/31/2021,3/31/2021,"Pensler, Nathan",IND,N,,,,Brooklyn,NY,11216,Unknown,2050.00,WAGES,Campgn Wrkrs $$,Campaign manager,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009103,4/15/2021,4/15/2021,"Pensler, Nathan",IND,N,,,,Brooklyn,NY,11216,Unknown,2050.00,WAGES,Campgn Wrkrs $$,Campaign manager,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009127,5/14/2021,5/14/2021,"Pensler, Nathan",IND,N,,,,Brooklyn,NY,11216,Unknown,2050.00,WAGES,Campgn Wrkrs $$,Campaign manager,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009142,4/30/2021,4/30/2021,"Pensler, Nathan",IND,N,,,,Brooklyn,NY,11216,Unknown,2050.00,WAGES,Campgn Wrkrs $$,Campaign manager,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009166,5/28/2021,5/28/2021,"Pensler, Nathan",IND,N,,,,Brooklyn,NY,11216,Unknown,2050.00,WAGES,Campgn Wrkrs $$,Campaign manager,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009182,6/15/2021,6/15/2021,"Pensler, Nathan",IND,N,,,,Brooklyn,NY,11216,Unknown,2050.00,WAGES,Campgn Wrkrs $$,Campaign manager,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009235,6/30/2021,6/30/2021,"Pensler, Nathan",IND,N,,,,Brooklyn,NY,11216,Unknown,2050.00,WAGES,Campgn Wrkrs $$,Campaign manager,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0005589,12/30/2020,12/30/2020,Phara for Assembly,PCOMC,Y,,,,Brooklyn,NY,11225,Unknown,752.50,FUNDR,Fundraising,Contacts from Phara,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008848,6/3/2021,6/11/2021,"Potts, Hallam",IND,N,,,,Glendale,NY,11385,Unknown,240.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008542,6/24/2021,6/24/2021,R.T. Building Supplies,CORP,Y,,,,Brooklyn,NY,11238,Unknown,10.85,OFFCE,Office Expenses,Office supplies,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0006773,4/9/2021,4/9/2021,R.T. Building Supplies,CORP,Y,,,,Brooklyn,NY,11238,Unknown,66.83,OFFCE,Office Expenses,Move-in supplies,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0006777,4/9/2021,4/9/2021,R.T. Building Supplies,CORP,Y,,,,Brooklyn,NY,11238,Unknown,13.56,OFFCE,Office Expenses,Move-in supplies,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0006821,4/14/2021,4/14/2021,R.T. Building Supplies,CORP,Y,,,,Brooklyn,NY,11238,Unknown,6.91,OFFCE,Office Expenses,Keys,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0006824,4/13/2021,4/13/2021,R.T. Building Supplies,CORP,Y,,,,Brooklyn,NY,11238,Unknown,20.65,OFFCE,Office Expenses,Office supplies,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007942,6/3/2021,6/3/2021,R.T. Building Supplies,CORP,Y,,,,Brooklyn,NY,11238,Unknown,21.69,OFFCE,Office Expenses,Tape,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0001926,12/7/2020,12/7/2020,Reach Progress,CORP,Y,,,,Long Island City,NY,11101,Unknown,163.31,FUNDR,Fundraising,Reach Progress App,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0005663,1/7/2021,1/7/2021,Reach Progress,CORP,Y,,,,Long Island City,NY,11101,Unknown,163.31,FUNDR,Fundraising,Monthly fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0006690,2/7/2021,2/7/2021,Reach Progress,CORP,Y,,,,Long Island City,NY,11101,Unknown,163.31,INTER,Interest Expns.,Voter contact,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0006693,3/7/2021,3/7/2021,Reach Progress,CORP,Y,,,,Long Island City,NY,11101,Unknown,163.31,INTER,Interest Expns.,Voter contact,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0006847,4/7/2021,4/7/2021,Reach Progress,CORP,Y,,,,Long Island City,NY,11101,Unknown,163.31,OTHER,Other: explntion,Reach Progress App,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0007747,5/7/2021,5/7/2021,Reach Progress,CORP,Y,,,,Long Island City,NY,11101,Unknown,163.31,OTHER,Other: explntion,Reach Progress App,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0008128,6/7/2021,6/7/2021,Reach Progress,CORP,Y,,,,Long Island City,NY,11101,Unknown,163.31,INTER,Interest Expns.,Reach outreach,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008576,7/6/2021,7/6/2021,Rewired LLC,LLC,Y,,,,Brooklyn,NY,11221,Unknown,862.03,INTER,Interest Expns.,Texting outreach,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0006926,5/4/2021,5/4/2021,Rewired LLC,LLC,Y,,,,Brooklyn,NY,11221,Unknown,1218.15,OTHER,Other: explntion,Texting outreach,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007951,6/4/2021,6/4/2021,Rewired LLC,LLC,Y,,,,Brooklyn,NY,11221,Unknown,312.99,INTER,Interest Expns.,Texting outreach,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0006787,4/7/2021,4/7/2021,Scheffey Realty,CORP,Y,,,,Brooklyn,NY,11216,Unknown,1000.00,PROFL,Prof. Srvcs.,Realtor fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0006818,4/3/2021,4/3/2021,Seamless,CORP,Y,,,,New York,NY,10018,Unknown,64.86,OTHER,Other: explntion,Food for office,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008760,5/26/2021,7/2/2021,"Shepherd, Tristan",IND,N,,,,Brooklyn,NY,11216,Unknown,120.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008788,6/21/2021,6/21/2021,"Shepherd, Tristan",IND,N,,,,Brooklyn,NY,11216,Unknown,150.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008810,6/15/2021,6/18/2021,"Shepherd, Tristan",IND,N,,,,Brooklyn,NY,11216,Unknown,230.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007830,6/7/2021,6/7/2021,"Shepherd, Tristan",IND,N,,,,Brooklyn,NY,11216,Unknown,130.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009005,2/12/2021,2/12/2021,Social Security,OTHR,Y,,,,,,,Unknown,251.10,WAGES,Campgn Wrkrs $$,Social security,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009035,2/26/2021,2/26/2021,Social Security,OTHR,Y,,,,,,,Unknown,251.10,WAGES,Campgn Wrkrs $$,Social security,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009063,3/15/2021,3/15/2021,Social Security,OTHR,Y,,,,,,,Unknown,251.10,WAGES,Campgn Wrkrs $$,Social security,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009091,3/31/2021,3/31/2021,Social Security,OTHR,Y,,,,,,,Unknown,251.10,WAGES,Campgn Wrkrs $$,Social security,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009119,4/15/2021,4/15/2021,Social Security,OTHR,Y,,,,,,,Unknown,251.10,WAGES,Campgn Wrkrs $$,Social security,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009138,5/14/2021,5/14/2021,Social Security,OTHR,Y,,,,,,,Unknown,251.10,WAGES,Campgn Wrkrs $$,Social security,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009158,4/30/2021,4/30/2021,Social Security,OTHR,Y,,,,,,,Unknown,251.10,WAGES,Campgn Wrkrs $$,Social security,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009178,5/28/2021,5/28/2021,Social Security,OTHR,Y,,,,,,,Unknown,251.10,WAGES,Campgn Wrkrs $$,Social security,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009194,6/15/2021,6/15/2021,Social Security,OTHR,Y,,,,,,,Unknown,251.10,WAGES,Campgn Wrkrs $$,Social security,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0009247,6/30/2021,6/30/2021,Social Security,OTHR,Y,,,,,,,Unknown,251.10,OTHER,Other: explntion,Social security,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008131,6/9/2021,6/9/2021,Staples,CORP,Y,,,,Brooklyn,NY,11215,Unknown,159.13,OFFCE,Office Expenses,Office supplies,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008162,6/10/2021,6/10/2021,Staples,CORP,Y,,,,Brooklyn,NY,11215,Unknown,48.48,OFFCE,Office Expenses,Office supplies,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0001948,11/13/2020,11/13/2020,Staples,CORP,Y,,,,Brooklyn,NY,11215,Unknown,33.71,OFFCE,Office Expenses,Office supplies,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0001951,11/13/2020,11/13/2020,Staples,CORP,Y,,,,Brooklyn,NY,11215,Unknown,88.50,OFFCE,Office Expenses,Office supplies,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0006624,2/19/2021,2/19/2021,Staples,CORP,Y,,,,Brooklyn,NY,11215,Unknown,202.34,OFFCE,Office Expenses,Printing supplies,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0006665,3/1/2021,3/1/2021,Staples,CORP,Y,,,,Brooklyn,NY,11215,Unknown,84.32,OFFCE,Office Expenses,Pens and paper clips,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0006667,3/5/2021,3/5/2021,Staples,CORP,Y,,,,Brooklyn,NY,11215,Unknown,62.64,OFFCE,Office Expenses,Pens,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0007758,5/15/2021,5/15/2021,Staples,CORP,Y,,,,Brooklyn,NY,11215,Unknown,65.89,OFFCE,Office Expenses,Office supplies,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008555,6/28/2021,6/28/2021,"Stoll, Glickman, and Bellina",PART,Y,,,,Brooklyn,NY,11201,Unknown,3500.00,PROFL,Prof. Srvcs.,Retainer,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008560,6/28/2021,6/28/2021,"Stoll, Glickman, and Bellina",PART,Y,,,,Brooklyn,NY,11201,Unknown,360.47,PROFL,Prof. Srvcs.,Filing fee,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008563,6/30/2021,6/30/2021,"Stoll, Glickman, and Bellina",PART,Y,,,,Brooklyn,NY,11201,Unknown,158.10,PROFL,Prof. Srvcs.,Service of documents,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0001955,12/28/2020,12/28/2020,"Stoll, Glickman, and Bellina",PART,Y,,,,Brooklyn,NY,11201,Unknown,3000.00,PROFL,Prof. Srvcs.,Legal services,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0006614,2/17/2021,2/17/2021,"Stoll, Glickman, and Bellina",PART,Y,,,,Brooklyn,NY,11201,Unknown,1000.00,PETIT,Petition Expns.,Legal services,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008536,6/30/2021,6/30/2021,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,127.15,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0000067,7/31/2020,7/31/2020,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,29.30,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0000140,9/30/2020,9/30/2020,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,22.09,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0000465,10/31/2020,10/31/2020,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,108.49,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0001503,11/30/2020,11/30/2020,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,295.60,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0002701,12/31/2020,12/31/2020,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,301.32,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0006597,2/28/2021,2/28/2021,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,62.66,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0006599,1/31/2021,1/31/2021,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,338.20,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0006937,4/30/2021,4/30/2021,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,83.49,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0006939,3/31/2021,3/31/2021,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,65.71,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0008197,5/31/2021,5/31/2021,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,171.22,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008349,6/19/2021,6/19/2021,Target,CORP,Y,,,,Brooklyn,NY,11217,Unknown,51.56,OTHER,Other: explntion,Food for canvassers,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0006621,2/18/2021,2/18/2021,Thrutalk,CORP,Y,,,,Alameda,CA,94501,Unknown,548.24,OTHER,Other: explntion,Peer to peer phone,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0006650,3/11/2021,3/11/2021,Thrutalk,CORP,Y,,,,Alameda,CA,94501,Unknown,731.34,OTHER,Other: explntion,Thrutalk dialer,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0006828,4/15/2021,4/15/2021,Thrutalk,CORP,Y,,,,Alameda,CA,94501,Unknown,1445.57,OTHER,Other: explntion,Thrutalk,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,10,F,,,R0008551,6/28/2021,6/28/2021,United States Postal Service,CORP,Y,,,,Washington,DC,20590,Unknown,0.69,OFFCE,Office Expenses,Envelope and stamp,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0006930,5/10/2021,5/10/2021,United States Postal Service,CORP,Y,,,,Washington,DC,20590,Unknown,496.08,CMAIL,Campgn Mlngs,Postage,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0007731,5/12/2021,5/12/2021,United States Postal Service,CORP,Y,,,,Washington,DC,20590,Unknown,360.00,CMAIL,Campgn Mlngs,1000 postcard stamps,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0007734,5/12/2021,5/12/2021,United States Postal Service,CORP,Y,,,,Washington,DC,20590,Unknown,144.00,CMAIL,Campgn Mlngs,400 postcard stamps,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0007737,5/17/2021,5/17/2021,United States Postal Service,CORP,Y,,,,Washington,DC,20590,Unknown,361.85,CMAIL,Campgn Mlngs,Stamps,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007874,5/31/2021,5/31/2021,United States Postal Service,CORP,Y,,,,Washington,DC,20590,Unknown,153.05,CMAIL,Campgn Mlngs,Stamps,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007925,6/1/2021,6/1/2021,United States Postal Service,CORP,Y,,,,Washington,DC,20590,Unknown,361.85,CMAIL,Campgn Mlngs,Stamps,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008763,7/2/2021,7/2/2021,"Venkatesh, Ranjana",IND,N,,,,New York,NY,11216,Unknown,75.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008766,7/2/2021,7/2/2021,"Venkatesh, Ranjana",IND,N,,,,New York,NY,11216,Unknown,275.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008800,6/21/2021,6/21/2021,"Venkatesh, Ranjana",IND,N,,,,New York,NY,11216,Unknown,45.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008823,6/14/2021,6/14/2021,"Venkatesh, Ranjana",IND,N,,,,New York,NY,11216,Unknown,85.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,20,F,,,R0008939,6/11/2021,6/11/2021,"Venkatesh, Ranjana",IND,N,,,,New York,NY,11216,Unknown,135.00,WAGES,Campgn Wrkrs $$,Payroll,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0007840,6/3/2021,6/3/2021,"Venkatesh, Ranjana",IND,N,,,,New York,NY,11216,Unknown,160.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0005827,1/21/2021,1/21/2021,Walgreens,CORP,Y,,,,Brooklyn,NY,11216,Unknown,19.54,LITER,Campgn Lit.,Tape for posters,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0006617,2/17/2021,2/17/2021,Walgreens,CORP,Y,,,,Brooklyn,NY,11216,Unknown,32.66,OFFCE,Office Expenses,Tape,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0006653,3/1/2021,3/1/2021,Walgreens,CORP,Y,,,,Brooklyn,NY,11216,Unknown,9.01,OFFCE,Office Expenses,Office supplies,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008754,7/28/2021,7/28/2021,"Zhuang, Wen",IND,N,,,,Brooklyn,NY,11233,Unknown,680.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008757,7/28/2021,7/28/2021,"Zhuang, Wen",IND,N,,,,Brooklyn,NY,11233,Unknown,500.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008794,6/15/2021,6/21/2021,"Zhuang, Wen",IND,N,,,,Brooklyn,NY,11233,Unknown,340.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008835,6/9/2021,6/11/2021,"Zhuang, Wen",IND,N,,,,Brooklyn,NY,11233,Unknown,340.00,WAGES,Campgn Wrkrs $$,Canvasser,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,11,F,,,R0008613,7/25/2021,7/25/2021,Zoom,CORP,Y,,,,San Jose,CA,95113,Unknown,15.44,OFFCE,Office Expenses,Zoom,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,11,F,,,R0008616,6/25/2021,6/25/2021,Zoom,CORP,Y,,,,San Jose,CA,95113,Unknown,15.35,OFFCE,Office Expenses,Zoom,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,15,F,,,R0008610,8/25/2021,8/25/2021,Zoom,CORP,Y,,,,San Jose,CA,95113,Unknown,15.35,OFFCE,Office Expenses,Zoon,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0001928,11/25/2020,11/25/2020,Zoom,CORP,Y,,,,San Jose,CA,95113,Unknown,15.35,FUNDR,Fundraising,Facilitate e-outreac,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,6,F,,,R0005144,12/25/2020,12/25/2020,Zoom,CORP,Y,,,,San Jose,CA,95113,Unknown,15.35,OFFCE,Office Expenses,Zoom account,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0006680,1/24/2021,1/24/2021,Zoom,CORP,Y,,,,San Jose,CA,95113,Unknown,15.35,OTHER,Other: explntion,Zoom account,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,7,F,,,R0006683,2/24/2021,2/24/2021,Zoom,CORP,Y,,,,San Jose,CA,95113,Unknown,15.35,OTHER,Other: explntion,Zoom account,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0006831,4/25/2021,4/25/2021,Zoom,CORP,Y,,,,San Jose,CA,95113,Unknown,15.35,OFFCE,Office Expenses,Zoom,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,8,F,,,R0006834,3/25/2021,3/25/2021,Zoom,CORP,Y,,,,San Jose,CA,95113,Unknown,15.35,OFFCE,Office Expenses,Zoom,,N,N
+2021,55,2377,P,Hollingsworth,Michael,D,H,9,F,,,R0008050,5/25/2021,5/25/2021,Zoom,CORP,Y,,,,San Jose,CA,95113,Unknown,15.35,OTHER,Other: explntion,Zoom account,,N,N
+
