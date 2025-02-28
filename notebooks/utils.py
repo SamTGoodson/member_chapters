@@ -316,7 +316,7 @@ def find_biggest_col(row):
     return row.idxmax()
 
 def make_precinct_counts(df,district,candidate1,candidate2):
-    ag = df.groupby(['Precinct',district+'_choice_1'])[district+'_choice_2'].value_counts().reset_index(name='count')
+    ag = df.groupby(['Precinct',district+'_choice_1'])[district+'_choice_2'].value_counts(dropna=False).reset_index(name='count')
     pc = aggregate_precinct_counts(ag,district,candidate1,candidate2)
     cols = pc.columns.tolist()
     cols.remove('Precinct')
