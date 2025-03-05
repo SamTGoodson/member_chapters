@@ -1,0 +1,237 @@
+precinct,ed_name,candidate,votes,ed_total,vote_share
+AD: 50 ED: 003,50003,Julia Salazar,238,306,77.78
+AD: 50 ED: 004,50004,Julia Salazar,86,113,76.11
+AD: 50 ED: 005,50005,Julia Salazar,250,309,80.91
+AD: 50 ED: 006,50006,Julia Salazar,206,260,79.23
+AD: 50 ED: 007,50007,Julia Salazar,140,181,77.35
+AD: 50 ED: 008,50008,Julia Salazar,188,251,74.9
+AD: 50 ED: 009,50009,Julia Salazar,203,254,79.92
+AD: 50 ED: 011,50011,Martin Malave Dilan,125,160,78.12
+AD: 50 ED: 012,50012,Julia Salazar,199,227,87.67
+AD: 50 ED: 015,50015,Julia Salazar,145,191,75.92
+AD: 50 ED: 016,50016,Martin Malave Dilan,146,206,70.87
+AD: 50 ED: 017,50017,Julia Salazar,116,198,58.59
+AD: 50 ED: 018,50018,Julia Salazar,144,188,76.6
+AD: 50 ED: 019,50019,Julia Salazar,185,218,84.86
+AD: 50 ED: 020,50020,Julia Salazar,156,205,76.1
+AD: 50 ED: 021,50021,Julia Salazar,227,281,80.78
+AD: 50 ED: 022,50022,Julia Salazar,121,152,79.61
+AD: 50 ED: 025,50025,Julia Salazar,61,80,76.25
+AD: 50 ED: 043,50043,Julia Salazar,139,174,79.89
+AD: 50 ED: 044,50044,Julia Salazar,155,190,81.58
+AD: 50 ED: 045,50045,Julia Salazar,31,44,70.45
+AD: 50 ED: 046,50046,Julia Salazar,177,227,77.97
+AD: 50 ED: 049,50049,Julia Salazar,78,105,74.29
+AD: 50 ED: 050,50050,Julia Salazar,143,191,74.87
+AD: 50 ED: 051,50051,Julia Salazar,107,149,71.81
+AD: 50 ED: 052,50052,Julia Salazar,171,233,73.39
+AD: 50 ED: 053,50053,Julia Salazar,129,162,79.63
+AD: 50 ED: 054,50054,Julia Salazar,63,100,63.0
+AD: 50 ED: 056,50056,Julia Salazar,46,71,64.79
+AD: 50 ED: 057,50057,Martin Malave Dilan,123,182,67.58
+AD: 50 ED: 058,50058,Martin Malave Dilan,92,130,70.77
+AD: 50 ED: 059,50059,Julia Salazar,115,228,50.44
+AD: 50 ED: 060,50060,Martin Malave Dilan,124,170,72.94
+AD: 50 ED: 061,50061,Martin Malave Dilan,94,147,63.95
+AD: 50 ED: 062,50062,Martin Malave Dilan,87,126,69.05
+AD: 50 ED: 063,50063,Martin Malave Dilan,159,206,77.18
+AD: 50 ED: 081,50081,Martin Malave Dilan,16,22,72.73
+AD: 50 ED: 097,50097,Julia Salazar,156,194,80.41
+AD: 50 ED: 098,50098,Julia Salazar,108,148,72.97
+AD: 50 ED: 102,50102,Julia Salazar,62,84,73.81
+AD: 53 ED: 001,53001,Julia Salazar,96,139,69.06
+AD: 53 ED: 002,53002,Julia Salazar,65,88,73.86
+AD: 53 ED: 003,53003,Julia Salazar,103,174,59.2
+AD: 53 ED: 004,53004,Julia Salazar,124,165,75.15
+AD: 53 ED: 005,53005,Julia Salazar,110,160,68.75
+AD: 53 ED: 006,53006,Julia Salazar,44,48,91.67
+AD: 53 ED: 007,53007,Julia Salazar,126,187,67.38
+AD: 53 ED: 008,53008,Julia Salazar,140,188,74.47
+AD: 53 ED: 009,53009,Julia Salazar,133,193,68.91
+AD: 53 ED: 010,53010,Julia Salazar,77,144,53.47
+AD: 53 ED: 011,53011,Julia Salazar,97,146,66.44
+AD: 53 ED: 012,53012,Julia Salazar,127,152,83.55
+AD: 53 ED: 013,53013,Julia Salazar,135,189,71.43
+AD: 53 ED: 015,53015,Martin Malave Dilan,52,98,53.06
+AD: 53 ED: 016,53016,Julia Salazar,174,231,75.32
+AD: 53 ED: 017,53017,Julia Salazar,140,199,70.35
+AD: 53 ED: 018,53018,Julia Salazar,195,246,79.27
+AD: 53 ED: 019,53019,Julia Salazar,136,204,66.67
+AD: 53 ED: 020,53020,Julia Salazar,218,276,78.99
+AD: 53 ED: 021,53021,Julia Salazar,108,211,51.18
+AD: 53 ED: 022,53022,Julia Salazar,139,243,57.2
+AD: 53 ED: 023,53023,Julia Salazar,143,190,75.26
+AD: 53 ED: 024,53024,Martin Malave Dilan,85,140,60.71
+AD: 53 ED: 025,53025,Martin Malave Dilan,166,276,60.14
+AD: 53 ED: 026,53026,Martin Malave Dilan,85,127,66.93
+AD: 53 ED: 027,53027,Julia Salazar,125,215,58.14
+AD: 53 ED: 028,53028,Julia Salazar,110,188,58.51
+AD: 53 ED: 029,53029,Julia Salazar,82,119,68.91
+AD: 53 ED: 030,53030,Julia Salazar,156,207,75.36
+AD: 53 ED: 031,53031,Martin Malave Dilan,129,206,62.62
+AD: 53 ED: 032,53032,Julia Salazar,101,168,60.12
+AD: 53 ED: 033,53033,Julia Salazar,188,232,81.03
+AD: 53 ED: 034,53034,Julia Salazar,181,227,79.74
+AD: 53 ED: 035,53035,Julia Salazar,182,206,88.35
+AD: 53 ED: 036,53036,Julia Salazar,197,264,74.62
+AD: 53 ED: 037,53037,Julia Salazar,170,220,77.27
+AD: 53 ED: 038,53038,Julia Salazar,56,73,76.71
+AD: 53 ED: 039,53039,Julia Salazar,184,231,79.65
+AD: 53 ED: 040,53040,Martin Malave Dilan,48,93,51.61
+AD: 53 ED: 041,53041,Martin Malave Dilan,85,134,63.43
+AD: 53 ED: 042,53042,Martin Malave Dilan,61,90,67.78
+AD: 53 ED: 043,53043,Martin Malave Dilan,86,140,61.43
+AD: 53 ED: 044,53044,Julia Salazar,155,221,70.14
+AD: 53 ED: 045,53045,Julia Salazar,172,281,61.21
+AD: 53 ED: 046,53046,Julia Salazar,117,197,59.39
+AD: 53 ED: 047,53047,Julia Salazar,170,222,76.58
+AD: 53 ED: 048,53048,Julia Salazar,134,160,83.75
+AD: 53 ED: 049,53049,Julia Salazar,40,47,85.11
+AD: 53 ED: 050,53050,Julia Salazar,137,175,78.29
+AD: 53 ED: 051,53051,Martin Malave Dilan,68,110,61.82
+AD: 53 ED: 052,53052,Julia Salazar,21,22,95.45
+AD: 53 ED: 053,53053,Julia Salazar,146,202,72.28
+AD: 53 ED: 054,53054,Julia Salazar,177,235,75.32
+AD: 53 ED: 055,53055,Julia Salazar,147,181,81.22
+AD: 53 ED: 056,53056,Julia Salazar,171,229,74.67
+AD: 53 ED: 057,53057,Julia Salazar,155,213,72.77
+AD: 53 ED: 058,53058,Julia Salazar,144,181,79.56
+AD: 53 ED: 059,53059,Julia Salazar,185,264,70.08
+AD: 53 ED: 060,53060,Julia Salazar,206,273,75.46
+AD: 53 ED: 061,53061,Julia Salazar,123,179,68.72
+AD: 53 ED: 062,53062,Julia Salazar,44,71,61.97
+AD: 53 ED: 063,53063,Julia Salazar,192,235,81.7
+AD: 53 ED: 064,53064,Julia Salazar,124,186,66.67
+AD: 53 ED: 065,53065,Julia Salazar,90,148,60.81
+AD: 53 ED: 066,53066,Julia Salazar,128,223,57.4
+AD: 53 ED: 067,53067,Julia Salazar,167,225,74.22
+AD: 53 ED: 068,53068,Julia Salazar,112,170,65.88
+AD: 53 ED: 069,53069,Julia Salazar,97,132,73.48
+AD: 53 ED: 070,53070,Martin Malave Dilan,106,206,51.46
+AD: 53 ED: 071,53071,Martin Malave Dilan,84,140,60.0
+AD: 53 ED: 072,53072,Julia Salazar,128,172,74.42
+AD: 53 ED: 073,53073,Martin Malave Dilan,99,160,61.88
+AD: 53 ED: 074,53074,Martin Malave Dilan,155,220,70.45
+AD: 53 ED: 075,53075,Martin Malave Dilan,49,91,53.85
+AD: 53 ED: 076,53076,Julia Salazar,167,225,74.22
+AD: 53 ED: 077,53077,Julia Salazar,142,226,62.83
+AD: 53 ED: 079,53079,Julia Salazar,42,74,56.76
+AD: 53 ED: 080,53080,Julia Salazar,122,197,61.93
+AD: 53 ED: 081,53081,Julia Salazar,22,42,52.38
+AD: 53 ED: 082,53082,Julia Salazar,108,182,59.34
+AD: 53 ED: 083,53083,Julia Salazar,95,132,71.97
+AD: 53 ED: 084,53084,Julia Salazar,120,163,73.62
+AD: 53 ED: 085,53085,Martin Malave Dilan,60,117,51.28
+AD: 53 ED: 086,53086,Martin Malave Dilan,104,142,73.24
+AD: 53 ED: 087,53087,Julia Salazar,160,217,73.73
+AD: 53 ED: 088,53088,Julia Salazar,180,211,85.31
+AD: 54 ED: 001,54001,Martin Malave Dilan,27,42,64.29
+AD: 54 ED: 007,54007,Julia Salazar,117,177,66.1
+AD: 54 ED: 008,54008,Julia Salazar,85,149,57.05
+AD: 54 ED: 009,54009,Martin Malave Dilan,83,148,56.08
+AD: 54 ED: 010,54010,Julia Salazar,99,167,59.28
+AD: 54 ED: 011,54011,Julia Salazar,105,174,60.34
+AD: 54 ED: 012,54012,Julia Salazar,141,206,68.45
+AD: 54 ED: 013,54013,Julia Salazar,105,143,73.43
+AD: 54 ED: 014,54014,Julia Salazar,19,22,86.36
+AD: 54 ED: 017,54017,Julia Salazar,52,70,74.29
+AD: 54 ED: 018,54018,Martin Malave Dilan,1,2,50.0
+AD: 54 ED: 019,54019,Martin Malave Dilan,114,166,68.67
+AD: 54 ED: 020,54020,Julia Salazar,137,218,62.84
+AD: 54 ED: 021,54021,Julia Salazar,109,197,55.33
+AD: 54 ED: 022,54022,Julia Salazar,77,117,65.81
+AD: 54 ED: 023,54023,Julia Salazar,83,156,53.21
+AD: 54 ED: 024,54024,Julia Salazar,102,154,66.23
+AD: 54 ED: 025,54025,Julia Salazar,155,216,71.76
+AD: 54 ED: 027,54027,Julia Salazar,97,146,66.44
+AD: 54 ED: 028,54028,Julia Salazar,130,226,57.52
+AD: 54 ED: 029,54029,Julia Salazar,97,156,62.18
+AD: 54 ED: 030,54030,Martin Malave Dilan,85,154,55.19
+AD: 54 ED: 031,54031,Julia Salazar,76,138,55.07
+AD: 54 ED: 032,54032,Julia Salazar,68,135,50.37
+AD: 54 ED: 033,54033,Julia Salazar,88,160,55.0
+AD: 54 ED: 034,54034,Martin Malave Dilan,101,187,54.01
+AD: 54 ED: 035,54035,Julia Salazar,76,149,51.01
+AD: 54 ED: 036,54036,Martin Malave Dilan,91,182,50.0
+AD: 54 ED: 037,54037,Martin Malave Dilan,106,159,66.67
+AD: 54 ED: 038,54038,Martin Malave Dilan,109,185,58.92
+AD: 54 ED: 039,54039,Julia Salazar,77,138,55.8
+AD: 54 ED: 040,54040,Julia Salazar,41,65,63.08
+AD: 54 ED: 041,54041,Martin Malave Dilan,131,193,67.88
+AD: 54 ED: 042,54042,Martin Malave Dilan,104,128,81.25
+AD: 54 ED: 043,54043,Martin Malave Dilan,112,159,70.44
+AD: 54 ED: 044,54044,Martin Malave Dilan,90,116,77.59
+AD: 54 ED: 045,54045,Martin Malave Dilan,92,118,77.97
+AD: 54 ED: 046,54046,Martin Malave Dilan,116,185,62.7
+AD: 54 ED: 047,54047,Martin Malave Dilan,70,92,76.09
+AD: 54 ED: 048,54048,Martin Malave Dilan,87,122,71.31
+AD: 54 ED: 049,54049,Martin Malave Dilan,89,124,71.77
+AD: 54 ED: 050,54050,Martin Malave Dilan,125,171,73.1
+AD: 54 ED: 051,54051,Martin Malave Dilan,113,161,70.19
+AD: 54 ED: 052,54052,Martin Malave Dilan,71,103,68.93
+AD: 54 ED: 053,54053,Martin Malave Dilan,65,83,78.31
+AD: 54 ED: 054,54054,Martin Malave Dilan,78,103,75.73
+AD: 54 ED: 055,54055,Martin Malave Dilan,69,91,75.82
+AD: 54 ED: 056,54056,Martin Malave Dilan,55,80,68.75
+AD: 54 ED: 057,54057,Martin Malave Dilan,91,143,63.64
+AD: 54 ED: 058,54058,Martin Malave Dilan,94,122,77.05
+AD: 54 ED: 059,54059,Martin Malave Dilan,67,104,64.42
+AD: 54 ED: 060,54060,Julia Salazar,125,237,52.74
+AD: 54 ED: 061,54061,Julia Salazar,74,146,50.68
+AD: 54 ED: 062,54062,Martin Malave Dilan,74,148,50.0
+AD: 54 ED: 063,54063,Julia Salazar,117,189,61.9
+AD: 54 ED: 064,54064,Julia Salazar,85,127,66.93
+AD: 54 ED: 065,54065,Martin Malave Dilan,54,83,65.06
+AD: 54 ED: 066,54066,Martin Malave Dilan,66,125,52.8
+AD: 54 ED: 067,54067,Martin Malave Dilan,101,162,62.35
+AD: 54 ED: 068,54068,Martin Malave Dilan,95,132,71.97
+AD: 54 ED: 069,54069,Martin Malave Dilan,76,131,58.02
+AD: 54 ED: 070,54070,Martin Malave Dilan,59,105,56.19
+AD: 54 ED: 073,54073,Julia Salazar,80,150,53.33
+AD: 54 ED: 074,54074,Julia Salazar,102,156,65.38
+AD: 54 ED: 075,54075,Martin Malave Dilan,27,33,81.82
+AD: 54 ED: 076,54076,Martin Malave Dilan,105,187,56.15
+AD: 54 ED: 077,54077,Julia Salazar,51,84,60.71
+AD: 54 ED: 079,54079,Martin Malave Dilan,54,70,77.14
+AD: 54 ED: 080,54080,Martin Malave Dilan,73,105,69.52
+AD: 54 ED: 081,54081,Martin Malave Dilan,68,98,69.39
+AD: 54 ED: 082,54082,Martin Malave Dilan,58,85,68.24
+AD: 54 ED: 083,54083,Martin Malave Dilan,83,123,67.48
+AD: 54 ED: 084,54084,Julia Salazar,75,106,70.75
+AD: 54 ED: 085,54085,Julia Salazar,78,127,61.42
+AD: 54 ED: 086,54086,Martin Malave Dilan,88,153,57.52
+AD: 54 ED: 087,54087,Julia Salazar,67,121,55.37
+AD: 54 ED: 088,54088,Martin Malave Dilan,102,168,60.71
+AD: 54 ED: 089,54089,Martin Malave Dilan,80,146,54.79
+AD: 55 ED: 003,55003,Julia Salazar,30,44,68.18
+AD: 55 ED: 006,55006,Martin Malave Dilan,91,137,66.42
+AD: 55 ED: 007,55007,Julia Salazar,103,146,70.55
+AD: 55 ED: 014,55014,Martin Malave Dilan,88,158,55.7
+AD: 55 ED: 015,55015,Julia Salazar,73,133,54.89
+AD: 55 ED: 016,55016,Julia Salazar,120,223,53.81
+AD: 55 ED: 026,55026,Julia Salazar,19,36,52.78
+AD: 55 ED: 041,55041,Julia Salazar,27,52,51.92
+AD: 55 ED: 045,55045,Martin Malave Dilan,68,107,63.55
+AD: 55 ED: 046,55046,Martin Malave Dilan,112,178,62.92
+AD: 55 ED: 050,55050,Julia Salazar,24,42,57.14
+AD: 55 ED: 051,55051,Martin Malave Dilan,7,11,63.64
+AD: 55 ED: 054,55054,Julia Salazar,10,17,58.82
+AD: 56 ED: 001,56001,Martin Malave Dilan,68,125,54.4
+AD: 56 ED: 002,56002,Martin Malave Dilan,88,160,55.0
+AD: 56 ED: 003,56003,Martin Malave Dilan,70,112,62.5
+AD: 56 ED: 004,56004,Martin Malave Dilan,82,136,60.29
+AD: 56 ED: 006,56006,Martin Malave Dilan,92,178,51.69
+AD: 56 ED: 007,56007,Martin Malave Dilan,95,158,60.13
+AD: 56 ED: 008,56008,Martin Malave Dilan,118,197,59.9
+AD: 56 ED: 009,56009,Julia Salazar,86,149,57.72
+AD: 56 ED: 010,56010,Martin Malave Dilan,95,157,60.51
+AD: 56 ED: 011,56011,Julia Salazar,155,236,65.68
+AD: 56 ED: 017,56017,Julia Salazar,122,189,64.55
+AD: 56 ED: 020,56020,Julia Salazar,82,129,63.57
+AD: 60 ED: 006,60006,Julia Salazar,25,45,55.56
+AD: 60 ED: 010,60010,Martin Malave Dilan,52,90,57.78
+AD: 60 ED: 011,60011,Martin Malave Dilan,15,16,93.75
+AD: 60 ED: 016,60016,Martin Malave Dilan,36,61,59.02
+AD: 60 ED: 018,60018,Martin Malave Dilan,59,90,65.56
+AD: 60 ED: 019,60019,Julia Salazar,38,71,53.52
+AD: 60 ED: 020,60020,Martin Malave Dilan,18,22,81.82
