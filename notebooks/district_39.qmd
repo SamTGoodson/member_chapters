@@ -1,0 +1,110 @@
+---
+title: "'Too Dangerous for the City Council' Insiders and Outsiders in the 35th Council District"
+format:
+  pdf:
+    df-print: kable
+    tbl-colwidths: [75,25]
+    code-fold: true
+    mainfont: "Georgia"
+header-includes:
+  - \usepackage{graphicx}
+  - \usepackage{adjustbox}
+  - \usepackage{afterpage}
+  - \usepackage{biblatex}
+  - \newcommand{\bibsection}{\clearpage\printbibliography}
+execute:
+  echo: false
+jupyter: python3
+bibliography: references.bib
+---
+
+
+```{python}
+#| warning: false
+import pandas as pd
+import geopandas as gpd
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.colors as colors
+import matplotlib as mpl
+
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+
+import statsmodels.api as sm
+from statsmodels.iolib.summary2 import summary_col
+
+from utils import make_precinct_counts,make_demo_map,job_cols,race_cols,cols_to_keep,scale_and_cluster,make_edname,map_round_votes,brooklyn_zips,zip_list
+
+from shapely import wkt
+
+from IPython.display import display, Latex,Markdown
+from tabulate import tabulate
+
+demo_cluster = pd.read_csv('../../chapter_two/data/occupation_demo_clusters_on_ed.csv')
+d39 = pd.read_csv('../../cc_election_cleaning/all_rounds_results/district_39.csv')
+ed_level = pd.read_csv('../../cc_election_cleaning/occupation_demo_data_feb21.csv')
+fwe = pd.read_csv('../data/finance_with_ethnicity.csv')
+finance = pd.read_csv('../../council_campaign_finance/data/located_data_subset_for_member_chapters.csv')
+ae = pd.read_csv('../../cc_election_cleaning/ae_precincts.csv')
+
+ed_shapefile = '../../chapter_two/data/nyed_21a/nyed.shp'
+ed_gdf = gpd.read_file(ed_shapefile)
+nyc_zip = gpd.read_file('../data/Modified Zip Code Tabulation Areas (MODZCTA).geojson')
+full_results = pd.read_csv('../../cc_election_cleaning/election_results_with_vote_sponsor_cluster_FEB13.csv')
+full_results_thirty_nine = full_results[full_results['district'] == 39]
+full_results_thirty_nine['dpp20bs'] = full_results_thirty_nine['dpp20bs'] / 10
+sh_full = full_results[full_results['candidate'] ==  'Shahana K. Hanif']
+bw_full = full_results[full_results['candidate'] ==  'Brandon West']
+sh_full = sh_full[['vote_share','ed_name','dpp20bs','garcia213p','white_transplant_ratio','mhhi21','cvap21bapp','h21p', 'nha21p', 'nhb21p', 'nhw21p','wfh_ratio']]
+bw_full = bw_full[['vote_share','ed_name','dpp20bs','garcia213p','white_transplant_ratio','mhhi21','cvap21bapp','h21p', 'nha21p', 'nhb21p', 'nhw21p','wfh_ratio']]
+
+d39 = make_edname(d39)
+d39_eds = d39['ed_name'].unique().tolist()
+
+
+max_vote_share_candidates = pd.read_csv('../data/max_vote_share_candidates.csv')
+tj = max_vote_share_candidates[['ed_name','candidate']]
+
+occ_df = pd.read_csv('../../cc_election_cleaning/occupation_election_feb21.csv')
+p_cols = [col for col in occ_df.columns if col[-1] == 'p']
+wp_cols = [col for col in occ_df.columns if col.startswith("w2") and col.endswith("p")]
+to_remove = [ 'w2psp',
+ 'w2sep',
+ 'w2npp',
+ 'w2govp',
+ 'w2nip','w2cop']
+wp_cols = [col for col in wp_cols if col not in to_remove]
+```
+
+```{python}
+#| warning: false
+cor_cols = ['ed_name','vote_share','garcia213p','white_transplant_ratio','dpp20bs','nhb21p','nha21p','mhhi21','cvap21bapp','ind21p','bang21p'] + wp_cols
+corr_df = sh_full.merge(occ_df, left_on='ed_name', right_on='ElectDist', how='left')
+corr_df = corr_df.merge(ae, left_on='ed_name', right_on='ElectDist', how='left')
+corr_df['dpp20bs'] = corr_df['dpp20bs'] / 10
+corr_matrix = corr_df[cor_cols].corr()
+corr_matrix = corr_matrix.sort_values('vote_share')
+vote_corr = corr_matrix[['vote_share']]
+```
+
+In several respects the 2021 primary in Brooklyn's 39th Council district mirrored the race the in 35th. A DSA endorsed housing activist, Brandon West, squared off against another progressive who had connections to the outgoing council member, Shahana Hanif, with Hanif coming out on top. Unlike the 35th, however, Hanif was self-described socialist and the outgoing member, Brad Lander, a standard bearer for local progressive politics. Also unlike the 35th Hanif, a daughter of Bengali immigrants, had a connection to a sizeable minority population in the district. To win Hanif put together a coalition of Bengali's in the southern section of the district, middle-income professionals in Kensington and Windsor Terrace, and upper-income Garcia voters in Park Slope. Her campaign was a showcase of progressive political potential. NYC-DSA co-chair Sumathy Kuma said of the race that it was unfortunate that they had to run against each other. It certainly was unfortunate for the DSA that they endorsed against a socialist with broad coalitional potential. 
+
+## The District
+The 39th stretches from Park Slope south and southeast through the neighborhoods sandwiched between Prospect Park and Greenwood Cemetery and ends in Kensignton. In the demographic clustering the 39th was in cluster 3 alongside other neighborhoods in brownstone Brooklyn, lower Manhattan, and the Upper West Side. It ranks in the top quintile of both income and education levels, white population, and white population born outside New York state. Its primary occupations correspond with its high education levels; it is in the highest quintile of lawyers, analysts, software engineers, educators and journalists. There are also large concentrations of construction workers, home health aids, and nurses in the southern section of the district. It is in the 2nd highest quintile of both Indian and Bengali residents, though in absolute terms these population are not that large at 2 and 1 percent of the district's population respectively. The district has an electoral history of supporting progressives, having sent both Brad Lander and Bill De Blasio to the city council. Figure 1 below shows the distribution of income throughout the district and figure 2 shows the distribution of Indian and Bengali populations. 
+
+
+```{python}
+#| fig-cap: 'Median Household Income'
+corr_map = corr_df.merge(ed_gdf, left_on='ed_name', right_on='ElectDist', how='left')
+corr_map = gpd.GeoDataFrame(corr_map,geometry=corr_map['geometry'])
+corr_map.plot(column='mhhi21', cmap='viridis', legend=True, figsize=(15, 10))
+plt.show()
+```
+
+
+```{python}
+#| fig-cap: "South Asian Population"
+corr_map.plot(column='south_asian', cmap='viridis', legend=True, figsize=(15, 10))
+plt.show()
+```
