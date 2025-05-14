@@ -1,0 +1,185 @@
+---
+title: "DSA Sweep in the 22nd"
+format:
+  pdf:
+    df-print: kable
+    tbl-colwidths: [75,25]
+    code-fold: true
+    mainfont: "Georgia"
+header-includes:
+  - \usepackage{graphicx}
+  - \usepackage{adjustbox}
+  - \usepackage{afterpage}
+  - \usepackage{biblatex}
+  - \newcommand{\bibsection}{\clearpage\printbibliography}
+execute:
+  echo: false
+jupyter: python3
+bibliography: references.bib
+---
+
+```{python}
+import pandas as pd
+import geopandas as gpd
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib as mpl
+
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+
+import statsmodels.api as sm
+import statsmodels.formula.api as smf
+from statsmodels.iolib.summary2 import summary_col
+from statsmodels.stats.outliers_influence import variance_inflation_factor
+
+from shapely import wkt
+import matplotlib.patches as mpatches
+import colorsys
+from matplotlib.colors import to_hex
+import contextily as ctx
+
+from utils import make_precinct_counts,make_demo_map,job_cols,race_cols,cols_to_keep,scale_and_cluster,make_edname,map_round_votes,make_pc_map
+```
+
+```{python}
+demo_cluster = pd.read_csv('../../chapter_two/data/occupation_demo_clusters_on_ed.csv')
+d22 = pd.read_csv('../../cc_election_cleaning/all_rounds_results/district_22.csv')
+ed_level = pd.read_csv('../../cc_election_cleaning/occupation_demo_data_feb21.csv')
+
+ed_shapefile = '../../chapter_two/data/nyed_21a/nyed.shp'
+ed_gdf = gpd.read_file(ed_shapefile)
+
+full_results = pd.read_csv('../../cc_election_cleaning/election_results_with_vote_sponsor_cluster_FEB13.csv')
+
+full_results_twenty_two = full_results[full_results['district'] == 22]
+tc_full = full_results[full_results['candidate'] == 'Tiffany Caban']
+winner_twenty_two = full_results_twenty_two[full_results_twenty_two['winner'] == True]
+occ_df = pd.read_csv('../../cc_election_cleaning/occupation_election_feb21.csv')
+eds_22 = full_results_twenty_two['ed_name'].unique().tolist()
+ae = pd.read_csv('../../cc_election_cleaning/ae_precincts.csv')
+eds_22 = full_results_twenty_two['ed_name'].unique().tolist()
+```
+
+```{python}
+p_cols = [col for col in occ_df.columns if col[-1] == 'p']
+wp_cols = [col for col in occ_df.columns if col.startswith("w2") and col.endswith("p")]
+wp_cols.remove('w2cop')
+to_remove = [ 'w2psp',
+ 'w2sep',
+ 'w2npp',
+ 'w2govp',
+ 'w2nip']
+wp_cols = [col for col in wp_cols if col not in to_remove]
+demo_cols = ['nhw21p','nhb21p','h21p','nha21p','cvap21bapp','mhhi21']
+cluster_cols = wp_cols + demo_cols
+
+demo_occ = winner_twenty_two[['ed_name','nhw21p','nhb21p','h21p','nha21p','cvap21bapp','mhhi21','venez21p','chin21p',
+                 'kor21p','colomb21p','domin21p','mex21p','white_transplant_ratio']].merge(occ_df, left_on='ed_name', right_on='ElectDist', how='left')
+
+demo_occ = demo_occ.merge(ae[['ElectDist','ind21p','bang21p','pak21p','filip21p']],left_on='ElectDist',right_on='ElectDist',how='left')
+demo_occ_map = gpd.GeoDataFrame(demo_occ,geometry=demo_occ['geometry'].apply(wkt.loads))
+```
+
+In the Democratic primary in the 22nd district DSA member and endorsee Tiffany Caban soundly defeated Evie Hantzopoulos. Caban had attracted national attention running in the Democratic primary for Queens District Attorney two years previously, garnering comparisons to Alexandria Ocasio-Cortez in whose congressional district her council seat lies. She narrowly lost the DA race but maintained her stature as a socialst leader in the city, coming back to win the council seat handily. Caban won in her diverse district largely the same demographic the DSA wins city-wide, well educated middle to upper income New Yorkers who work in cultural and intellectual professions (though, notably given her background, not lawyers), though she also 
+
+## The District
+
+THe 22nd is in Western Queens, bounded to the West by the East river and to the West by Jackson Heights and Elmhurst. It includes Astoria and Long Island City, both areas experiencing growth in middle and upper income professionals. It is in the second highest quintile of income, education, white-collar analysts, journalists, designers, and software engineers, as well as in white and asian population. The district also has a sizeable Hispanic population concentrated in the Eastern and Western extremes of the district. Figure 1 maps just the census's race variables, showing the large concentration of whites (particularly whites born outside of New York State) in the center of the district and Hispanic populations in the wings. There are two large pockets of Chinese residents also in the center of the district, and Indian and Bangladeshi residents living primarily alongside Columbians and Mexicans in the Eastern wing of the district. There is a class divide in the district, mapped in figure 2. The center of the district has a concentration of White collar workers of different types, while the Western leg has a concentration of construction workers, home health workers, and food service employees. 
+
+```{python}
+#| warning: false
+#| fig-cap: "Largest Ethnicity by Precinct"
+#| fig-pos: H
+
+gdf = demo_occ_map.copy()
+
+eth_cols = ['ind21p','bang21p','chin21p','colomb21p','mex21p','white_transplant_ratio']
+red_eth_cols = ['nhw21p','nhb21p','h21p','nha21p']
+gdf['dom_eth']   = gdf[eth_cols].idxmax(axis=1)  
+gdf['dom_eth_p'] = gdf[eth_cols].max(axis=1)   
+
+gdf['dom_red_eth']   = gdf[red_eth_cols].idxmax(axis=1)  
+gdf['dom_red_eth_p'] = gdf[red_eth_cols].max(axis=1)   
+
+gdf['dom_occ']   = gdf[wp_cols].idxmax(axis=1)
+gdf['dom_occ_p'] = gdf[wp_cols].max(axis=1)
+
+gdf = gdf.set_crs(epsg=2263, allow_override=True)
+gdf_3857 = gdf.to_crs(epsg=3857)
+
+fig, ax = plt.subplots(figsize=(10, 10))
+
+gdf_3857.plot(
+    column='dom_eth',
+    categorical=True,
+    cmap='tab20',
+    legend=True,
+    alpha=0.7,
+    ax=ax,
+    edgecolor='white',
+    linewidth=0.2,
+    legend_kwds={'title': 'Dominant Ethnicity', 'fontsize': 8, 'title_fontsize': 10}
+)
+
+ctx.add_basemap(
+    ax,
+    #source=ctx.providers.CartoDB.Positron,  
+    zoom=14   
+)
+
+ax.set_axis_off()
+ax.set_title("Dominant Ethnicity overlaid on Streets & Neighborhoods", pad=12)
+
+plt.tight_layout()
+plt.show()
+
+```
+
+```{python}
+#| warning: false
+#| fig-cap: "Largest Occupation by Precinct"
+#| fig-pos: H
+
+occ_label_map = {
+    'w2admp': 'Designers & Journalists',
+    'w2banp': 'Analyst Specialist',
+    'w2bgp': 'Janitorial',
+    'w2conp': 'Construction',
+    'w2copp': 'Law Enforcement',
+    'w2foodp': 'Food Service',
+    'w2hsp': 'Homecare',
+    'w2mgtp': 'Management',
+    'w2oadp': 'Office Admin',
+    'w2salep': 'Sales'
+}
+
+gdf_3857['occupation_label'] = gdf_3857['dom_occ'].map(occ_label_map)
+gdf_3857['occupation_label'] = gdf_3857['occupation_label'].astype('category')
+
+fig, ax = plt.subplots(figsize=(10, 10))
+
+gdf_3857.plot(
+    column='occupation_label',
+    categorical=True,
+    cmap='tab20',
+    legend=True,
+    alpha=0.7,
+    ax=ax,
+    edgecolor='white',
+    linewidth=0.2,
+    legend_kwds={'title': 'Dominant Ethnicity', 'fontsize': 8, 'title_fontsize': 10}
+)
+
+ctx.add_basemap(
+    ax,
+    #source=ctx.providers.CartoDB.Positron,  
+    zoom=14   
+)
+
+ax.set_axis_off()
+ax.set_title("Dominant Ethnicity overlaid on Streets & Neighborhoods", pad=12)
+
+plt.tight_layout()
+plt.show()
+```
