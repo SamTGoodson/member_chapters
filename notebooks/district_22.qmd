@@ -59,6 +59,8 @@ occ_df = pd.read_csv('../../cc_election_cleaning/occupation_election_feb21.csv')
 eds_22 = full_results_twenty_two['ed_name'].unique().tolist()
 ae = pd.read_csv('../../cc_election_cleaning/ae_precincts.csv')
 eds_22 = full_results_twenty_two['ed_name'].unique().tolist()
+
+cc_da = pd.read_csv('../data/cc_da_results_master.csv')
 ```
 
 ```{python}
@@ -81,11 +83,11 @@ demo_occ = demo_occ.merge(ae[['ElectDist','ind21p','bang21p','pak21p','filip21p'
 demo_occ_map = gpd.GeoDataFrame(demo_occ,geometry=demo_occ['geometry'].apply(wkt.loads))
 ```
 
-In the Democratic primary in the 22nd district DSA member and endorsee Tiffany Caban soundly defeated Evie Hantzopoulos. Caban had attracted national attention running in the Democratic primary for Queens District Attorney two years previously, garnering comparisons to Alexandria Ocasio-Cortez in whose congressional district her council seat lies. She narrowly lost the DA race but maintained her stature as a socialst leader in the city, coming back to win the council seat handily. Caban won in her diverse district largely the same demographic the DSA wins city-wide, well educated middle to upper income New Yorkers who work in cultural and intellectual professions (though, notably given her background, not lawyers), though she also 
+In the Democratic primary in the 22nd district DSA member and endorsee Tiffany Caban soundly defeated Evie Hantzopoulos. Caban had attracted national attention running in the Democratic primary for Queens District Attorney two years previously, winning the support of, and garnering comparisons to, Alexandria Ocasio-Cortez in whose congressional district her council seat lies. In addition to both being socialists, both women's victories came at the expense of the County democratic party.  She narrowly lost the DA race but maintained her stature as a socialist leader in the city, coming back to win the council seat handily. Caban won in her diverse district largely the same demographic the DSA wins city-wide, well educated middle to upper income New Yorkers who work in cultural and intellectual professions (though, notably given her background, not lawyers). She also improved her vote share with her districts Latino population compared to her DA race, though she lost ground with non-transplant Whites. Her victory was an archetypal DSA win; an outerborrough neighborhood proximate to Manhattan and a coaltion of white professionals. Caban's election is also important because she was often the face of the DSA in the media. 
 
 ## The District
 
-THe 22nd is in Western Queens, bounded to the West by the East river and to the West by Jackson Heights and Elmhurst. It includes Astoria and Long Island City, both areas experiencing growth in middle and upper income professionals. It is in the second highest quintile of income, education, white-collar analysts, journalists, designers, and software engineers, as well as in white and asian population. The district also has a sizeable Hispanic population concentrated in the Eastern and Western extremes of the district. Figure 1 maps just the census's race variables, showing the large concentration of whites (particularly whites born outside of New York State) in the center of the district and Hispanic populations in the wings. There are two large pockets of Chinese residents also in the center of the district, and Indian and Bangladeshi residents living primarily alongside Columbians and Mexicans in the Eastern wing of the district. There is a class divide in the district, mapped in figure 2. The center of the district has a concentration of White collar workers of different types, while the Western leg has a concentration of construction workers, home health workers, and food service employees. 
+The 22nd is in Western Queens, bounded to the West by the East river and to the West by Jackson Heights and Elmhurst. It includes Astoria and Long Island City, both areas experiencing growth in middle and upper income professionals. It is in the second highest quintile of income, education, white-collar analysts, journalists, designers, and software engineers, as well as in white and asian population. The district also has a sizeable Hispanic population concentrated in the Eastern and Western extremes of the district. Figure 1 maps just the census's race variables, showing the large concentration of whites (particularly whites born outside of New York State) in the center of the district and Hispanic populations in the wings. There are two large pockets of Chinese residents also in the center of the district, and Indian and Bangladeshi residents living primarily alongside Columbians and Mexicans in the Eastern wing of the district. There is a class divide in the district, mapped in figure 2. The center of the district has a concentration of White collar workers of different types, while the Western leg has a concentration of construction workers, home health workers, and food service employees. 
 
 ```{python}
 #| warning: false
@@ -182,4 +184,104 @@ ax.set_title("Dominant Ethnicity overlaid on Streets & Neighborhoods", pad=12)
 
 plt.tight_layout()
 plt.show()
+```
+
+
+## Fundraising 
+
+Divergent fundraising patterns illustrate the difference in the two candidacies. Caban nearly doubled Hantz's fundraising total, brininging in almost half a million dollars, putting her well in the top tier of City Council fundraisers. In addition to this enormous gap in overall donations, table 2 illustrates some of the key differences in individual donations. Like other DSA candidates, her average donation size of $206 was significantly lower than Hant's of $336. She and her DSA colleagues ran a campaign on the Bernie Sanders model of high numbers of small dollar donations. Also of note is the extreme geographic divergence in the donations. Only 9% of Hantz's donations came from out of state and 66% percent came from her home borough of Queens. In contrast, almost a quarter of Caban's donations came from out of state and only, 38% came from Queens. Central Brooklyn was as fundraising hotspot for all DSA candidates and this is also reflected in their fundraising total, with Caban pulling 28% of her individual donations from Brooklyn in and Hantz only 9. Caban received donations from 42 different states, as opposed to Hant's 22. In summary, Hantz ran a typical city council campagin. She raised a respectable amount of individual donations primarily from her home district. Caban ran a campaign of national profile, pulling a sizeable chunk of money from all across the country as well as in the socialst stronghold of Central Brooklyn. 
+
+```{python}
+#| warning: false
+#| fig-cap: 'Table 1'
+fund_tab = pd.read_csv('../../council_campaign_finance/data/compare_22_table.csv')
+fund_tbl = fund_tab[['matched_name','avg_donation','donation_count','perc_queens','perc_brooklyn','perc_oos','NAME']]
+cols = ['Candidate','Average Donation','Donation Count',
+ 'Percent Queens','Percent Brooklyn','Percent Out of State','Number of States']
+Markdown(tabulate(fund_tbl,headers = cols,showindex=False))
+
+```
+
+
+## The Election 
+Caban won with the DSA's core coaltion, well-educated white newcomers with white-collar professional careers. Table 2 shows the correlation between key demographic variables and Caban's vote share, as well as the difference in her vote share in the DA race and the City Council race. The strongest positive correlates with her vote share is the percentage of a district with a college degree, the share of Whites born outside of NYS, and the share of Journalists and Designers. The strongest negative correlates are the share of homeowners, car commutes, construction workers, and government employees. 
+
+```{python}
+#| warning: false
+#| fig-cap: 'Table 2'
+label_map = {
+    'vote_diff': 'Vote Difference (DA - CC)',
+    'vote_share': 'Caban Vote Share',
+    'nhw21p': 'Non-Hispanic White',
+    'h21p': 'Hispanic',
+    'cvap21bapp': 'BA+',
+    'white_transplant_ratio': 'White Transplant Ratio',
+    'native_whites': 'Whites Born in NYS',
+    'hh21op': 'Homeowners',
+    'drive_ratio': 'Car Commuters',
+    'w2conp': 'Construction Workers',
+    'w2admp': 'Designers & Journalists',
+    'w2govp': 'Government Workers',
+    'greek21p': 'Greek Share'
+}
+
+small_cor_cols = ['vote_diff','vote_share','nhw21p','h21p','cvap21bapp','white_transplant_ratio','native_whites','hh21op','drive_ratio','w2admp','w2conp','w2govp','greek21p']
+small_cor_matrix = cc_da[small_cor_cols].corr()
+small_cor_matrix.dropna(subset=('vote_share'),inplace=True) 
+small_cor_matrix.rename(index=label_map, columns=label_map, inplace=True)
+
+plt.figure(figsize=(10, 8))
+sns.set(style="white", font_scale=1.2)
+
+heatmap = sns.heatmap(
+    small_cor_matrix,
+    annot=True,             
+    fmt=".2f",             
+    cmap="coolwarm",        
+    vmin=-1, vmax=1,        
+    linewidths=0.5,         
+    cbar_kws={"shrink": 0.8, 'label': 'Correlation Coefficient'}
+)
+
+plt.title("Correlation Matrix", fontsize=16)
+plt.xticks(rotation=45, ha='right')
+plt.yticks(rotation=0)
+plt.tight_layout()
+plt.show()
+```
+
+
+As in the chapter on the 36th, exploratory factor analysis further elucidates these relationships. Four factors were very clearly the correct amount for the 22nd district, additional factors explained almost zero extra variance. A table with the factor loadings are below, followed by an OLS model that uses these factors to predict Caban's vote share. The model explains 60% of the variance in vote share, and all of the factors have large and statistically significant coefficients. 
+
+Factor 1 loads negatively on measures of educational attainment and non‐Hispanic white share and positively on the percentages of Hispanic  and non‐Hispanic Asian residents, homeownership rates, car commuting, and certain service occupations such as custodial work. Factor 1 identifies working-class, Asian and Hispanic homeowners that rely heavily on their vehicles. For each increase in this factor in a precince Caban saw her electoral score decrease by 5 percentage points. 
+
+Factor 2 is dominated by very strong positive loadings on homeownership and non‐Hispanic white share (though a negative loading on white transplants) and by positive loadings on lawyers and managers. It has negative loadings on occupations such as home health aides and creative professions (designers/journalists). Factor 2 identifies classic outer-borrough White ethnic enclaves. Theirs is the most negative coefficient in the model predicting Caban's vote share. This may be due less to outright opposition and more out of support for the Greek candidate. In table 2 above both the Greek and the NYS born white variable are stronlgy correlated with the shift in vote share from the DAs race to the Council race, indicating a willingness to support Caban in general but a preference for a Greek candidate. 
+
+Factor 3 is Caban, and the DSA more broadly's, home base. it shows its strongest positive loadings on educational attainment (BA+), non‐Hispanic Asian share (“nha21p”), and technical/professional occupations (software engineers, designers/journalists, and managers). While it loads negatively on White population broadly it loads positively on white transplant ratio. It also loads negatively on car commuting and Hispanic share. In other words, precincts with high Factor 3 values are those with a concentration of college‐educated, tech‐oriented, and managerial workers, often with higher percentages of Whites born outside of NYS and including significant Asian‐American populations. This is the the only factor with a positive coefficient for Caban. 
+
+Factor 4 has its most prominent positive loadings on car commuting, construction and custodial work, but also loads positivley on Greek share of the population, and it loads negatively on BA+ and white transplant ratios. Precincts with higher Factor 4 scores are therefore characterized by a blue‐collar workforce (e.g., custodians) and heavy reliance on driving to work, whereas precincts with lower Factor 4 scores tend to be more educated and have a higher share of newer (transplanted) white residents.
+
+```{python}
+loadings = pd.read_csv('../data/22_factor_loadings.csv')
+fa_df = pd.read_csv('../data/22_factor_scores.csv')
+plt.figure(figsize=(8, 6))
+sns.heatmap(
+    loadings,
+    annot=True,         
+    fmt=".2f",           
+    cmap="vlag",         
+    center=0,            
+    cbar_kws={"label": "Loading"}
+)
+plt.title("Factor Loadings Heatmap")
+plt.xlabel("Factors")
+plt.ylabel("Original Variables")
+plt.tight_layout()
+plt.show()
+```
+
+```{python}
+Y = fa_df['vote_share']
+model_fa = sm.OLS(Y, sm.add_constant(fa_df)).fit()
+print(model_fa.summary())
 ```
