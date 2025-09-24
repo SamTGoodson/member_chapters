@@ -1,5 +1,5 @@
 ---
-title: "'My Own Kind of Progressive' Generational Clash in the 36th"
+title: "'My Own Kind of Progressive' County Party Defeat in the 36th"
 format:
   pdf:
     df-print: kable
@@ -35,6 +35,11 @@ from shapely import wkt
 import contextily as ctx
 import seaborn as sns
 
+from tabulate import tabulate
+from IPython.display import Markdown
+
+import seaborn as sns
+import matplotlib.patches as mpatches
 from utils import make_precinct_counts,make_demo_map,job_cols,race_cols,cols_to_keep,scale_and_cluster,make_edname,map_round_votes
 ```
 
@@ -69,11 +74,11 @@ co = co.set_crs(epsg=2263, allow_override=True)
 co_3857 = co.to_crs(epsg=3857)
 ```
 
-The contest in the 36th Council district was won by 23 year old upstart progressive Chi Osse. Radicalized by the Black Lives Matter movement, Osse ran a grassroots campaign without the backing of the major institutional players of either the establishment or the upstart left. He narrowly defeated Henry Butler, an establishment Democrat with longstanding ties to the County party. This election was important for several reasons. 1) it is the clearest example of the stereotypical progressive coalition examined in this dissertation; Osse clearly won in the gentrified Western portion of the district with highly-educated white professionals as the core of his electoral coalition 2) Osse won a truly outsider campaign, running against the county party without the support of the DSA and managing only a split WFP endorsement 3) the district has seen several high-profile DSA elections before and after, the frequency of elections and the dynamic laid out above make for an interesting contest.
+The contest in the 36th Council district was won by 23 year old upstart progressive Chi Ossé. Radicalized by the Black Lives Matter movement, Ossé ran a grassroots campaign without the backing of the major institutional players of either the establishment or the upstart left. He narrowly defeated Henry Butler, an establishment Democrat with longstanding ties to the County party. This election clarifies the process of progressive coalition formation in two ways: 1) It is one of the clearest examples of the stereotypical progressive coalition examined in this dissertation; Ossé clearly won in the gentrified portion of the district with highly-educated white professionals as the core of his electoral coalition, 2) Ossé won a truly outsider campaign, running against the County party without the support of the DSA and managing only a split WFP endorsement. This chapter will briefly survey the district, examine the candidates, and then use Exploratory Factor Analysis to understand the trends in voter support.
 
 ## The District
 
-The 36th is coterminous with Bedford-Sutyvesent, a longtime center of Black culture and political power. The district has also in recent decades become synonymous with gentrification as younger White professionals move into the district, primarily in the strip of the district to the west of Nostrand Avenue. The district is in the top quintile of Black residents city wide, and in the second of West Indian residents, as well as in the second of Whites born outside of New York State. It sits in the fourth quintile of income but in the second of education. Figure 1 maps the white transplant population.
+The 36th is coterminous with Bedford-Stuyvesant, a longtime center of Black culture and political power. The district has also in recent decades become synonymous with gentrification as younger White professionals move into the district, primarily in the strip of the district to the west of Nostrand Avenue. The district is in the top quintile of Black residents city wide, and in the second of West Indian residents, as well as in the second of Whites born outside of New York State. It sits in the fourth quintile of income but in the second of education. The tension between Bed-Stuy's status as a center of Black politics and as a rapidly gentrifying area make it fertile ground to analyze the extent to which progressives are, as Laurie Cuombo stated, the political arm of white gentrification. Figure 1 maps the white transplant population.
 
 ```{python}
 #| warning: false
@@ -83,6 +88,12 @@ fig, ax = plt.subplots(figsize=(10, 10))
 co_3857.plot(
     column="white_transplant_ratio",
     legend=True,
+    legend_kwds={
+        "label": "White Transplant Ratio by ED",
+        "orientation": "horizontal",
+        "shrink": 0.8,         # fraction of original size
+        "pad": 0.02            # space between map and bar
+    },
     ax=ax,
     alpha=0.6,
     edgecolor="k",
@@ -96,26 +107,27 @@ plt.tight_layout()
 plt.show()
 ```
 
+The White transplant population is grouped in the Western part of the district, particularly near the A/C trains in the Southwest and the G train in the Northwest portions of the district. This population correlates strongly with education level and various white-collar professions, as discussed below. Also of note in the district's geography are two of the city's larger and more culturally significant NYCHA complex's, the Marcy Houses and the Tompkins Houses, which neighbor each other in the northernmost section of the district.
+
 ## The Candidates
 
-Three candidates had a viable shot at winning the district, Chi Osse, Henry Butler, and Tahirah Moore. Others ran but and participated in debates but did not fundraise or receive enough votes to merit discussion. Osse is a very young (23 at the time of election) self-described socialist and third generation Brooklynite. Osse had at one time been a member of the DSA but left the party, citing differences in ideology. His progressivism centered around Black Lives Matter and defending the police. This was Osse’s primary talking point both on the campaign trail and on social media in the months leading up to the primary. 3% of the 780 tweets he sent in the first half of 2021 had something to do with policing, double the median amount for all candidates. Also of chief concern to Osse was housing affordability, a problem which he attributed in large part to the relationship between developers and politicians, including his opponents. Like Michael Hollingsworth in the 35th, Osse argued the only solution to help working people in the district would come from an outsider, someone not tainted by what he saw as the corrupt politics of the past.
+Three candidates had a viable shot at winning the district, Chi Ossé, Henry Butler, and Tahirah Moore. Others ran and participated in debates but did not fundraise or receive enough votes to merit discussion. Ossé is a very young (23 at the time of election) self-described socialist and third generation Brooklynite. Ossé had at one time been a member of the DSA but left the party, citing differences in ideology[@ibeliev2023]. His progressivism centered around Black Lives Matter and defunding the police. This was Ossé’s primary talking point both on the campaign trail and on social media in the months leading up to the primary. 3% of the 780 tweets he sent in the first half of 2021 had something to do with policing, double the median amount for all candidates[@goodson]. Also of chief concern to Ossé was housing affordability, a problem which he attributed in large part to the relationship between developers and politicians, including his opponents. Like Michael Hollingsworth in the 35th, Ossé argued the only solution to help working people in the district would come from an outsider, someone not tainted by what he saw as the corrupt politics of the past.
 
-Osse's primary opponent was Henry L. Butler. Butler was twice Osse's age, a fact he did not shy away from emphasizing. He had grown up in the Tompkins Houses, a large public housing development in Northern Bed-Stuy that neighbors the more famous Marcy Houses. This also separates him demographically from Osse, whose father was a successful music producer and grew up in a higher economic class. Butler had years of experience in Booklyn politics, having served on Community Board 8 and as a district manager for the county party. He also frequently discussed housing affordability and police excess, but from a different angle than Osse, focusing instead on productive relationships with officers and developers.
+Ossé's primary opponent was Henry L. Butler. Butler was twice Ossé's age, a fact he did not shy away from emphasizing. He had grown up in the Tompkins Houses, a large public housing development in Northern Bed-Stuy that neighbors the more famous Marcy Houses. This also separates him demographically from Ossé, whose father was a successful music producer and grew up in a higher economic class[@mchugh2022]. Butler had years of experience in Brooklyn politics, having served on Community Board 8 and as a district manager for the county party. He also frequently discussed housing affordability and police excess, but from a different angle than Ossé, focusing instead on productive relationships with officers and developers.
 
-Tahirah Moore also ran a viable campaign, though she remained in a distant third in terms of both fundraising and votes. She secured a split Working Families Party endorsement with Osse. Moore is also a native of the districts, having group up in the Marcy Homes, and prior to running for the council seat worked for the outgoing council member. Moore's ideological stances were more difficult to pin down than the other two candidates, her campaign focuses more on personal appeal and legislative experience.
+Tahirah Moore also ran a viable campaign, though she remained in a distant third in terms of both fundraising and votes. She secured a split Working Families Party endorsement with Ossé. Moore is also a native of the district, having grown up in the Marcy Houses, and prior to running for the council seat worked for the outgoing council member. Moore's ideological stances were more difficult to pin down than the other two candidates, her campaign focused more on personal appeal and legislative experience.
 
-The differences between Osse and Butler were clearly articulated at a debate co-hosted by Politics NY and Scheps Media. The hour long debate featured frequent tense exchanges between Osse and Butler on age, experience, policing, and housing. The exchange was well summarized by Butler's closing remark “I didn’t wake up one day and do some Black Lives Matter marching and decide I should run for city council.” Butler consistently touted his experience and Osse’s youth and Osse in return pinged Butler again and again on his connections to private developers and donations he had taken from the PBA in a previous election cycle. Moore largely stayed out of the hostilities, except for to correct a misstatement of her position in the outgoing CM's office. 
+The differences between Ossé and Butler were clearly articulated at a debate co-hosted by Politics NY and Scheps Media[@36thcou2021]. The hour long debate featured frequent tense exchanges between Ossé and Butler on age, experience, policing, and housing. The exchange was well summarized by Butler's closing remark “I didn’t wake up one day and do some Black Lives Matter marching and decide I should run for city council.” Butler consistently touted his experience and Ossé’s youth and Ossé in return pinged Butler again and again on his connections to private developers and donations he had taken from the Police Benevolant Association in a previous election cycle. Moore largely stayed out of the hostilities, except to correct a misstatement of her position in the outgoing CM's office. 
 
-The most contentious issue in the debate was housing. Both Butler and Osse picked affordable housing as the most important issue the district was facing, but approached solving the problem differently. Osse insisted gentrification was green, Butler retorted that it was White and Green, “just go look and Vaughn King Park” he offered as evidence. Osse, like other progressives, felt the housing crisis was exacerbated by private developers building housing that did not incorporate enough affordable housing, or termed affordable housing stock that was really not. Butler listed several housing projects that he approved on Community Board 3 that were constructed by minority or woman-owned developers (MWBE) and contained what he emphatically claimed were truly affordable housing. Osse used air quotes when Butler used the term affordable. Osse and Butler clearly disagree about the definition of the term affordable, but the projects Butler mentioned do indeed feature a significant volume of units for residents at as low as 30% of AMI with rents well below the neighborhood market rate. Osse proudly mentioned his work in opposition to development at 920 Park Place that would have demolished a section of the abandoned historical landmark currently siting on the property. He also pitched an amorphous "re-imagining" of the land use process.
+The most contentious issue in the debate was housing. Both Butler and Ossé picked affordable housing as the most important issue the district was facing, but approached solving the problem differently. Ossé insisted gentrification was green, Butler retorted that it was White and Green, “just go look at Vaughn King Park” offering the racial composition of park goers as evidence of gentrification's racial component. Ossé, like other progressives, felt the housing crisis was exacerbated by private developers building housing that did not incorporate enough affordable housing, or termed affordable housing stock that was really not. Butler listed several housing projects that he approved on Community Board 3 that were constructed by minority or woman-owned developers (MWBE) and contained what he emphatically claimed were truly affordable housing. Ossé used air quotes when Butler used the term affordable. Ossé and Butler clearly disagree about the definition of the term affordable, but the projects Butler mentioned do indeed feature a significant volume of units for residents at as low as 30% of AMI with rents well below the neighborhood market rate [@londono2022; @londono2021]. Ossé proudly mentioned his work in opposition to development at 920 Park Place that would have demolished a section of the abandoned historical landmark currently siting on the property, preserving the remainder of the decaying property and constructing affordable housing on the adjacent block. He also pitched an amorphous "re-imagining" of the land use process.
 
-The same dynamic characterized their discussion of policing. Osse criticized Butler for having accepted \$5,000 in donations from the PBA in a previous campaign, referencing his own history of being stopped and frisked while doing so. Butler retorted that he would "not be lectured by a young man when I myself was stopped and frisked, growing up in Tompkins houses, thrown up against the wall coming out of my own building.” Butler insisted that the only way to improve community police relations was to sit down with officers and discuss. He emphasized this theme more broadly; the only way to get anything done in politics was to discuss it with people he disagreed with. He mentioned his youth in Bed-Stuy of the 1980s and ‘90s, as well as the gun violence crisis affecting the district today, and insisted that the police were needed.
+The same dynamic characterized their discussion of policing. Ossé criticized Butler for having accepted \$5,000 in donations from the PBA in a previous campaign, referencing his own history of being stopped and frisked while doing so. Butler retorted that he would "not be lectured by a young man when I myself was stopped and frisked, growing up in Tompkins Houses, thrown up against the wall coming out of my own building.” Butler insisted that the only way to improve community police relations was to sit down with officers and form relationships. He emphasized this theme more broadly; the only way to get anything done in politics was to discuss it with people he disagreed with. He mentioned his youth in Bed-Stuy of the 1980s and ‘90s, as well as the gun violence crisis affecting the district today, to illustrate that the police were needed.
 
-The tension between these two candidates perfectly distills disagreements in NYC politics broadly and especially the tension of progressivism in Central Brooklyn. Osse ran as a proud outsider looking to unseat a corrupt party establishment, representing the signature issues of progressives in the cycle: defunding to abolish and ending the housing crisis through government intervention rather than through market processes. Butler was a veteran of local politics who came up through the county party and represented a more traditionally moderate liberal agenda. As the next section will make clear, these messages appealed to two very different blocs of voters.
+The tension between these two candidates perfectly distills disagreements in NYC politics broadly and especially the tension of progressivism in Central Brooklyn. Ossé ran as a proud outsider looking to unseat a corrupt party establishment, representing the signature issues of progressives in the cycle: defunding to abolish and ending the housing crisis through government intervention rather than through market processes. Butler was a veteran of local politics who came up through the County party and represented a more traditionally liberal agenda. As the next section will make clear, these messages appealed to two very different blocs of voters.
 
 ## The Election
 
-Voters clearly saw the difference in Osse and Butler. Table 1 shows the flow of votes from he first RCV round to the second. Osse and Butler alone at the top of the ballot are two of the three most common choices. Voters who ranked one of the two first did not frequently rank the other second, this option is not in the top ten most common options (less than 2,000 combined voters chose to do this). 
-
+Voters clearly saw the difference in Ossé and Butler. Table 1 shows the flow of votes from the first RCV round to the second. Ossé and Butler alone at the top of the ballot are two of the three most common choices. Voters who ranked one of the two first did not frequently rank the other second, this option is not in the top ten most common options (less than 2,000 combined voters chose to do this). This level of division in RCV was quite rare in the 2021 primaries.
 
 ```{python}
 c_tbl = d36.groupby('district_36_choice_1')['district_36_choice_2'].value_counts(dropna=False).reset_index(name='count').sort_values('count', ascending=False).head(10)
@@ -123,12 +135,11 @@ cols = ['Choice 1','Choice 2','Count']
 Markdown(tabulate(c_tbl,headers = cols,showindex=False))
 ```
 
-Figure 2 shows the distribution of votes for the top three candidates. Osse clearly wins the Western strip of the district, with strength especially along the northwestern corner of the district that the G train hooks through and along the A/C corridor in the South. Butler and Moore's strength is in the Northern strip of the district where the Marcy and Tompkins houses are located as well as the Southeastern corner of the district which is less white than the rest of the district. Figure 3 below the map shows a correlation table for Osse's first-round vote share. The strongest correlations with Osse's vote share is the white transplant population, the share with a college degree, and the shares of journalists, designers, and software engineers. The strongest negative correlation is with the share of janitors, home health aids, and government workers (especially with publically employed social workers). The map and corelation table suggest Osse won a population of white, well-educated, professionals, particularly those born outside of New York state.
-
+Figure 2 shows the distribution of votes for the top three candidates. Ossé clearly wins the Western strip of the district, with strength especially along the northwestern corner of the district that the G train hooks through and along the A/C corridor in the South. Butler and Moore's strength is in the Northern strip of the district where the Marcy and Tompkins houses are located as well as the Southeastern corner of the district which is less white than the rest of the district. Figure 3 below the map shows a correlation table for Ossé's first-round vote share. The strongest correlations with Ossé's vote share is the white transplant population, the share with a college degree, and the shares of journalists, designers, and software engineers. The strongest negative correlation is with the share of janitors, home health aides, and government workers (especially with publicly employed social workers). The map and correlation table suggest Ossé won a population of white, well-educated professionals, particularly those born outside of New York state.
 
 ```{python}
 #| warning: false
-#| fig-cap: "Osse Vote Share"
+#| fig-cap: "Ossé Vote Share"
 #| fig-pos: H
 top_three = full_results_thirty_six[full_results_thirty_six['candidate'].isin(['Chi A. Osse','Henry L. Butler','Tahirah A. Moore'])]
 winners = top_three.loc[top_three.groupby('ed_name')['vote_share'].idxmax()].copy()
@@ -151,6 +162,19 @@ winners_3857 = winners .to_crs(epsg=3857)
 fig, ax = plt.subplots(1, figsize=(10, 10))
 winners_3857.plot(color=winners['color'], ax=ax)
 ctx.add_basemap(ax, source=ctx.providers.OpenStreetMap.Mapnik)
+
+handles = [
+    mpatches.Patch(color=mpl.cm.Blues(0.6),  label="Chi A. Osse"),
+    mpatches.Patch(color=mpl.cm.Reds(0.6),   label="Henry L. Butler"),
+    mpatches.Patch(color=mpl.cm.Greens(0.6), label="Tahirah A. Moore")
+]
+
+ax.legend(
+    handles=handles,
+    title="Candidate",
+    loc="lower left",
+    frameon=False
+)
 ax.set_axis_off()
 plt.tight_layout()
 ax.set_title("Electoral District Winners and Vote Share Shading")
@@ -162,7 +186,7 @@ plt.show()
 #| fig-cap: "Corelation Matrix"
 #| fig-pos: H
 label_map = {
-    'vote_share': 'Osse Vote',
+    'vote_share': 'Ossé Vote',
     'white_transplant_ratio': 'White Transplant Ratio',
     'nhb21p': 'Black %',
     'nhw21p': 'White %',
@@ -199,23 +223,22 @@ plt.tight_layout()
 plt.show()
 ```
 
-As table 2 demonstrates, many of these variables are themselves highly correlated, which makes building a regression model to predict vote share difficult. To make this modeling possible factor analysis was employed. This process reduces these many overlapping and related variables to a smaller set of factors, in this case four. The number of factors is set by analysing how much of the variance in the data can be explained by adding and additional factor. If the data is well suited for factor analysis, the factors clearly demonstrate a set of the data that can be analysed by looking at how strongly each variable loads on each factor. Below are two tables, the first is a heatmap of each independant variable as it loads on each factor. The second is a regression table showing each factor regressed on Chi Osse's vote share. 
+As table 2 demonstrates, many of these variables are themselves highly correlated, which makes building a regression model to predict vote share difficult. To make this modeling possible, Exploratory Factor Analysis was employed. This process reduces these many overlapping and related variables to a smaller set of factors, in this case four. The number of factors is set by analyzing how much of the variance in the data can be explained by adding an additional factor. If the data is well suited for factor analysis, the factors clearly demonstrate a set of the data that can be analyzed by looking at how strongly each variable loads on each factor. Below are two tables, the first is a heatmap of each independent variable as it loads on each factor. The second is a regression table showing each factor regressed on Chi Ossé's vote share.
 
-Factor 1 is characterized by strong positive loadings on Hispanic share, home health aides, female-headed households, bus commuting, and janitorial staff, alongside strong negative loadings on education, non-Hispanic Black share, homeowners, and income. In effect, it captures neighborhoods that are lower-income, renter-heavy, predominantly Latino, and oriented toward care- and service-sector work with high dependence on the bus sytem. In the OLS, Factor 1 has a large, highly significant negative coefficient (–6.49, p<0.001), indicating that districts scoring high on this working-class, racially diverse profile saw substantially lower vote shares for Osse.
+Factor 1 is characterized by strong positive loadings on Hispanic share, home health aides, female-headed households, bus commuting, and janitorial staff, alongside strong negative loadings on education, non-Hispanic Black share, homeowners, and income. In effect, it captures neighborhoods that are lower-income, renter-heavy, predominantly Latino, and oriented toward care- and service-sector work with high dependence on the bus system. In the OLS, Factor 1 has a large, highly significant negative coefficient (–6.49, p\<0.001), indicating that districts scoring high on this working-class, racially diverse profile saw substantially lower vote shares for Ossé.
 
-Factor 2 is the the gentrification factor. It loads very positively on education, non-Hispanic white share, white transplant ratio, managers, journalists and designers, software engineers, and work-from-home rate, while loading negatively on female-headed households, bus commuting, and Black homeownership. This clearly delineates gentrified districts with well-educated, predominantly white, high-income professional newcomers. In the regression, Factor 2 exerts a large positive effect (7.26, p<0.001), showing that these progressive professional neighborhoods delivered significantly higher vote shares for Osse.
+Factor 2 is most clearly associated with gentrification. It loads very positively on education, non-Hispanic white share, white transplant ratio, managers, journalists and designers, software engineers, and work-from-home rate, while loading negatively on female-headed households, bus commuting, and Black homeownership. This clearly delineates gentrified districts with well-educated, predominantly white, high-income professional newcomers. In the regression, Factor 2 exerts a large positive effect (7.26, p\<0.001), showing that these progressive professional neighborhoods delivered significantly higher vote shares for Ossé.
 
-Factor 3 exhibits positive loadings on work-from-home rate, living alone ratio, sanitation workers, and train commuting, with negative loadings on homeowners, Black homeownership, and drive commuting. It appears to index a blend of more transient, train-and-remote-work-oriented districts that nonetheless retain a strong renter component. However, its OLS coefficient (0.81) is small and statistically insignificant (p=0.36), indicating that this mixed mobility-and-tenure profile had no reliable association with Osse's vote share.
+Factor 3 exhibits positive loadings on work-from-home rate, living alone ratio, sanitation workers, and train commuting, with negative loadings on homeowners, Black homeownership, and drive commuting. It appears to index a blend of more transient, train-and-remote-work-oriented districts that nonetheless retain a strong renter component. However, its OLS coefficient (0.81) is small and statistically insignificant (p=0.36), indicating no reliable association with Ossé's vote share.
 
-Factor 4 loads positively on home health aides, sanitation workers, female-headed households, and bus commuting, and negatively on education, software workers, lawyers, and work-from-home rate. It thus captures older, service-sector neighborhoods with less professional employment and lower educational attainment, but with strong care-and-municipal-service presence. In the regression, Factor 4 carries a significant negative coefficient (–4.02, p<0.001), meaning these traditional service-worker enclaves were associated with lower electoral support for Osse.
+Factor 4 loads positively on home health aides, sanitation workers, female-headed households, and bus commuting, and negatively on education, software workers, lawyers, and work-from-home rate. It captures, service-sector neighborhoods with less professional employment and lower educational attainment, but with strong care-and-municipal-service presence. In the regression, Factor 4 carries a significant negative coefficient (–4.02, p\<0.001), meaning these traditional service-worker enclaves were associated with lower electoral support for Ossé.
 
-These factors are attempting to measure and explain variation, which is why no factor is strongly associated with non-Hispanic Black share. Because, even while rapidly changing, Bed-Stuy is still predominantly Black, this variables is not fluctuating enough to be meaninffully captured. In the correlation table above Osse vote is similarly not strongly correlated with nhb population, possibly also because the population is not fluctuating enough to note correlation. If the factoring and regression above is repeated pulling nhb out of the facoring process and adding it in as its own IV, it is not statistically siginificant nore does it large. Non-Hispanic black population is not a strong predictor of Chi Osse's vote. 
+These factors are attempting to measure and explain variation, which is why no factor is strongly associated with non-Hispanic Black share. Because, even while rapidly changing, Bed-Stuy is still predominantly Black, this variable is not fluctuating enough to be meaningfully captured. In the correlation table above Ossé vote is similarly not strongly correlated with the non-Hispanic Black population, possibly also because the population is not fluctuating enough to note correlation. If the factoring and regression above is repeated, pulling the non-Hispanic Black variable out of the factoring process and adding it in as its own independent variable, it is not statistically significant nor is it large. Non-Hispanic black population is not a strong predictor of Chi Ossé's vote.
 
-White population, however, is a strong predictor of Osse vote. It is strongly correlated with it and Factor 2, the white and white newcomer factor, is a strong and significant predictor of Osse's vote, as is education and the white-collar educated professions. Osse's electoral constituency here is clearly well-educated white professional newcomers and it clearly does not include working-class sections of the district. 
-
+White population, however, is a strong predictor of Ossé vote. It is strongly correlated with it and Factor 2, the white and white newcomer factor, is a strong and significant predictor of Ossé's vote, as is education and the white-collar educated professions. Ossé's electoral constituency here is clearly well-educated white professional newcomers and it clearly does not include working-class sections of the district.
 
 ```{python}
-loadings = pd.read_csv('../data/36_factor_loadings.csv')
+loadings = pd.read_csv('../data/36_factor_loadings.csv', index_col=0)
 fa_df = pd.read_csv('../data/36_factor_scores.csv')
 plt.figure(figsize=(8, 6))
 sns.heatmap(
@@ -233,12 +256,17 @@ plt.tight_layout()
 plt.show()
 ```
 
-
 ```{python}
 Y = fa_df['vote_share']
 model_fa = sm.OLS(Y, sm.add_constant(fa_df)).fit()
 print(model_fa.summary())
 ```
 
-## Conclusion 
+## Conclusion
 
+Chi Ossé ran an impressive successful outsider campaign for the City Council at only 23 years old, running without the support of either the Brooklyn Democratic Party or its primary challenger, the DSA, and earning only a split endorsement from the WFP. His campaign was movement centered and soaked in the language of the 2020 protest movement, with defunding the NYPD at the center of his agenda. Also crucial to his political ideology was a rethinking of how the city regulated housing construction. Both of these stances put him into conflict with his primary opponent, Henry Butler, who saw Ossé an idealistic outsider with no real sense of how politics functioned. With this message Ossé handily won the quickly gentrifying sections of Western Bed Stuy. EFA models above clearly demonstrate that his core demographic of support was well-educated, white, professional, newcomers. Ossé's campaign illustrates both the promise and the current limits of progressive coalition formation, its ability to catapult radical outsiders into office and its current inability to break into working-class communities of color, at least in Central Brooklyn.
+
+\clearpage
+
+::: {#refs}
+:::

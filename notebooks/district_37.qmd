@@ -1,0 +1,256 @@
+---
+title: "Sandy Nurse vs. the County Democratic Party"
+format:
+  pdf:
+    df-print: kable
+    tbl-colwidths: [75,25]
+    code-fold: true
+    mainfont: "Georgia"
+header-includes:
+  - \usepackage{graphicx}
+  - \usepackage{adjustbox}
+  - \usepackage{afterpage}
+  - \usepackage{biblatex}
+  - \newcommand{\bibsection}{\clearpage\printbibliography}
+execute:
+  echo: false
+jupyter: python3
+bibliography: references.bib
+---
+
+```{python}
+import pandas as pd
+import geopandas as gpd
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib as mpl
+
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+
+import statsmodels.api as sm
+import statsmodels.formula.api as smf
+from statsmodels.iolib.summary2 import summary_col
+from statsmodels.stats.outliers_influence import variance_inflation_factor
+
+from shapely import wkt
+import matplotlib.patches as mpatches
+import colorsys
+from matplotlib.colors import to_hex
+import contextily as ctx
+
+from utils import make_precinct_counts,make_demo_map,job_cols,race_cols,cols_to_keep,scale_and_cluster,make_edname,map_round_votes,make_pc_map
+
+from tabulate import tabulate
+from IPython.display import Markdown
+
+import seaborn as sns
+```
+
+```{python}
+demo_cluster = pd.read_csv('../../chapter_two/data/occupation_demo_clusters_on_ed.csv')
+ed_level = pd.read_csv('../../cc_election_cleaning/occupation_demo_data_feb21.csv')
+
+ed_shapefile = '../../chapter_two/data/nyed_21a/nyed.shp'
+ed_gdf = gpd.read_file(ed_shapefile)
+
+full_results = pd.read_csv('../../cc_election_cleaning/election_results_with_vote_sponsor_cluster_FEB13.csv')
+sn = full_results[full_results['candidate'] == 'Sandy Nurse']
+
+ae = pd.read_csv('../../cc_election_cleaning/ae_precincts.csv')
+av = pd.read_csv('../../cc_election_cleaning/additional_variables.csv')
+fwe = pd.read_csv('../data/finance_with_ethnicity.csv')
+f_plus = pd.read_csv('../../council_campaign_finance/data/iwrl_plus.csv')
+occ_df = pd.read_csv('../../cc_election_cleaning/occupation_election_feb21.csv')
+
+p_cols = [col for col in occ_df.columns if col[-1] == 'p']
+wp_cols = [col for col in occ_df.columns if col.startswith("w2") and col.endswith("p")]
+wp_cols.remove('w2cop')
+to_remove = [ 'w2psp',
+ 'w2sep',
+ 'w2npp',
+ 'w2govp',
+ 'w2nip']
+wp_cols = [col for col in wp_cols if col not in to_remove]
+demo_cols = ['nhw21p','nhb21p','h21p','nha21p','cvap21bapp','mhhi21']
+```
+
+In Brooklyn's 37th Council district activist and Occupy Wall Street veteran Sandy Nurse unseated County party veteran Darma Diaz. Diaz had been endorsed by the County Party Executive Committee and was a close ally of new Brooklyn boss Rodneyse Bichette. Diaz had successfully gotten Nurse kicked off the ballot the year previously in a move that many, including Nurse, saw as Bichette and the County party using their weight to lift their chosen candidate to victory. Nurse's subsequent win was, like Osse in the 36th, an impressive show of progressive power against the political forces that had long dominated the borough. Also like Osse, Nurse easily won the district's gentrifying Northwestern corner, relying on well-educated white transplants as the base of her coalition. As with the races in the 35th and 36th, the race in the 37th became a referendum on Brooklyn Democratic establishment power, and as in the 36th the establishment lost.
+
+## The District
+
+District 37 is a lower-income, relatively low-education working-class district with a large Hispanic and Black population and an increasingly large population of White newcomers. The district's northwest corner includes large sections of Bushwick, a neighborhood that has become synonymous in the past decade with young, white, newcomers. This population is especially dense around Myrtle Avenue, and coexists with large Mexican and Dominican populations. The district curves Southeast around Highland Park, where it proceeds East and includes Cypres Hills and sections of East New York. There is also a large Hispanic population in this area of the neighborhood, particularly a Dominican population between Liberty Avenue and the park. There is also a significant Black population in this section, primarily concentrated to the South of Liberty Avenue. Figures 1, 2 and 3 break down the district's population by race, ethnicity, and occupation. Figure 1 shows the district's EDs by largest race, the district is clearly largely Hispanic with a Black population along the southern edge. Figure 2 breaks down the district by ethnicity, the pocket of White transplants and Mexicans emerge in the Northwest corner of the district and the large Dominican population in the East. Figure 3 breaks down the district by primary occupation. Office Administration is the most common, uniting all the different ethnic sections of the district. Food service, construction, and home health care make up the other dominant occupations. Finally Figure 4 shows the share of a composite category of "laptop professionals", designers, journalists, financial and banking analysits, software engineers, and IT workers. There is a clear concentration of this group to the West of the L train, which runs north-south through this district at the Western edge of the park.
+
+```{python}
+#| echo: false
+
+demo_occ_map = gpd.GeoDataFrame(demo_occ,geometry=demo_occ['geometry_x'].apply(wkt.loads))
+gdf = demo_occ_map.copy()
+gdf['nbb'] = gdf['nhb21p'] - gdf['winda21p']
+gdf['laptop'] = gdf['w2admp'] + gdf['w2banp'] + gdf['w2cmp']
+
+eth_cols = ['ind21p','bang21p','domin21p','venez21p','mex21p','white_transplant_ratio','winda21p','nbb']
+red_eth_cols = ['nhw21p','nhb21p','h21p','nha21p']
+
+
+gdf['dom_eth']   = gdf[eth_cols].idxmax(axis=1)  
+gdf['dom_eth_p'] = gdf[eth_cols].max(axis=1)     
+
+gdf['dom_red_eth']   = gdf[red_eth_cols].idxmax(axis=1)
+gdf['dom_red_eth_p'] = gdf[red_eth_cols].max(axis=1)
+
+gdf['dom_occ']   = gdf[wp_cols].idxmax(axis=1)
+gdf['dom_occ_p'] = gdf[wp_cols].max(axis=1)
+
+occ_label_map = {
+    'w2admp': 'Designers & Journalists',
+    'w2banp': 'Analyst Specialist',
+    'w2bgp': 'Janitorial',
+    'w2conp': 'Construction',
+    'w2copp': 'Law Enforcement',
+    'w2foodp': 'Food Service',
+    'w2hsp': 'Homecare',
+    'w2mgtp': 'Management',
+    'w2oadp': 'Office Admin',
+    'w2salep': 'Sales'
+}
+
+gdf_3857['occupation_label'] = gdf_3857['dom_occ'].map(occ_label_map)
+gdf_3857['occupation_label'] = gdf_3857['occupation_label'].astype('category')
+```
+
+```{python}
+#| warning: false
+#| fig-cap: "Majority Race by ED"
+#| fig-pos: H
+fig, ax = plt.subplots(figsize=(10, 10))
+
+gdf_3857.plot(
+    column='dom_red_eth',
+    categorical=True,
+    cmap='tab20',
+    legend=True,
+    alpha=0.7,
+    ax=ax,
+    edgecolor='white',
+    linewidth=0.2,
+    legend_kwds={'title': 'Dominant Race', 'fontsize': 8, 'title_fontsize': 10}
+)
+
+
+ctx.add_basemap(
+    ax,
+    source=ctx.providers.CartoDB.Positron,  
+    zoom=14   
+)
+
+# 5) Clean up
+ax.set_axis_off()
+ax.set_title("Dominant Ethnicity overlaid on Streets & Neighborhoods", pad=12)
+
+plt.tight_layout()
+plt.show()
+```
+
+```{python}
+#| warning: false
+#| fig-cap: "Majority Ethnicity by ED"
+#| fig-pos: H
+fig, ax = plt.subplots(figsize=(10, 10))
+
+gdf_3857.plot(
+    column='dom_eth',
+    categorical=True,
+    cmap='tab20',
+    legend=True,
+    alpha=0.7,
+    ax=ax,
+    edgecolor='white',
+    linewidth=0.2,
+    legend_kwds={'title': 'Dominant Ethnicity', 'fontsize': 8, 'title_fontsize': 10}
+)
+
+
+ctx.add_basemap(
+    ax,
+    source=ctx.providers.CartoDB.Positron,  
+    zoom=14   
+)
+
+# 5) Clean up
+ax.set_axis_off()
+ax.set_title("Dominant Ethnicity overlaid on Streets & Neighborhoods", pad=12)
+
+plt.tight_layout()
+plt.show()
+```
+
+```{python}
+#| warning: false
+#| fig-cap: "Majority Occupation by ED"
+#| fig-pos: H
+fig, ax = plt.subplots(figsize=(10, 10))
+
+gdf_3857.plot(
+    column='occupation_label',
+    categorical=True,
+    cmap='tab20',
+    legend=True,
+    alpha=0.7,
+    ax=ax,
+    edgecolor='white',
+    linewidth=0.2,
+    legend_kwds={'title': 'Dominant Occupation', 'fontsize': 8, 'title_fontsize': 10}
+)
+
+
+ctx.add_basemap(
+    ax,
+    source=ctx.providers.CartoDB.Positron,  
+    zoom=14   
+)
+
+# 5) Clean up
+ax.set_axis_off()
+ax.set_title("Dominant Ethnicity overlaid on Streets & Neighborhoods", pad=12)
+
+plt.tight_layout()
+plt.show()
+```
+
+```{python}
+#| warning: false
+#| fig-cap: "Laptop Workers by ED"
+#| fig-pos: H
+fig, ax = plt.subplots(figsize=(10, 10))
+gdf_3857.plot(
+    column="laptop",
+    legend=True,
+    legend_kwds={
+        "label": "Eric Adams '21 Primary Vote by ED",
+        "orientation": "horizontal",
+        "shrink": 0.8,        
+        "pad": 0.02            
+    },
+    ax=ax,
+    alpha=0.6,
+    edgecolor="k",
+    cmap="viridis",
+)
+
+ctx.add_basemap(ax, source=ctx.providers.OpenStreetMap.Mapnik)
+
+ax.set_axis_off()
+plt.tight_layout()
+plt.show()
+```
+
+## The Candidates
+
+The two candidates with viable shots to win were Darma Diaz and Sandy Nurse. Diaz is a Brooklyn born daughter of Puerto Rican parents. Prior to her political work she founded and operated an non-profit that provided homeless services. She is a veteran of Brooklyn politics, having previously served as district leader for her assembly district. In 2020 she was elected to fill a Council seat vacated by resignation. There was confusion in the months leading up to the primary about whether the reduction in the necessary number of signatures for ballot access would apply to City Council races. The dispute is detailed in more detail below, but the end result was the removal of her most competitive opponents, including Nurse from the ballot. This meant she entered the 2021 race as the incumbent and the clear favorite of the County Party, as well as with a stain of corruption.
+
+Prior to her political career Diaz worked for OverComing Love Ministry which seeks to find housing and employment for homeless East New Yorkers. She was also a founding member of Coalition for Community Advancement, a community group which sought to negotiate the removal of Arlington Village from the East New York rezoning. Arlington Village is a large, mainly vacant housing unit the city had hoped to include in its mixed use rezoning of the area. Diaz and her group worried about looming Real Estate speculation should the large property be included in the plan, and successfully sought its removal.
+
+Nurse is a veteran of progressive politics. Her disillusionment with establishment politics led her to Occupy Wall Street where she played an important role as an organizer and leader. After Occupy she continued her activism, founding BK ROT, a composting service, and Mayday Space, a location for activists and organizers. She was also a leader in the 2020 sit-in outside City Hall for a no vote on the budget due to its continued high rate of NYPD funding.
+
+Both candidates draw on their personal biographies to justify thier current political activites, both have long histories in the district, and both are markedly left of center on the national political scale (though there is markedly more distance between them then between candidates in the 35th). As in other districts, the primary difference between the two returns again to insider vs outsider status. Diaz's work was inside the County Democratic Party which moved her up their ranks.

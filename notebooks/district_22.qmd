@@ -1,5 +1,5 @@
 ---
-title: "DSA Sweep in the 22nd"
+title: "National Progressive Success in the 22nd District"
 format:
   pdf:
     df-print: kable
@@ -40,6 +40,11 @@ from matplotlib.colors import to_hex
 import contextily as ctx
 
 from utils import make_precinct_counts,make_demo_map,job_cols,race_cols,cols_to_keep,scale_and_cluster,make_edname,map_round_votes,make_pc_map
+
+from tabulate import tabulate
+from IPython.display import Markdown
+
+import seaborn as sns
 ```
 
 ```{python}
@@ -53,7 +58,7 @@ ed_gdf = gpd.read_file(ed_shapefile)
 full_results = pd.read_csv('../../cc_election_cleaning/election_results_with_vote_sponsor_cluster_FEB13.csv')
 
 full_results_twenty_two = full_results[full_results['district'] == 22]
-tc_full = full_results[full_results['candidate'] == 'Tiffany Caban']
+tc_full = full_results[full_results['candidate'] == 'Tiffany Cabán']
 winner_twenty_two = full_results_twenty_two[full_results_twenty_two['winner'] == True]
 occ_df = pd.read_csv('../../cc_election_cleaning/occupation_election_feb21.csv')
 eds_22 = full_results_twenty_two['ed_name'].unique().tolist()
@@ -83,11 +88,11 @@ demo_occ = demo_occ.merge(ae[['ElectDist','ind21p','bang21p','pak21p','filip21p'
 demo_occ_map = gpd.GeoDataFrame(demo_occ,geometry=demo_occ['geometry'].apply(wkt.loads))
 ```
 
-In the Democratic primary in the 22nd district DSA member and endorsee Tiffany Caban soundly defeated Evie Hantzopoulos. Caban had attracted national attention running in the Democratic primary for Queens District Attorney two years previously, winning the support of, and garnering comparisons to, Alexandria Ocasio-Cortez in whose congressional district her council seat lies. In addition to both being socialists, both women's victories came at the expense of the County democratic party.  She narrowly lost the DA race but maintained her stature as a socialist leader in the city, coming back to win the council seat handily. Caban won in her diverse district largely the same demographic the DSA wins city-wide, well educated middle to upper income New Yorkers who work in cultural and intellectual professions (though, notably given her background, not lawyers). She also improved her vote share with her districts Latino population compared to her DA race, though she lost ground with non-transplant Whites. Her victory was an archetypal DSA win; an outerborrough neighborhood proximate to Manhattan and a coaltion of white professionals. Caban's election is also important because she was often the face of the DSA in the media. 
+In the Democratic primary in the 22nd district DSA member and endorsee Tiffany Cabán soundly defeated Evie Hantzopoulos. Cabán had attracted national attention running in the Democratic primary for Queens District Attorney two years previously, winning the support of, and garnering comparisons to, Alexandria Ocasio-Cortez in whose congressional district her council seat lies. In addition to both being socialists, both women ran popular, grassroots campaigns despite the opposition of the Queens County Democratic Party. Cabán narrowly lost the DA race but maintained her stature as a socialist leader in the city, coming back to win the council seat handily. She won in her diverse district largely the same demographic the DSA wins city-wide, well educated middle to upper income New Yorkers who work in cultural and intellectual professions (though, notably given her background, not lawyers). She also improved her vote share with her district's Latino population compared to her DA race, though she lost ground with whites born in New York State. Her victory was an archetypal progressive win showing both the coalition's potential, well-educated professionals, particularly white transplants, and also its limits, like other progressives she struggled with voters of color and neighborhoods with high percentages of working-class professions. Her victory is also important to understanding progressive coalition formation in the city as it showcased the ability of the city's progressives to make a City Council race national. Cabán appeared in the national media, drew donations in high numbers from all five boroughs, as well as receiving donations from all across the United States. This ability to garner national attention and money may be one of progressives' key advantages in challenging the city's entrenched power structures, particularly the Brooklyn and Queens county parties.
 
 ## The District
 
-The 22nd is in Western Queens, bounded to the West by the East river and to the West by Jackson Heights and Elmhurst. It includes Astoria and Long Island City, both areas experiencing growth in middle and upper income professionals. It is in the second highest quintile of income, education, white-collar analysts, journalists, designers, and software engineers, as well as in white and asian population. The district also has a sizeable Hispanic population concentrated in the Eastern and Western extremes of the district. Figure 1 maps just the census's race variables, showing the large concentration of whites (particularly whites born outside of New York State) in the center of the district and Hispanic populations in the wings. There are two large pockets of Chinese residents also in the center of the district, and Indian and Bangladeshi residents living primarily alongside Columbians and Mexicans in the Eastern wing of the district. There is a class divide in the district, mapped in figure 2. The center of the district has a concentration of White collar workers of different types, while the Western leg has a concentration of construction workers, home health workers, and food service employees. 
+The 22nd is in Western Queens, bounded to the West by the East river and to the East by Jackson Heights and Elmhurst. It includes Astoria and parts of Long Island City, both areas experiencing growth in middle- and upper- income professionals. District 22 is remarkably left-wing, it is currently represented by a socialist in CIty Hall, Albany, and Washington. It is in the second highest quintile of income, education, white-collar analysts, journalists, designers, and software engineers, as well as in white and Asian population. The district also has a sizable Hispanic population concentrated in the Eastern and Western extremes of the district. Figure 1 maps just the census's race variables, showing the large concentration of whites (particularly whites born outside of New York State) in the center of the district and Hispanic populations in the wings. There are two large pockets of Chinese residents also in the center of the district, and Indian and Bangladeshi residents living primarily alongside Columbians and Mexicans in the Eastern wing of the district. There is a geographic class divide in the district, mapped in figure 2. The center of the district has a concentration of white collar workers of different types, while the Western leg has a concentration of construction workers, home health workers, and food service employees.
 
 ```{python}
 #| warning: false
@@ -186,10 +191,17 @@ plt.tight_layout()
 plt.show()
 ```
 
+## The Candidates
 
-## Fundraising 
+The field of competition was crowded but only two candidates had a serious shot at victory, Tiffany Cabán and Evie Hantzopoulos. Both women were longtime Astoria residents and could comfortably be described as to the left politically. Hantzopoulos has lived in the district since the late 1990s and when asked about her qualification to represent it cited her long-running engagement with different segments of the community [@hantzopoulos2021]. In the same questionnaire she was asked about her history supporting LGBTQ rights in the district and pointed to her support of Cabán in the DA race. Cabán grew up in Queens in a low-income immigrant household and has worked as a public defender in the district [@rojas2019; @aboutti].
 
-Divergent fundraising patterns illustrate the difference in the two candidacies. Caban nearly doubled Hantz's fundraising total, brininging in almost half a million dollars, putting her well in the top tier of City Council fundraisers. In addition to this enormous gap in overall donations, table 2 illustrates some of the key differences in individual donations. Like other DSA candidates, her average donation size of $206 was significantly lower than Hant's of $336. She and her DSA colleagues ran a campaign on the Bernie Sanders model of high numbers of small dollar donations. Also of note is the extreme geographic divergence in the donations. Only 9% of Hantz's donations came from out of state and 66% percent came from her home borough of Queens. In contrast, almost a quarter of Caban's donations came from out of state and only, 38% came from Queens. Central Brooklyn was as fundraising hotspot for all DSA candidates and this is also reflected in their fundraising total, with Caban pulling 28% of her individual donations from Brooklyn in and Hantz only 9. Caban received donations from 42 different states, as opposed to Hant's 22. In summary, Hantz ran a typical city council campagin. She raised a respectable amount of individual donations primarily from her home district. Caban ran a campaign of national profile, pulling a sizeable chunk of money from all across the country as well as in the socialst stronghold of Central Brooklyn. 
+Concrete policy differences between the two candidates were rare. They both ran respectful campaigns in which they often tweeted and said kind things about each other. Additionally, they both fell largely in the progressive camp on most major policy issues. Both candidates agreed that the NYPD should be defunded, though Cabán thought it should be defunded to be abolished (along with the rest of the city's carceral system) and Hantzopoulos proposed a re-organizing of the budget to move funds from the NYPD to other city agencies, making no mention of abolition [@hantzopoulos2021a; @candidat2021]. Both cited housing as as top concern, Cabán sought to abolish local member deference, Hantzopoulos emphasized the role of the local member in bringing truly affordable housing to the district. Both candidates were asked about their support in recent elections and there they differed, Hantzopoulos having supported Clinton in the '16 primary and Leititia James for AG, whereas Cabán supported Sanders and Zephyr Teachout, putting them on opposing sides of a cleavage in the left. As with other progressives, such as Osse and Hollingsworth, Cabán's tone was notably different than Hantzopoulos. Her rhetoric was centered on complete re-toolings. The City and it's agencies were "failing," over-policing required "abolition," and only an outsider could take on the powers currently running the city to implement these changes. In an interview conducted between the primary and the general, Cabán noted that while her opponent was indeed to the left of center, she was the furthest to the left and was the only "socialist abolitionist" in the race [@max].
+
+The primary difference between the two candidates is the scope of their campaigns. Since her DA race Caban had emerged as a prominent figure in city wide, even national, left-wing politics. She was discussed, along with AOC, as a primary threat to the Queens Democratic party and a model of an outsider campaigner taking on the establishment [@mays2019; @howtiff2021; @vincent2019]. This notoriety meant that, wheres Hantzopoulos was running a typical City Council race, Cabán was running a national statement on progressive values, in part against the Queens County party she felt had wronged her the year before. Cabán was able to run a truly city-wide, in some respects even nation-wide campaign for the office, drawing donations from all over the United States, receiving national political attention, and claiming the mantle of the progressive, grassroots, outsider taking on the corrupt and powerful machine. DeFelippis and Simon note that her area of Western Queens was primed to challenge the County party, as it was heavily populated by newcomers who didn't have the same attachments to the party as other sections of the borough [@defilippis2024].
+
+## Fundraising
+
+Divergent fundraising patterns illustrate the difference in the two candidacies. Cabán nearly doubled Hantzopoulos's fundraising total, bringing in almost half a million dollars, putting her well in the top tier of City Council fundraisers. In addition to this enormous gap in overall donations, table 2 illustrates some of the key differences in individual donations. Like other DSA candidates, her average donation size of \$206 was significantly lower than Hantzopoulos's of \$336. She and her DSA colleagues ran a campaign on the Bernie Sanders model of high numbers of small dollar donations. Also of note is the extreme geographic divergence in the donations. Only 9% of Hantzopoulos's donations came from out of state and 66% percent came from her home borough of Queens. In contrast, almost a quarter of Cabán's donations came from out of state and only 38% came from Queens. Central Brooklyn was a fundraising hotspot for all progressive candidates and this is also reflected in their fundraising totals, with Cabán pulling 28% of her individual donations from Brooklyn and Hantzopoulos only 9%. Cabán received donations from 42 different states, as opposed to Hantzopoulos's 22. In summary, Hantzopoulos ran a typical City Council campaign. She raised a respectable amount of individual donations primarily from her home district. Cabán ran a campaign of national profile, pulling a sizable chunk of money from all across the country as well as in the socialist stronghold of Central Brooklyn.
 
 ```{python}
 #| warning: false
@@ -202,16 +214,16 @@ Markdown(tabulate(fund_tbl,headers = cols,showindex=False))
 
 ```
 
+## The Election
 
-## The Election 
-Caban won with the DSA's core coaltion, well-educated white newcomers with white-collar professional careers. Table 2 shows the correlation between key demographic variables and Caban's vote share, as well as the difference in her vote share in the DA race and the City Council race. The strongest positive correlates with her vote share is the percentage of a district with a college degree, the share of Whites born outside of NYS, and the share of Journalists and Designers. The strongest negative correlates are the share of homeowners, car commutes, construction workers, and government employees. 
+Cabán won the district soundly, improving on her numbers from her DA race and taking 93% of election precincts and over half of the vote share in the first round of RCV. She decidedly won the DSA's core coalition, well-educated white newcomers with white-collar professional careers. Table 2 shows the correlation between key demographic variables and Cabán's vote share, as well as the difference in her vote share in the DA race and the City Council race. The strongest positive correlates with her vote share are the percentage of a district with a college degree, the share of whites born outside of NYS, and the share of Journalists and Designers. The strongest negative correlates are the share of homeowners, car commuters, construction workers, and government employees, particularly social workers employed by the city.
 
 ```{python}
 #| warning: false
 #| fig-cap: 'Table 2'
 label_map = {
     'vote_diff': 'Vote Difference (DA - CC)',
-    'vote_share': 'Caban Vote Share',
+    'vote_share': 'Cabán Vote Share',
     'nhw21p': 'Non-Hispanic White',
     'h21p': 'Hispanic',
     'cvap21bapp': 'BA+',
@@ -250,19 +262,19 @@ plt.tight_layout()
 plt.show()
 ```
 
+As in the chapter on the 36th, exploratory factor analysis further elucidates these relationships. Four factors were clearly the correct amount for the 22nd district, additional factors explained almost zero extra variance. A table with the factor loadings are below, followed by an OLS model that uses these factors to predict Cabán's vote share. The model explains 60% of the variance in vote share, and all of the factors have large and statistically significant coefficients.
 
-As in the chapter on the 36th, exploratory factor analysis further elucidates these relationships. Four factors were very clearly the correct amount for the 22nd district, additional factors explained almost zero extra variance. A table with the factor loadings are below, followed by an OLS model that uses these factors to predict Caban's vote share. The model explains 60% of the variance in vote share, and all of the factors have large and statistically significant coefficients. 
+Factor 1 loads negatively on measures of educational attainment and non‐Hispanic white share and positively on the percentages of Hispanic and non‐Hispanic Asian residents, homeownership rates, car commuting, and certain service occupations such as custodial work. Factor 1 identifies working-class, Asian and Hispanic homeowners that rely heavily on their vehicles. For each increase in this factor in a precinct Cabán saw her electoral score decrease by 5 percentage points.
 
-Factor 1 loads negatively on measures of educational attainment and non‐Hispanic white share and positively on the percentages of Hispanic  and non‐Hispanic Asian residents, homeownership rates, car commuting, and certain service occupations such as custodial work. Factor 1 identifies working-class, Asian and Hispanic homeowners that rely heavily on their vehicles. For each increase in this factor in a precince Caban saw her electoral score decrease by 5 percentage points. 
+Factor 2 is dominated by very strong positive loadings on homeownership and non‐Hispanic white share (though a negative loading on white transplants) and by positive loadings on lawyers and managers. It has negative loadings on occupations such as home health aides and creative professions (designers/journalists). Factor 2 identifies classic outer-borrough White ethnic enclaves. Theirs is the most negative coefficient in the model predicting Cabán's vote share. This may be due less to outright opposition and more out of support for the Greek candidate. In Table 2 above both the Greek and the NYS born white variable are strongly correlated with the shift in vote share from the DAs race to the Council race, indicating a willingness to support Cabán in general but a preference for a Greek candidate.
 
-Factor 2 is dominated by very strong positive loadings on homeownership and non‐Hispanic white share (though a negative loading on white transplants) and by positive loadings on lawyers and managers. It has negative loadings on occupations such as home health aides and creative professions (designers/journalists). Factor 2 identifies classic outer-borrough White ethnic enclaves. Theirs is the most negative coefficient in the model predicting Caban's vote share. This may be due less to outright opposition and more out of support for the Greek candidate. In table 2 above both the Greek and the NYS born white variable are stronlgy correlated with the shift in vote share from the DAs race to the Council race, indicating a willingness to support Caban in general but a preference for a Greek candidate. 
+Factor 3 is Cabán's, and the DSA's more broadly, home base. it shows its strongest positive loadings on educational attainment (BA+), non‐Hispanic Asian share, and technical/professional occupations (software engineers, designers/journalists, and managers). While it loads negatively on White population broadly it loads positively on white transplant ratio. It also loads negatively on car commuting and Hispanic share. In other words, precincts with high Factor 3 values are those with a concentration of college‐educated, tech‐oriented, and managerial workers, often with higher percentages of Whites born outside of NYS and including significant Asian‐American populations. This is the the only factor with a positive coefficient for Cabán.
 
-Factor 3 is Caban, and the DSA more broadly's, home base. it shows its strongest positive loadings on educational attainment (BA+), non‐Hispanic Asian share (“nha21p”), and technical/professional occupations (software engineers, designers/journalists, and managers). While it loads negatively on White population broadly it loads positively on white transplant ratio. It also loads negatively on car commuting and Hispanic share. In other words, precincts with high Factor 3 values are those with a concentration of college‐educated, tech‐oriented, and managerial workers, often with higher percentages of Whites born outside of NYS and including significant Asian‐American populations. This is the the only factor with a positive coefficient for Caban. 
-
-Factor 4 has its most prominent positive loadings on car commuting, construction and custodial work, but also loads positivley on Greek share of the population, and it loads negatively on BA+ and white transplant ratios. Precincts with higher Factor 4 scores are therefore characterized by a blue‐collar workforce (e.g., custodians) and heavy reliance on driving to work, whereas precincts with lower Factor 4 scores tend to be more educated and have a higher share of newer (transplanted) white residents.
+Factor 4 has its most prominent positive loadings on car commuting, construction and custodial work, but also loads positively on Greek share of the population, and it loads negatively on BA+ and white transplant ratios. Precincts with higher Factor 4 scores are therefore characterized by a blue‐collar workforce (e.g., custodians) and heavy reliance on driving to work, whereas precincts with lower Factor 4 scores tend to be more educated and have a higher share of newer (transplanted) white residents.
 
 ```{python}
-loadings = pd.read_csv('../data/22_factor_loadings.csv')
+loadings = pd.read_csv('../data/22_factor_loadings.csv', index_col=0)
+
 fa_df = pd.read_csv('../data/22_factor_scores.csv')
 plt.figure(figsize=(8, 6))
 sns.heatmap(
@@ -285,3 +297,14 @@ Y = fa_df['vote_share']
 model_fa = sm.OLS(Y, sm.add_constant(fa_df)).fit()
 print(model_fa.summary())
 ```
+
+Cabán clearly won the core progressive constituency. The correlation chart indicates that she also improved with Latinos from her DA race to her City Council race, and she noted in an interview shortly after her primary victory that she had gained with working-class voters and public housing residents relative to her DA race [@max]. Additionally, her victory was not a close one, she won 93% of her district's election precincts. Nonetheless, like other progressives, the areas of her district where here vote share struggled were precincts with homeowners, car commuters, and high shares of working-class professions.
+
+## Conclusion
+
+The 22nd district represents the DSA's most high profile victory. Tiffany Cabán returned from her narrow loss in the Queens DA race, representing the progressive criminal justice policy core to the city's progressive coalition, and convincingly won her local Council seat. Despite her cordial relationship with her opponent, voters received a clear message from the press that she was a socialist political outsider representing a radical departure from mainstream criminal justice policy, and she won convincingly anyway. Cabán, like Osse in the 36th, demonstrates both the promise and the limit of progressive coalitions in the city. They are highly capable of mobilizing the city's well-educated, outer-borough professionals, particularly when they are whites born outside of New York State. This is an abundant population and one that allows for progressive success in Council and Assembly districts concentrated in these core neighborhoods. Her coalitional limits, however, are indicative of a broader progressive movement that struggles to extend to the city's working-class, particularly the working-class New Yorkers of color.
+
+\clearpage
+
+::: {#refs}
+:::

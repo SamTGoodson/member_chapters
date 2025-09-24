@@ -1,0 +1,572 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"'Too Dangerous for the City Council' Insiders and Outsiders in the 35th Council District\"\n",
+        "format:\n",
+        "  html: default   \n",
+        "  pdf:           \n",
+        "    df-print: kable\n",
+        "    tbl-colwidths: [75,25]\n",
+        "    code-fold: true\n",
+        "    mainfont: \"Georgia\"\n",
+        "header-includes:\n",
+        "  - \\usepackage{graphicx}\n",
+        "  - \\usepackage{adjustbox}\n",
+        "  - \\usepackage{afterpage}\n",
+        "  - \\usepackage{biblatex}\n",
+        "  - \\newcommand{\\bibsection}{\\clearpage\\printbibliography}\n",
+        "execute:\n",
+        "  echo: false\n",
+        "jupyter: python3\n",
+        "bibliography: references.bib\n",
+        "---"
+      ],
+      "id": "b6dfc4c4"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| warning: false\n",
+        "import pandas as pd\n",
+        "import geopandas as gpd\n",
+        "import numpy as np\n",
+        "import matplotlib.pyplot as plt\n",
+        "import matplotlib as mpl\n",
+        "\n",
+        "from sklearn.cluster import KMeans\n",
+        "from sklearn.preprocessing import StandardScaler\n",
+        "\n",
+        "import statsmodels.api as sm\n",
+        "from statsmodels.iolib.summary2 import summary_col\n",
+        "\n",
+        "from utils import make_precinct_counts,make_demo_map,job_cols,race_cols,cols_to_keep,scale_and_cluster,make_edname,map_round_votes,brooklyn_zips,zip_list\n",
+        "\n",
+        "from shapely import wkt\n",
+        "\n",
+        "from IPython.display import display, Latex,Markdown\n",
+        "from tabulate import tabulate\n",
+        "\n",
+        "\n",
+        "demo_cluster = pd.read_csv('../../chapter_two/data/occupation_demo_clusters_on_ed.csv')\n",
+        "d35 = pd.read_csv('../../cc_election_cleaning/all_rounds_results/district_35.csv')\n",
+        "ed_level = pd.read_csv('../../cc_election_cleaning/occupation_demo_data_feb21.csv')\n",
+        "fwe = pd.read_csv('../data/finance_with_ethnicity.csv')\n",
+        "\n",
+        "ed_shapefile = '../../chapter_two/data/nyed_21a/nyed.shp'\n",
+        "ed_gdf = gpd.read_file(ed_shapefile)\n",
+        "nyc_zip = gpd.read_file('../data/Modified Zip Code Tabulation Areas (MODZCTA).geojson')\n",
+        "\n",
+        "fifty_seven = pd.read_csv('../data/fifty_seventh_assem.csv')\n",
+        "fifty_seven = fifty_seven[['aded','percphara','percmos']]\n",
+        "full_results = pd.read_csv('../../cc_election_cleaning/election_results_with_vote_sponsor_cluster_FEB13.csv')\n",
+        "\n",
+        "full_results_thirty_five = full_results[full_results['district'] == 35]\n",
+        "full_results_thirty_five['dpp20bs'] = full_results_thirty_five['dpp20bs'] / 10\n",
+        "mh_full = full_results[full_results['candidate'] ==  'Michael Hollingsworth']\n",
+        "ch_full = full_results[full_results['candidate'] ==  'Crystal Hudson']\n",
+        "mh_full = mh_full[['vote_share','ed_name','dpp20bs','garcia213p','white_transplant_ratio','mhhi21','cvap21bapp','h21p', 'nha21p', 'nhb21p', 'nhw21p','wfh_ratio']]\n",
+        "ch_full = ch_full[['vote_share','ed_name','dpp20bs','garcia213p','white_transplant_ratio','mhhi21','cvap21bapp','h21p', 'nha21p', 'nhb21p', 'nhw21p','wfh_ratio']]\n",
+        "\n",
+        "mh_ps = fifty_seven.merge(mh_full, left_on = 'aded', right_on = 'ed_name')\n",
+        "mh_ps['dpp20bs'] = mh_ps['dpp20bs'] / 10\n",
+        "mh_ps['hol_phar_diff'] = mh_ps['percphara'] - mh_ps['vote_share']\n",
+        "\n",
+        "dif_map = mh_ps.merge(ed_gdf, left_on = 'aded', right_on = 'ElectDist') \n",
+        "d35 = make_edname(d35)\n",
+        "d35_eds = d35['ed_name'].unique().tolist()\n",
+        "\n",
+        "\n",
+        "max_vote_share_candidates = pd.read_csv('../data/max_vote_share_candidates.csv')\n",
+        "tj = max_vote_share_candidates[['ed_name','candidate']]\n",
+        "\n",
+        "occ_df = pd.read_csv('../../cc_election_cleaning/occupation_election_feb21.csv')\n",
+        "p_cols = [col for col in occ_df.columns if col[-1] == 'p']\n",
+        "wp_cols = [col for col in occ_df.columns if col.startswith(\"w2\") and col.endswith(\"p\")]\n",
+        "to_remove = [ 'w2psp',\n",
+        " 'w2sep',\n",
+        " 'w2npp',\n",
+        " 'w2govp',\n",
+        " 'w2nip','w2cop']\n",
+        "wp_cols = [col for col in wp_cols if col not in to_remove]"
+      ],
+      "id": "3d17e7a4",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "The 2021 Democratic primary in Brooklyn’s 35th City Council district offered an excellent view of a rivalry central to NYC progressive politics. Crystal Hudson, aide to the former city council woman Laurie Cuombo and endorsed by U.S. Congressman Hakim Jeffries, Brooklyn’s lead antagonist to the DSA, squared off against Michael Hollingsworth, the DSA-endorsed socialist running proudly as an anti-system political outsider. The two feuded over their insider/outsider status, disagreeing on whether it was possible to enact meaningful political change without disrupting the political status quo. Because of Hudson's perceived proximity to Jeffries and the Brooklyn Democratic Establishment, the race became became a high-profile contest between two ideas of progressive change in teh city. Despite this rhetorical disagreement, the two shared much ideological space, agreeing generally on defunding the NYPD, opposing rezoning in the 35th, and enacting a more redistributive city budget.\n",
+        "\n",
+        "They were running in a district that is more diverse than others by several metrics as well as being animated by the current changes in NYC demographics and politics. In the end, Hudson won the Democratic primary and general election by successfully 1) winning over the district’s large Hasidic population, 2) pulling key blocs of DSA support away from Hollingsworth in the whiter, more affluent, and more professional western section of the district, and 3) raising more funds than Hollingsworth in wealthier areas of Brooklyn, inside and outside the district.\n",
+        "\n",
+        "This contest between left-leaning rivals foregrounded important questions about the pragmatics of progressive coalition formation, including how two very closely related ideological strands related to each other, the relative importance of different endorsements and political networks, how left candidates should deal with large but minority conservative voting blocs, the demographic limits of support for the DSA, and the relative importance of ideology relative to political brand. This chapter will examine the district, the candidates, the campaign, and then compare the results with two relevant State Assembly and Senate races. It will conclude by discussing what Hudson’s coalition means for the formation of progressive coalitions in the city.\n",
+        "\n",
+        "## The District\n",
+        "\n",
+        "District 35 occupies the northwestern edge of Black central Brooklyn adjacent to long-gentrified Park Slope. It is just East of the historic but now-blurring dividing line between white and Black Brooklyn. Its western edge runs down Flatbush Avenue through Prospect Heights and then cuts east through Crown Heights along Empire Boulevard as its southern border. The Brownstone district falls in the top quintile of NYC Council districts in rate of higher education and in the second highest quintile in both White and Black share of the population. Much of the Black population is of West Indian origin, it is in the top quintile of West Indian born residents. It is also in the top quintile of white transplants, measured as white population born outside of New York State, and many of its neighborhoods, especially those in the central and southern part of the district, have the reputation of being rapidly gentrifying. It also has a sizable Hasidic population, the Chabad-Lubavitch, though this population is partially split by Empire Boulevard into the 40th Council District. It relatively few Asian and Hispanic residents and is in the middle in terms of income, though, as with education, this masks much diversity, and the election districts (EDs) containing public housing in the northern part of the 35th are among the poorest and least educated in the city.\n",
+        "\n",
+        "The district belonged to cluster three in the demographic classification developed in chapter two, along with districts such as Lincoln Restler’s and Shahana Hanif’s, that mix high-income, mainly white sections with more racially diverse and mid- and lower-income sections. The district is heavily Democratic. It sits in the 9^th^ congressional district, which is D+32 on the Cook Political Index. Joe Biden won the 35th by an 85% margin in the 2020 election (though there was significant Trump support in the Hasidic section of the neighborhood).\n",
+        "\n",
+        "Figure 1 below is a map of education level by ED across the district. Of note are the generally higher levels of education north of Grand Army Plaza in the Prospect Heights area, with the exception of the top hook of the district which includes a NYCHA campus. Income is similarly much higher in this section of the neighborhood. Figure 2 shows the distribution of white transplants in the district. There are, again, high rates in the blocks north of Grand Army Plaza, extending east across Franklin Avenue and south to around Eastern Parkway.\n"
+      ],
+      "id": "a869b4cc"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| warning: false\n",
+        "#| fig-cap: \"Education Level by ED\"\n",
+        "#| fig-pos: H\n",
+        "demo_map = make_demo_map(d35_eds,ed_level)\n",
+        "demo_map.plot(column='cvap21bapp', cmap='viridis', legend=True, figsize=(15, 10))\n",
+        "plt.show()"
+      ],
+      "id": "44d46208",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| warning: false\n",
+        "#| fig-cap: \"White Transplant Ratio by ED\"\n",
+        "#| fig-pos: H\n",
+        "demo_map = mh_full.merge(ed_gdf, left_on = 'ed_name', right_on = 'ElectDist')\n",
+        "demo_map = gpd.GeoDataFrame(demo_map)\n",
+        "demo_map.plot(column='white_transplant_ratio', cmap='viridis', legend=True, figsize=(15, 10))\n",
+        "plt.show()"
+      ],
+      "id": "08d674f4",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "As in Chapter 2, K-Means clustering was used to reduce the dimensionality of the demographic variables. The clusters represented in Figure 3 take into account income, education, race, and occupation type, broken into several categories. Table 1 below the map shows key demographic figures by cluster, including the percentage employed in several occupations. In the section of the district running diagonally down Flatbush Avenue there are primarily three groups. In the middle section are clusters 0 and 4, both with high levels of non-Hispanic Whites and with high levels of higher education, but divided dramatically by income. The wealthier cluster has higher rates of salespeople and lower rates of office clerks. Cluster 1 sits in the northern hook of the district, a lower education and income and higher Black population. In the horizontal section of the district to the east of the park there is a white lower income cluster, 0, that is clearly the Hasidic blocs. Cluster 0 extends into these blocs and is joined by clusters 1 and 2, both being predominantly Black clusters, with 2 featuring higher levels of whites and Education (but not income).\n"
+      ],
+      "id": "c308ea84"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| warning: false\n",
+        "#| fig-cap: \"Clusters by ED\"\n",
+        "#| fig-pos: H\n",
+        "\n",
+        "cols_to_keep = ['mhhi21', 'nhb21p', 'nhw21p','cvap21bapp']\n",
+        "cols_to_keep.extend(wp_cols)\n",
+        "\n",
+        "cluster_df = mh_full[['ed_name','white_transplant_ratio']].merge(ed_level, left_on = 'ed_name', right_on = 'ElectDist')\n",
+        "\n",
+        "cluster_df = cluster_df.merge(occ_df, left_on = 'ed_name', right_on = 'ElectDist')\n",
+        "df = cluster_df[cols_to_keep]\n",
+        "scaler = StandardScaler()\n",
+        "df_scaled = scaler.fit_transform(df)\n",
+        "kmeans = KMeans(n_clusters=6, random_state=0)\n",
+        "kmeans.fit(df_scaled)\n",
+        "cluster_df['cluster'] = kmeans.labels_\n",
+        "cluster_df_map = cluster_df.merge(ed_gdf, left_on = 'ed_name', right_on = 'ElectDist')\n",
+        "cluster_df_map = gpd.GeoDataFrame(cluster_df_map)\n",
+        "cluster_df_map['cluster'] = cluster_df_map['cluster'].astype('category')\n",
+        "cluster_df_map.plot(column='cluster', cmap='tab10', legend=True, figsize=(15, 10))\n",
+        "plt.show()"
+      ],
+      "id": "c3cc6879",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| warning: false\n",
+        "#| fig-cap: 'Table 1'\n",
+        "a_tbl = cluster_df.groupby('cluster')[['mhhi21', 'nhb21p', 'nhw21p','cvap21bapp','w2admp','w2cmp','w2mgtp','w2pservep','w2salep','w2oadp']].mean().round(2).reset_index()\n",
+        "a_tbl = a_tbl.rename(columns={'mhhi21':'M.H.I','cvap21bapp':'BA+','nhb21p':\"NH Black\",'nhw21p':'NH White','w2admp':'A.D.J','w2cmp':'Computer Prof.','w2mgtp':'Mgmt.','w2pservep':'Service',\"w2salep\":'Sales','w2oadp':'Office'\n",
+        "})\n",
+        "columns = a_tbl.columns\n",
+        "Markdown(tabulate(a_tbl, headers=columns, showindex=False))"
+      ],
+      "id": "f47b8cf5",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "The district contains several groups that are of great interest to progressive coalition formation in the city, new arrival high and middle income whites, a large conservative religious bloc, and native and foreign born Blacks. Michael Lange suggested this district, along with Jennifer Guttierez's, is demographically prime for a DSA candidate [@lange2025].\n",
+        "\n",
+        "## The Candidates\n",
+        "\n",
+        "The two front runners (by a great margin) in the 2021 Council race were Crystal Hudson and Michael Hollingsworth. Hudson had worked for the outgoing Council member Laurie Cuombo and therefore had connections to the county Democratic establishment, whereas Hollingsworth, a graphic designer and community organizer, proudly ran on his lack of such connections. Hollingsworth was endorsed by DSA, an organization to which outgoing member Cuombo referred as the political arm of white gentrification. Despite these differences, in analyzing their interviews, tweets, and campaign material, it is difficult to find significant daylight between the two on firm policy issues. Much media commentary noted two seemingly contradictory aspects of the race, that 1) it set up a contest between two rival sections of the city’s progressive left, but that 2) the two candidates seemed to agree on most substantive policy issues [@salazar2021; @hamm2021; @barkan2021; @hollidaysmith2021]. Both agreed that portions of the NYPD’s budget should be reallocated to other uses (though at different speeds and in different amounts), both thought the city’s land-use process needed to be retooled to build more affordable housing, especially to encourage more rezoning in wealthy neighborhoods, both were pro-union and pro-education reform (though they differed slightly on mayoral control of schools). One commentator suggested that the most daylight between the candidates was on real estate, with Hollingsworth suggesting a complete moratorium on upzonings, while Hudson argued that upzonings should continue, but in wealthier neighborhoods and with more affordable housing. Case in point, she supported the SoHo/NoHo rezoning while Hollingsworth did not. Similarly, Hollingsworth has suggested he would continue to support the practice of local member deference, while Hudson would not [@oder2021].\n",
+        "\n",
+        "Though this gap on real estate and development is not enormous, it may explain, in part, some of the trade union PAC support for Hudson as well as the Stephen Ross mailers mentioned below. It also helps shed light on the central political differences between the two. While both, as mentioned above, support the most common slate of reforms on development, Hollingsworth made it clear he thought that Hudson's proximity to the borough's Democratic establishment was part of the problem. He saw her campaigning on affordable housing as a convenient rhetorical shift to the left. He contrasted his own history of tenant organization \"for years I’ve been a volunteer and tenant organizer with the Crown Heights Tenant Union (CHTU), organizing my neighbors and building tenant power across Crown Heights to fight back against our own displacement\" against \"candidates who have been part of the structures that have harmed our community, now being recast as fighters against the system.\" He's \"tired\" he wrote, \"of being presented every election cycle with establishment candidates and being told that this is the best person for the job\"[@hollingsworth2021]. While he doesn't name Hudson directly here, he goes to say that this is exactly why he is most qualified to represent the district, making it clear which establishment candidate he had in mind. In another interview, asked again why he was the right candidate for the job, he described himself as a \"candidate who’s not going to be in the mold of what we had before and connected to the same harmful forces—whether it’s real estate or political—that have done so much damage to our community\"[@barkan2021]. In another interview he emphasized that he was the only candidate with actual experience fighting for affordable housing, \"while today everyone says things like housing is a human right, there’s one person who’s shown some commitment to making that happen, to make that a right for everybody. I think that separates me from the other folks \\[in the race\\]\"[@broszkowski2021]. For Hollingsworth policy can't be instrumentally separated from political background; Hudson was a product of the political system that created displacement in the district and her election would necessarily mean more of it. This attitude reflects what Zach Hendrickson, coordinator of the DSA's Socialists in Office committee, had to say about socialist strategy in the city. While he didn't comment on this race directly, he spoke about the importance of building DSA power away from the current institutional structures of city government. There is a sort of gravity of institutional alignment in this view that, no matter the tenor of the rhetoric, pulls electeds into the same legislative patterns as their predocessors. This does not mean that insider/outsider coalitional work is impossible or even undesireable, Hendrickson talked repeatedly about working with colleagues on the progressive caucus, but it does mean there is something categorically different about outsider candidates that make them prefereable to socialists. He also noted that the primary metric he uses to evaluate potential DSA success is the share of renters in a district, which helps to make sense of Hollingsworth's reliance on tenants as the core organizational category of his campaign [@hendrickson2025].\n",
+        "\n",
+        "Hudson, responding to this manner of critique, made it clear she was proud to have political experience. “Trump had no experience, right?\" she said \"And look what that got us for four years”[@barkan2021]. In the same interview she went on to expand on her pride in receiving a wide range of endorsements, including those who were to her right, stating that everyone was welcome at her table. She went on to take a clear shot at the DSA's notoriously ideologically selective endorsement process \"I’m running to represent everyone, not some people or only people who agree with me 100 percent of time on 100 percent of the issues”[@barkan2021]. For Hudson, political experience and well placed connections were not only nothing to be ashamed of, they were the very instrument by which she would spur change. Additionally, actual political work required some ideological leniency, which the DSA has seemed incapable of. This political squabbling belies a real difference on the nature of politics and political opposition. Hollingsworth saw the goal of his campaign as leading an opposition movement to a political class that, no matter the rhetoric du jour, had been responsible for inequality and displacement. He saw a broad coalition of the displaced and affected as his base, with their status as tenants as the unifying demographic category. He talked of a \"broad coalition that stands for Black and brown, marginalized, and working class New Yorkers to fight austerity and pass a bold legislative agenda\"[@hollingsworth2021]. Hudson, also heavy on language of justice and anti-austerity, saw a route to do that through more traditional political means. She also framed this language of opposition in purely racial terms, eschewing the language of class and tenancy evoked by Hollingsworth. \"Race,\" she wrote, \"is the prism through which I view injustice ... In short, when Black New Yorkers fare well, all of us fare well\"[@hudson2021].\n",
+        "\n",
+        "While their ideological difference may be, in the grand scheme of city politics, seemingly minor, they were large enough to attract attention from conservative political interests in the city. Common Sense NYC, a real-estate PAC, spent hundreds of thousands of dollars in opposition to several left-wing candidates, Hollingsworth among them, calling them “too dangerous for the City Council”. Their opposition was nominally about crime and police funding, but since it was backed by several big real estate players such as Stephen Ross, it can reasonably be assumed that candidates’ stance on land use and development influenced their spending choices. That Hudson and Hollingsworth had practically identical statements on NYPD funding seems to speak to this motivation. This reading of the PAC spending was given voice by Sean Abreu, also targeted, “they’re scared that a City Council that’s full of socialists … will be a threat to their top dollar because we are very committed in guaranteeing a city that works for immigrant and working-class communities”[@maldonado2021]. That the real estate industry deemed one of the candidates to be a threat and not the other evinces some real separation behind the similar political rhetoric. This sentiment was also reflected in Hendrickson’s interview. He saw this kind of anti-DSA campaigning as a mark of its success. His telling of the DSA strategy is a long one, building a center of political power outside the bounds of current political power. That organizations such as Common Sense see the party as a threat is a sign of their progress, as well as a sign that the insider/outsider division is a real one, even if harder to measure than policy difference [@hendrickson2025a].\n",
+        "\n",
+        "In addition to the issues discussed above, the race garnered broader attention due to the perceived contest between Congressman Jeffires and the socialist left. Jeffries has emerged as the central antagonist to the city's socialist left. He frames the distinctions between his own brand of Democratic politics and the DSA's as such: “There’s a difference between progressive Democrats and hard-left democratic socialists ... It’s not a distinction that I’m drawing. They draw that distinction. And so clearly, I’m a Black progressive Democrat concerned with addressing racial and social and economic injustice with the fierce urgency of now. That’s been my career, that’s been my journey, and it will continue to be as I move forward for however long I have an opportunity to serve. There will never be a moment where I bend the knee to hard-left democratic socialism.” He continued later in the same interview “Hard-left progressives tend to view the defining problem in America as one that is anchored in class. That is not my experience as a Black man in this country. And perhaps that’s where we have a difference of perspective.” After Hudson won the primary Jeffries took to Twitter to gloat, \"The most interesting take away from this year’s NYC elections may be the battleground city council races. Streets is watching\" [@jeffries2021]. Hudson's victory in the Council race was cited widely, including in NYC political press and an Atlantic profile on Jeffries as Speaker in waiting, as evidence of his enduring influence and power. \n",
+        "\n",
+        "The primary in the 35th offered two candidates who seemingly agreed on major political issues but had vastly different political networks and ideas about political action. One is a traditional Brooklyn progressive, perhaps moved rhetorically to the left to capture the spirit of the time, running with the support of an established network of Democratic insiders. The most important member of her network, Hakeem Jeffries, was glad to make the race a referendum on the status of progressive outsiders in NYC politics. The other is a populist outsider seeking to ride a multi-racial working class coalition of tenants to victory. The race helps illuminate some particularly interesting dynamic in NYC progressive politics. Do voters understand the differences between the candidates? How much of a chance does an outsider, even with a relatively powerful DSA endorsement, stand against an established insider? What demographic blocs do these messages appeal to? Is there evidence that Laurie Cuombo’s assessment that the DSA is the political wing of white gentrification holds true for the 35th? At the root of these questions are larger ones about political branding as well as about how national politics map onto local politics. The next section will explore the campaign, specifically it funding, in more depth, and then turn to election returns.\n",
+        "\n",
+        "## The Campaign\n",
+        "\n",
+        "Hudson's campaign raised \\$134,000 in private funds and received \\$209,000 in public matching funds, putting her campaign's coffers at \\$343,993. This significantly outdid Hollingsworth, who raised a total of \\$255,651, \\$86,000 in contributions and \\$168,000 in matching funds [@newyork].[^1] Hollingsworth's campaign was financed by a large number of smaller donations, with an average donation size of \\$38.71, compared to Hudson's average donation size of \\$82.37. Roughly the same amount of both candidates' individual donations came from inside the five boroughs, 83%. There was a significant geographical divergence in where the individual funds came from. Figure 4 below shows the difference in dollar amount raised by ZIP code (donors' self-report ZIP). The darker blue a ZIP is the more it gave to Hollingsworth, the more red the more it gave to Hudson.\n",
+        "\n",
+        "[^1]: All references to campaign funds and spending are from the NYC Campaign Finance Board unless otherwise specified.\n"
+      ],
+      "id": "1d95f5aa"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| warning: false\n",
+        "#| fig-cap: 'Difference in Individual Contributions'\n",
+        "#| fig-pos: H\n",
+        "thirty_five = [\"Michael D Hollingsworth\",'Crystal Hudson']\n",
+        "thirty_five_df = fwe[fwe['matched_name'].isin(thirty_five)]\n",
+        "by_zip_35 = thirty_five_df.groupby(['matched_name','ZIP'])['AMNT'].sum().reset_index()\n",
+        "by_zip_35['ZIP'] = by_zip_35['ZIP'].astype(str)\n",
+        "compare = by_zip_35.pivot(index='ZIP',columns='matched_name',values='AMNT').fillna(0).reset_index()\n",
+        "compare_nyc = compare[compare['ZIP'].isin(zip_list)]\n",
+        "compare_nyc['dif'] = compare_nyc['Crystal Hudson'] - compare_nyc['Michael D Hollingsworth']\n",
+        "zip_map = compare_nyc.merge(nyc_zip, left_on='ZIP', right_on='zcta', how='left')\n",
+        "zip_map = gpd.GeoDataFrame(zip_map)\n",
+        "\n",
+        "brooklyn_map = zip_map[zip_map['ZIP'].isin(brooklyn_zips)]\n",
+        "brooklyn_map.plot(column='dif', cmap='coolwarm', legend=True)\n",
+        "plt.show()"
+      ],
+      "id": "b53aa693",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "Hollingsworth's most lucrative ZIP was 11225, east of the park and south of Eastern Parkway, where he raised \\$7,400 to Hudson's \\$1,900. Based on voting trends discussed below we can assume that these donations were not coming from the Hasidic population located primarily to the east of New York Avenue but rather from the middle and lower income West Indian and white population. Hudson's most lucrative ZIP was the much wealthier and better educated 11238, immediately to the east of Flatbush avenue where she out-raised Hollingsworth \\$21,900 to \\$12,900. Also of note is the amount she raised in 11217 and 11215, two ZIPs outside of her district in which she raised \\$9,100 and \\$5,100 respectively, compared to Hollingsworth's \\$2,900 and \\$2,100. These are highly educated, high-income, highly politically involved areas that clearly favored Hudson. Hudson had a clear dollar amount advantage in the wealthier parts of her district and in parts of the city that were not her district. It's impossible to map these donations directly onto spending, but there are areas in which the Hudson campaign well outspent the Hollingsworth campaign. They doubled, for example, Hollingsworth on direct mailers and generally outspent it on advertising, including a \\$6,500 ad buy for streaming television ads two weeks before the election and \\$1,300 on a direct text messaging campaign throughout the late Spring.\n",
+        "\n",
+        "Another vital aspect of the primary campaign was relations with the Hasidic community, which traditionally votes as a bloc and with high rates of voter turnout. Neither of the leading candidates, both outspoken progressives and one a proud member of the LGBTQ community, seemed to be well fit to win over the conservative, religious voting bloc, but the advantage clearly went to Hudson. An examination of the English language Hasidic press suggests that this advantage had almost entirely to do with the politics of the Middle East. In multiple articles across multiple publications, Michael Hollingsworth is described as fiercely antisemitic, primarily because of his stance on the state of Israel. One ColLive article begins “Socialist representation of Crown Heights? A BDS supporter as your City Council member? Jewish concerns shelved? Yep. And all you have to do is ignore the coming June 22 election” [@behrman2021]. Many articles feature pro-Palestinian tweets either he or the DSA made as evidence of his antisemitism. One features a cartoon video of Hollingsworth standing in front of a burning Israeli flag [@whyyou2021]. Much more is made of his stance towards Israel than of his position on local issues, such as monitoring of educational standards at Yeshivas, though one flier does implore the voter to “protect our Yeshivas” by voting Hudson, and another features a video of a man meant to be a DSA member breaking into a Yeshive to graffiti \"The Torah was Wrong About Creation\" across a blackboard [@coliveeditorial2021]. Hudson is not generally described in positive terms in these pre-election articles, except to say that she is not affiliated with BDS or DSA and that she has a dialogue with the community. After the election one article celebrates her and describes overwhelming support among the community [@coliveeditorial2021a]. The principle selling point for her was that she was the only candidate capable of beating Hollingsworth. “Internal polls show that no other candidates have a chance at victory” one article reads, after smearing Hollingsworth, “this race is between Crystal and Michael only” (Behrman and Klein, 2021). According to self-reported numbers, the Hasidic community turned out at 7 times its normal rate in the June primary, producing 4,000 votes, or almost twice Crystal Hudson’s margin of victory [@whyyou2021; @weissman2021]. This is not sufficient evidence to claim that if Hollingsworth had a better relationship with the community he could have won, but it does suggest some important questions for the DSA about how they deal with large, conservative voting blocs.\n",
+        "\n",
+        "## Voting\n",
+        "\n",
+        "Hudson won the election in three rounds but she lead from the first, with the final vote total coming to 16,564 to Hollingsworth's 14,138. The map below shows the breakdown of votes by ED, the darker red the ED the higher share of its votes went to Hudson. Her best area is clearly the Hasidic section. Aside from that she does well in the pocket along Flatbush and Vanderbuilt in the blocks north of Grand Army Plaza. She continues to do well moving north along Flatbush, though Hollingsworth wins pockets. Hollingsworth's best districts are in the area running down Franklin Avenue.\n"
+      ],
+      "id": "872e14f8"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| warning: false\n",
+        "#| fig-cap: \"Electoral District Winners and Vote Share Shading\"\n",
+        "#| fig-pos: H\n",
+        "\n",
+        "top_two = full_results_thirty_five[full_results_thirty_five['candidate'].isin(['Crystal Hudson','Michael Hollingsworth'])]\n",
+        "winners = top_two.loc[top_two.groupby('ed_name')['vote_share'].idxmax()].copy()\n",
+        "winners['norm'] = winners.groupby('candidate')['vote_share'].transform(\n",
+        "    lambda x: (x - x.min()) / (x.max() - x.min())\n",
+        ")\n",
+        "\n",
+        "def assign_color(row):\n",
+        "    if row['candidate'] == 'Crystal Hudson':\n",
+        "        return mpl.cm.Reds(row['norm'])\n",
+        "    else:\n",
+        "        return mpl.cm.Blues(row['norm'])\n",
+        "\n",
+        "winners['color'] = winners.apply(assign_color, axis=1)\n",
+        "\n",
+        "winners = gpd.GeoDataFrame(winners,geometry=winners['geometry'].apply(wkt.loads))\n",
+        "\n",
+        "fig, ax = plt.subplots(1, figsize=(10, 10))\n",
+        "winners.plot(color=winners['color'], ax=ax)\n",
+        "plt.show()"
+      ],
+      "id": "a93a5c0d",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "Table 1 shows the flow of votes in the fist two rounds of voting, ranked by number of ballots. The top two options were overwhelmingly Hudson followed by Hollingsworth or vice-versa, many voters seemingly found them quite similar. Nonetheless there are several thousand ballots that chose one candidate and then someone else (or no one) second. A NaN in round two indicates only the first choice was filled out.\n"
+      ],
+      "id": "d45da86b"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| warning: false\n",
+        "#| fig-cap: 'Table 2'\n",
+        "c_tbl = d35.groupby('district_35_choice_1')['district_35_choice_2'].value_counts(dropna=False).reset_index(name='count').sort_values('count', ascending=False).head(10)\n",
+        "cols = ['Choice 1','Choice 2','Count']\n",
+        "Markdown(tabulate(c_tbl,headers = cols,showindex=False))"
+      ],
+      "id": "9cc12e08",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "Figure 5 shows what percentage of the ED listed Hudson first and anything but Hollingsworth second. These votes are overwhelmingly clustered in the Hasidic section. Figure 6 shows the opposite. Hollingsworth's votes are not as concentrated as Hudson's but do seem to be clustered along Franklin Avenue.\n"
+      ],
+      "id": "4cc6e115"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| warning: false\n",
+        "#| fig-cap: \"First Choice Hudson, Second Choice Not Hollingsworth\"\n",
+        "#| fig-pos: H\n",
+        "pc = make_precinct_counts(d35,'district_35','Crystal Hudson','Michael Hollingsworth')\n",
+        "pc['total_votes'] = pc.iloc[:, 1:6].sum(axis=1)\n",
+        "pc = pc[['ed_name','Crystal Hudson_notMichael Hollingsworth','total_votes']]\n",
+        "pc.columns = ['ed_name','ch_notmh','total']\n",
+        "pc['ch_vote_share'] = pc['ch_notmh'] / pc['total']\n",
+        "el = full_results_thirty_five[full_results_thirty_five['winner'] == True]\n",
+        "map = pc.merge(el[['ed_name','geometry']],on='ed_name', how='left')\n",
+        "map = gpd.GeoDataFrame(map,geometry=map['geometry'].apply(wkt.loads))\n",
+        "\n",
+        "map.plot(column='ch_vote_share', cmap='viridis', legend=True, figsize=(15, 10))\n",
+        "plt.show()"
+      ],
+      "id": "2de5a460",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| warning: false\n",
+        "#| fig-cap: \"First Choice Hollingsworth, Second Choice Not Hudson\"\n",
+        "#| fig-pos: H\n",
+        "pc = make_precinct_counts(d35,'district_35','Crystal Hudson','Michael Hollingsworth')\n",
+        "pc['total_votes'] = pc.iloc[:, 1:6].sum(axis=1)\n",
+        "pc = pc[['ed_name','Michael Hollingsworth_notCrystal Hudson','total_votes']]\n",
+        "pc.columns = ['ed_name','ch_notmh','total']\n",
+        "pc['ch_vote_share'] = pc['ch_notmh'] / pc['total']\n",
+        "el = full_results_thirty_five[full_results_thirty_five['winner'] == True]\n",
+        "map = pc.merge(el[['ed_name','geometry']],on='ed_name', how='left')\n",
+        "map = gpd.GeoDataFrame(map,geometry=map['geometry'].apply(wkt.loads))\n",
+        "\n",
+        "map.plot(column='ch_vote_share', cmap='viridis', legend=True, figsize=(15, 10))\n",
+        "plt.show()"
+      ],
+      "id": "46012c05",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "Geographically, Hudson’s vote looks to correlate to the Hasidic EDs and to wealthier EDs along Flatbush. Table 3 below shows all correlations stronger than .25 between Hudson’s vote share and key demographic variables. The NHW correlation is over .5, though this is probably largely attributable to the Hasidic vote. The Black correlation is negative. An equally strong correlation is with non-profit workers, and a weaker one with social service workers and therapists. This leaves the question of Hudson’s coalition a bit ambiguous, except that she seems to clearly have won the Hasidic blocs, and done well with non-profit workers and social service providers. The next section will take up other elections that crossed into the 35th council district to get a closer picture of how the EDs broke.\n"
+      ],
+      "id": "ac1e87a9"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| warning: false\n",
+        "#| fig-cap: 'Table 3'\n",
+        "cor_cols = ['vote_share','w2npp','nhw21p','w2cossp','w2edup','dpp20bs','nhb21p']\n",
+        "corr_df = ch_full.merge(occ_df, left_on='ed_name', right_on='ElectDist', how='left')\n",
+        "corr_matrix = corr_df[cor_cols].corr()\n",
+        "corr_matrix = corr_matrix.sort_values('vote_share')\n",
+        "vote_corr = corr_matrix[['vote_share']]\n",
+        "md_table = tabulate(vote_corr, headers=\"keys\", tablefmt=\"pipe\")\n",
+        "display(Markdown(md_table))"
+      ],
+      "id": "c509eea6",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## DSA Comparison\n",
+        "\n",
+        "A year before the Council primary in the 35th two DSA candidates won office in districts that overlap with part of the council district. Phara Soufrant Forest won the primary and general election in the 57th Assembly District and Jabari Brisport won the primary and general in the 25th State Senate race. Both of these districts overlap with a large part of the eastern section of the 35th Council District. This overlap allows for a more detailed examination of what districts are friendly or not to the DSA, and of the districts that are, which ones Hollingsworth won and which ones Hudson won away. Table 4 is a breakdown of the EDS that voted in all three elections.\n"
+      ],
+      "id": "f3477419"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| warning: false\n",
+        "#| fig-cap: 'Table 4'\n",
+        "tj['ed_name'] = tj['ed_name'].astype('Int64')\n",
+        "quick_compare = mh_ps.merge(tj, on='ed_name', how='left')\n",
+        "\n",
+        "eds_won = full_results_thirty_five[full_results_thirty_five['winner'] == True]\n",
+        "eds_won = eds_won[['ed_name','candidate']]\n",
+        "eds_won.columns = ['ed_name','council']\n",
+        "\n",
+        "quick_compare = quick_compare.merge(eds_won, on='ed_name', how='left')\n",
+        "quick_compare['assembley'] = quick_compare[['percmos','percphara']].apply(lambda x: x.idxmax(), axis=1)\n",
+        "quick_compare.dropna(inplace=True)\n",
+        "assembly_mapping = {\n",
+        "    'percmos': 'Walter Mosley',\n",
+        "    'percphara': 'Phara Souffrant Forrest'\n",
+        "}\n",
+        "qdf = quick_compare.copy()\n",
+        "qdf['assembley'] = qdf['assembley'].map(assembly_mapping)\n",
+        "tabl = qdf[['ed_name','assembley','council','candidate']].groupby(['assembley','council','candidate']).count()\n",
+        "tabl_columns = ['Vote Combination','Count']\n",
+        "Markdown(tabulate(tabl,headers=tabl_columns))"
+      ],
+      "id": "1ad8a9ec",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| warning: false\n",
+        "quick_compare[\"missed_chance\"] = np.where(\n",
+        "    (quick_compare[\"assembley\"] == \"percphara\") & \n",
+        "    (quick_compare[\"council\"] == \"Crystal Hudson\") & \n",
+        "    (quick_compare[\"candidate\"] == \"Jabari Brisport\"), \n",
+        "    1, 0\n",
+        ")\n",
+        "\n",
+        "quick_compare[\"never_dsa\"] = np.where(\n",
+        "    (quick_compare[\"assembley\"] == \"percmos\") & \n",
+        "    (quick_compare[\"council\"].isin([\"Crystal Hudson\", \"Renee T. Collymore\"])) & \n",
+        "    (quick_compare[\"candidate\"] == \"Tremaine S. Wright\"), \n",
+        "    1, 0\n",
+        ")\n",
+        "\n",
+        "conditions = [\n",
+        "    (quick_compare[\"assembley\"] == \"percphara\") & \n",
+        "    (quick_compare[\"council\"] == \"Crystal Hudson\") & \n",
+        "    (quick_compare[\"candidate\"] == \"Jabari Brisport\"),\n",
+        "    \n",
+        "    (quick_compare[\"assembley\"] == \"percphara\") & \n",
+        "    (quick_compare[\"council\"] == \"Michael Hollingsworth\") & \n",
+        "    (quick_compare[\"candidate\"] == \"Jabari Brisport\")\n",
+        "]\n",
+        "\n",
+        "values = [1, 2] \n",
+        "quick_compare[\"dsa_cats\"] = np.select(conditions, values, default=0)"
+      ],
+      "id": "7f29362b",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "Below is a map of three categories. Category 2 voted DSA across the board, category 1 voted for the DSA in the Assembly and Senate races but not in the council races, and 0 is the rest of the districts. Table 5 below the map breaks down these categories by some key demographic variables.\n"
+      ],
+      "id": "884a0e08"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| warning: false\n",
+        "#| fig-cap: \"Missed Opportunity\"\n",
+        "#| fig-pos: H\n",
+        "map_missed = quick_compare[['ed_name','missed_chance','dsa_cats']].merge(ed_gdf, left_on='ed_name',right_on= 'ElectDist', how='left')\n",
+        "map_missed = gpd.GeoDataFrame(map_missed)\n",
+        "\n",
+        "map_missed['missed_chance'] = map_missed['missed_chance'].astype('category')\n",
+        "map_missed.plot(column='missed_chance', cmap='tab10', legend=True, figsize=(15, 10))\n",
+        "plt.show()"
+      ],
+      "id": "37024ddf",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| warning: false\n",
+        "#| fig-cap: 'Table 5'\n",
+        "\n",
+        "qc_demo = quick_compare[['ed_name','missed_chance','never_dsa',\"dsa_cats\"]].merge(full_results_thirty_five, on='ed_name', how='left')\n",
+        "qc_demo_occ = qc_demo.merge(occ_df, left_on='ed_name', right_on='ElectDist', how='left')\n",
+        "\n",
+        "b_tbl = qc_demo_occ.groupby('dsa_cats').agg({\n",
+        "    'nhw21p': 'mean',\n",
+        "    'nhb21p': 'mean',\n",
+        "    'white_transplant_ratio': 'mean',\n",
+        "    'mhhi21': 'mean',\n",
+        "    'cvap21bapp': 'mean',\n",
+        "    'wfh_ratio': 'mean',\n",
+        "    'dpp20bs': 'mean',\n",
+        "    'w2oadp': 'mean',\n",
+        "    'w2admp': 'mean'\n",
+        "}).round(2)\n",
+        "\n",
+        "b_tbl.reset_index(inplace=True)\n",
+        "cols = ['Cat.','NHW','NHB','White Trans.','M.H.I','BA+','WFH',\"Bernie '20\",'Office','A.D.J']\n",
+        "md_table = tabulate(b_tbl, tablefmt=\"pipe\",showindex=False,headers=cols)\n",
+        "display(Markdown(md_table))"
+      ],
+      "id": "52dd2f9f",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "This demographic breakdown offers a fascinating look at DSA support. The difference in all variables shown above is significant at the 99.9% confidence interval, meaning the chance that the demographic variation between these groups is random is practically 0. Categories 1 and 2, which vote for the DSA some or all of the time are whiter, better educated, higher income, and more likely to be artists, journalists, or designers than category zero. As discussed in Chapter 2 this last occupation category is a key indicator for DSA sucess. This aligns with stereotypes about the DSA citywide, as well as Hendrickson’s estimation that the organization could be doing better with working-class voters of color. In this election, however, Hudson was able to break up the DSA coalition and take the whitest, highest educated, and wealthiest EDs into her coalition. While both categories are likely to be artists, designers, and journalists, the category that broke with Hollingsworth is significantly less likely to be office clerks or admin. The core of the DSA electoral coalition, from this sample, seems be highly educated but middle income whites living along Franklin Ave, working in white-collar positions but not top earning ones. The wealthier whites in Prospect Heights may be happy to accept a DSA candidate in races such as Brisport’s and Souffrant’s, which is to say there may be no particular DSA stigma there, but are also eager to jump to a more traditional progressive candidate when one comes along. Especially one endorsed by local and national Democratic leadership. Hudson managed to artfully thread this coalition of Hasidic voters worried about Isreal and high-income voters looking for a traditional progressive and win. This is a real challenge to the DSA outsider strategy mentioned above.\n",
+        "\n",
+        "## Conclusion\n",
+        "\n",
+        "The 35th council district is a diverse district, representing many of the biggest changes to NYC demographics and politics. It features large white and Black populations, with many in-group differences in those larger racial categories. It features newcomers and long-time residents, and it has a large spectrum of income and education. Crystal Hudson’s winning coalition managed to win completely the large Hasidic bloc in the southeast of the district, as well as pick several high-income, highly educated white neighborhoods off of the DSA coalition in the area just north of Grand Army Plaza.\n",
+        "\n",
+        "This has important implications for the process of coaltion formation. First, it offers some evidence for differential demographic support for certain types of progressives. In this case, DSA support did in fact seem to come from white newcomers. High-income liberal whites might be counted on to join a progressive coalition, but with a preference for more traditional, party endorsed Democrats, whereas highly educated middle-income whites may be the ideal demographic pocket for further left progressives. This fits with the city-wide regression analysis done in Chapter 2. Second, the election reminds us that conservative blocs are important. If the Hasidic self-reported numbers are close to correct, Holllingsworth could have kept the entire Brisport and Suffrant coalition intact and still lost the race, almost entirely because of his stance on Israel (which, to state the obvious, does not fall within the jurisdiction of the New York City Council). Even a reduction in fervor over his stances on this issue might have reduced turnout and put him closer to the council. This offers a difficult picture for the DSA’s twin stances of ideological purity and outsider campaign status.\n",
+        "\n",
+        "Finally, how do the issues at play in this election affect actual policies? How much does the difference between the two leading candidates and the victory of the one receiving more support from affluent whites matter to the production of progressive policy? It matters quite a lot to those in the DSA section of the coalition, and they continue to see their job in city politics as slowly building a power structure to rival the current Democratic establishment. They think that nothing will fundamentally change for working-class New Yorkers until they break the gravitational pull of business as usual. As evidence for this view they would cite Hudson’s affirmative vote on the most recent budget vote, lending consent to Mayor Adam’s budget cuts. From a more traditional progressive perspective, however, Hudson has been a reliable supporter on the post-split progressive caucus and her yes vote on the budget, echoing that of the vast majority of her colleagues, made no difference to its passage. One way to state the difference between these two camps might be how they view political time. The DSA sees its mission in many election cycles, building a new base of political power. The opposing perspective is more concerned with political production in the shorter term. Subsequent chapters will continue to explore this fault line.\n",
+        "\n",
+        "\\clearpage\n",
+        "\n",
+        "::: {#refs}\n",
+        ":::"
+      ],
+      "id": "46c05526"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "C:\\Users\\samtg\\AppData\\Roaming\\Python\\share\\jupyter\\kernels\\python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}
