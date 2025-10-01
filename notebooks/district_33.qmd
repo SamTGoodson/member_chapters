@@ -1,0 +1,184 @@
+---
+title: "Lincoln Restler"
+format:
+  pdf:
+    df-print: kable
+    tbl-colwidths: [75,25]
+    code-fold: true
+    mainfont: "Georgia"
+header-includes:
+  - \usepackage{graphicx}
+  - \usepackage{adjustbox}
+  - \usepackage{afterpage}
+  - \usepackage{biblatex}
+  - \newcommand{\bibsection}{\clearpage\printbibliography}
+execute:
+  echo: false
+jupyter: python3
+bibliography: references.bib
+---
+
+
+```{python}
+import pandas as pd
+import geopandas as gpd
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib as mpl
+
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+
+import statsmodels.api as sm
+import statsmodels.formula.api as smf
+from statsmodels.iolib.summary2 import summary_col
+from statsmodels.stats.outliers_influence import variance_inflation_factor
+
+from shapely import wkt
+import matplotlib.patches as mpatches
+import colorsys
+from matplotlib.colors import to_hex
+import contextily as ctx
+
+from utils import make_precinct_counts,make_demo_map,job_cols,race_cols,cols_to_keep,scale_and_cluster,make_edname,map_round_votes,make_pc_map
+
+from tabulate import tabulate
+from IPython.display import Markdown
+
+import seaborn as sns
+```
+
+
+```{python}
+demo_cluster = pd.read_csv('../../chapter_two/data/occupation_demo_clusters_on_ed.csv')
+ed_level = pd.read_csv('../../cc_election_cleaning/occupation_demo_data_feb21.csv')
+
+ed_shapefile = '../../chapter_two/data/nyed_21a/nyed.shp'
+ed_gdf = gpd.read_file(ed_shapefile)
+
+full_results = pd.read_csv('../../cc_election_cleaning/election_results_with_vote_sponsor_cluster_FEB13.csv')
+lr = full_results[full_results['candidate'] == 'Lincoln Restler']
+
+ae = pd.read_csv('../../cc_election_cleaning/ae_precincts.csv')
+av = pd.read_csv('../../cc_election_cleaning/additional_variables.csv')
+fwe = pd.read_csv('../data/finance_with_ethnicity.csv')
+f_plus = pd.read_csv('../../council_campaign_finance/data/iwrl_plus.csv')
+occ_df = pd.read_csv('../../cc_election_cleaning/occupation_election_feb21.csv')
+
+p_cols = [col for col in occ_df.columns if col[-1] == 'p']
+wp_cols = [col for col in occ_df.columns if col.startswith("w2") and col.endswith("p")]
+wp_cols.remove('w2cop')
+to_remove = [ 'w2psp',
+ 'w2sep',
+ 'w2npp',
+ 'w2govp',
+ 'w2nip']
+wp_cols = [col for col in wp_cols if col not in to_remove]
+demo_cols = ['nhw21p','nhb21p','h21p','nha21p','cvap21bapp','mhhi21']
+
+lr = gpd.GeoDataFrame(lr,geometry=lr['geometry'].apply(wkt.loads))
+lr = lr.set_crs(epsg=2263, allow_override=True)
+co_3857 = lr.to_crs(epsg=3857)
+
+aal = pd.read_csv('../../cc_election_cleaning/precincts_leins.csv')
+yd = pd.read_csv('../../cc_election_cleaning/yiddish_precincts.csv')
+```
+
+Lincoln Restler won the Democratic primary in Brooklyn's 33rd Council District handily with 64% of the maximum round vote. As Chapter 2 recounted Restler is one of the progressives to win without capturing the white-transplant vote and, as explored below, is in the unique position of having 2020 support for Donald Trump as one of his strongest predictors. This is the case because Restler's strongest vote showing was in Williamsburg's Hasidic community. Restler, a stalwart of NYC progressive politics with tenure in Nydia Velzquez's office and the De Blasio administration, did not moderate his values to win the vote. 
+
+## The District 
+
+The 33rd begins in Downtown Brooklyn and follows the coastline North past the Navy Yard into Greenpoint and Williamsburg. It is in the top quintile of income, education, white population, white transplant population, as well as employees in banking, finance, and insurance, lawyers, white-collar managers, design, journalism, and software engineering. Occupationally and demographically it represents a horizontal coalition as described in Chapter 1. It is also in the top of Yiddish speaking population, including Williamsburg large and politically active Satmar population. Figure 1 below maps occupation by district and figure 2 maps the percentage of Hasidic speakers per bloc. 
+
+```{python}
+
+demo_occ_map = gpd.GeoDataFrame(demo_occ,geometry=demo_occ['geometry_x'].apply(wkt.loads))
+gdf = demo_occ_map.copy()
+eth_cols = ['ind21p','bang21p','domin21p','venez21p','mex21p','white_transplant_ratio','winda21p']
+red_eth_cols = ['nhw21p','nhb21p','h21p','nha21p']
+
+gdf['laptop'] = gdf['w2admp'] + gdf['w2banp'] + gdf['w2cmp']
+
+gdf['dom_eth']   = gdf[eth_cols].idxmax(axis=1)  
+gdf['dom_eth_p'] = gdf[eth_cols].max(axis=1)     
+
+gdf['dom_red_eth']   = gdf[red_eth_cols].idxmax(axis=1)
+gdf['dom_red_eth_p'] = gdf[red_eth_cols].max(axis=1)
+
+gdf['dom_occ']   = gdf[wp_cols].idxmax(axis=1)
+gdf['dom_occ_p'] = gdf[wp_cols].max(axis=1)
+
+def make_distinct_colormap(categories, palette_name='tab20'):
+    """
+    Returns dict mapping each category to a hex color, 
+    drawn from Matplotlib’s qualitative palette.
+    """
+    n = len(categories)
+    # grab n distinct colors from the palette
+    palette = plt.get_cmap(palette_name).colors
+    if n > len(palette):
+        raise ValueError(f"Palette {palette_name} only has {len(palette)} colors")
+    colors = palette[:n]
+    return dict(zip(categories, (to_hex(c) for c in colors)))
+
+eth_colors = make_distinct_colormap(sorted(gdf['dom_eth'].unique()), 'tab20')
+occ_colors = make_distinct_colormap(sorted(gdf['dom_occ'].unique()), 'tab20')
+
+# 2) map them into new columns on your GeoDataFrame
+gdf['eth_color'] = gdf['dom_eth'].map(eth_colors)
+gdf['occ_color'] = gdf['dom_occ'].map(occ_colors)
+
+def pct_to_color(hue, pct):
+    """
+    Convert hue [0–1] & pct [0–100] to an RGB hex.
+    We fix saturation=0.7 and vary value/lightness between 0.4 and 1.
+    """
+    sat = 0.7
+    # map 0–100 → 0.4–1.0
+    val = 0.4 + 0.6*(pct/100)
+    r, g, b = colorsys.hsv_to_rgb(hue, sat, val)
+    return (r, g, b)
+gdf = gdf.set_crs(epsg=2263, allow_override=True)
+gdf_3857 = gdf.to_crs(epsg=3857)
+
+occ_label_map = {
+    'w2admp': 'Designers & Journalists',
+    'w2banp': 'Analyst Specialist',
+    'w2bgp': 'Janitorial',
+    'w2conp': 'Construction',
+    'w2copp': 'Law Enforcement',
+    'w2foodp': 'Food Service',
+    'w2hsp': 'Homecare',
+    'w2mgtp': 'Management',
+    'w2oadp': 'Office Admin',
+    'w2salep': 'Sales'
+}
+
+gdf_3857['occupation_label'] = gdf_3857['dom_occ'].map(occ_label_map)
+gdf_3857['occupation_label'] = gdf_3857['occupation_label'].astype('category')
+
+fig, ax = plt.subplots(figsize=(10, 10))
+
+gdf_3857.plot(
+    column='occupation_label',
+    categorical=True,
+    cmap='tab20',
+    legend=True,
+    alpha=0.7,
+    ax=ax,
+    edgecolor='white',
+    linewidth=0.2,
+    legend_kwds={'title': 'Dominant Ethnicity', 'fontsize': 8, 'title_fontsize': 10}
+)
+
+ctx.add_basemap(
+    ax,
+    zoom=14   
+)
+
+ax.set_axis_off()
+ax.set_title("Dominant Ethnicity overlaid on Streets & Neighborhoods", pad=12)
+
+plt.tight_layout()
+plt.show()
+```

@@ -75,11 +75,11 @@ wp_cols = [col for col in wp_cols if col not in to_remove]
 demo_cols = ['nhw21p','nhb21p','h21p','nha21p','cvap21bapp','mhhi21']
 ```
 
-In Brooklyn's 37th Council district activist and Occupy Wall Street veteran Sandy Nurse unseated County party veteran Darma Diaz. Diaz had been endorsed by the County Party Executive Committee and was a close ally of new Brooklyn boss Rodneyse Bichette. Diaz had successfully gotten Nurse kicked off the ballot the year previously in a move that many, including Nurse, saw as Bichette and the County party using their weight to lift their chosen candidate to victory. Nurse's subsequent win was, like Osse in the 36th, an impressive show of progressive power against the political forces that had long dominated the borough. Also like Osse, Nurse easily won the district's gentrifying Northwestern corner, relying on well-educated white transplants as the base of her coalition. As with the races in the 35th and 36th, the race in the 37th became a referendum on Brooklyn Democratic establishment power, and as in the 36th the establishment lost.
+In Brooklyn's 37th Council district activist and Occupy Wall Street veteran Sandy Nurse unseated County party stalwart Darma Diaz. Diaz had been endorsed by the County Party Executive Committee and was a close ally of its new boss, Rodneyse Bichette. Diaz had successfully gotten Nurse kicked off the ballot the year previously in a move that many, including Nurse herself, saw as Bichette and the County party using their weight to lift their chosen candidate to victory. Nurse's subsequent win was, like Osse's in the 36th, an impressive show of progressive power against the political forces that had long dominated the borough. Also like Osse, Nurse easily won the district's gentrifying Northwestern corner, relying on well-educated white transplants as the base of her coalition, though she also had success in the southern wing of the district among Black voters. As with the races in the 35th and 36th, the race in the 37th became a referendum on Brooklyn Democratic establishment power, and as in the 36th the establishment lost.
 
 ## The District
 
-District 37 is a lower-income, relatively low-education working-class district with a large Hispanic and Black population and an increasingly large population of White newcomers. The district's northwest corner includes large sections of Bushwick, a neighborhood that has become synonymous in the past decade with young, white, newcomers. This population is especially dense around Myrtle Avenue, and coexists with large Mexican and Dominican populations. The district curves Southeast around Highland Park, where it proceeds East and includes Cypres Hills and sections of East New York. There is also a large Hispanic population in this area of the neighborhood, particularly a Dominican population between Liberty Avenue and the park. There is also a significant Black population in this section, primarily concentrated to the South of Liberty Avenue. Figures 1, 2 and 3 break down the district's population by race, ethnicity, and occupation. Figure 1 shows the district's EDs by largest race, the district is clearly largely Hispanic with a Black population along the southern edge. Figure 2 breaks down the district by ethnicity, the pocket of White transplants and Mexicans emerge in the Northwest corner of the district and the large Dominican population in the East. Figure 3 breaks down the district by primary occupation. Office Administration is the most common, uniting all the different ethnic sections of the district. Food service, construction, and home health care make up the other dominant occupations. Finally Figure 4 shows the share of a composite category of "laptop professionals", designers, journalists, financial and banking analysits, software engineers, and IT workers. There is a clear concentration of this group to the West of the L train, which runs north-south through this district at the Western edge of the park.
+District 37 is a lower-income, relatively low-education working-class district with a large Hispanic and Black population and an increasingly large population of White newcomers, particularly concentrated in the district's Northwest corner. This population is especially dense around Myrtle Avenue, and coexists with large Mexican and Dominican populations. The district curves Southeast around Highland Park, where it proceeds East and includes Cypres Hills and sections of East New York. There is also a large Hispanic population in this area of the neighborhood, particularly a Dominican population between Liberty Avenue and the park. There is also a significant Black population in this section, primarily concentrated to the South of Liberty Avenue. Figures 1, 2 and 3 break down the district's population by race, ethnicity, and occupation. Figure 1 shows the district's EDs by largest race, the district is clearly largely Hispanic with a Black population along the southern edge. Figure 2 breaks down the district by ethnicity, the pocket of White transplants and Mexicans emerge in the Northwest corner of the district and the large Dominican population in the East. Figure 3 breaks down the district by primary occupation. Office Administration is the most common, uniting all the different ethnic sections of the district. Food service, construction, and home health care make up the other dominant occupations. Finally Figure 4 shows the share of a composite category of "laptop professionals", designers, journalists, financial and banking analysis, software engineers, and IT workers. There is a clear concentration of this group to the West of the L train, which runs north-south through this district at the Western edge of the park.
 
 ```{python}
 #| echo: false
@@ -247,10 +247,112 @@ plt.show()
 
 ## The Candidates
 
-The two candidates with viable shots to win were Darma Diaz and Sandy Nurse. Diaz is a Brooklyn born daughter of Puerto Rican parents. Prior to her political work she founded and operated an non-profit that provided homeless services. She is a veteran of Brooklyn politics, having previously served as district leader for her assembly district. In 2020 she was elected to fill a Council seat vacated by resignation. There was confusion in the months leading up to the primary about whether the reduction in the necessary number of signatures for ballot access would apply to City Council races. The dispute is detailed in more detail below, but the end result was the removal of her most competitive opponents, including Nurse from the ballot. This meant she entered the 2021 race as the incumbent and the clear favorite of the County Party, as well as with a stain of corruption.
+The two candidates with viable shots to win were Darma Diaz and Sandy Nurse. Diaz is a Brooklyn born daughter of Puerto Rican parents. Prior to her political work she founded and operated an non-profit that provided homeless services. She is a veteran of Brooklyn politics, having previously served as district leader for her assembly district. In 2020 she was elected to fill a Council seat vacated by resignation. There was confusion in the months leading up to the primary about whether the COVID inspired reduction in the necessary number of signatures for ballot access would apply to City Council races. The dispute is detailed in more detail below, but the end result was the removal of her most competitive opponents, including Nurse from the ballot. This meant she entered the 2021 race as the incumbent and the clear favorite of the County Party, as well as with a stain of corruption.
 
-Prior to her political career Diaz worked for OverComing Love Ministry which seeks to find housing and employment for homeless East New Yorkers. She was also a founding member of Coalition for Community Advancement, a community group which sought to negotiate the removal of Arlington Village from the East New York rezoning. Arlington Village is a large, mainly vacant housing unit the city had hoped to include in its mixed use rezoning of the area. Diaz and her group worried about looming Real Estate speculation should the large property be included in the plan, and successfully sought its removal.
+Prior to her political career Diaz worked for OverComing Love Ministry which seeks to find housing and employment for homeless East New Yorkers. She was also a founding member of Coalition for Community Advancement, a community group which sought to negotiate the removal of Arlington Village from the East New York rezoning. Arlington Village is a large, mainly vacant housing unit the city had hoped to include in its mixed use rezoning of the area. Diaz and her group worried about looming real estate speculation should the large property be included in the plan, and successfully sought its removal. Apart from these associations Diaz had no outstanding political associations and is difficult to place on an ideological spectrum. She is an older type of council member, whose career on the body is primarily due to her in-district relationships, primarily with the County party. She did not raise exorbitant sums of city-wide money or take bold stands on national or international issues, like members of the group under analysis here.
 
-Nurse is a veteran of progressive politics. Her disillusionment with establishment politics led her to Occupy Wall Street where she played an important role as an organizer and leader. After Occupy she continued her activism, founding BK ROT, a composting service, and Mayday Space, a location for activists and organizers. She was also a leader in the 2020 sit-in outside City Hall for a no vote on the budget due to its continued high rate of NYPD funding.
+Not so with Nurse, who is a long time veteran of progressive politics. She is comfortable with the label progressive because she thinks it quickly communicates a lot of information to a large number of voters, but she also refers to herself as a leftist and cited her colleagues in the DSA as her closest ideological allies [@nurse2025]. Nurse spent her early career working with NGOs, but her disillusionment with what she say as establishment politics led her to Occupy Wall Street where she played an important role as an organizer and leader[@lange2023]. After Occupy she continued her activism, founding BK ROT, a composting service, and Mayday Space, a location for activists and organizers. She was also a leader in the 2020 sit-in outside City Hall for a no vote on the budget due to its continued high rate of NYPD funding [@lange2023]. Nurse is of the new breed of Coucnil members. When she discusses political issues there is careful attention paid to how they affect her constituents as well as an eye towards what they mean in the larger scope of city-wide and national politics. She often framed responses to questions in terms reminiscent of the discussion of Stone, Molleknkopf, and Fortner in Chapter 1, thinking through the intersection of race in class in ways that frame urban power.
 
-Both candidates draw on their personal biographies to justify thier current political activites, both have long histories in the district, and both are markedly left of center on the national political scale (though there is markedly more distance between them then between candidates in the 35th). As in other districts, the primary difference between the two returns again to insider vs outsider status. Diaz's work was inside the County Democratic Party which moved her up their ranks.
+The two were opposed, then, on two primary axes. First, the loudest and most contentious division, was their insider and outsider status. Diaz was the clear choice of the Kings County Dems, who threw their weight behind her in both 2020 and in 2021, having worked to get Nurse tossed off the ballot. Nurse saw this as corruption and clearly said so, as well as tweeting about other ways in which the county party was over-extending its reach, such as in the attempted dissolution of its youth branch [@alarge2021; @itconti2021]. Diaz also got the support of Hakeem Jeffries, Brooklyn's chief antagonist to progressives [@councilw2021]. The other axes was the style of council member each sought to be. Diaz emphasized her roots in the district, her personal experience, and her year spent getting money for the district. There was not much in the way of an identifiable partisan agenda. It was clear from the campaign trail that nurse wanted to be a different style of councilwoman, vocal about left-wing issues at the city and national level.
+
+## The Campaign
+
+The primary divide on the campaign trail was about Diaz's relationship with the County democratic party, as already mentioned. Diaz, who had gloated about her opponents being removed a year previously, had to play the defensive to avoid accusations of corruption [@coltin2020]. In PoliticsNY's candidate debate Nurse goes on the defensive against accusations of inept governance by the left, but the accusations came from another opponent, not from Diaz. During the debate Diaz seems at a loss on some principle issues and only capable of commanding the conversation when she is discussing places in her district or initiatives that she was on on the council. When discussing police violence, for example, most candidates discussed crime rates, police abuses, or defunding, Diaz chose to speak about a citizens policing course she had taken decades previously.
+
+The most contentious issues of the campaign was over race. Nurse, born in Panama to a Panamanian mother and African-American father, referred to herself as Afro-Latina. Diaz objected to this categorization, suggesting that Nurse was changing her race to meet the political demands of the moment.
+
+## The Election
+
+Nurse won the primary handily with 65% of the vote, figures X, Y, and Z explore the shape of the electorate. Figure X shows the first round vote percentages, here Nurse clearly excels in the gentrifying section of the district to the West of the L train, but also does well in the Southern strip of the Eastern part of the district.
+
+```{python}
+fig, ax = plt.subplots(figsize=(10, 10))
+co_3857.plot(
+    column='vote_share',
+    legend=True,
+    legend_kwds={
+        "label": "White Transplant Ratio by ED",
+        "orientation": "horizontal",
+        "shrink": 0.8,         # fraction of original size
+        "pad": 0.02            # space between map and bar
+    },
+    ax=ax,
+    alpha=0.6,
+    edgecolor="k",
+    cmap="viridis",
+)
+
+ctx.add_basemap(ax, source=ctx.providers.OpenStreetMap.Mapnik)
+
+ax.set_axis_off()
+plt.tight_layout()
+plt.show()
+```
+
+Figure Y looks at the percentage of ballots that picked Nurse in the first round and then someone other than Diaz, including no one else (the most popular response) in the second. This shows that Bushwick is clearly Nurse's home base but that she again does quite well in the Southeastern part of her district.
+
+```{python}
+value_col = 'share_sandy_nurse_not_darma_v._diaz_pct' 
+low_q = 0.01   
+high_q = 0.99
+cmap = "viridis"
+alpha = 0.6
+edgecolor = "k"
+
+
+gdf_clip = co_3857.copy()
+q_low, q_high = gdf_clip[value_col].quantile([low_q, high_q]).values
+
+
+gdf_clip['share_clipped'] = gdf_clip[value_col].clip(lower=q_low, upper=q_high)
+
+fig, ax = plt.subplots(figsize=(10, 10))
+gdf_clip.plot(
+    column='share_clipped',
+    legend=True,
+    legend_kwds={
+        "label": "Share (Sandy not Darma) — clipped to 1st/99th pct",
+        "orientation": "horizontal",
+        "shrink": 0.8,
+        "pad": 0.02
+    },
+    ax=ax,
+    alpha=alpha,
+    edgecolor=edgecolor,
+    cmap=cmap,
+)
+ctx.add_basemap(ax, source=ctx.providers.OpenStreetMap.Mapnik)
+ax.set_axis_off()
+plt.tight_layout()
+plt.show()
+```
+
+Finally, figure Z shows for each district what the largest category is, Nurse alone, Nurse than Diaz, Diaz alone, or Diaz then Nurse. Diaz clearly controls the heavily Dominican part of the district and Nurse the rest.
+
+```{python}
+fig, ax = plt.subplots(figsize=(10, 10))
+
+co_3857.plot(
+    column='biggest',
+    categorical=True,
+    cmap='tab20',
+    legend=True,
+    alpha=0.7,
+    ax=ax,
+    edgecolor='white',
+    linewidth=0.2,
+    legend_kwds={'title': 'Dominant Ethnicity', 'fontsize': 8, 'title_fontsize': 10}
+)
+
+ctx.add_basemap(
+    ax,
+    #source=ctx.providers.CartoDB.Positron,  
+    zoom=14   
+)
+
+ax.set_axis_off()
+ax.set_title("Dominant Ethnicity overlaid on Streets & Neighborhoods", pad=12)
+
+plt.tight_layout()
+plt.show()
+```
