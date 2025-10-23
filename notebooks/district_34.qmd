@@ -1,0 +1,81 @@
+---
+title: "Route in Bushwick"
+format:
+  pdf:
+    df-print: kable
+    tbl-colwidths: [75,25]
+    code-fold: true
+    mainfont: "Georgia"
+header-includes:
+  - \usepackage{graphicx}
+  - \usepackage{adjustbox}
+  - \usepackage{afterpage}
+  - \usepackage{biblatex}
+  - \newcommand{\bibsection}{\clearpage\printbibliography}
+execute:
+  echo: false
+jupyter: python3
+bibliography: references.bib
+---
+
+```{python}
+import pandas as pd
+import geopandas as gpd
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib as mpl
+
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+
+import statsmodels.api as sm
+import statsmodels.formula.api as smf
+from statsmodels.iolib.summary2 import summary_col
+from statsmodels.stats.outliers_influence import variance_inflation_factor
+
+from shapely import wkt
+import matplotlib.patches as mpatches
+import colorsys
+from matplotlib.colors import to_hex
+import contextily as ctx
+
+from utils import make_precinct_counts,make_demo_map,job_cols,race_cols,cols_to_keep,scale_and_cluster,make_edname,map_round_votes,make_pc_map
+
+from tabulate import tabulate
+from IPython.display import Markdown
+
+import seaborn as sns
+```
+
+```{python}
+demo_cluster = pd.read_csv('../../chapter_two/data/occupation_demo_clusters_on_ed.csv')
+ed_level = pd.read_csv('../../cc_election_cleaning/occupation_demo_data_feb21.csv')
+
+ed_shapefile = '../../chapter_two/data/nyed_21a/nyed.shp'
+ed_gdf = gpd.read_file(ed_shapefile)
+
+full_results = pd.read_csv('../../cc_election_cleaning/election_results_with_vote_sponsor_cluster_FEB13.csv')
+jg = full_results[full_results['candidate'] == 'Jennifer Guttierez']
+
+ae = pd.read_csv('../../cc_election_cleaning/ae_precincts.csv')
+av = pd.read_csv('../../cc_election_cleaning/additional_variables.csv')
+fwe = pd.read_csv('../data/finance_with_ethnicity.csv')
+f_plus = pd.read_csv('../../council_campaign_finance/data/iwrl_plus.csv')
+occ_df = pd.read_csv('../../cc_election_cleaning/occupation_election_feb21.csv')
+
+p_cols = [col for col in occ_df.columns if col[-1] == 'p']
+wp_cols = [col for col in occ_df.columns if col.startswith("w2") and col.endswith("p")]
+wp_cols.remove('w2cop')
+to_remove = [ 'w2psp',
+ 'w2sep',
+ 'w2npp',
+ 'w2govp',
+ 'w2nip']
+wp_cols = [col for col in wp_cols if col not in to_remove]
+demo_cols = ['nhw21p','nhb21p','h21p','nha21p','cvap21bapp','mhhi21']
+```
+
+District 34 lies to the West of District 37, representing the large section of Bushwick not represented by Sandy Nurse as well as some sections of Ridgewood. In our interview Michael Lange described this district as the one most primed for a DSA candidate that didn't already have one, and indeed the progressive (but non DSA) Guttierez won in a landslide, securing 79% of the vote with no opponent securing more than 10%. Because the margin of victory was so large, Gutierez's win doesn't lend itself to detailed analysis. 
+
+## The District 
+

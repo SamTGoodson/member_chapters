@@ -18,7 +18,6 @@ jupyter: python3
 bibliography: references.bib
 ---
 
-
 ```{python}
 #| warning: false
 import pandas as pd
@@ -88,11 +87,11 @@ corr_matrix = corr_matrix.sort_values('vote_share')
 vote_corr = corr_matrix[['vote_share']]
 ```
 
-In several respects the 2021 primary in Brooklyn's 39th Council district mirrored the race the in 35th. A DSA endorsed housing activist, Brandon West, squared off against another progressive who had connections to the outgoing council member, Shahana Hanif, with Hanif coming out on top. Unlike the 35th, however, Hanif was self-described socialist and the outgoing member, Brad Lander, a standard bearer for local progressive politics. Also unlike the 35th Hanif, a daughter of Bengali immigrants, had a connection to a sizeable minority population in the district. To win Hanif put together a coalition of Bengali's in the southern section of the district, middle-income professionals in Kensington and Windsor Terrace, and upper-income Garcia voters in Park Slope. Her campaign was a showcase of progressive political potential. NYC-DSA co-chair Sumathy Kuma said of the race that it was unfortunate that they had to run against each other. It certainly was unfortunate for the DSA that they endorsed against a socialist with broad coalitional potential. 
+In several respects the 2021 primary in Brooklyn's 39th Council district mirrored the race the in 35th. A DSA endorsed housing activist, Brandon West, squared off against another progressive who had connections to the outgoing council member, Shahana Hanif, with Hanif coming out on top. Unlike the 35th, however, Hanif was self-described socialist and the outgoing member, Brad Lander, a standard bearer for local progressive politics. Also unlike the 35th Hanif, a daughter of Bengali immigrants, had a connection to a sizeable minority population in the district. To win Hanif put together a coalition of Bengali's in the southern section of the district, middle-income professionals in Kensington and Windsor Terrace, and upper-income Garcia voters in Park Slope. Her campaign was a showcase of progressive political potential. NYC-DSA co-chair Sumathy Kuma said of the race that it was unfortunate that they had to run against each other. It certainly was unfortunate for the DSA that they endorsed against a socialist with broad coalitional potential.
 
 ## The District
-The 39th stretches from Park Slope south and southeast through the neighborhoods sandwiched between Prospect Park and Greenwood Cemetery and ends in Kensignton. In the demographic clustering the 39th was in cluster 3 alongside other neighborhoods in brownstone Brooklyn, lower Manhattan, and the Upper West Side. It ranks in the top quintile of both income and education levels, white population, and white population born outside New York state. Its primary occupations correspond with its high education levels; it is in the highest quintile of lawyers, analysts, software engineers, educators and journalists. There are also large concentrations of construction workers, home health aids, and nurses in the southern section of the district. It is in the 2nd highest quintile of both Indian and Bengali residents, though in absolute terms these population are not that large at 2 and 1 percent of the district's population respectively. The district has an electoral history of supporting progressives, having sent both Brad Lander and Bill De Blasio to the city council. Figure 1 below shows the distribution of income throughout the district and figure 2 shows the distribution of Indian and Bengali populations. 
 
+The 39th stretches from Park Slope south and southeast through the neighborhoods sandwiched between Prospect Park and Greenwood Cemetery and ends in Kensignton. In the demographic clustering the 39th was in cluster 3 alongside other neighborhoods in brownstone Brooklyn, lower Manhattan, and the Upper West Side. It ranks in the top quintile of both income and education levels, white population, and white population born outside New York state. Its primary occupations correspond with its high education levels; it is in the highest quintile of lawyers, analysts, software engineers, educators and journalists. There are also large concentrations of construction workers, home health aids, and nurses in the southern section of the district. It is in the 2nd highest quintile of both Indian and Bengali residents, though in absolute terms these population are not that large at 2 and 1 percent of the district's population respectively. The district has an electoral history of supporting progressives, having sent both Brad Lander and Bill De Blasio to the city council. It also has the fourth highest rate of DSA member in Brooklyn, at 573. Both candidates lamented that political power in the district had long been held in wealthier, whiter, and more professional Park Slope[@central2020]. DSA endorsement documents show excitment about the potential for socialists in the district because of these high numbers as well as the high rate of education as well as outgoing council member Lander's decision not to endorse [@central2020a]. Figure 1 below shows the distribution of income throughout the district and figure 2 shows the distribution of Indian and Bengali populations.
 
 ```{python}
 #| fig-cap: 'Median Household Income'
@@ -102,9 +101,14 @@ corr_map.plot(column='mhhi21', cmap='viridis', legend=True, figsize=(15, 10))
 plt.show()
 ```
 
-
 ```{python}
 #| fig-cap: "South Asian Population"
 corr_map.plot(column='south_asian', cmap='viridis', legend=True, figsize=(15, 10))
 plt.show()
 ```
+
+## The Candidates
+
+Both candidates sought a DSA endorsement and both candidates lost votes in the Brooklyn Electoral Working Group to receive it. West lost a close vote 80/95, whereas Hanif lost a more lopsided vote 22/154. West ended up receiving the endorsement anyway, as he won the mandatory 60% minimum of chapter support [@cbkweek2020].
+
+Hanif

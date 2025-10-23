@@ -18,7 +18,6 @@ jupyter: python3
 bibliography: references.bib
 ---
 
-
 ```{python}
 import pandas as pd
 import geopandas as gpd
@@ -47,7 +46,6 @@ from IPython.display import Markdown
 
 import seaborn as sns
 ```
-
 
 ```{python}
 demo_cluster = pd.read_csv('../../chapter_two/data/occupation_demo_clusters_on_ed.csv')
@@ -84,11 +82,11 @@ aal = pd.read_csv('../../cc_election_cleaning/precincts_leins.csv')
 yd = pd.read_csv('../../cc_election_cleaning/yiddish_precincts.csv')
 ```
 
-Lincoln Restler won the Democratic primary in Brooklyn's 33rd Council District handily with 64% of the maximum round vote. As Chapter 2 recounted Restler is one of the progressives to win without capturing the white-transplant vote and, as explored below, is in the unique position of having 2020 support for Donald Trump as one of his strongest predictors. This is the case because Restler's strongest vote showing was in Williamsburg's Hasidic community. Restler, a stalwart of NYC progressive politics with tenure in Nydia Velzquez's office and the De Blasio administration, did not moderate his values to win the vote. 
+Lincoln Restler won the Democratic primary in Brooklyn's 33rd Council District handily with 64% of the maximum round vote. As Chapter 2 recounted Restler is one of the progressives to win without capturing the white-transplant vote and, as explored below, is in the unique position of having 2020 support for Donald Trump as one of his strongest predictors. This is the case because Restler's strongest vote showing was in Williamsburg's Hasidic community. Restler, a stalwart of NYC progressive politics with tenure in Nydia Velzquez's office and the De Blasio administration, did not moderate his values to win the vote. He won with a progressive pragmatism that allowed him to advocate for ideological shifts to the left without alienating this voter base.
 
-## The District 
+## The District
 
-The 33rd begins in Downtown Brooklyn and follows the coastline North past the Navy Yard into Greenpoint and Williamsburg. It is in the top quintile of income, education, white population, white transplant population, as well as employees in banking, finance, and insurance, lawyers, white-collar managers, design, journalism, and software engineering. Occupationally and demographically it represents a horizontal coalition as described in Chapter 1. It is also in the top of Yiddish speaking population, including Williamsburg large and politically active Satmar population. Figure 1 below maps occupation by district and figure 2 maps the percentage of Hasidic speakers per bloc. 
+The 33rd begins in Downtown Brooklyn and follows the coastline North past the Navy Yard into Greenpoint and Williamsburg. It is in the top quintile of income, education, white population, white transplant population, as well as employees in banking, finance, and insurance, lawyers, white-collar managers, design, journalism, and software engineering. Occupationally and demographically it represents a horizontal coalition as described in Chapter 1. It is also in the top of Yiddish speaking population, including Williamsburg large and politically active Satmar population. Figure 1 below maps occupation by district and figure 2 maps the percentage of Hasidic speakers per bloc.
 
 ```{python}
 
@@ -179,6 +177,59 @@ ctx.add_basemap(
 ax.set_axis_off()
 ax.set_title("Dominant Ethnicity overlaid on Streets & Neighborhoods", pad=12)
 
+plt.tight_layout()
+plt.show()
+```
+
+## The Candidates
+
+The top two candidates were Lincoln Restler and Elizabeth Adams, though Adams was a very distant second; Restler tripled her vote total in the first round of voting.
+
+Adams is a native New Yorker who credits rent stabilization and unionization with allowing her family to raiser he in the city. After working in advocacy at Planned Parenthood she worked as the 33rd's legislative director. She expressed routinely progressive opinions in interviews and endorsement questionnaires, desiring to cut the NYPD budget, closer Rikers, legalize sex work, and overhaul the land use and rezoning procedures. Despite these progressive bona fides in a leftwing district, her campaign never really launched. She raised \$60k to Restler's \$90, received not Independent Expenditure support, and received no major endorsements.
+
+Adams's failure to build momentum has less to do with her personal failings and more to do with her opponent. Reslter also grew up in the district, returning after his university studies and becoming involved in local politics. He co-founded New Kings Democrats, a reform club seeking to oppose the reign of the Brooklyn Democratic machine that so staunchly opposed Nurse, Osse, and Hollingsworth. He worked in the De Blasio administration and as a policy advisor in his second campaign. Restler received the endorsement of Congresswoman Nydia Velezquez, as well as DSA front-bencher Julia Salazar and progresive public advoacte Jumanee Williams. Restler got a WFP endorsement, a New Kings Democrat endorsement, as well as DC37, 32BJ SEIU, the CWA, the New York State Nurses Association, and the Hotel Trades Council, all of whom spent heavily on advertisements for restler via their Labor Strong PAC. In total they spetn \$53,548 on mailers, fliers, digital ads, and a TV spot for Retler, their sixth largest spot of the cycle. Restler had the connections and the name recognintion to pull far ahead of Adams and not look back.
+
+It is perhaps this seeming inevitability of his primary victory that won him the support of the Satmar community. Figure 4 is a map of Reslter's overall vote total and figure 3 is a map of the number of votes for Restler only, that didn't include Adams on the ballot at all. He swept the Hasidic section of Willamsburg. Billy Richling highlighted in densly-reported an article for Bklynr that none of the slate of Dems in the 33rd really fit with the Satmar ideological profile, but that nonetheless Restler was their favorite. Writing for New York Jewish Week after the primary, Jacob Henry asks explicitly "How this Jewish politician in Brooklyn wins friends among progressives and the haredi Orthodox?" A lot of the answer Henry provides is fluff, but he does cite Satmar leader Rabbi Moishe Indig on Restler's dependability on local issues. “He’s not like other politicians,” Indig said. “He’s always on the streets. If it’s snow, or a blackout or a flood, whatever it is, he is there to help.” Restler mentioned this when interviewed for the project, saying for many in the community the issue is less about ideology than immediate services rendered. Sandy Nurse offered a similar refection for parts of her district, suggesting there are areas in the city where high-flying ideology wins out but that there are others where dependability during infrastructure failure is really what counts. Everyone interviewed for this project about The Bronx had similar things to say about the districts there. This dichotomy is too simple, as the Satmar themselves make clear, being deeply concerned with ideological issues of a national scale along with this local dependability. The distinction does help illuminate broad differences, however, in the salience of national political valence for different voters.
+
+## The Election
+
+Table 1 and 2 argue for Restler's dependence on Satmar support. Table 1 shows a strong positive correlation with the vote for Donald Turmp and Eric Adams and number of Yiddish speakers per 100 residents as well as a strong negative correlation with markers that characterize the rest of Williamsburg, white transplant ratio, education, and share of media workers. Table 2 is an OLS model using only Donald Trump vote share as an independent variable, this model has an R squared of .74, meaning 74% of the variation in Lincoln Restler's vote share can be explained by looking at Trump's.
+
+```{python}
+label_map = {
+    'vote_share': 'Restler Vote',
+    'white_transplant_ratio': 'White Transplant Ratio',
+    'pg20djtp': '2020 Trump Vote',
+    'nhw21p': 'White %',
+    'mhhi21': 'Median HH Income',
+    'cvap21bapp': 'BA+',
+    'w2admp': 'Journalists/Designers',
+    'w2bgp': 'Janitors/Building',
+    'w2hsp': 'Home Health Aid',
+    'w2cmp': 'Software/Computers',
+    'w2govp': 'Government',
+    'adams213p' : 'Adams Vote',
+    'rateE' : 'Yiddish Speakers/100'
+}
+cor_cols = ['vote_share','rateE','adams213p','pg20djtp','nhw21p','white_transplant_ratio','cvap21bapp','w2admp'] 
+corr_matrix = demo_occ[cor_cols].corr()
+corr_matrix.rename(index=label_map, columns=label_map, inplace=True)
+plt.figure(figsize=(10, 8))
+sns.set(style="white", font_scale=1.2)
+
+heatmap = sns.heatmap(
+    corr_matrix,
+    annot=True,             
+    fmt=".2f",             
+    cmap="coolwarm",        
+    vmin=-1, vmax=1,        
+    linewidths=0.5,         
+    cbar_kws={"shrink": 0.8, 'label': 'Correlation Coefficient'}
+)
+
+plt.title("Correlation Matrix", fontsize=16)
+plt.xticks(rotation=45, ha='right')
+plt.yticks(rotation=0)
 plt.tight_layout()
 plt.show()
 ```

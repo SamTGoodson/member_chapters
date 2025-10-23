@@ -1,0 +1,339 @@
+ELECTION,OFFICECD,CANDID,CANCLASS,CANDLAST,CANDFIRST,CANDMI,COMMITTEE,FILING,SCHEDULE,PAGENO,SEQUENCENO,REFNO,INV_DATE,DATE,NAME,C_CODE,ORG_IND,STRNO,STRNAME,APARTMENT,CITY,STATE,ZIP,PAY_METHOD,AMNT,PURPOSECD,PURPOSE,EXPLAIN,EXEMPTCD,RR_IND,SEG_IND
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0001013,10/16/2020,10/19/2020,	NY PRINTS LLC,LLC,Y,,,,Long Island City,NY,11101,Unknown,54.44,LITER,Campgn Lit.,Posters,,N,N
+2021,55,2380,P,Won,Julie,,H,13,F,,,R0004891,9/24/2021,9/29/2021,"Ahasan, Purna",IND,N,,,,Woodside,NY,11377,Unknown,900.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005047,10/8/2021,10/20/2021,"Ahasan, Purna",IND,N,,,,Woodside,NY,11377,Unknown,900.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0004020,5/8/2021,5/8/2021,Alewife Brewing,LLC,Y,,,,Sunnyside,NY,11104,Unknown,53.10,OTHER,Other: explntion,Canvassing Refreshme,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004487,6/25/2021,6/25/2021,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,4.00,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,11,F,,,R0004704,7/28/2021,7/28/2021,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,25.50,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,13,F,,,R0004881,9/28/2021,9/28/2021,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,20.00,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,13,F,,,R0005039,8/27/2021,8/27/2021,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,20.75,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005306,10/29/2021,10/29/2021,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,21.75,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,15,F,,,R0005361,11/26/2021,11/26/2021,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,40.13,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,15,F,,,R0005460,12/27/2021,12/27/2021,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,8.96,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,16,F,,,R0005503,1/26/2022,1/26/2022,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,5.21,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,16,F,,,R0005507,2/25/2022,2/25/2022,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,5.75,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,16,F,,,R0005511,3/25/2022,3/25/2022,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,5.00,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,16,F,,,R0005518,4/26/2022,4/26/2022,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,5.00,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,16,F,,,R0005643,5/26/2022,5/26/2022,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,5.00,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,16,F,,,R0005647,6/24/2022,6/24/2022,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,5.00,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,17,F,,,R0005652,7/26/2022,7/26/2022,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,5.25,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,17,F,,,R0005660,8/26/2022,8/26/2022,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,5.00,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,17,F,,,R0005664,9/29/2022,9/29/2022,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,5.00,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,17,F,,,R0005673,10/27/2022,10/27/2022,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,5.00,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,17,F,,,R0005682,11/23/2022,11/23/2022,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,5.00,OTHER,Other: explntion,banking fees,,N,N
+2021,55,2380,P,Won,Julie,,H,17,F,,,R0005686,12/23/2022,12/23/2022,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,5.25,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,18,F,,,R0005692,1/26/2023,1/26/2023,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,5.00,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,18,F,,,R0005696,2/23/2023,2/23/2023,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,5.00,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,18,F,,,R0005700,3/24/2023,3/24/2023,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,5.00,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,18,F,,,R0005709,4/26/2023,4/26/2023,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,5.00,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,18,F,,,R0005715,5/26/2023,5/26/2023,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,5.00,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,18,F,,,R0005719,6/26/2023,6/26/2023,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,5.00,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,19,F,,,R0005729,7/26/2023,7/26/2023,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,5.00,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,19,F,,,R0005733,8/25/2023,8/25/2023,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,5.00,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,19,F,,,R0005740,9/27/2023,9/27/2023,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,5.00,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,19,F,,,R0005747,10/27/2023,10/27/2023,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,5.00,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,19,F,,,R0005751,11/29/2023,11/29/2023,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,5.00,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,19,F,,,R0005755,12/29/2023,12/29/2023,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,5.00,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,20,F,,,R0005759,1/26/2024,1/26/2024,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,5.00,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,20,F,,,R0005764,2/27/2024,2/27/2024,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,5.00,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,20,F,,,R0005768,3/27/2024,3/27/2024,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,5.00,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,20,F,,,R0005776,4/26/2024,4/26/2024,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,5.00,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,20,F,,,R0005780,5/24/2024,5/24/2024,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,5.00,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,20,F,,,R0005786,6/28/2024,6/28/2024,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,7.25,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,21,F,,,R0005793,7/26/2024,7/26/2024,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,7.00,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,21,F,,,R0005798,8/29/2024,8/29/2024,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,7.00,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,21,F,,,R0005802,9/26/2024,9/26/2024,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,7.00,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0000876,9/28/2020,9/28/2020,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,125.46,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0001261,10/29/2020,10/29/2020,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,6.47,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0001774,11/27/2020,11/27/2020,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,6.47,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0002832,12/21/2020,12/21/2020,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,5.21,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,7,F,,,R0003454,1/22/2021,1/22/2021,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,6.46,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,7,F,,,R0003596,2/25/2021,2/25/2021,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,7.56,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003789,3/25/2021,3/25/2021,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,40.75,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0004097,4/27/2021,4/27/2021,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,18.25,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,9,F,,,R0004222,5/28/2021,5/28/2021,Amalgamated Bank,CORP,Y,,,,New York,NY,10001,Unknown,2.71,OTHER,Other: explntion,Banking Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005290,10/30/2021,11/1/2021,Amazon,CORP,Y,,,,Seattle,WA,98109,Unknown,251.90,OTHER,Other: explntion,Rally Speaker/Mic,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005294,10/30/2021,11/3/2021,Amazon,CORP,Y,,,,Seattle,WA,98109,Unknown,50.03,OTHER,Other: explntion,Laptop Stand GOTV,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003914,4/17/2021,4/17/2021,Bee Cafe,LLC,Y,,,,Woodside,NY,11377,Unknown,5.17,OTHER,Other: explntion,Canvassing Refreshme,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003918,4/17/2021,4/19/2021,Bee Cafe,LLC,Y,,,,Woodside,NY,11377,Unknown,6.17,OTHER,Other: explntion,Canvassing Refreshme,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003922,4/17/2021,4/17/2021,Bee Cafe,LLC,Y,,,,Woodside,NY,11377,Unknown,78.36,OTHER,Other: explntion,Canvassing Refreshme,,N,N
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0001771,11/26/2020,11/30/2020,Best Buy,CORP,Y,,,,Richfield,MN,55423,Unknown,870.99,OFFCE,Office Expenses,Computer Laptop,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004424,6/23/2021,6/25/2021,"Blasenstein, Isaac",IND,N,,,,Woodside,NY,11377,Unknown,2550.00,CONSL,Campgn Consuls.,Policy Crafting Edit,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005045,10/13/2021,10/19/2021,"Blasenstein, Isaac",IND,N,,,,Woodside,NY,11377,Unknown,750.00,CONSL,Campgn Consuls.,Policy Crafting Edit,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005206,11/3/2021,11/5/2021,"Blasenstein, Isaac",IND,N,,,,Woodside,NY,11377,Unknown,1071.43,CONSL,Campgn Consuls.,Policy Crafting Edit,,N,N
+2021,55,2380,P,Won,Julie,,H,7,F,,,R0003602,3/1/2021,3/2/2021,"Blasenstein, Isaac",IND,N,,,,Woodside,NY,11377,Unknown,1500.00,CONSL,Campgn Consuls.,Policy Crafting Edit,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003726,3/15/2021,3/17/2021,"Blasenstein, Isaac",IND,N,,,,Woodside,NY,11377,Unknown,750.00,CONSL,Campgn Consuls.,Policy Crafting Edit,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003817,3/30/2021,4/1/2021,"Blasenstein, Isaac",IND,N,,,,Woodside,NY,11377,Unknown,750.00,CONSL,Campgn Consuls.,Policy Crafting Edit,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003909,4/19/2021,4/23/2021,"Blasenstein, Isaac",IND,N,,,,Woodside,NY,11377,Unknown,1660.71,CONSL,Campgn Consuls.,Policy Crafting Edit,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0004003,5/7/2021,5/11/2021,"Blasenstein, Isaac",IND,N,,,,Woodside,NY,11377,Unknown,1500.00,CONSL,Campgn Consuls.,Policy Crafting Edit,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0004065,5/13/2021,5/17/2021,"Blasenstein, Isaac",IND,N,,,,Woodside,NY,11377,Unknown,1500.00,CONSL,Campgn Consuls.,Policy Crafting Edit,,N,N
+2021,55,2380,P,Won,Julie,,H,9,F,,,R0004177,5/31/2021,6/2/2021,"Blasenstein, Isaac",IND,N,,,,Woodside,NY,11377,Unknown,1500.00,CONSL,Campgn Consuls.,Policy Crafting Edit,,N,N
+2021,55,2380,P,Won,Julie,,H,15,F,,,R0005437,12/11/2021,12/13/2021,Calendly LLC,LLC,Y,,,,Atlanta,GA,30363,Unknown,156.78,OFFCE,Office Expenses,Calendar Program,,N,N
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0001889,12/11/2020,12/12/2020,Calendly LLC,LLC,Y,,,,Atlanta,GA,30363,Unknown,96.00,OFFCE,Office Expenses,Calendar program,,N,N
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0001893,12/11/2020,12/12/2020,Calendly LLC,LLC,Y,,,,Atlanta,GA,30363,Unknown,48.00,OFFCE,Office Expenses,Calendar program,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005241,11/3/2021,11/8/2021,"Chowdhury, Tanbir",IND,N,,,,Jamaica,NY,11435,Unknown,279.00,WAGES,Campgn Wrkrs $$,Canvass Payroll,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005245,11/3/2021,11/8/2021,"Chowdhury, Tanbir",IND,N,,,,Jamaica,NY,11435,Unknown,288.00,WAGES,Campgn Wrkrs $$,Canvass Payroll,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004455,6/26/2021,6/29/2021,"Connor, Martin E",IND,N,,,,Brooklyn,NY,11201,Unknown,7000.00,PROFL,Prof. Srvcs.,Post Primary Legal,CAN,N,N
+2021,55,2380,P,Won,Julie,,H,11,F,,,R0004761,7/13/2021,7/15/2021,"Connor, Martin E",IND,N,,,,Brooklyn,NY,11201,Unknown,1529.72,PROFL,Prof. Srvcs.,Post Primary Legal,CAN,N,N
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0000281,8/3/2020,8/20/2020,"Connor, Martin E",IND,N,,,,Brooklyn,NY,11201,Unknown,1000.00,PROFL,Prof. Srvcs.,Legal Services,,N,N
+2021,55,2380,P,Won,Julie,,H,7,F,,,R0003619,3/1/2021,3/2/2021,"Connor, Martin E",IND,N,,,,Brooklyn,NY,11201,Unknown,4500.00,PROFL,Prof. Srvcs.,Legal Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003781,3/22/2021,3/25/2021,"Connor, Martin E",IND,N,,,,Brooklyn,NY,11201,Unknown,4000.00,PROFL,Prof. Srvcs.,Legal Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005197,10/28/2021,10/29/2021,Crown Prints,LLC,Y,,,,Long Island City,NY,11101,Unknown,1040.00,OTHER,Other: explntion,Campaign Sweatshirts,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005302,11/1/2021,11/3/2021,Crown Prints,LLC,Y,,,,Long Island City,NY,11101,Unknown,2040.00,OTHER,Other: explntion,Campaign Sweatshirts,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003786,3/25/2021,3/29/2021,Cyclo,LLC,Y,,,,Long Island City,NY,11101,Unknown,126.96,OTHER,Other: explntion,Staff Dinner,,N,N
+2021,55,2380,P,Won,Julie,,H,12,F,,,R0004813,9/9/2021,9/13/2021,Dawa's,LLC,Y,,,,Woodside,NY,11377,Unknown,125.42,OTHER,Other: explntion,Volunteer Dinner,,N,N
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0002764,12/29/2020,12/31/2020,"Deng, Jefferson",IND,N,,,,Flushing,NY,11373,Unknown,1000.00,LITER,Campgn Lit.,Graphics,,N,N
+2021,55,2380,P,Won,Julie,,H,11,F,,,R0004626,7/23/2021,7/26/2021,District Saigon,LLC,Y,,,,Astoria,NY,11103,Unknown,603.23,OTHER,Other: explntion,Staff Appreciation,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004404,6/21/2021,6/21/2021,Dollar Tree,CORP,Y,,,,Woodside,NY,11377,Unknown,50.00,OTHER,Other: explntion,Ponchos for Canvasse,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003742,3/18/2021,3/18/2021,Dollar Tree,CORP,Y,,,,Woodside,NY,11377,Unknown,6.53,OTHER,Other: explntion,Candelight Vigil,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003746,3/18/2021,3/18/2021,Dollar Tree,CORP,Y,,,,Woodside,NY,11377,Unknown,9.80,OTHER,Other: explntion,Candelight Vigil,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004399,6/19/2021,6/19/2021,Doughnut Plant,LLC,Y,,,,Long Island City,NY,11101,Unknown,25.10,OTHER,Other: explntion,Canvassing Refreshme,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0004016,5/8/2021,5/8/2021,Duck Season,LLC,Y,,,,Sunnyside,NY,11104,Unknown,27.60,OTHER,Other: explntion,Canvassing Refreshme,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005331,11/2/2021,11/3/2021,Dunkin' - Baskin Robbins,CORP,Y,,,,Woodside,NY,11377,Unknown,29.35,OTHER,Other: explntion,Food for E-day staff,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005335,11/2/2021,11/3/2021,Dunkin' - Baskin Robbins,CORP,Y,,,,Woodside,NY,11377,Unknown,33.96,OTHER,Other: explntion,Food for E-day staff,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005013,10/13/2021,10/20/2021,EL Diario,CORP,Y,,,,Brooklyn,NY,11201,Unknown,2200.00,PRINT,Print Ads,Ads,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003897,4/17/2021,4/17/2021,Flowers By Giorgie,LLC,Y,,,,Sunnyside,NY,11104,Unknown,121.62,INTER,Interest Expns.,Earth Day Seeds,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004475,6/30/2021,7/1/2021,Google,LLC,Y,,,,Mountain View,CA,94043,Unknown,71.42,OFFCE,Office Expenses,Google Cloud G Suite,,N,N
+2021,55,2380,P,Won,Julie,,H,11,F,,,R0004707,7/31/2021,8/3/2021,Google,LLC,Y,,,,Mountain View,CA,94043,Unknown,52.26,OFFCE,Office Expenses,Google Cloud G Suite,,N,N
+2021,55,2380,P,Won,Julie,,H,12,F,,,R0004784,8/31/2021,9/2/2021,Google,LLC,Y,,,,Mountain View,CA,94043,Unknown,52.26,OFFCE,Office Expenses,Google Cloud G Suite,,N,N
+2021,55,2380,P,Won,Julie,,H,13,F,,,R0004932,9/30/2021,10/4/2021,Google,LLC,Y,,,,Mountain View,CA,94043,Unknown,50.95,OFFCE,Office Expenses,Google Cloud G Suite,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005317,10/31/2021,11/2/2021,Google,LLC,Y,,,,Mountain View,CA,94043,Unknown,45.73,OFFCE,Office Expenses,Google Cloud G Suite,,N,N
+2021,55,2380,P,Won,Julie,,H,15,F,,,R0005428,11/30/2021,12/1/2021,Google,LLC,Y,,,,Mountain View,CA,94043,Unknown,45.73,OFFCE,Office Expenses,Google Cloud G Suite,,N,N
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0001492,10/31/2020,10/31/2020,Google,LLC,Y,,,,Mountain View,CA,94043,Unknown,25.28,OFFCE,Office Expenses,Google Cloud G Suite,,N,N
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0001884,11/30/2020,12/2/2020,Google,LLC,Y,,,,Mountain View,CA,94043,Unknown,51.39,OFFCE,Office Expenses,Google Cloud G Suite,,N,N
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0003091,12/31/2020,1/4/2021,Google,LLC,Y,,,,Mountain View,CA,94043,Unknown,28.64,OFFCE,Office Expenses,Google Cloud G Suite,,N,N
+2021,55,2380,P,Won,Julie,,H,7,F,,,R0003476,1/31/2021,2/2/2021,Google,LLC,Y,,,,Mountain View,CA,94043,Unknown,33.48,OFFCE,Office Expenses,Google Cloud G Suite,,N,N
+2021,55,2380,P,Won,Julie,,H,7,F,,,R0003606,2/28/2021,3/3/2021,Google,LLC,Y,,,,Mountain View,CA,94043,Unknown,44.55,OFFCE,Office Expenses,Google Cloud G Suite,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003848,3/31/2021,4/4/2021,Google,LLC,Y,,,,Mountain View,CA,94043,Unknown,53.09,OFFCE,Office Expenses,Google Cloud G Suite,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003969,4/30/2021,5/3/2021,Google,LLC,Y,,,,Mountain View,CA,94043,Unknown,62.71,OFFCE,Office Expenses,Google Cloud G Suite,,N,N
+2021,55,2380,P,Won,Julie,,H,9,F,,,R0004204,5/31/2021,6/2/2021,Google,LLC,Y,,,,Mountain View,CA,94043,Unknown,70.57,OFFCE,Office Expenses,Google Cloud G Suite,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004316,,6/14/2021,"Ho, Helen",IND,N,,,,Long Island City,NY,11106,Advance,223.95,ADVAN,Advance Repaymnt,Advance Repayment,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004318,,6/14/2021,"Ho, Helen",IND,N,,,,Long Island City,NY,11106,Advance,44.59,ADVAN,Advance Repaymnt,Advance Repayment,,N,N
+2021,55,2380,P,Won,Julie,,H,13,F,,,R0004957,10/8/2021,10/15/2021,"Ho, Helen",IND,N,,,,Long Island City,NY,11106,Unknown,750.00,CONSL,Campgn Consuls.,Communications,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005163,10/25/2021,10/27/2021,"Ho, Helen",IND,N,,,,Long Island City,NY,11106,Unknown,750.00,CONSL,Campgn Consuls.,Communications,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005167,11/3/2021,11/5/2021,"Ho, Helen",IND,N,,,,Long Island City,NY,11106,Unknown,525.00,CONSL,Campgn Consuls.,Communications,,N,N
+2021,55,2380,P,Won,Julie,,H,12,F,,,R0004852,9/17/2021,9/22/2021,"Hom, Peter B",IND,N,,,,Oakland Gardens,NY,11364-240,Unknown,2500.00,CONSL,Campgn Consuls.,Treasurer,,N,N
+2021,55,2380,P,Won,Julie,,H,13,F,,,R0004905,10/1/2021,10/5/2021,"Hom, Peter B",IND,N,,,,Oakland Gardens,NY,11364-240,Unknown,2500.00,CONSL,Campgn Consuls.,Treasurer,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005043,10/12/2021,10/20/2021,"Hom, Peter B",IND,N,,,,Oakland Gardens,NY,11364-240,Unknown,2500.00,CONSL,Campgn Consuls.,Treasurer,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005202,11/2/2021,11/5/2021,"Hom, Peter B",IND,N,,,,Oakland Gardens,NY,11364-240,Unknown,3750.00,CONSL,Campgn Consuls.,Treasurer,,N,N
+2021,55,2380,P,Won,Julie,,H,15,F,,,R0005430,11/23/2021,11/30/2021,"Hom, Peter B",IND,N,,,,Oakland Gardens,NY,11364-240,Unknown,3750.00,CONSL,Campgn Consuls.,Treasurer,,N,N
+2021,55,2380,P,Won,Julie,,H,15,F,,,R0005446,1/1/2022,1/5/2022,"Hom, Peter B",IND,N,,,,Oakland Gardens,NY,11364-240,Unknown,6250.00,CONSL,Campgn Consuls.,Treasurer,,N,N
+2021,55,2380,P,Won,Julie,,H,15,F,,,R0005468,1/11/2022,1/12/2022,"Hom, Peter B",IND,N,,,,Oakland Gardens,NY,11364-240,Unknown,2500.00,CONSL,Campgn Consuls.,Treasurer,,N,N
+2021,55,2380,P,Won,Julie,,H,16,F,,,R0005485,1/14/2022,1/19/2022,"Hom, Peter B",IND,N,,,,Oakland Gardens,NY,11364-240,Unknown,1250.00,CONSL,Campgn Consuls.,Treasurer,,N,N
+2021,55,2380,P,Won,Julie,,H,16,F,,,R0005639,6/2/2022,6/6/2022,"Hom, Peter B",IND,N,,,,Oakland Gardens,NY,11364-240,Unknown,1750.00,CONSL,Campgn Consuls.,Post Election Audit,,N,N
+2021,55,2380,P,Won,Julie,,H,17,F,,,R0005678,11/14/2022,11/16/2022,"Hom, Peter B",IND,N,,,,Oakland Gardens,NY,11364-240,Unknown,1750.00,OTHER,Other: explntion,Post Election Audit,,N,N
+2021,55,2380,P,Won,Julie,,H,20,F,,,R0005782,7/11/2023,5/29/2024,"Hom, Peter B",IND,N,,,,Oakland Gardens,NY,11364-240,Unknown,2500.00,CONSL,Campgn Consuls.,Post Election Audit,,N,N
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0000143,,8/22/2020,"Hom, Peter B",IND,N,,,,Oakland Gardens,NY,11364-240,Advance,42.43,ADVAN,Advance Repaymnt,Advance Repayment,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004255,6/7/2021,6/9/2021,"Hong, Daniel",IND,N,,,,Ridgewood,NY,11385,Unknown,375.00,CONSL,Campgn Consuls.,Social Media,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004419,6/21/2021,6/24/2021,"Hong, Daniel",IND,N,,,,Ridgewood,NY,11385,Unknown,375.00,CONSL,Campgn Consuls.,Social Media,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004449,6/28/2021,6/30/2021,"Hong, Daniel",IND,N,,,,Ridgewood,NY,11385,Unknown,75.00,CONSL,Campgn Consuls.,Social Media,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003721,3/15/2021,3/17/2021,"Hong, Daniel",IND,N,,,,Woodside,NY,11377,Unknown,250.00,CONSL,Campgn Consuls.,Social Media,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003836,3/29/2021,4/5/2021,"Hong, Daniel",IND,N,,,,Woodside,NY,11377,Unknown,250.00,CONSL,Campgn Consuls.,Social Media,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003891,4/12/2021,4/15/2021,"Hong, Daniel",IND,N,,,,Woodside,NY,11377,Unknown,250.00,CONSL,Campgn Consuls.,Social Media,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003948,4/26/2021,4/28/2021,"Hong, Daniel",IND,N,,,,Woodside,NY,11377,Unknown,375.00,CONSL,Campgn Consuls.,Social Media,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0004008,5/10/2021,5/12/2021,"Hong, Daniel",IND,N,,,,Ridgewood,NY,11385,Unknown,375.00,CONSL,Campgn Consuls.,Social Media,,N,N
+2021,55,2380,P,Won,Julie,,H,9,F,,,R0004157,5/24/2021,5/26/2021,"Hong, Daniel",IND,N,,,,Ridgewood,NY,11385,Unknown,375.00,CONSL,Campgn Consuls.,Social Media,,N,N
+2021,55,2380,P,Won,Julie,,H,9,F,,,R0004263,6/2/2021,6/7/2021,Hootsuite Inc.,CORP,Y,,,,New York,NY,10017,Unknown,81.66,OTHER,Other: explntion,Social Media Platfor,,N,N
+2021,55,2380,P,Won,Julie,,H,13,F,,,R0005018,10/16/2021,10/18/2021,I Love Paraguay,LLC,Y,,,,Sunnyside,NY,11104,Unknown,139.03,OTHER,Other: explntion,Volunteer Meal,,N,N
+2021,55,2380,P,Won,Julie,,H,7,F,,,R0003501,2/5/2021,2/8/2021,Jack's Fire Department,LLC,Y,,,,Sunnyside,NY,11104,Unknown,276.80,OTHER,Other: explntion,Community contact,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004383,6/16/2021,6/17/2021,Jim Owles Liberal Democratic C,PCOMZ,Y,,,,New York,NY,10011,Unknown,400.00,OTHER,Other: explntion,Gala Awards Ceremony,,N,N
+2021,55,2380,P,Won,Julie,,H,11,F,,,R0004624,7/23/2021,7/26/2021,Karaoke Shout,LLC,Y,,,,Astoria,NY,11103,Unknown,729.60,OTHER,Other: explntion,Staff Appreciation,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005149,10/25/2021,11/1/2021,Karmapa Service Society USA,OTHR,Y,,,,Woodside,NY,11377,Unknown,150.00,OTHER,Other: explntion,Space Rental,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004345,6/15/2021,6/17/2021,"Kim, Phillip",IND,N,,,,Brooklyn,NY,11213,Unknown,1500.00,OTHER,Other: explntion,Video filming,,N,N
+2021,55,2380,P,Won,Julie,,H,9,F,,,R0004197,5/27/2021,5/31/2021,Kini,LLC,Y,,,,Long Island City,NY,11101,Unknown,204.91,OTHER,Other: explntion,Community Event,,N,N
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0000297,8/3/2020,8/13/2020,"Kung, Andrew",IND,N,,,,Brooklyn,NY,11201,Unknown,370.00,PROFL,Prof. Srvcs.,Photography,,N,N
+2021,55,2380,P,Won,Julie,,H,12,F,,,R0004824,9/13/2021,9/13/2021,La Flor Restaurant Cafe,LLC,Y,,,,Woodside,NY,11377,Unknown,14.09,OTHER,Other: explntion,Campaign Lunch,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0004108,5/7/2021,5/17/2021,Lamar Advertising of New York,CORP,Y,,,,New York,NY,10016,Unknown,3725.00,PRINT,Print Ads,Poster,,N,N
+2021,55,2380,P,Won,Julie,,H,13,F,,,R0005008,10/12/2021,10/13/2021,"Litchinut Studios, LLC",LLC,Y,,,,Sunnyside,NY,11104,Unknown,567.82,OTHER,Other: explntion,Masks,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005091,10/21/2021,10/22/2021,"Litchinut Studios, LLC",LLC,Y,,,,Sunnyside,NY,11104,Unknown,1020.15,OTHER,Other: explntion,Campaign Beanies,,N,N
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0002555,12/9/2020,12/28/2020,"Litchinut Studios, LLC",LLC,Y,,,,Sunnyside,NY,11104,Unknown,673.65,LITER,Campgn Lit.,Masks with logo,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0004044,4/21/2021,4/26/2021,"Litchinut Studios, LLC",LLC,Y,,,,Sunnyside,NY,11104,Unknown,582.38,OTHER,Other: explntion,"Masks,Totes",,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005115,10/21/2021,10/22/2021,"Lyft, Inc.",CORP,Y,,,,San Francisco,CA,94104,Unknown,11.65,OTHER,Other: explntion,Tranportation,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005177,10/25/2021,10/27/2021,"Lyft, Inc.",CORP,Y,,,,San Francisco,CA,94104,Unknown,55.86,OTHER,Other: explntion,Tranportation,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005181,10/25/2021,10/25/2021,"Lyft, Inc.",CORP,Y,,,,San Francisco,CA,94104,Unknown,48.78,OTHER,Other: explntion,Tranportation,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005185,10/22/2021,10/25/2021,"Lyft, Inc.",CORP,Y,,,,San Francisco,CA,94104,Unknown,9.71,OTHER,Other: explntion,Tranportation,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005298,10/30/2021,11/1/2021,"Lyft, Inc.",CORP,Y,,,,San Francisco,CA,94104,Unknown,12.75,OTHER,Other: explntion,Tranportation,,N,N
+2021,55,2380,P,Won,Julie,,H,7,F,,,R0003465,1/28/2021,1/29/2021,Mobilize,CORP,Y,,,,New York,NY,10003,Unknown,163.31,OTHER,Other: explntion,Volunteer management,,N,N
+2021,55,2380,P,Won,Julie,,H,7,F,,,R0003628,3/1/2021,3/4/2021,"Mohammed, Doreen",IND,N,,,,Astoria,NY,11102,Unknown,1125.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003732,3/12/2021,3/17/2021,"Mohammed, Doreen",IND,N,,,,Astoria,NY,11102,Unknown,750.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003840,4/2/2021,4/6/2021,"Mohammed, Doreen",IND,N,,,,Astoria,NY,11102,Unknown,1125.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003901,4/16/2021,4/20/2021,"Mohammed, Doreen",IND,N,,,,Astoria,NY,11102,Unknown,750.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003973,5/1/2021,5/4/2021,"Mohammed, Doreen",IND,N,,,,Astoria,NY,11102,Unknown,750.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,9,F,,,R0004169,5/22/2021,6/1/2021,"Mohammed, Doreen",IND,N,,,,Astoria,NY,11102,Unknown,1125.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004356,6/15/2021,6/17/2021,"Muccioli, Thomas",IND,N,,,,Sunnyside,NY,11104,Unknown,1750.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004365,6/16/2021,6/17/2021,"Muccioli, Thomas",IND,N,,,,Sunnyside,NY,11104,Unknown,1750.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004479,6/29/2021,7/2/2021,"Muccioli, Thomas",IND,N,,,,Sunnyside,NY,11104,Unknown,1925.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003905,4/17/2021,4/23/2021,"Muccioli, Thomas",IND,N,,,,Sunnyside,NY,11104,Unknown,1750.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003981,5/3/2021,5/4/2021,"Muccioli, Thomas",IND,N,,,,Sunnyside,NY,11104,Unknown,1750.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,9,F,,,R0004149,5/24/2021,5/26/2021,"Muccioli, Thomas",IND,N,,,,Sunnyside,NY,11104,Unknown,1750.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0002771,12/23/2020,12/28/2020,New York State Democratic Comm,PCOMZ,Y,,,,New York,NY,10004,Unknown,3500.00,OFFCE,Office Expenses,Voter file access,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004332,6/8/2021,6/16/2021,"North Shore Strategies, LLC",LLC,Y,,,,Astoria,NY,11106,Unknown,8062.94,CMAIL,Campgn Mlngs,GOTV Mailer,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004444,6/22/2021,6/29/2021,"North Shore Strategies, LLC",LLC,Y,,,,Astoria,NY,11106,Unknown,4785.00,CONSL,Campgn Consuls.,Canvass Payroll,,N,N
+2021,55,2380,P,Won,Julie,,H,7,F,,,R0003567,2/17/2021,2/25/2021,"North Shore Strategies, LLC",LLC,Y,,,,Astoria,NY,11106,Unknown,6780.69,CMAIL,Campgn Mlngs,Direct Mail,,N,N
+2021,55,2380,P,Won,Julie,,H,9,F,,,R0004232,6/1/2021,6/4/2021,"North Shore Strategies, LLC",LLC,Y,,,,Astoria,NY,11106,Unknown,8990.00,CONSL,Campgn Consuls.,Canvass Payroll,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004369,6/9/2021,6/19/2021,NY Prints LLC,LLC,Y,,,,Long Island City,NY,11101,Unknown,1829.10,LITER,Campgn Lit.,Palm Cards,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004374,6/11/2021,6/19/2021,NY Prints LLC,LLC,Y,,,,Long Island City,NY,11101,Unknown,2090.40,LITER,Campgn Lit.,Palm Cards,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005121,10/15/2021,11/4/2021,NY Prints LLC,LLC,Y,,,,Long Island City,NY,11101,Unknown,598.81,LITER,Campgn Lit.,Posters,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005123,10/15/2021,11/4/2021,NY Prints LLC,LLC,Y,,,,Long Island City,NY,11101,Unknown,1306.50,LITER,Campgn Lit.,Palm Cards,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005343,11/1/2021,11/12/2021,NY Prints LLC,LLC,Y,,,,Long Island City,NY,11101,Unknown,4700.00,CMAIL,Campgn Mlngs,GOTV Mailer,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005345,11/1/2021,11/10/2021,NY Prints LLC,LLC,Y,,,,Long Island City,NY,11101,Unknown,4600.00,CMAIL,Campgn Mlngs,GOTV Mailer,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005347,11/1/2021,11/13/2021,NY Prints LLC,LLC,Y,,,,Long Island City,NY,11101,Unknown,1775.56,CMAIL,Campgn Mlngs,GOTV Mailer,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005351,11/3/2021,11/13/2021,NY Prints LLC,LLC,Y,,,,Long Island City,NY,11101,Unknown,871.00,LITER,Campgn Lit.,Palm Cards,,N,N
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0001703,11/20/2020,11/24/2020,NY Prints LLC,LLC,Y,,,,Long Island City,NY,11101,Unknown,734.91,LITER,Campgn Lit.,"Posters, Cards",,N,N
+2021,55,2380,P,Won,Julie,,H,7,F,,,R0003650,2/27/2021,3/8/2021,NY Prints LLC,LLC,Y,,,,Long Island City,NY,11101,Unknown,299.41,PETIT,Petition Expns.,Petition Printing,,N,N
+2021,55,2380,P,Won,Julie,,H,7,F,,,R0003690,3/10/2021,3/11/2021,NY Prints LLC,LLC,Y,,,,Long Island City,NY,11101,Unknown,81.66,PETIT,Petition Expns.,Petition Printing,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0004025,5/4/2021,5/15/2021,NY Prints LLC,LLC,Y,,,,Long Island City,NY,11101,Unknown,1300.00,LITER,Campgn Lit.,Door Hangers,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0004026,5/4/2021,5/16/2021,NY Prints LLC,LLC,Y,,,,Long Island City,NY,11101,Unknown,1313.00,LITER,Campgn Lit.,Door Hangers,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0004031,5/4/2021,5/15/2021,NY Prints LLC,LLC,Y,,,,Long Island City,NY,11101,Unknown,903.66,LITER,Campgn Lit.,Palm Cards,,N,N
+2021,55,2380,P,Won,Julie,,H,9,F,,,R0004192,5/27/2021,5/31/2021,NY Prints LLC,LLC,Y,,,,Long Island City,NY,11101,Unknown,653.25,LITER,Campgn Lit.,Poster,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004388,6/15/2021,6/24/2021,"NY Pro Audio Connection, LLC",LLC,Y,,,,Astoria,NY,11106,Unknown,370.18,OTHER,Other: explntion,Audio services,,N,N
+2021,55,2380,P,Won,Julie,,H,13,F,,,R0004899,9/29/2021,9/30/2021,Outerboro Media,CORP,Y,,,,Sunnyside,NY,11104,Unknown,1450.00,PRINT,Print Ads,Ads,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003829,3/31/2021,4/1/2021,Outerboro Media,CORP,Y,,,,Sunnyside,NY,11104,Unknown,2500.00,PRINT,Print Ads,Ads,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003956,4/30/2021,4/30/2021,Outerboro Media,CORP,Y,,,,Sunnyside,NY,11104,Unknown,2500.00,PRINT,Print Ads,Ads,,N,N
+2021,55,2380,P,Won,Julie,,H,9,F,,,R0004186,5/31/2021,5/31/2021,Outerboro Media,CORP,Y,,,,Sunnyside,NY,11104,Unknown,2500.00,PRINT,Print Ads,Ads,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004328,6/8/2021,6/9/2021,Pacific Campaign House,LLC,Y,,,,San Francisco,CA,94105,Unknown,5000.00,OTHER,Other: explntion,Digital Ads,,N,N
+2021,55,2380,P,Won,Julie,,H,11,F,,,R0004495,7/8/2021,7/12/2021,Pacific Campaign House,LLC,Y,,,,San Francisco,CA,94105,Unknown,1000.00,PROFL,Prof. Srvcs.,Digital Consulting,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005027,10/18/2021,10/20/2021,Pacific Campaign House,LLC,Y,,,,San Francisco,CA,94105,Unknown,7000.00,OTHER,Other: explntion,Digital Ads,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003713,3/12/2021,3/16/2021,Pacific Campaign House,LLC,Y,,,,San Francisco,CA,94105,Unknown,500.00,PROFL,Prof. Srvcs.,Digital Consulting,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003794,3/25/2021,3/31/2021,Pacific Campaign House,LLC,Y,,,,San Francisco,CA,94105,Unknown,20000.00,OTHER,Other: explntion,Digital Ads,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0004059,5/12/2021,5/17/2021,Pacific Campaign House,LLC,Y,,,,San Francisco,CA,94105,Unknown,2000.00,PROFL,Prof. Srvcs.,Digital Consulting,,N,N
+2021,55,2380,P,Won,Julie,,H,9,F,,,R0004226,6/2/2021,6/4/2021,Pacific Campaign House,LLC,Y,,,,San Francisco,CA,94105,Unknown,1000.00,PROFL,Prof. Srvcs.,Digital Consulting,,N,N
+2021,55,2380,P,Won,Julie,,H,13,F,,,R0005003,10/9/2021,10/15/2021,Parijat Desai,LLC,Y,,,,New York,NY,10040,Unknown,125.00,OTHER,Other: explntion,Community Event,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003752,3/18/2021,3/19/2021,Party City,CORP,Y,,,,Long Island City,NY,11101,Unknown,28.29,OTHER,Other: explntion,Candelight Vigil,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003757,3/18/2021,3/19/2021,Party City,CORP,Y,,,,Long Island City,NY,11101,Unknown,14.14,OTHER,Other: explntion,Candelight Vigil,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005050,9/24/2021,10/24/2021,"Perez, Karla",IND,N,,,,Long Island City,NY,11101,Unknown,300.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005052,10/8/2021,10/27/2021,"Perez, Karla",IND,N,,,,Long Island City,NY,11101,Unknown,900.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005056,10/22/2021,10/27/2021,"Perez, Karla",IND,N,,,,Long Island City,NY,11101,Unknown,900.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005210,11/3/2021,11/8/2021,"Perez, Karla",IND,N,,,,Long Island City,NY,11101,Unknown,900.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,9,F,,,R0004270,6/5/2021,6/6/2021,Pizza Boy 2,LLC,Y,,,,Woodside,NY,11377,Unknown,10.00,OTHER,Other: explntion,Canvassing Refreshme,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005257,10/21/2021,11/12/2021,"Police Department, City of New",OTHR,Y,,,,Long Island City,NY,11101,Unknown,45.00,OTHER,Other: explntion,GOTV Rally permit,,N,N
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0002703,12/23/2020,12/31/2020,Red Horse Strategies,LLC,Y,,,,Brooklyn,NY,11201,Unknown,1959.75,LITER,Campgn Lit.,Palm Cards,,N,N
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0002707,12/4/2020,1/4/2021,Red Horse Strategies,LLC,Y,,,,Brooklyn,NY,11201,Unknown,1250.00,CONSL,Campgn Consuls.,Retainer,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004483,7/2/2021,7/6/2021,Rewired LLC,LLC,Y,,,,Brooklyn,NY,11221,Unknown,153.49,OTHER,Other: explntion,Text Messaging,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003988,5/3/2021,5/4/2021,Rewired LLC,LLC,Y,,,,Brooklyn,NY,11221,Unknown,38.58,OTHER,Other: explntion,Text Messaging,,N,N
+2021,55,2380,P,Won,Julie,,H,9,F,,,R0004251,6/3/2021,6/6/2021,Rewired LLC,LLC,Y,,,,Brooklyn,NY,11221,Unknown,107.75,OTHER,Other: explntion,Text Messaging,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004322,6/8/2021,6/9/2021,"Rubin, Moses",IND,N,,,,New York,NY,10013,Unknown,2250.00,CONSL,Campgn Consuls.,Comms / FLD /Mgmt,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004429,6/28/2021,6/30/2021,"Rubin, Moses",IND,N,,,,New York,NY,10013,Unknown,2700.00,CONSL,Campgn Consuls.,Comms / FLD /Mgmt,,N,N
+2021,55,2380,P,Won,Julie,,H,12,F,,,R0004788,8/30/2021,9/2/2021,"Rubin, Moses",IND,N,,,,New York,NY,10013,Unknown,750.00,CONSL,Campgn Consuls.,Communications,,N,N
+2021,55,2380,P,Won,Julie,,H,12,F,,,R0004817,9/11/2021,9/14/2021,"Rubin, Moses",IND,N,,,,New York,NY,10013,Unknown,750.00,CONSL,Campgn Consuls.,Communications,,N,N
+2021,55,2380,P,Won,Julie,,H,13,F,,,R0004893,9/24/2021,9/28/2021,"Rubin, Moses",IND,N,,,,New York,NY,10013,Unknown,2150.00,CONSL,Campgn Consuls.,Comms / Campgn Mgmt,,N,N
+2021,55,2380,P,Won,Julie,,H,13,F,,,R0004936,10/8/2021,10/14/2021,"Rubin, Moses",IND,N,,,,New York,NY,10013,Unknown,2500.00,CONSL,Campgn Consuls.,Campgn Mgmt,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005101,,10/21/2021,"Rubin, Moses",IND,N,,,,New York,NY,10013,Advance,31.84,ADVAN,Advance Repaymnt,Advance Repayment,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005103,,10/21/2021,"Rubin, Moses",IND,N,,,,New York,NY,10013,Advance,88.22,ADVAN,Advance Repaymnt,Advance Repayment,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005105,,10/21/2021,"Rubin, Moses",IND,N,,,,New York,NY,10013,Advance,66.18,ADVAN,Advance Repaymnt,Advance Repayment,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005107,,10/21/2021,"Rubin, Moses",IND,N,,,,New York,NY,10013,Advance,140.02,ADVAN,Advance Repaymnt,Advance Repayment,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005119,10/22/2021,10/26/2021,"Rubin, Moses",IND,N,,,,New York,NY,10013,Unknown,2500.00,CONSL,Campgn Consuls.,Campgn Mgmt,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005214,11/3/2021,11/5/2021,"Rubin, Moses",IND,N,,,,New York,NY,10013,Unknown,1964.29,CONSL,Campgn Consuls.,Campgn Mgmt,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005264,,11/1/2021,"Rubin, Moses",IND,N,,,,New York,NY,10013,Advance,100.34,ADVAN,Advance Repaymnt,Advance Repayment,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005312,,11/4/2021,"Rubin, Moses",IND,N,,,,New York,NY,10013,Advance,91.60,ADVAN,Advance Repaymnt,Advance Repayment,,N,N
+2021,55,2380,P,Won,Julie,,H,7,F,,,R0003457,1/15/2021,1/20/2021,"Rubin, Moses",IND,N,,,,New York,NY,10013,Unknown,1125.00,CONSL,Campgn Consuls.,Comms / FLD /Mgmt,,N,N
+2021,55,2380,P,Won,Julie,,H,7,F,,,R0003472,1/30/2021,2/2/2021,"Rubin, Moses",IND,N,,,,New York,NY,10013,Unknown,2250.00,CONSL,Campgn Consuls.,Comms / FLD /Mgmt,,N,N
+2021,55,2380,P,Won,Julie,,H,7,F,,,R0003531,2/13/2021,2/17/2021,"Rubin, Moses",IND,N,,,,New York,NY,10013,Unknown,2250.00,CONSL,Campgn Consuls.,Comms / FLD /Mgmt,,N,N
+2021,55,2380,P,Won,Julie,,H,7,F,,,R0003612,3/1/2021,3/3/2021,"Rubin, Moses",IND,N,,,,New York,NY,10013,Unknown,2250.00,CONSL,Campgn Consuls.,Comms / FLD /Mgmt,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003736,3/15/2021,3/17/2021,"Rubin, Moses",IND,N,,,,New York,NY,10013,Unknown,2250.00,CONSL,Campgn Consuls.,Comms / FLD /Mgmt,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003821,3/29/2021,4/1/2021,"Rubin, Moses",IND,N,,,,New York,NY,10013,Unknown,2250.00,CONSL,Campgn Consuls.,Comms / FLD /Mgmt,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003883,4/12/2021,4/13/2021,"Rubin, Moses",IND,N,,,,New York,NY,10013,Unknown,2250.00,CONSL,Campgn Consuls.,Comms / FLD /Mgmt,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003942,4/26/2021,4/28/2021,"Rubin, Moses",IND,N,,,,New York,NY,10013,Unknown,2250.00,CONSL,Campgn Consuls.,Comms / FLD /Mgmt,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0004040,5/12/2021,5/13/2021,"Rubin, Moses",IND,N,,,,New York,NY,10013,Unknown,2250.00,CONSL,Campgn Consuls.,Comms / FLD /Mgmt,,N,N
+2021,55,2380,P,Won,Julie,,H,9,F,,,R0004153,5/24/2021,5/26/2021,"Rubin, Moses",IND,N,,,,New York,NY,10013,Unknown,2250.00,CONSL,Campgn Consuls.,Comms / FLD /Mgmt,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004393,6/23/2021,6/24/2021,Sapps,LLC,Y,,,,Long Island City,NY,11101,Unknown,1060.82,OTHER,Other: explntion,Election Day Party,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003784,3/25/2021,3/29/2021,Sapps,LLC,Y,,,,Long Island City,NY,11101,Unknown,486.79,OTHER,Other: explntion,Volunteer Appreciati,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004339,6/11/2021,6/15/2021,Scheck Outdoor Advertising LLC,LLC,Y,,,,Hoboken,NJ,07030,Unknown,1050.00,OTHER,Other: explntion,Digital Truck Ads,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004413,6/22/2021,6/23/2021,Scheck Outdoor Advertising LLC,LLC,Y,,,,Hoboken,NJ,07030,Unknown,2500.00,OTHER,Other: explntion,Digital Truck Ads,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005153,10/22/2021,10/26/2021,Scheck Outdoor Advertising LLC,LLC,Y,,,,Hoboken,NJ,07030,Unknown,1050.00,OTHER,Other: explntion,Digital Truck Ads,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005158,11/1/2021,11/3/2021,Scheck Outdoor Advertising LLC,LLC,Y,,,,Hoboken,NJ,07030,Unknown,1050.00,OTHER,Other: explntion,Digital Truck Ads,,N,N
+2021,55,2380,P,Won,Julie,,H,7,F,,,R0003440,1/15/2021,1/17/2021,"Shabana, Yarah",IND,N,,,,Flushing,NY,11355,Unknown,975.00,CONSL,Campgn Consuls.,Communications / FLD,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003875,4/9/2021,4/12/2021,Skillman Convenience,LLC,Y,,,,Sunnyside,NY,11104,Unknown,33.80,LITER,Campgn Lit.,Copies of Flyers,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003879,4/12/2021,4/14/2021,Skillman Convenience,LLC,Y,,,,Sunnyside,NY,11104,Unknown,33.97,LITER,Campgn Lit.,Copies of Flyers,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003998,5/5/2021,5/7/2021,Skillman Convenience,LLC,Y,,,,Sunnyside,NY,11104,Unknown,33.97,LITER,Campgn Lit.,Copies of Flyers,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004349,6/11/2021,6/16/2021,"Soto, Eric",IND,N,,,,New York,NY,10034,Unknown,1750.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004440,6/22/2021,6/30/2021,"Soto, Eric",IND,N,,,,New York,NY,10034,Unknown,1225.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003992,5/1/2021,5/11/2021,"Soto, Eric",IND,N,,,,New York,NY,10034,Unknown,1750.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,9,F,,,R0004111,5/14/2021,5/18/2021,"Soto, Eric",IND,N,,,,New York,NY,10034,Unknown,1750.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,9,F,,,R0004173,5/28/2021,6/2/2021,"Soto, Eric",IND,N,,,,New York,NY,10034,Unknown,1750.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004459,6/28/2021,6/29/2021,Staples,CORP,Y,,,,Woodside,NY,11377,Unknown,17.64,OTHER,Other: explntion,Ballot Canvass Forms,CAN,N,N
+2021,55,2380,P,Won,Julie,,H,16,F,,,R0005499,1/24/2022,1/24/2022,Staples,CORP,Y,,,,Bayside,NY,11361,Unknown,46.81,OTHER,Other: explntion,1099-NEC Tax Forms,,N,N
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0003089,1/6/2021,1/7/2021,Staples,CORP,Y,,,,Queens,NY,11377,Unknown,48.62,OTHER,Other: explntion,District Map,,N,N
+2021,55,2380,P,Won,Julie,,H,7,F,,,R0003573,2/24/2021,2/25/2021,Staples,CORP,Y,,,,Woodside,NY,11377,Unknown,32.09,OTHER,Other: explntion,poster supplies,,N,N
+2021,55,2380,P,Won,Julie,,H,7,F,,,R0003623,3/1/2021,3/2/2021,Staples,CORP,Y,,,,Queens,NY,11377,Unknown,58.37,PETIT,Petition Expns.,Supplies,,N,N
+2021,55,2380,P,Won,Julie,,H,7,F,,,R0003654,3/5/2021,3/8/2021,Staples,CORP,Y,,,,Woodside,NY,11377,Unknown,41.88,PETIT,Petition Expns.,Petition Supplies,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003763,3/21/2021,3/22/2021,Staples,CORP,Y,,,,Woodside,NY,11377,Unknown,131.37,POLLS,Polling Costs,Survey Printing,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003870,4/9/2021,4/12/2021,Staples,CORP,Y,,,,Woodside,NY,11377,Unknown,70.55,LITER,Campgn Lit.,"Flyers, Spanish",,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003887,4/14/2021,4/15/2021,Staples,CORP,Y,,,,Woodside,NY,11377,Unknown,68.59,LITER,Campgn Lit.,"Flyers, Spanish",,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003952,4/23/2021,4/26/2021,Staples,CORP,Y,,,,Woodside,NY,11377,Unknown,209.04,LITER,Campgn Lit.,Copies of Flyers,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003977,5/1/2021,5/3/2021,Staples,CORP,Y,,,,Woodside,NY,11377,Unknown,105.06,LITER,Campgn Lit.,Copies of Flyers,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0004048,5/5/2021,5/6/2021,Staples,CORP,Y,,,,Woodside,NY,11377,Unknown,48.99,LITER,Campgn Lit.,Copies of Flyers,,N,N
+2021,55,2380,P,Won,Julie,,H,9,F,,,R0004140,5/20/2021,5/21/2021,Staples,CORP,Y,,,,Woodside,NY,11377,Unknown,58.79,LITER,Campgn Lit.,Flyers,,N,N
+2021,55,2380,P,Won,Julie,,H,9,F,,,R0004180,5/20/2021,5/21/2021,Staples,CORP,Y,,,,Woodside,NY,11377,Unknown,102.69,LITER,Campgn Lit.,Flyers,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005252,11/3/2021,11/9/2021,"Stepnowska, Dorothy",IND,N,,,,Glendale,NY,11385,Unknown,324.00,WAGES,Campgn Wrkrs $$,Canvass Payroll,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004494,6/30/2021,6/30/2021,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,9.61,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,11,F,,,R0004623,7/31/2021,7/31/2021,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,46.68,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,12,F,,,R0004797,8/31/2021,8/31/2021,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,411.98,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,13,F,,,R0005036,9/30/2021,9/30/2021,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,5.11,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005233,10/31/2021,10/31/2021,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,13.96,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0000431,8/31/2020,8/31/2020,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,239.54,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0000883,9/30/2020,9/30/2020,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,292.08,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0001308,10/31/2020,10/31/2020,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,244.71,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0001806,11/30/2020,11/30/2020,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,167.61,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0003194,12/31/2020,12/31/2020,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,519.23,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,7,F,,,R0003526,1/31/2021,1/31/2021,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,639.57,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,7,F,,,R0003672,2/28/2021,2/28/2021,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,30.46,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003867,3/31/2021,3/31/2021,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,15.49,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003966,4/30/2021,4/30/2021,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,26.23,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,9,F,,,R0004296,5/31/2021,5/31/2021,Stripe - NYC Votes Contribute,CORP,Y,,,,San Francisco,CA,94103,Unknown,19.77,OTHER,Other: explntion,Stripe Fees,,N,N
+2021,55,2380,P,Won,Julie,,H,9,F,,,R0004136,5/21/2021,5/25/2021,"Talukder, Isfir",IND,N,,,,Woodside,NY,11377,Unknown,750.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,9,F,,,R0004236,6/2/2021,6/4/2021,"Talukder, Isfir",IND,N,,,,Woodside,NY,11377,Unknown,375.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0004070,5/15/2021,5/15/2021,The Beerkeeper,LLC,Y,,,,Woodside,NY,11377,Unknown,48.00,OTHER,Other: explntion,Canvassing Refreshme,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005326,11/1/2021,11/3/2021,The Home Depot,CORP,Y,,,,Long Island City,NY,11101,Unknown,50.06,OTHER,Other: explntion,Table for E Day,,N,N
+2021,55,2380,P,Won,Julie,,H,13,F,,,R0004913,10/2/2021,10/4/2021,The Lowery Bar & Kitchen,LLC,Y,,,,Sunnyside,NY,11104,Unknown,7.62,OTHER,Other: explntion,Volunteer Dinner,,N,N
+2021,55,2380,P,Won,Julie,,H,13,F,,,R0004917,10/2/2021,10/4/2021,The Lowery Bar & Kitchen,LLC,Y,,,,Sunnyside,NY,11104,Unknown,10.71,OTHER,Other: explntion,Volunteer Dinner,,N,N
+2021,55,2380,P,Won,Julie,,H,13,F,,,R0004921,10/2/2021,10/4/2021,The Lowery Bar & Kitchen,LLC,Y,,,,Sunnyside,NY,11104,Unknown,207.49,OTHER,Other: explntion,Volunteer Dinner,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005321,11/3/2021,11/3/2021,The Lowery Bar & Kitchen,LLC,Y,,,,Sunnyside,NY,11104,Unknown,1949.44,OTHER,Other: explntion,Election Day Party,,N,N
+2021,55,2380,P,Won,Julie,,H,9,F,,,R0004145,5/22/2021,5/24/2021,The Mad Donkey,LLC,Y,,,,Long Island City,NY,11106,Unknown,133.12,OTHER,Other: explntion,Canvassing Refreshme,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004409,6/21/2021,6/23/2021,Top 99,LLC,Y,,,,Woodside,NY,11377,Unknown,38.89,OTHER,Other: explntion,Ponchos for Canvasse,,N,N
+2021,55,2380,P,Won,Julie,,H,10,F,,,R0004436,6/24/2021,6/30/2021,"Tseyang, Tenzin",IND,N,,,,Woodside,NY,11377,Unknown,2800.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,13,F,,,R0004895,9/24/2021,9/28/2021,"Tseyang, Tenzin",IND,N,,,,Woodside,NY,11377,Unknown,1750.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,13,F,,,R0004945,10/8/2021,10/13/2021,"Tseyang, Tenzin",IND,N,,,,Woodside,NY,11377,Unknown,1750.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005058,,10/27/2021,"Tseyang, Tenzin",IND,N,,,,Woodside,NY,11377,Advance,25.50,ADVAN,Advance Repaymnt,Advance Repayment,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005142,10/22/2021,10/26/2021,"Tseyang, Tenzin",IND,N,,,,Woodside,NY,11377,Unknown,1750.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005146,11/3/2021,11/8/2021,"Tseyang, Tenzin",IND,N,,,,Woodside,NY,11377,Unknown,1375.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005281,,11/10/2021,"Tseyang, Tenzin",IND,N,,,,Woodside,NY,11377,Advance,39.75,ADVAN,Advance Repaymnt,Advance Repayment,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005283,,11/10/2021,"Tseyang, Tenzin",IND,N,,,,Woodside,NY,11377,Advance,21.66,ADVAN,Advance Repaymnt,Advance Repayment,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005023,10/18/2021,10/19/2021,United States Postal Service,CORP,Y,,,,New Hyde Park,NY,11040,Unknown,8.70,OFFCE,Office Expenses,Postage,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005173,10/26/2021,10/27/2021,United States Postal Service,CORP,Y,,,,Oakland Gardens,NY,11364,Unknown,8.70,OFFCE,Office Expenses,Postage,,N,N
+2021,55,2380,P,Won,Julie,,H,16,F,,,R0005489,1/22/2022,1/24/2022,United States Postal Service,CORP,Y,,,,Oakland Gardens,NY,11364,Unknown,11.60,POSTA,Postage,Mailing 1099-NEC,,N,N
+2021,55,2380,P,Won,Julie,,H,16,F,,,R0005494,1/28/2022,1/28/2022,United States Postal Service,CORP,Y,,,,New Hyde Park,NY,11040,Unknown,8.95,POSTA,Postage,Mail 1099-NEC to IRS,,N,N
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0002939,1/5/2021,1/5/2021,United States Postal Service,CORP,Y,,,,Sunnyside,NY,11104,Unknown,55.00,POSTA,Postage,Stamps,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0003844,4/2/2021,4/4/2021,United States Postal Service,CORP,Y,,,,Sunnyside,NY,11104,Unknown,7.70,POSTA,Postage,Mail doc to CFB,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0004055,5/11/2021,5/11/2021,United States Postal Service,CORP,Y,,,,Oakland Gardens,NY,11364,Unknown,7.95,POSTA,Postage,Mail Check to vendor,,N,N
+2021,55,2380,P,Won,Julie,,H,13,F,,,R0004951,10/8/2021,10/13/2021,"Vera Martinez, Neily",IND,N,,,,Highland,NY,12528,Unknown,450.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005138,10/22/2021,10/26/2021,"Vera Martinez, Neily",IND,N,,,,Highland,NY,12528,Unknown,900.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005218,11/3/2021,11/8/2021,"Vera Martinez, Neily",IND,N,,,,Highland,NY,12528,Unknown,900.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,12,F,,,R0004858,9/22/2021,9/24/2021,"Verlute, LLC",LLC,Y,,,,Hollis,NY,11423,Unknown,500.00,CONSL,Campgn Consuls.,Campaign Lit design,,N,N
+2021,55,2380,P,Won,Julie,,H,13,F,,,R0004925,10/8/2021,10/12/2021,"Verlute, LLC",LLC,Y,,,,Hollis,NY,11423,Unknown,750.00,CONSL,Campgn Consuls.,Campaign Ad design,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005189,10/25/2021,11/2/2021,"Verlute, LLC",LLC,Y,,,,Hollis,NY,11423,Unknown,1750.00,CONSL,Campgn Consuls.,Campaign Ad design,,N,N
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0001509,11/4/2020,11/6/2020,"Verlute, LLC",LLC,Y,,,,Hollis,NY,11423,Unknown,25.00,OTHER,Other: explntion,Poster design,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005134,10/22/2021,11/5/2021,"Vosarogo, John",IND,N,,,,Sunnyside,NY,11104,Unknown,875.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005222,11/3/2021,11/5/2021,"Vosarogo, John",IND,N,,,,Sunnyside,NY,11104,Unknown,1375.00,CONSL,Campgn Consuls.,Field Organizing,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005099,10/21/2021,10/22/2021,Walgreens,CORP,Y,,,,Sunnyside,NY,11104,Unknown,32.61,OFFCE,Office Expenses,Postering Tape,,N,N
+2021,55,2380,P,Won,Julie,,H,12,F,,,R0004832,,9/22/2021,"Won, Julie",IND,N,,,,Sunnyside,NY,11104,Advance,33.99,ADVAN,Advance Repaymnt,Advance Repayment,,N,N
+2021,55,2380,P,Won,Julie,,H,12,F,,,R0004834,,9/22/2021,"Won, Julie",IND,N,,,,Sunnyside,NY,11104,Advance,48.91,ADVAN,Advance Repaymnt,Advance Repayment,,N,N
+2021,55,2380,P,Won,Julie,,H,12,F,,,R0004836,,9/22/2021,"Won, Julie",IND,N,,,,Sunnyside,NY,11104,Advance,47.02,ADVAN,Advance Repaymnt,Advance Repayment,,N,N
+2021,55,2380,P,Won,Julie,,H,13,F,,,R0004908,,10/12/2021,"Won, Julie",IND,N,,,,Sunnyside,NY,11104,Advance,50.99,ADVAN,Advance Repaymnt,Advance Repayment,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005061,,10/22/2021,"Won, Julie",IND,N,,,,Sunnyside,NY,11104,Advance,43.84,ADVAN,Advance Repaymnt,Advance Repayment,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005063,,10/22/2021,"Won, Julie",IND,N,,,,Sunnyside,NY,11104,Advance,31.94,ADVAN,Advance Repaymnt,Advance Repayment,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005065,,10/22/2021,"Won, Julie",IND,N,,,,Sunnyside,NY,11104,Advance,45.82,ADVAN,Advance Repaymnt,Advance Repayment,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005067,,10/22/2021,"Won, Julie",IND,N,,,,Sunnyside,NY,11104,Advance,41.75,ADVAN,Advance Repaymnt,Advance Repayment,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005069,,10/22/2021,"Won, Julie",IND,N,,,,Sunnyside,NY,11104,Advance,9.85,ADVAN,Advance Repaymnt,Advance Repayment,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005071,,10/22/2021,"Won, Julie",IND,N,,,,Sunnyside,NY,11104,Advance,10.92,ADVAN,Advance Repaymnt,Advance Repayment,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005073,,10/22/2021,"Won, Julie",IND,N,,,,Sunnyside,NY,11104,Advance,43.70,ADVAN,Advance Repaymnt,Advance Repayment,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005075,,10/22/2021,"Won, Julie",IND,N,,,,Sunnyside,NY,11104,Advance,40.04,ADVAN,Advance Repaymnt,Advance Repayment,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005077,,10/22/2021,"Won, Julie",IND,N,,,,Sunnyside,NY,11104,Advance,35.01,ADVAN,Advance Repaymnt,Advance Repayment,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005269,10/28/2021,10/28/2021,"Won, Julie",IND,N,,,,Sunnyside,NY,11104,Unknown,14.37,OTHER,Other: explntion,Tranportation,,N,N
+2021,55,2380,P,Won,Julie,,H,14,F,,,R0005415,11/19/2021,11/19/2021,"Won, Julie",IND,N,,,,Sunnyside,NY,11104,Unknown,8.24,OTHER,Other: explntion,Billed in Error,,N,N
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0001697,,11/11/2020,"Won, Julie Jaehee",IND,N,,,,Fort Lee,NJ,07024,Advance,324.00,ADVAN,Advance Repaymnt,Advance Repayment,,N,N
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0001258,10/19/2020,10/20/2020,"Zach Han, LLC",LLC,Y,,,,Brooklyn,NY,11221,Unknown,3000.00,OTHER,Other: explntion,Video Production,,N,N
+2021,55,2380,P,Won,Julie,,H,6,F,,,R0002833,12/21/2020,12/23/2020,"Zach Han, LLC",LLC,Y,,,,Brooklyn,NY,11221,Unknown,3000.00,LITER,Campgn Lit.,Video Series 1,,N,N
+2021,55,2380,P,Won,Julie,,H,8,F,,,R0004052,5/3/2021,5/11/2021,"Zach Han, LLC",LLC,Y,,,,Brooklyn,NY,11221,Unknown,3250.00,OTHER,Other: explntion,Video Production,,N,N
+2021,55,2380,P,Won,Julie,,H,9,F,,,R0004211,6/2/2021,6/4/2021,"Zach Han, LLC",LLC,Y,,,,Brooklyn,NY,11221,Unknown,3250.00,OTHER,Other: explntion,Video Production,,N,N
+
