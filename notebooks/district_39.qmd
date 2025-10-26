@@ -109,6 +109,10 @@ plt.show()
 
 ## The Candidates
 
-Both candidates sought a DSA endorsement and both candidates lost votes in the Brooklyn Electoral Working Group to receive it. West lost a close vote 80/95, whereas Hanif lost a more lopsided vote 22/154. West ended up receiving the endorsement anyway, as he won the mandatory 60% minimum of chapter support [@cbkweek2020].
+Both candidates sought a DSA endorsement and both candidates lost votes in the Brooklyn Electoral Working Group to receive it. West lost a close vote 80/95, whereas Hanif lost a more lopsided vote 22/154. West ended up receiving the endorsement anyway, as he won the mandatory 60% minimum of chapter support [@cbkweek2020]. The candidates ideological proximity caused a small dustup on Twitter when DSA members posted themselves campaigning for her, drawing the ire of their colleagues who thought this was a betrayal of party discipline. Since the election Hanif has been partially claimed by the DSA, as an example a popular post on r/dsa listed her as part of the city's socialist caucus. 
 
-Hanif
+## The Campaign 
+
+Hanif outfundraised West $94,456 to $81,988, and the additional $13,000 allowed her to unlock significantly more city matching funds, putting her total receipts at $432,232 compared to West's $250,776. Hanif was also the benificiary of ad buys from the WFP and from the nurse's union, whereas West received no IE spending. Figure x shows the fundraising differential between the two candidates. The redder the district the more Hanif raised than West, with the bluer districts representing the opposite. Hanif clearly outraised West significantly in the Kensington area in the Southeast of the district, where there is a significant Bangledeshi population. West closes the gap but still trails in Park Slope, then takes the lead in zip codes north of the district in the DSA heartland. 
+
+Hanif made the Bangladeshi community the center of her campaign, hoping to bring more of the generally low-turnout population to the polls. 

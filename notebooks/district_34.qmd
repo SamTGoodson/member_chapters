@@ -75,7 +75,9 @@ wp_cols = [col for col in wp_cols if col not in to_remove]
 demo_cols = ['nhw21p','nhb21p','h21p','nha21p','cvap21bapp','mhhi21']
 ```
 
-District 34 lies to the West of District 37, representing the large section of Bushwick not represented by Sandy Nurse as well as some sections of Ridgewood. In our interview Michael Lange described this district as the one most primed for a DSA candidate that didn't already have one, and indeed the progressive (but non DSA) Guttierez won in a landslide, securing 79% of the vote with no opponent securing more than 10%. Because the margin of victory was so large, Gutierez's win doesn't lend itself to detailed analysis. 
+District 34 lies to the West of District 37, representing the large section of Bushwick not represented by Sandy Nurse as well as some sections of Ridgewood. In our interview Michael Lange described this district as the one most primed for a DSA candidate that didn't already have one, and indeed the progressive (but non DSA) Guttierez won in a landslide, securing 79% of the vote with no opponent securing more than 10%. The second and third place candidates, Andy Marte and Scott Murphy, tried to strategize the RCV by cross-endorsing, but it did not seem to help their overall vote total. Guttierez more than tripled the fundraising of Marte, the second place fundraiser, and was the only candidate in the field to receive support for an Independent Expenditure. Her victory was so complete it does not lend itself wel to detailed regression analysis, she won in the white-transplant section of her district as well as in the Mexican, Dominican, and Puerto Rican sections. 
+
 
 ## The District 
 
+District 34 is a plurality Hispanic district with a large white-transplant population straddling the border between Brooklyn and Queens composed primarily of Ridgewood and Bushwick. It is middle income and relatively high in college education, but with great diversity in both these metrics. It is in the top quintile of white transplants as well as of Mexicans, Dominicans, and Puerto Ricans. The outgoing Council member is current Borrough president Antonio Reynoso. 

@@ -89,3 +89,15 @@ Julie Won won the primary in Queen's 26th Council district in a tight race again
 ## The District
 
 The 26th sits immediately to the South of Tiffany Caban's district, occupying most of Long Island City and portions of Sunnyside and Astoria. It is in the second highest quintile of education, income, and the white transplant ratio, and in the highest quintile of standard deviation for those categories, signaling significant spread.
+
+## The Campaign
+
+The biggest controversy of the campaign was the Working Families Party endorsement of Bagga. In early 2021 the Queens branch of the WFP voted to endorse Julie Won as the #1 candidate, but in February that vote was overridden by the citywide branch which elected to endorse Bagga [@thisis2021]. There was no rule violation in this decision, the local chapters endorsement is one factor in the city chapter's decision to endorse. Nonetheless, it smelled of corruption to the Won campaign. Bagga had a long history of connection to the city Democratic party and the liberal establishment. He served as Anthony Weiner's chief of staff, and then served a long tenure in the De Blasio administration. Crucially for Won's interpretation of events, he was not one of many De Blasio staffers who signed letters denouncing the mayor's handling of the policing of BLM protests in the summer of 2020. For Won, it was this loyalty in a time of turmoil that purchased support for Bagga in the 2021 primary.
+
+The support came strong. Bagga was the recipient of \$142,225 in Indepent Expenditures, coming primarily from the WFP and affiliated organized labor. This support included radio and television spots, digital ads, and direct mailers both district wide and to union members. Won received no support from an IE.
+
+In terms of individual donations, however, Won outraised Bagga \$86,6644 to \$73,179, which led to a post public matching advantage of \$221,042 to \$168,888. Won's fundraising power came in large part from the district's East Asian community. The Python pacakge ethnicolr uses a large surname dataset built from Wikipedia by the computer scientist Steve Skienna to predict fine-grained ethnicity from last names. Using that package on the donor list, and then aggregating by amount given, produces the tables below for the two candidates:
+
+TABLES
+
+Won raised 50k plus from East Asian donors, more than she or Bagga raised from any other ethnic group.

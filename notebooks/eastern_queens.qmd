@@ -76,4 +76,126 @@ wp_cols = [col for col in wp_cols if col not in to_remove]
 demo_cols = ['nhw21p','nhb21p','h21p','nha21p','cvap21bapp','mhhi21']
 ```
 
-Progressives suffered two close loses in Eastern Queens that would have added to both their geographic and demographic diversity. In the 23rd DSA endorsed Jaslin Kaur narrowly lost to Jane Dough, and in the 32nd Felicia Singh won her primary but lost a close race to Republican Joann Arioloa in the general. Both women refer to themselves as socialists, both ran on progressive platforms, and both had over $100,000 of independent expenditure money, drawn primarily from real estate interests, used against them. In the 23rd Kaur won the South Asian vote but lost the East Asian vote. In the 32nd Singh won the ethnically diverse north half of her district but lost the white southern half. 
+Progressives suffered two close loses in Eastern Queens that would have added to both their geographic and demographic diversity. In the 23rd DSA endorsed Jaslin Kaur narrowly lost to Jane Dough, and in the 32nd Felicia Singh won her primary but lost a close race to Republican Joann Arioloa in the general. Both women refer to themselves as socialists, both ran on progressive platforms, and both had over \$100,000 of independent expenditure money, drawn primarily from real estate interests, used against them. In the 23rd Kaur won the South Asian vote but lost the East Asian vote. In the 32nd Singh won the ethnically diverse north half of her district but lost the white, conservative southern half. Both losses were quite close and offer lessons for winning districts outside the progressive comfort zone.
+
+## Antagonistic Spending
+
+Both candidates were the targets of intense IE spending. Common Sense NYC., the group of primarily real estate investors lead by Stephen Ross wrote two of their three largest checks to oppose these to candidacies. Against Singh they spent \$75,000 and against Kaur \$95,610, an amount only exceeded by the \$113,611 they spent against Michael Hollingsworth in the 35th. Singh additionally faced a \$54,439 ad buy from the Committe for Sensible Government and \$77,460 from the Police Benevolant Association. In addition to their spending specifically against Singh the PBA also spent \$179,038 in favor of her opponent, Joann Ariola.
+
+The Committee for Sensible Government described its "singular mission: to stop the Democratic Socialists of America (DSA) and AOC's squad from taking over our government here in New York City." In recent cycles the CSG has focused primarily on the DSA's support for GAZA but in the '21 cycle the focus was primarily on defunding the police and tax burdens on small businesses. The organizations primary contributor was Ronald S. Lauder, heir to the Estee Lauder estate, who along with his brother X spent prolifically against progressives in the campaign. Though the organization's purpose states it opposes all DSA candidates it only spent against Singh and Tiffany Caban. Thier ad against Singh and Caban in the general shows the two women besides AOC, all beside a cluster of nuclear missiles mid-launch, with the copy reading "No Matter How You Add it Up The Equal Doom for NYC: Life as we know it ends with socialist leaders like these." They also released a suite of five anti-Singh radio adds, which Tamman suggests is a particularly potent form of advertising in local elections.
+
+Common Sense's anti-Singh fliers show several picture of her with "Socialist Approved" stamped in a red star. They suggest she will allow Queens neighborhoods to become overridden with crime as she seeks to defund the NYPD and decriminalize prostitution. Other fliers change the imaging and some specifics but all center on her desire to defund the NYPD and legalize sex work. The week of the general election they sent a text blast that read: "Vote NO on SOCIALIST Felicia Singh! Singh promised to cut entire police units while crime is at historic highs, guaranteeing crime will continue to rise in New York City. Stop the rise in crime and Vote NO on SOCIALIST Felicia Singh."
+
+Common Sense's spending against Kaur fit exactly the same mold, with a set of fliers released throughout the weeks before the primary quoting her on defunding the NYPD and legalizing sex work, continually suggesting an increase in crime and decrease in general quality of life issues. One reads dramatically "Stabbings are up by 95% and Jaslin Kaur wants to close all prisons and defund the NYPB by \$3 Billion."
+
+For its part the PBA put up a billboard saying that "When Felicia Singh Tells You She's a Radical, Anti-Police Extremist, Beleive Her." It also ran a radio ad weeks before the general election.
+
+Sandy Nurse said that the toughest two progressive issues for her to talk to her constituents about were crime generally and drug use and sex work in particular. She emphasized that her constituents were sympathetic to those affected, but that is was difficult to pitch solutions that would avoid policing for longer term recovery. Both IEs in Eastern Queens hit hard on these issues, pitching the candidates stances on the issues purely as spurs of crime and quality of life.
+
+## The Campaigns
+
+### Kaur
+
+In the primary in the 23rd Kaur faced local non-profit leader Linda Lee. The campaign was friendly but there was significant ideological distance between the two, specifically on policing. After her primary win Lee, speaking on the issue, said "thankfully, for me personally, what I believe and what I want to see happen in the district is very much in line with where the district is. Public safety was a big issue. And I think I’m on the same page with folks in our district, which is not for defunding" [@coltin2021].
+
+Figure 1 shows winner by ed, with districts won by Linda Lee in blue and those won by Kaur in red, and the few won by Steve Baur in green. The darker the color the larger share of votes the winning candidate received. There is a clear north/south split.
+
+```{python}
+#| warning: false
+#| fig-cap: "Ossé Vote Share"
+#| fig-pos: H
+winners  = winners .set_crs(epsg=2263, allow_override=True)
+winners_3857 = winners .to_crs(epsg=3857)
+
+fig, ax = plt.subplots(1, figsize=(10, 10))
+winners_3857.plot(color=winners['color'], ax=ax)
+ctx.add_basemap(ax, source=ctx.providers.OpenStreetMap.Mapnik)
+
+handles = [
+    mpatches.Patch(color=mpl.cm.Blues(0.6),  label="Linda Lee"),
+    mpatches.Patch(color=mpl.cm.Reds(0.6),   label="Jaslin Kaur"),
+    mpatches.Patch(color=mpl.cm.Greens(0.6), label="Steve Behar ")
+]
+
+ax.legend(
+    handles=handles,
+    title="Candidate",
+    loc="lower left",
+    frameon=False
+)
+ax.set_axis_off()
+plt.tight_layout()
+ax.set_title("Electoral District Winners and Vote Share Shading")
+plt.show()
+```
+
+There was as strong correlation between both women's vote share and different Asian ethnicities. In the 23rd South Asians and East Asians tend not to live togther, as the correlations in table 1 suggest:
+
+```{python}
+demo_occ[['ind21p','chin21p','kor21p']].corr()
+```
+
+Figure 2 divides eds into those won by Lee and Kaur and graphs their population.
+
+```{python}
+eth_group = winners[['candidate','ed_name']].merge(ae, left_on='ed_name', right_on='ElectDist')\
+    .groupby('candidate')[['ind21p','chin21p','kor21p']].mean().reset_index()
+
+filtered_data = eth_group[eth_group['candidate'].isin(['Linda Lee','Jaslin Kaur'])]
+
+filtered_data.plot(x='candidate', kind='barh', figsize=(10, 10))
+plt.title('District 23: Share Ethnicity by ED Won')
+plt.ylabel('Candidate')
+plt.xlabel('Population Percentage')
+plt.legend(['Indian','Chinese','Korean'])
+plt.show()
+```
+
+This association is born out by OLS models, the inclusion of Chinese or Indian population alone is strong and significant but they partially cancel each other out. The populations live separately and voted differently.
+
+```{python}
+target = demo_occ['vote_share']
+mod1 = sm.OLS(target, sm.add_constant(demo_occ[['nhw21p','h21p','cvap21bapp','nha21p']])).fit()
+mod2 = sm.OLS(target, sm.add_constant(demo_occ[['nhw21p','h21p','cvap21bapp','nha21p','ind21p']])).fit()
+mod3 = sm.OLS(target, sm.add_constant(demo_occ[['nhw21p','h21p','cvap21bapp','nha21p','chin21p']])).fit()
+mod4 = sm.OLS(target, sm.add_constant(demo_occ[['nhw21p','h21p','cvap21bapp','nha21p','ind21p','chin21p']])).fit()
+summary_col([mod1,mod2,mod3,mod4], stars=True)
+```
+
+This may just be ethnic voting, the East Asians voting for the East Asian candidate and the South Asians doing the same. It is worth noting, however, a noted rightward shift among the city's East Asian population cycle. Particularly in terms of policing and a spate of hate crimes against East Asians.
+
+### Singh
+
+The 32nd district is fairly neatly divided in terms of ethnicity.
+
+```{python}
+fig, ax = plt.subplots(figsize=(10, 10))
+
+gdf_3857.plot(
+    column='dom_red_eth',
+    categorical=True,
+    cmap='tab20',
+    legend=True,
+    alpha=0.7,
+    ax=ax,
+    edgecolor='white',
+    linewidth=0.2,
+    legend_kwds={'title': 'Dominant Ethnicity', 'fontsize': 8, 'title_fontsize': 10}
+)
+
+
+ctx.add_basemap(
+    ax,
+    source=ctx.providers.CartoDB.Positron,  
+    zoom=14   
+)
+
+# 5) Clean up
+ax.set_axis_off()
+ax.set_title("Dominant Ethnicity overlaid on Streets & Neighborhoods", pad=12)
+
+plt.tight_layout()
+plt.show()
+```
+
+Felicia Singh won a very tight victory in the primary against Mike Scala and then lost to Republican Joann Ariola in the general. In the general Singh increased her primary election coalition, especially among the Indian and Bangledeshi community in the north of her district. The final general election coalition broke neatly along racial lines. A model using only census racial variables to predict votes improves in R squared from .35 to .79 when shifting from predicting the primary to predicting the general. Additionaly the inclusion of 2020 Donald Trump makes for a huge jump in R squared and erases the significance of practically every other variable. Singh clearly lost to white conservatives in the general.

@@ -1,0 +1,212 @@
+---
+title: "She Did it on Her own: Amanda Farias's Comeback Win"
+format:
+  pdf:
+    df-print: kable
+    tbl-colwidths: [75,25]
+    code-fold: true
+    mainfont: "Georgia"
+header-includes:
+  - \usepackage{graphicx}
+  - \usepackage{adjustbox}
+  - \usepackage{afterpage}
+  - \usepackage{biblatex}
+  - \newcommand{\bibsection}{\clearpage\printbibliography}
+execute:
+  echo: false
+jupyter: python3
+bibliography: references.bib
+---
+
+```{python}
+import pandas as pd
+import geopandas as gpd
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib as mpl
+
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+
+import statsmodels.api as sm
+import statsmodels.formula.api as smf
+from statsmodels.iolib.summary2 import summary_col
+from statsmodels.stats.outliers_influence import variance_inflation_factor
+
+from shapely import wkt
+import matplotlib.patches as mpatches
+import colorsys
+from matplotlib.colors import to_hex
+import contextily as ctx
+
+from utils import make_precinct_counts,make_demo_map,job_cols,race_cols,cols_to_keep,scale_and_cluster,make_edname,map_round_votes,make_pc_map
+
+from tabulate import tabulate
+from IPython.display import Markdown
+
+import seaborn as sns
+```
+
+```{python}
+demo_cluster = pd.read_csv('../../chapter_two/data/occupation_demo_clusters_on_ed.csv')
+d22 = pd.read_csv('../../cc_election_cleaning/all_rounds_results/district_22.csv')
+ed_level = pd.read_csv('../../cc_election_cleaning/occupation_demo_data_feb21.csv')
+
+ed_shapefile = '../../chapter_two/data/nyed_21a/nyed.shp'
+ed_gdf = gpd.read_file(ed_shapefile)
+
+full_results = pd.read_csv('../../cc_election_cleaning/election_results_with_vote_sponsor_cluster_FEB13.csv')
+
+full_results_twenty_two = full_results[full_results['district'] == 22]
+af_full = full_results[full_results['candidate'] == 'Amanda Farias']
+winner_twenty_two = full_results_twenty_two[full_results_twenty_two['winner'] == True]
+occ_df = pd.read_csv('../../cc_election_cleaning/occupation_election_feb21.csv')
+eds_22 = full_results_twenty_two['ed_name'].unique().tolist()
+ae = pd.read_csv('../../cc_election_cleaning/ae_precincts.csv')
+eds_22 = full_results_twenty_two['ed_name'].unique().tolist()
+
+cc_da = pd.read_csv('../data/cc_da_results_master.csv')
+```
+
+```{python}
+p_cols = [col for col in occ_df.columns if col[-1] == 'p']
+wp_cols = [col for col in occ_df.columns if col.startswith("w2") and col.endswith("p")]
+wp_cols.remove('w2cop')
+to_remove = [ 'w2psp',
+ 'w2sep',
+ 'w2npp',
+ 'w2govp',
+ 'w2nip']
+wp_cols = [col for col in wp_cols if col not in to_remove]
+demo_cols = ['nhw21p','nhb21p','h21p','nha21p','cvap21bapp','mhhi21']
+cluster_cols = wp_cols + demo_cols
+
+demo_occ = winner_twenty_two[['ed_name','nhw21p','nhb21p','h21p','nha21p','cvap21bapp','mhhi21','venez21p','chin21p',
+                 'kor21p','colomb21p','domin21p','mex21p','white_transplant_ratio']].merge(occ_df, left_on='ed_name', right_on='ElectDist', how='left')
+
+demo_occ = demo_occ.merge(ae[['ElectDist','ind21p','bang21p','pak21p','filip21p']],left_on='ElectDist',right_on='ElectDist',how='left')
+demo_occ_map = gpd.GeoDataFrame(demo_occ,geometry=demo_occ['geometry'].apply(wkt.loads))
+```
+
+In the 18th Council District Amanda Farias narrowly defeated William Rivera to secure the Democratic nomination. Three years previously Farias had lost to longtime conservative Democratic Ruben Diaz Sr. In her second effort, this time vying for an empty seat, Farias managed to win labor and WFP support as well as the support of the County Democratic Party and take the victory. While voter turnout on the whole in the district was down, Farias won the precincts in which voter turnout increased. She also managed to take sections of the district she lost badly the year previously. Her victory was one that inspired City and State to declare a transformation in The Bronx county machinery. When asked his opinion on that change Fernando Aquino agreed that the party was in flux, but argued that they couldn't take credit for Amanda since she "did it on her own."
+
+## The District 
+
+The 18th lies in the Southeastern Bronx where it covers the neighborhoods of Parkchester, Castle Hill, Soundview and Classon Point. It has a large Hispanic population consisting primarily of Dominicans and Puerto Ricans as well as sizeable Mexican and Columbian populations. It is in the city's lowest quintile for both income and education. Figure one shows the dominant ethnicity by election precinct and figure 2 shows the dominant occupation. 
+
+```{python}
+#| echo: false
+
+gdf = demo_occ_map.copy()
+gdf['nbb'] = gdf['nhb21p'] - gdf['winda21p']
+gdf['laptop'] = gdf['w2admp'] + gdf['w2banp'] + gdf['w2cmp']
+
+eth_cols = ['ind21p','bang21p','domin21p','venez21p','mex21p','white_transplant_ratio','winda21p','nbb']
+red_eth_cols = ['nhw21p','nhb21p','h21p','nha21p']
+
+
+gdf['dom_eth']   = gdf[eth_cols].idxmax(axis=1)  
+gdf['dom_eth_p'] = gdf[eth_cols].max(axis=1)     
+
+gdf['dom_red_eth']   = gdf[red_eth_cols].idxmax(axis=1)
+gdf['dom_red_eth_p'] = gdf[red_eth_cols].max(axis=1)
+
+gdf['dom_occ']   = gdf[wp_cols].idxmax(axis=1)
+gdf['dom_occ_p'] = gdf[wp_cols].max(axis=1)
+
+occ_label_map = {
+    'w2admp': 'Designers & Journalists',
+    'w2banp': 'Analyst Specialist',
+    'w2bgp': 'Janitorial',
+    'w2conp': 'Construction',
+    'w2copp': 'Law Enforcement',
+    'w2foodp': 'Food Service',
+    'w2hsp': 'Homecare',
+    'w2mgtp': 'Management',
+    'w2oadp': 'Office Admin',
+    'w2salep': 'Sales'
+}
+
+gdf_3857['occupation_label'] = gdf_3857['dom_occ'].map(occ_label_map)
+gdf_3857['occupation_label'] = gdf_3857['occupation_label'].astype('category')
+```
+
+```{python}
+#| warning: false
+#| fig-cap: "Majority Ethnicity by ED"
+#| fig-pos: H
+fig, ax = plt.subplots(figsize=(10, 10))
+
+gdf_3857.plot(
+    column='dom_eth',
+    categorical=True,
+    cmap='tab20',
+    legend=True,
+    alpha=0.7,
+    ax=ax,
+    edgecolor='white',
+    linewidth=0.2,
+    legend_kwds={'title': 'Dominant Ethnicity', 'fontsize': 8, 'title_fontsize': 10}
+)
+
+
+ctx.add_basemap(
+    ax,
+    source=ctx.providers.CartoDB.Positron,  
+    zoom=14   
+)
+
+# 5) Clean up
+ax.set_axis_off()
+ax.set_title("Dominant Ethnicity overlaid on Streets & Neighborhoods", pad=12)
+
+plt.tight_layout()
+plt.show()
+```
+
+```{python}
+#| warning: false
+#| fig-cap: "Majority Occupation by ED"
+#| fig-pos: H
+fig, ax = plt.subplots(figsize=(10, 10))
+
+gdf_3857.plot(
+    column='occupation_label',
+    categorical=True,
+    cmap='tab20',
+    legend=True,
+    alpha=0.7,
+    ax=ax,
+    edgecolor='white',
+    linewidth=0.2,
+    legend_kwds={'title': 'Dominant Occupation', 'fontsize': 8, 'title_fontsize': 10}
+)
+
+
+ctx.add_basemap(
+    ax,
+    source=ctx.providers.CartoDB.Positron,  
+    zoom=14   
+)
+
+# 5) Clean up
+ax.set_axis_off()
+ax.set_title("Dominant Ethnicity overlaid on Streets & Neighborhoods", pad=12)
+
+plt.tight_layout()
+plt.show()
+```
+
+From 2017 to 2021 the district was represented by conservative pentecostal preacher Ruben Diaz Sr.. Diaz made headlines during his this term from saying that the Council was "controlled by the homosexual community." Throughout his political career he routinely opposed same-sex marriage, as well as any other civil protections for the LQTBQ community, and staunchly opposed abortion. In the 2024 presidential election he supported Donald Trump. Trump doubled his vote share in the 18th from 2016 to 2020 from 6% to 12%, and would move to 28% in 2024. Though the district remains reliably Democratic, there is also a strong conservative streak. 
+
+## The Candidates
+
+Eight candidates vied for Diaz Sr.'s seat, though none came close to Rivera and Farias. 
+
+William Rivera is a lifelong resident of the district who served as the district leader for Bronx Community Board 9 and before that as district leader of the 87th assembley district. He received the support of Diaz Sr. for the seat which made him an early frontrunner. Until the month before the election he lead the field in fundrasiing, securing high dollar donations primarily from real estate and construction firms. Rivera ran into trouble into trouble in early June when The City ran an article highlighting two significant corruptoin allegations. In one case Rivera had allegedly depositied $9,000 raised by the community board into the accounts of his own non-profit, in another he could not acount for nearly half a million dollars in post-9/11 donations sent to a Bronx volunteer fire company he ran. With tight ties to the CB, the outgoing CM, and the county party, Rivera was an establishment candidate.
+
+Farias also grew up in the district. She began her political career working on Barack Obama's 2012 reelection campaign. She returned to NYC after the campaign where she took a job in Elizabeth Crowley's office. Her 2017 loss to Diaz Sr. was her first campaign and her '21 victory her second. Outside of politics Farias worked for the Consortium for Worker Education. Farias received endorsements from the WFP as well as from all the affilated unions of Labor Strong, who spent $58,969 on advertisement in her race. Laborers Building a Better New York, a PAC of building trades unions, also spent $14,141 on a mailer supporting her. She also received endorsements from Jumanee Williams and Riche Torres.
+
+## The Campaign 
+
+An article in the Riverdale Press highlighted Farias's campaign manager's targeting of new or lapsed voters, and this appears to have paid off. Though overall voter participation fell in the district from her first run in 2017 to 2021, her first-round vote share was positively correlated with a districts change in voter turnout from '17 to '21 and was 7 points higher in eds that increased voter turnout.  
