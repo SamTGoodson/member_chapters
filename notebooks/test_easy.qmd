@@ -1,0 +1,22 @@
+---
+title: "'Too Dangerous for the City Council' Insiders and Outsiders in the 35th Council District"
+format:
+  html: default   
+  pdf:           
+    df-print: kable
+    tbl-colwidths: [75,25]
+    code-fold: true
+    mainfont: "Georgia"
+header-includes:
+  - \usepackage{graphicx}
+  - \usepackage{adjustbox}
+  - \usepackage{afterpage}
+  - \usepackage{biblatex}
+  - \newcommand{\bibsection}{\clearpage\printbibliography}
+execute:
+  echo: false
+jupyter: python3
+bibliography: references.bib
+---
+
+Hello world.

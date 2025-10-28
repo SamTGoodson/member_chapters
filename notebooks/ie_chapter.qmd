@@ -1,0 +1,99 @@
+---
+title: "Independent Expenditures "
+format:
+  pdf:
+    df-print: kable
+    tbl-colwidths: [75,25]
+    code-fold: true
+    mainfont: "Georgia"
+header-includes:
+  - \usepackage{graphicx}
+  - \usepackage{adjustbox}
+  - \usepackage{afterpage}
+  - \usepackage{biblatex}
+  - \newcommand{\bibsection}{\clearpage\printbibliography}
+execute:
+  echo: false
+jupyter: python3
+bibliography: references.bib
+---
+
+```{python}
+import pandas as pd
+from IPython.display import display, Latex,Markdown
+from tabulate import tabulate
+
+
+ie = pd.read_csv('../../cfb_cs/ie_con_cc.csv')
+ie_cont = pd.read_csv('../data/ie_contr.csv')
+dt = pd.read_csv('../data/donor_totals.csv')
+
+groups = {
+    'Executive': ['CEO', 'Chief Executive Officer', 'Executive', 'Consultant/CEO','Executive Chairman'],
+    'Investor': ['Investor', 'INVESTOR', 'Portfolio Investor'],
+    'Retired/Unemployed': ['Retired', 'Not Employed','Not employed'],
+    'Attorney' : ['Attorney','Lawyer']
+}
+mapping = {occ: group for group, occs in groups.items() for occ in occs}
+ie_cont['grouped_occupation'] = ie_cont['OCCUPATION'].apply(
+    lambda x: mapping.get(x, x)
+)
+dt_occ = dt.merge(ie_cont[['NAME','grouped_occupation','OCCUPATION','EMPNAME']],on='NAME')
+
+opp_list = ie[ie['POSITION'] == 'Oppose'].groupby(['SPENDER_NAME','CANDNAME'])['ALLOCATION'].sum().reset_index().sort_values('ALLOCATION',ascending=False)['CANDNAME'].to_list()
+prog_list = ie[(ie['CANDNAME'].isin(opp_list)) & (ie['POSITION'] == 'Support')].groupby('SPENDER_NAME')['ALLOCATION'].sum().reset_index().sort_values('ALLOCATION',ascending=False)['SPENDER_NAME'].to_list()
+
+```
+
+In New York City elections an Indpendent Expenditure is money spent by independent party not affiliated with a political campaign. It is the city equivalent of PAC spending at the national level. The bulk of IE money is spent on advertising, at the City Council level this is primarily on fliers, digital ads, radio spots, robocalling/texting, and the occasional television ad. This chapter will briefly overview some major donors and IE spending patterns that will be referenced in the chapters on individual campaigns. It will also make the argument that IE spending confirms the contours of the ideological schema laid out in chapter 1, with progressive and neoliberal, and to a lesser extent conservative, organizations falling neatly into the types borrowed from Weaver's regime analysis.
+
+Table 1 breaks down all IE spending in the 2021 City Council elections by spending type. Mass mailings are far and away the most popular option at over \$3 million spent, with internet banner ads at a distant second. Many specific examples will be surveyed throughout the chapters on individual races. Contributors to IEs (used here as a noun, like PAC) are varied. Organized labor, both private and public, are major spenders, as are non-profits, and individual donors and firms. Real Estate interests are large players. Table 2 shows IE contributions by type of contributor, and table 3 shows the most common listed occupation of the contributors. Individual donations make up the vast majority of IEs, totaling north of \$30 million. Of those individuals, executive officers of various firms, investors, and hedge fun managers are well represented. Of those who listed executive as their occupation, finance and real estate firms are the most represented.
+
+```{python}
+ie.groupby('COMM_PURPOSE')['ALLOCATION'].sum().reset_index().sort_values('ALLOCATION',ascending=False)
+```
+
+```{python}
+ie_cont.groupby('C_CODE')['AMNT'].sum().reset_index().sort_values('AMNT',ascending=False)
+```
+
+```{python}
+groups = {
+    'Executive': ['CEO', 'Chief Executive Officer', 'Executive', 'Consultant/CEO','Executive Chairman'],
+    'Investor': ['Investor', 'INVESTOR', 'Portfolio Investor'],
+    'Retired/Unemployed': ['Retired', 'Not Employed']
+}
+
+mapping = {occ: group for group, occs in groups.items() for occ in occs}
+ie_cont['grouped_occupation'] = ie_cont['OCCUPATION'].apply(
+    lambda x: mapping.get(x, x)
+)
+ie_cont[ie_cont['C_CODE'] == 'IND'].groupby('grouped_occupation')['AMNT'].sum().reset_index().sort_values('AMNT',ascending=False).head(10)
+```
+
+Every IE is registered with the city and listed as either supporting or opposing a candidate. Tables 5 shows the top 10 candidates by reception of supporting funds. Of note are several candidates who ran against DSA or DSA adjacent candidates.
+
+```{python}
+ie[ie['POSITION'] == 'Support'].groupby('CANDNAME')['ALLOCATION'].sum().reset_index().sort_values('ALLOCATION',ascending=False).head(15)
+```
+
+Table 6 shows the top candidates by funds spent in opposition. Every DSA candidate but Brandon West is present[^1], as is the socialist Felicia Singh. The three organizations spending heavily against these candidates are Common Sense NYC., an IE comprised primarily of donations from the real estate and finance sectors, the Police Benevolant Association, and the Committee for Sensible Government, funded primarily by the two inheritors of the Estee Lauder estate. The particulars of this spending will be discussed in the relevant chapters, but broadly they targeted left-wing candidates on crime in general, public drug use, dirty streets, the legalization of sex work, and general "quality of life," often with police officers or sanitation workers photographed. In an interview council member Sandy Nurse (whose opponent, Darma Diaz, was one of the top IE recipients) cited exactly these issues as the most difficult to talk to her constituents about [@nurse2025]. As described in the ideal regime types defined in Weaver, these representatives of both neoliberal and conservative regime types spent millions against progressive candidates, hammering them on the most difficult issues for the left.
+
+[^1]: West's campaign against Shahana Hanif in the 39th was by great measure the least contentious of all the DSA races, which explains his absence. This is explored in further detail in chapter X.
+
+Table 7 shows the organizations that spent in support of the candidates listed in table 6, opposing the conservative and neoliberal spending. They include the Working Famalies Party, Labor Strong, an organization of public sector unions, Laborers Building, an organization of unions in the building trades, Amplify Her, an org devoted to electing women to the Concil, and Our City, an organization with the stated goal of promoting progressive governance in New York City, funded both by individuals and labor unions. Table 8 shows the primary occupation of individuals giving to these organizations. The top category, Executive Directors, is comprised of two directors of orgs on the list (Amplify Her and Our City) and the other is the director of Girls Who Code. After this, the list features heavily from socio-cultural professionals. The top donors to these candidates besides organized labor are a film director, a novelist, an editor at The Nation, and a retired law school professor. These patterns also align with the theoretical structure detailed in Chapter 1, the left is funded primarily by labor and socio-cultural professionals.
+
+```{python}
+tab_test = ie[(ie['CANDNAME'].isin(opp_list)) & (ie['POSITION'] == 'Support')].groupby('SPENDER_NAME')['ALLOCATION'].sum().reset_index().sort_values('ALLOCATION',ascending=False)
+columns =tab_test .columns
+Markdown(tabulate(tab_test , headers=columns, showindex=False))
+
+```
+
+```{python}
+dt_occ[dt_occ['CANDNAME'].isin(opp_list)].groupby(['NAME','grouped_occupation','EMPNAME'])['indirect_opp_total'].sum().reset_index().sort_values('indirect_opp_total',ascending=False).head(10)
+```
+
+```{python}
+ie_cont[(ie_cont['C_CODE'] == 'IND') & ie_cont['RECIPNAME'].isin(prog_list)].groupby('OCCUPATION')['AMNT'].sum().reset_index().sort_values('AMNT',ascending=False).head(10)
+```

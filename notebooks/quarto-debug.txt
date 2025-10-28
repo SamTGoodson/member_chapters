@@ -1,0 +1,84 @@
+Quarto version: 1.6.42
+[execProcess] python C:\Program Files\Quarto\share\capabilities\jupyter.py
+[execProcess] Success: true, code: 0
+[execProcess] py C:\Program Files\Quarto\share\capabilities\jupyter.py
+[execProcess] Success: true, code: 0
+[execProcess] py -m jupyter --paths --json
+[execProcess] Success: true, code: 0
+[NotebookContext]: Starting Cleanup
+[NotebookContext]: Starting Cleanup
+Loaded deno-dom-native
+[execProcess] python C:\Program Files\Quarto\share\capabilities\jupyter.py
+[execProcess] Success: true, code: 0
+[execProcess] py C:\Program Files\Quarto\share\capabilities\jupyter.py
+[execProcess] Success: true, code: 0
+
+Starting python3 kernel...[execProcess] py C:\Program Files\Quarto\share\jupyter\jupyter.py
+Done
+
+Executing 'test_easy.quarto_ipynb'
+
+[execProcess] Success: true, code: 0
+Creating SassCache at C:\Users\samtg\AppData\Local\Temp\quarto-sessione28a4e3fb03dc6cb\ac2f9646ef7393ac\sass
+Returning SassCache at C:\Users\samtg\AppData\Local\Temp\quarto-sessione28a4e3fb03dc6cb\ac2f9646ef7393ac\sass
+SassCache.getOrSet(...)
+SassCache.getFromHash(hash=737639894da6472b567d6f61eb3def26, inputHash=9eff0c28f844e436236abf390bcae019, force=undefined)
+  cache miss
+  cache miss, setting
+SassCache.setFromHash(737639894da6472b567d6f61eb3def26, 9eff0c28f844e436236abf390bcae019), ...
+[execProcess] C:\Program Files\Quarto\bin\tools\x86_64\dart-sass\sass.bat C:\Users\samtg\AppData\Local\Temp\quarto-sessione28a4e3fb03dc6cb\ac2f9646ef7393ac\fc838b045bc66c46.scss C:\Users\samtg\AppData\Local\Temp\quarto-sessione28a4e3fb03dc6cb\ac2f9646ef7393ac\sass\737639894da6472b567d6f61eb3def26.css --style compressed --quiet --load-path=C:\Program Files\Quarto\share\formats\html\bootstrap\dist\scss --load-path=C:\Program Files\Quarto\share\formats\html\bslib\bslib-scss
+[execProcess] Success: true, code: 0
+Creating SassCache at C:\Users\samtg\AppData\Local\quarto\sass
+Returning SassCache at C:\Users\samtg\AppData\Local\quarto\sass
+SassCache.getOrSet(...)
+SassCache.getFromHash(hash=35eb38a806ee71ea6d2563be2308c832, inputHash=9f509382bdde1f63689aebd5c313cb92, force=undefined)
+  cache hit
+  cache hit
+[execProcess] reg query HKLM\SYSTEM\CurrentControlSet\Control\Nls\CodePage /v ACP
+[execProcess] Success: true, code: 0
+Windows: Using code page 65001
+-- Searching for R binary --
+Looking for 'Rscript' in QUARTO_R: undefined
+Looking for 'Rscript' in R_HOME: undefined
+Looking for 'Rscript' in PATH.
+[execProcess] CMD /C where Rscript
+[execProcess] Success: false, code: 1
+Looking for 'Rscript' in Windows Registry.
+[execProcess] reg query HKCU\Software\R-core\R /v Current Version
+[execProcess] Success: false, code: 1
+[execProcess] reg query HKLM\Software\R-core\R /v Current Version
+[execProcess] Success: true, code: 0
+[execProcess] reg query HKCU\Software\R-core\R\4.2.0 /v InstallPath
+[execProcess] Success: false, code: 1
+[execProcess] reg query HKLM\Software\R-core\R\4.2.0 /v InstallPath
+[execProcess] Success: true, code: 0
+Found in Windows Registry at C:\Program Files\R\R-4.2.0\bin
+pandoc -pdf --verbose --trace
+  to: html
+  output-file: test_easy.html
+  standalone: true
+  section-divs: true
+  html-math-method: mathjax
+  wrap: none
+  default-image-extension: png
+  
+metadata
+  document-css: false
+  link-citations: true
+  date-format: long
+  lang: en
+  title: '''Too Dangerous for the City Council'' Insiders and Outsiders in the 35th Council District'
+  header-includes:
+    - \usepackage{graphicx}
+    - \usepackage{adjustbox}
+    - \usepackage{afterpage}
+    - \usepackage{biblatex}
+    - \newcommand{\bibsection}{\clearpage\printbibliography}
+  jupyter: python3
+  bibliography:
+    - references.bib
+  
+[execProcess] C:\Program Files\Quarto\bin\tools\pandoc +RTS -K512m -RTS --defaults C:\Users\samtg\AppData\Local\Temp\quarto-sessione28a4e3fb03dc6cb\ac2f9646ef7393ac\quarto-defaultse8decb2c04d049c9.yml C:\Users\samtg\AppData\Local\Temp\quarto-sessione28a4e3fb03dc6cb\ac2f9646ef7393ac\quarto-inputb5896e0c7287737e.md --metadata-file C:\Users\samtg\AppData\Local\Temp\quarto-sessione28a4e3fb03dc6cb\ac2f9646ef7393ac\quarto-metadata2d3db85d74cdc223.yml -pdf --verbose --trace --data-dir C:\Program Files\Quarto\share\pandoc\datadir
+pandoc: f.yaml: withBinaryFile: does not exist (No such file or directory)
+[execProcess] Success: false, code: 1
+[NotebookContext]: Starting Cleanup
